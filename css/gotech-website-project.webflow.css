@@ -113,6 +113,9 @@ h1 {
   font-weight: 700;
   letter-spacing: -1.5px;
   text-indent: -2px;
+  font-size: 60px;
+  font-weight: 500;
+  margin-bottom: 0;
 }
 
 h2 {
@@ -123,6 +126,7 @@ h2 {
   font-weight: 600;
   letter-spacing: -1px;
   text-indent: -1px;
+  font-weight: 500;
 }
 
 h3 {
@@ -431,10 +435,10 @@ figcaption {
   background-color: #1f2631;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
-  background: #f3f3f3;
+  background: #404350;
   color: #ffa185;
   font-size: 12px;
-  line-height: 55px;
+  line-height: 50px;
   font-weight: 600;
   text-align: center;
   letter-spacing: 2px;
@@ -443,7 +447,7 @@ figcaption {
 }
 
 .button:hover {
-  background: #404350;
+  background: #efefef;
   text-decoration: none;
 }
 
@@ -593,12 +597,13 @@ figcaption {
   width: auto;
   text-align: center;
   min-width: 100px;
+  font-weight: 500
 }
 
 .navigation-link:hover {
   text-decoration: none;
   text-decoration: none;
-  background: #c5c5c569;
+  background: #ffc3ab;
 }
 
 .navigation-link.w--current {
@@ -935,7 +940,7 @@ figcaption {
   transition: background-position 100ms ease-in-out;
   color: #070f1a;
   font-size: 16px;
-  line-height: 60px;
+  line-height: 50px;
   font-weight: 500;
   letter-spacing: 2px;
 }
@@ -1182,8 +1187,8 @@ figcaption {
 .header-container.two-columns {
   position: relative;
   margin-bottom: 0px;
-  padding-top: 100px;
   padding-bottom: 0px;
+  padding-top: 150px;
 }
 
 .heading {
@@ -2858,6 +2863,13 @@ figcaption {
   margin-right: 30px;
 }
 
+.column-cummunity-image.column {
+  -webkit-align-self: stretch;
+  -ms-flex-item-align: stretch;
+  -ms-grid-row-align: stretch;
+  align-self: stretch;
+}
+
 .header-slider-container {
   margin-right: 40px;
   margin-left: 40px;
@@ -3152,14 +3164,17 @@ figcaption {
   margin-left: 0px;
   padding-right: 10px;
   padding-left: 10px;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-  -ms-flex-pack: center;
-  justify-content: center;
+  -webkit-justify-content: space-around;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
   -webkit-box-align: center;
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   border-style: solid;
   border-width: 2px;
   border-color: #f2f4f8;
