@@ -59,7 +59,7 @@ $(function () {
     let _mouseY = e.clientY;
     let _depth1 = `${(_mouseX - _w) * 0.01}%, ${(_mouseY - _h) * 0.01}%`;
     let x = `translate( ${_depth1} )`;
-    console.log(x);
+    // console.log(x);
     // elem.style.transform = x;
     g_letter.css('transform', x )
   }
