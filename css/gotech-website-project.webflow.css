@@ -605,7 +605,8 @@ figcaption {
 .navigation-link:hover {
   text-decoration: none;
   text-decoration: none;
-  background: #ffc3ab;
+  /* background: #ffc3ab; */
+  letter-spacing: 2px;
 }
 
 .navigation-link.w--current {
@@ -3000,11 +3001,35 @@ figcaption {
   background-size: cover;
   background-repeat: no-repeat;
 }
+.team-photo._6 {
+  background-image: url("../images/evgeny.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.team-photo._7 {
+  background-image: url("../images/lilach.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.team-photo._8 {
+  background-image: url("../images/giora.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.team-photo._9 {
+  background-image: url("../images/raz.jpg");
+  background-position: 50% 50%;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 
 .team-photo:hover {
-  z-index: 9999;
-  transform: scale(1.1);
-  box-shadow: -20px 20px 90px -10px #000000e0;
+  z-index: 99;
+  transform: scale(1.05);
+  box-shadow: -10px 10px 30px -20px #000000e0;
   filter: grayscale(0);
 }
 
@@ -4911,6 +4936,25 @@ figcaption {
   margin-bottom: 10px;
 }
 
+.navigation-link::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 80%;
+  width: 0%;
+  height: 2px;
+  transition: ease-in-out all .3s;
+  background: red;
+  background: linear-gradient( 90deg, rgb(94 231 188) 0%, rgb(82 227 239) 39%, rgb(233 82 133) 65%, rgba(252, 241, 69, 1) 100% );
+  background: #4c4c4c;
+  transform-origin: center;
+}
+
+.navigation-link:hover::after{
+  width: 100%;
+  left: 0%;
+}
+
 @media screen and (max-width: 991px) {
   .client-item{
     filter: grayscale(0)
@@ -4949,14 +4993,7 @@ figcaption {
     top: 0%;
     right: 0%;
     bottom: auto;
-  }
-
-  .navigation-links a::after {
-    content: "";
-    position: absolute;
-    left: 0px;
-    width: 10px;
-    background: red;
+    z-index: 9999;
   }
 
   .navigation-dropdown-icon {
