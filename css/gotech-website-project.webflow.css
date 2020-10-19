@@ -3181,6 +3181,7 @@ figcaption {
   right: auto;
   bottom: 0%;
   margin-right: 10px;
+  width: 20px;
 }
 
 .tech-feature-item {
