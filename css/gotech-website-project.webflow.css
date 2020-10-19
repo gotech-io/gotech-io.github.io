@@ -207,6 +207,7 @@ li {
 img {
   display: inline-block;
   max-width: 100%;
+  width: auto;
 }
 
 .brand-logo img {
@@ -731,7 +732,19 @@ figcaption {
   background-repeat: no-repeat;
 }
 
-.footer-social.twitter:hover {
+.footer-social.linkedin {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #f2f4f8;
+  background-color: #f2f4f8;
+  background-image: url("../images/linkedin.svg");
+  background-position: 50% 50%;
+  background-size: 23px;
+  background-repeat: no-repeat;
+}
+
+.footer-social.twitter:hover,
+.footer-social.linkedin:hover {
   background-color: #fff;
 }
 
@@ -2902,6 +2915,17 @@ figcaption {
 }
 
 .social-icon.facebook:hover {
+  background-color: #f2f4f8;
+}
+
+.social-icon.linkedin {
+  background-image: url("../images/linkedin.svg");
+  background-position: 50% 50%;
+  background-size: 25px;
+  background-repeat: no-repeat;
+}
+
+.social-icon.linkedin:hover {
   background-color: #f2f4f8;
 }
 
