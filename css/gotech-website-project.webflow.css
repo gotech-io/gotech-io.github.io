@@ -2673,7 +2673,7 @@ figcaption {
 }
 
 .header-container p {
-  width: 60%;
+  /* width: 60%; */
 }
 
 .feature-tabs-content {
@@ -2990,7 +2990,7 @@ figcaption {
   background-image: url("https://d3e54v103j8qbb.cloudfront.net/img/background-image.svg");
   background-position: 0px 0px;
   background-size: 125px;
-  transition: ease-in-out .3s all;
+  transition: ease-in-out 0.3s all;
   filter: grayscale(1);
 }
 
@@ -4968,21 +4968,66 @@ figcaption {
   top: 80%;
   width: 0%;
   height: 2px;
-  transition: ease-in-out all .3s;
+  transition: ease-in-out all 0.3s;
   background: red;
-  background: linear-gradient( 90deg, rgb(94 231 188) 0%, rgb(82 227 239) 39%, rgb(233 82 133) 65%, rgba(252, 241, 69, 1) 100% );
+  background: linear-gradient(
+    90deg,
+    rgb(94 231 188) 0%,
+    rgb(82 227 239) 39%,
+    rgb(233 82 133) 65%,
+    rgba(252, 241, 69, 1) 100%
+  );
   background: #4c4c4c;
   transform-origin: center;
 }
 
-.navigation-link:hover::after{
+.navigation-link:hover::after {
   width: 100%;
   left: 0%;
 }
 
+.flex-display {
+  display: flex;
+}
+
+#animated-logo {
+  width: 400px;
+}
+
+.st0 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: url(#SVGID_1_);
+}
+
+.st1 {
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+  fill: url(#SVGID_2_);
+}
+
+.st2 {
+  fill: #ffffff;
+}
+
+.div-path, #g-letter {
+  transform-origin: center center;
+  transform: scale(0);
+  transition: ease-in-out 0.7s all;
+}
+
+svg {
+  overflow: visible;
+}
+
 @media screen and (max-width: 991px) {
-  .client-item{
-    filter: grayscale(0)
+  #animated-logo {
+    width: 400px;
+    display: none;
+  }
+
+  .client-item {
+    filter: grayscale(0);
   }
 
   h1 {
