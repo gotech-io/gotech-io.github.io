@@ -1925,7 +1925,10 @@ figcaption {
   border-style: solid;
   border-width: 2px;
   border-color: #f2f4f8;
+  background: white;
   border-radius: 20px;
+  border: none;
+  box-shadow: 0px 0px 30px 0px #00000073;
 }
 
 .footer-subscribe {
@@ -2289,6 +2292,7 @@ figcaption {
   -ms-flex-pack: distribute;
   justify-content: space-around;
   background-image: url("../images/header-background_edited.svg");
+  /* background-image: url("../images/header-background.svg"); */
   background-position: 100% 0%;
   background-size: cover;
   background-repeat: no-repeat;
