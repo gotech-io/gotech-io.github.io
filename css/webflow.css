@@ -985,6 +985,8 @@ textarea.w-select {
 }
 .w-slider-nav-invert > div.w-active {
   background-color: #222;
+  background-color: #ff5900;
+  
 }
 .w-slider-dot {
   position: relative;
