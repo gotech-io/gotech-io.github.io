@@ -1046,6 +1046,10 @@ figcaption {
   margin-left: 10px;
 }
 
+.text-left {
+  text-align: left!important;
+}
+
 .navigation-dropdown-link-content.small {
   margin-left: 0px;
 }
