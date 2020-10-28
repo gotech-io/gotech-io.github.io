@@ -41,3 +41,32 @@ $(function () {
   }, 800)
 
 });
+
+
+var title_text = "GoTech";
+var sub_title_text = "Providing tech as a service";
+var speed = 50;
+var i = 0;
+var j = 0;
+
+function typeWriter(){
+  if ( i < title_text.length) {
+    document.getElementById("main-title").innerHTML += title_text.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed)
+  }
+}
+
+function typeWriter_subtitle(){
+  if ( j < sub_title_text.length) {
+    document.getElementById("main-sub-title").innerHTML += sub_title_text.charAt(j);
+    j++;
+    setTimeout(typeWriter_subtitle, speed)
+  }
+}
+
+$(document).ready(function(){
+  setTimeout(typeWriter(), 2000)
+  setTimeout(typeWriter_subtitle(), 2000)
+});
+
