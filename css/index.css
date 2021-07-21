@@ -35,3 +35,18 @@
 #main-animation {
     opacity: 0;
 }
+
+.header-container.header-double-padding {
+    padding-top: 120px;
+}
+
+p.pre-line {
+    white-space: pre-line;
+}
+
+@media only screen and (max-width: 1440px) {
+    .navigation-link {
+        padding: 30px 6px;
+        font-size: 1.15vw;
+    }
+}

@@ -168,7 +168,7 @@ h6 {
 p {
   margin-bottom: 20px;
   color: #1f2631;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 a {
@@ -688,7 +688,7 @@ figcaption {
 }
 
 .white.opacity-light {
-  color: hsla(0, 0%, 100%, 0.7);
+  color: hsla(0, 0%, 100%, 0.9);
 }
 
 .font-normal {
