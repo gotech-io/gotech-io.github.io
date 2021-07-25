@@ -1,0 +1,9 @@
+layout: page/index
+script: careers/index
+title: GoTech | Careers
+navbar:
+  - md/navbar/index.md
+footer:
+  - /_shared/footer/index.md
+main:
+  - md/index.md

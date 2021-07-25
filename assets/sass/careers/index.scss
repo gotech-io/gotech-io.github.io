@@ -1,0 +1,67 @@
+.careers {
+  &-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: linear-gradient(135deg, #ea5385, #f8ea74);
+    height: 400px;
+    &-content {
+      @extend .grid;
+      * {
+        color: white;
+      }
+      h1 {
+        font-size: 60px;
+        font-weight: 500;
+      }
+      p {
+        font-size: 20px;
+      }
+    }
+  }
+  &-jobs {
+    @extend .grid;
+    padding-top: 100px;
+  }
+  &-job {
+    margin-bottom: 20px;
+    &-title {
+      background: lightgray;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      cursor: pointer;
+    }
+    &-body {
+      max-height: 0px;
+      overflow: hidden;
+      transition: 0.2s all;
+
+      h3 {
+        font-size: 23px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+      p {
+        font-size: 18px;
+        &:last-child {
+          margin-bottom: 20px;
+        }
+      }
+      &-active {
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .careers-header-content {
+    h1 {
+      font-size: 30px;
+    }
+    p {
+      font-size: 14px;
+    }
+  }
+}
