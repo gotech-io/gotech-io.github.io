@@ -1,8 +1,7 @@
 ---
 layout: screens/home/sections/contact/index
-inputs:
-  - inputs/index.md
-submit_value: send message
+form:
+  - form/index.md
 ---
 
 ## Get in touch

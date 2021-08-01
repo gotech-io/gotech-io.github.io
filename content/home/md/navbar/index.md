@@ -1,5 +1,5 @@
 ---
-layout: screens/home/navbar/index
+layout: common/navbar/index
 
 navigation:
   - navigation/index.md

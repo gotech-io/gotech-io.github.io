@@ -1,12 +1,22 @@
 import "https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js";
-const SERVICE_ID = "service_5o5yu99";
-const TEMPLATE_ID = "template_26nu6kl";
-const USER_ID = "user_HJgeZJF8p00P1dPppTNJ1";
+const SERVICE_ID = "service_q0h7v7g";
+const SUBSCRIBE_TEMPLATE_ID = "template_bduwfnq";
+const USER_ID = "user_sKErxAWlcEHbUzgAWFTWL";
+const APLLY_TEMPLATE_ID = "template_ckrs4vn";
 emailjs.init(USER_ID);
 
-const subscribe = (body) => {
+const subscribe = (form) => {
   try {
-    return emailjs.send(SERVICE_ID, TEMPLATE_ID, body);
+    return emailjs.sendForm(SERVICE_ID, SUBSCRIBE_TEMPLATE_ID, form);
+  } catch (error) {
+    console.log(error);
+    return null;
+  }
+};
+
+const apply = (form) => {
+  try {
+    return emailjs.sendForm(SERVICE_ID, APLLY_TEMPLATE_ID, form);
   } catch (error) {
     console.log(error);
     return null;
@@ -15,4 +25,5 @@ const subscribe = (body) => {
 
 export default {
   subscribe,
+  apply,
 };

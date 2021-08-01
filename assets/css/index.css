@@ -34,7 +34,7 @@
   align-items: center;
   justify-content: space-between; }
 
-.grid, .home-services-list, .home-clients-grid, .home-about, .careers-header-content, .careers-jobs {
+.grid, .home-services-list, .home-clients-grid, .home-about, .careers-header-content, .careers-flex {
   max-width: 950px;
   width: calc(100% - 30px);
   margin-left: auto;
@@ -156,6 +156,70 @@ li,
     transform: translate(0, 0); }
   100% {
     transform: translate(24px, 0); } }
+
+.form {
+  position: relative; }
+  .form-submit {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px; }
+    .form-submit .loader {
+      top: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none; }
+    .form-submit .submit {
+      cursor: pointer;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.75rem;
+      background: transparent;
+      transition: 0.2s all;
+      border-radius: 50px;
+      width: 100%;
+      height: 100%; }
+  .form-flex {
+    display: flex;
+    flex-wrap: wrap; }
+    .form-flex .input-container {
+      width: 100%;
+      margin-bottom: 20px;
+      position: relative; }
+      .form-flex .input-container .input-error {
+        position: absolute;
+        font-size: 0.75rem;
+        top: calc(100% + 5px);
+        color: red;
+        left: 4px;
+        opacity: 0;
+        transition: 0.2s all; }
+        .form-flex .input-container .input-error-active {
+          opacity: 1; }
+      .form-flex .input-container label {
+        font-size: 0.625rem;
+        margin-bottom: 8px;
+        padding-left: 5px;
+        color: #070f1a;
+        padding-top: 5px; }
+      .form-flex .input-container .input {
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #f2f4f8;
+        height: 50px;
+        font-size: 16px;
+        text-indent: 10px;
+        transition: 0.2s all; }
+        .form-flex .input-container .input:focus {
+          border: 2px solid #002e63; }
+        .form-flex .input-container .input::placeholder {
+          opacity: 0.6; }
+      .form-flex .input-container .textarea {
+        height: 150px;
+        resize: none;
+        padding-top: 10px; }
 
 @media only screen and (max-width: 800px) {
   .section {
@@ -794,86 +858,42 @@ input {
     -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
     width: 500px;
     background: white;
-    position: relative;
     margin-bottom: -110px;
     padding: 50px;
     border-radius: 20px; }
-    .contact-form .contact-form-submit {
-      height: 50px;
-      position: relative;
-      width: 100%;
-      margin-top: 20px; }
-      .contact-form .contact-form-submit .contact-loader {
-        top: 50%;
-        position: absolute;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        display: none; }
-      .contact-form .contact-form-submit .submit {
-        cursor: pointer;
-        letter-spacing: 0.125rem;
-        text-transform: uppercase;
-        font-weight: 600;
-        font-size: 0.75rem;
-        background: transparent;
-        transition: 0.2s all;
-        border: solid 2px #002e63;
-        color: #002e63;
-        border-radius: 50px;
-        width: 100%;
-        height: 100%; }
-        .contact-form .contact-form-submit .submit:hover {
-          background: #002e63;
-          color: white; }
+    .contact-form .form-submit .submit {
+      border: solid 2px #002e63;
+      color: #002e63; }
+      .contact-form .form-submit .submit:hover {
+        background: #002e63;
+        color: white; }
     .contact-form-flex {
       display: flex;
       flex-wrap: wrap; }
-      .contact-form-flex .contact-form-section {
+      .contact-form-flex .input-container {
         width: 100%;
         margin-bottom: 20px;
         position: relative; }
-        .contact-form-flex .contact-form-section-error {
-          position: absolute;
-          font-size: 0.75rem;
-          top: calc(100% + 5px);
-          color: red;
-          left: 4px;
-          opacity: 0;
-          transition: 0.2s all; }
-          .contact-form-flex .contact-form-section-error-active {
-            opacity: 1; }
-        .contact-form-flex .contact-form-section label {
-          font-size: 0.625rem;
-          margin-bottom: 8px;
-          padding-left: 5px;
-          color: #070f1a;
-          padding-top: 5px; }
-        .contact-form-flex .contact-form-section input,
-        .contact-form-flex .contact-form-section textarea {
-          width: 100%;
-          border-radius: 10px;
+        .contact-form-flex .input-container label {
+          color: #070f1a; }
+        .contact-form-flex .input-container .input {
           border: 2px solid #f2f4f8;
-          height: 50px;
           color: #333333;
-          font-size: 16px;
-          text-indent: 10px;
-          transition: 0.2s all; }
-          .contact-form-flex .contact-form-section input:focus,
-          .contact-form-flex .contact-form-section textarea:focus {
+          font-size: 16px; }
+          .contact-form-flex .input-container .input:focus {
             border: 2px solid #002e63; }
-          .contact-form-flex .contact-form-section input::placeholder,
-          .contact-form-flex .contact-form-section textarea::placeholder {
+          .contact-form-flex .input-container .input::placeholder {
             opacity: 0.6; }
-        .contact-form-flex .contact-form-section textarea {
+        .contact-form-flex .input-container .textarea {
           height: 150px;
           resize: none;
           padding-top: 10px; }
-        .contact-form-flex .contact-form-section:nth-child(2) {
-          margin-left: auto; }
 
 @media only screen and (min-width: 800px) {
-  .contact-form-flex .contact-form-section:nth-child(1), .contact-form-flex .contact-form-section:nth-child(2) {
-    width: calc(50% - 10px); } }
+  .contact .form-flex .input-container:nth-child(1), .contact .form-flex .input-container:nth-child(2) {
+    width: calc(50% - 10px); }
+  .contact .form-flex .input-container:nth-child(2) {
+    margin-left: auto; } }
 
 @media only screen and (max-width: 800px) {
   .contact {
@@ -893,9 +913,7 @@ input {
       margin-top: -60px;
       width: 100%;
       bottom: -100px; }
-      .contact-form-flex .contact-form-section {
-        width: 100%; }
-      .contact-form .contact-form-submit .submit:hover {
+      .contact-form .form-submit .submit:hover {
         background: transparent;
         color: #002e63; } }
 
@@ -1154,30 +1172,70 @@ input {
   .careers-header-content p {
     font-size: 20px; }
 
-.careers-jobs {
-  padding-top: 100px; }
+.careers-flex {
+  padding-top: 70px; }
 
-.careers-job {
-  margin-bottom: 20px; }
-  .careers-job-title {
-    background: lightgray;
-    height: 50px;
+.careers-list {
+  margin-bottom: 30px; }
+  .careers-list-title {
+    font-size: 26px;
+    margin-bottom: 20px;
+    font-weight: 600; }
+  .careers-list-item {
+    border-bottom: 1px solid #3083ff;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    display: flex;
+    align-items: center; }
+    .careers-list-item-link {
+      text-decoration: none;
+      width: 500px;
+      font-size: 22px; }
+    .careers-list-item .tags {
+      margin-left: auto; }
+    .careers-list-item-arrow {
+      margin-left: 50px; }
+      .careers-list-item-arrow aside {
+        width: 15px;
+        height: 15px;
+        border-top: 3px solid black;
+        transform: rotate(45deg);
+        border-right: 3px solid black; }
+
+.career-page {
+  padding-top: 130px; }
+  .career-page-flex {
+    width: calc(100% - 30px);
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex; }
+  .career-page-body {
+    flex: 1;
+    padding-right: 80px; }
+  .career-page .form {
+    width: 40%; }
+    .career-page .form-title {
+      margin-bottom: 20px;
+      font-size: 24px; }
+
+.tags {
+  display: flex;
+  align-items: center; }
+  .tags-tag {
+    background: #eaeaec;
+    height: 32px;
+    padding: 0 18px;
+    border-radius: 23px;
+    margin-right: 15px;
+    font-size: 14px;
     display: flex;
     align-items: center;
-    padding-left: 20px;
-    cursor: pointer; }
-  .careers-job-body {
-    max-height: 0px;
-    overflow: hidden;
-    transition: 0.2s all; }
-    .careers-job-body h3 {
-      font-size: 23px;
-      margin-bottom: 20px;
-      margin-top: 20px; }
-    .careers-job-body p {
-      font-size: 18px; }
-      .careers-job-body p:last-child {
-        margin-bottom: 20px; }
+    justify-content: center;
+    font-weight: 300;
+    color: #9494a3; }
+    .tags-tag:last-child {
+      margin-right: 0px; }
 
 @media only screen and (max-width: 800px) {
   .careers-header-content h1 {

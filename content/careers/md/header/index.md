@@ -1,5 +1,5 @@
 ---
-layout: screens/careers/components/header
+layout: screens/careers/components/header/index
 ---
 
 # Careers

@@ -1,10 +1,9 @@
-import contact from "./contact/index.js";
 import navbar from "./navbar/index.js";
 
 export const init = () => {
   handleOnScroll();
   navbar.init();
-  contact.init();
+
   AOS.init({ once: true });
 };
 

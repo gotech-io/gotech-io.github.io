@@ -2,7 +2,7 @@ layout: page/index
 script: home/index
 title: GoTech | Tech as a Service
 navbar:
-  - home/md/navbar/index.md
+  - /_shared/navbar/index.md
 footer:
   - /_shared/footer/index.md
 main:
