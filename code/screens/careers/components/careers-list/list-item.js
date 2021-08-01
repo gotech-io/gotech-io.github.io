@@ -5,12 +5,12 @@ import Tags from "../../../../common/tags";
 function LisItem({ folderName, title, tags }) {
   return (
     <li className="careers-list-item" data-aos={animations.up}>
-      <a className="careers-list-item-link" href={`/careers/${folderName}`}>
-        {title}
-      </a>
-      <Tags tags={tags} />
-      <a className="careers-list-item-arrow" href={`/careers/${folderName}`}>
-        <aside />
+      <a href={`/careers/${folderName}`}>
+        <h4> {title}</h4>
+
+        <Tags tags={tags} />
+
+        <aside className="careers-list-item-arrow" />
       </a>
     </li>
   );

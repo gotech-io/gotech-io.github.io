@@ -1,9 +1,15 @@
 ---
 layout: screens/careers/components/career-mapper/index
 title: Lead DevOps architect
-back:
-  - ../back-btn/index.md
+backBtn:
+  - ../md/back-btn/index.md
 tags:
+  - Data analysis
+  - Excel
+  - SQL
+  - Data analysis
+  - Excel
+  - SQL
   - Data analysis
   - Excel
   - SQL
@@ -13,15 +19,28 @@ form:
   - ../form/index.md
 ---
 
-Do you have the skill?
+### What is the job
 
-Can you do what the rest of the experts can't?
-Can you actually BE a technological leader?
+We are looking for an analytical, detail-oriented, hands-on, business-oriented and highly motivated individual to join our Ad Operations team. The successful Ad Operations Manager will be a key contributor to the success and growth of Auras partners on the platform.
 
-With us, you will have the opportunities to advise and implement solutions at best, and yes we mean the best, tech companies in the world. Our experts are leading teams and projects at the heights peak of technology. They learn, explore and innovate in all languages and technologies.
+By combining exceptional operational and analytical skills, with business acumen and technical know-how, you will support the account management team in turning complex datasets into actionable insights. The ideal candidate will be responsible for a range of mission-critical functions and will interface with the Account Management team on a daily basis.
 
-We are GoTech, a company of experts working with the most advanced companies in the market.
+### Responsibilities
 
-Right now we are looking for a #LeadDevOps architect. In a very short time, our #DevOps team members are working with almost all technologies available in the market, including: #aws, #gcp, #azure, #k8s, #docker, #terraform, #jenkins, and many more.
+- Know all the ins-and-outs of the Aura product and the account management operations
+- Perform analysis on complex data sets to create actionable insights and maximize revenue opportunities
+- Lead troubleshooting efforts and work closely with our Technical team to ensure issues are communicated and resolved in a timely manner.
+- Identify opportunities for growth for key accounts and work with Account Managers (both in IL and the US) to build action plan and implement it successfully
+- Assist in the smooth on-boarding and launching of new partners to the platform
 
-So... what are we looking for? Someone with high responsibility, Autodidact, Someone, who is organized enough to work with several customers including leading a team.
+### Requirements
+
+- Strong analytical skills with the ability to collect, organize, analyze, and disseminate significant amounts of information (excel, BI tools, SQL nice to have)
+- Client-focused, detail-oriented mindset with a passion for using data and analytics to drive business results
+- Fluent in English
+- Ability to multitask and handle various priorities in a high paced environment
+- Tech savvy
+- Collaborative team player with strong interpersonal skills
+- Initiative, go getter
+- Quick learner
+- Previous experience in Ad Tech an advantage

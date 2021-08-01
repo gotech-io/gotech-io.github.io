@@ -1,8 +1,8 @@
 ---
-layout: common/form/input/index
+layout: common/form/input/upload
 name: file
 type: file
-placeholder:
-error: Required field
-label: CV
+placeholder: file
+error: Resume is required
+label: Resume
 ---

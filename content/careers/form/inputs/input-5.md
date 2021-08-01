@@ -4,6 +4,5 @@ name: linkedin
 placeholder:
 error: Invalid url
 label: LinkedIn Profile URL
-required: true
 validation: url
 ---

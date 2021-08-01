@@ -14,7 +14,10 @@ function Input({
       className="input-container"
       style={{ display: type === "hidden" ? "none" : "" }}
     >
-      <label htmlFor={name}>{label}</label>
+      <label htmlFor={name}>
+        {label}
+        {required && <span>*</span>}
+      </label>
       <input
         data-required={required}
         type={type}

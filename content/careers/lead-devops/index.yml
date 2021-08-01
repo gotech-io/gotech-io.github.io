@@ -1,6 +1,8 @@
 layout: page/index
 script: career-page/index
 title: GoTech | Careers
+backBtn:
+  - ../back-btn/index.md
 navbar:
   - /careers/md/navbar/index.md
 footer:

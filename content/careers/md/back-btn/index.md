@@ -1,5 +1,5 @@
 ---
-layout: screens/careers/components/back-btn
+layout: common/btns/back
 text: Back to all positions
 url: /careers
 ---
