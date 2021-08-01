@@ -10,7 +10,7 @@ const handleBackground = () => {
   const navbar = getElement(".navbar");
 
   const offsetTop = window.pageYOffset;
-  if (offsetTop >= 120) {
+  if (offsetTop >= 70) {
     navbar.classList.add("navbar-active");
   } else {
     navbar.classList.remove("navbar-active");
@@ -32,7 +32,6 @@ const handleTransform = () => {
 
 const handleScroll = () => {
   handleBackground();
-  handleTransform();
 };
 
 const addEventToMobileToggle = () => {
