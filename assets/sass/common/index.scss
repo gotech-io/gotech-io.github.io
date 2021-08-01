@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "https://unpkg.com/aos@2.3.1/dist/aos.css";
+@import "./form.scss";
+@import "./tags.scss";
+
 .flex-start {
   display: flex;
   justify-content: flex-start;
@@ -36,7 +39,7 @@
   justify-content: space-between;
 }
 
-$component-width: calc(100% - 30px);
+$component-width: calc(100% - 100px);
 
 .grid {
   max-width: 950px;
@@ -63,6 +66,29 @@ li,
 
 .text {
   font-size: 1.25rem;
+}
+.back-btn {
+  display: flex;
+  align-items: center;
+  a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 0.813rem;
+  }
+  &-arrow {
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    transform: rotate(-45deg);
+    transition: 0.2s all;
+    position: relative;
+  }
+  &:hover {
+    .back-btn-arrow {
+      transform: translate(-6px, 0) rotate(-45deg);
+    }
+  }
 }
 
 .link {
@@ -182,85 +208,6 @@ li,
   }
   100% {
     transform: translate(24px, 0);
-  }
-}
-
-.form {
-  position: relative;
-
-  &-submit {
-    height: 50px;
-    position: relative;
-    width: 100%;
-    margin-top: 20px;
-    .loader {
-      top: 50%;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: none;
-    }
-    .submit {
-      cursor: pointer;
-      letter-spacing: 0.125rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 0.75rem;
-      background: transparent;
-      transition: 0.2s all;
-      border-radius: 50px;
-      width: 100%;
-      height: 100%;
-    }
-  }
-  &-flex {
-    display: flex;
-    flex-wrap: wrap;
-    .input-container {
-      width: 100%;
-      margin-bottom: 20px;
-      position: relative;
-      .input-error {
-        position: absolute;
-        font-size: 0.75rem;
-        top: calc(100% + 5px);
-        color: red;
-        left: 4px;
-        opacity: 0;
-        transition: 0.2s all;
-        &-active {
-          opacity: 1;
-        }
-      }
-      label {
-        font-size: 0.625rem;
-        margin-bottom: 8px;
-        padding-left: 5px;
-        color: #070f1a;
-        padding-top: 5px;
-      }
-      .input {
-        width: 100%;
-        border-radius: 10px;
-        border: 2px solid #f2f4f8;
-        height: 50px;
-        font-size: 16px;
-        text-indent: 10px;
-        transition: 0.2s all;
-
-        &:focus {
-          border: 2px solid #002e63;
-        }
-        &::placeholder {
-          opacity: 0.6;
-        }
-      }
-      .textarea {
-        height: 150px;
-        resize: none;
-        padding-top: 10px;
-      }
-    }
   }
 }
 

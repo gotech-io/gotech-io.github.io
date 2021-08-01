@@ -24,6 +24,54 @@ class Form {
       addEvent(input, "focus", this.handleFocus.bind(this, input));
       addEvent(input, "blur", this.handleBlur.bind(this, input));
     });
+    this.addEventsToUploadInput();
+  }
+
+  addEventsToUploadInput() {
+    const uploadTrigger = getElement(
+      `form.${this.formName} .upload-container-trigger`
+    );
+    if (!uploadTrigger) return;
+    const uploadInput = getElement(`form.${this.formName} .upload`);
+    uploadTrigger.addEventListener("click", () => {
+      uploadInput.click();
+    });
+    uploadInput.addEventListener("change", (e) => {
+      const file = e.target.files[0];
+      let name;
+      if (file) {
+        name = file.name;
+      }
+      this.handleFileUploaded(name, uploadTrigger);
+    });
+
+    const clearBtn = getElement(
+      `form.${this.formName} .upload-container-file-clear`
+    );
+    addEvent(clearBtn, "click", () => {
+      this.handleFileUploaded("", uploadTrigger);
+    });
+  }
+
+  handleFileUploaded(name, uploadBtn) {
+    const input = getElement(`form.${this.formName} .upload`);
+    this.handleFocus(input);
+    const nameContainer = getElement(
+      `form.${this.formName} .upload-container-file-name`
+    );
+    const text = nameContainer.querySelector(
+      ".upload-container-file-name-text"
+    );
+    if (!name) {
+      input.value = "";
+      uploadBtn.style.display = "block";
+      text.innerText = " ";
+      nameContainer.style.display = "none";
+    } else {
+      uploadBtn.style.display = "none";
+      text.innerText = name;
+      nameContainer.style.display = "flex";
+    }
   }
 
   handleBlur(input) {
@@ -43,11 +91,11 @@ class Form {
     const value = input.value;
     switch (validation) {
       case "email":
-        return validateEmail(value);
+        return validateEmail(value, isRequired);
       case "phone":
-        return validatePhone(value);
+        return validatePhone(value, isRequired);
       case "url":
-        return validateUrl(value);
+        return validateUrl(value, isRequired);
       default:
         return isRequired ? !!value : true;
     }
@@ -63,7 +111,7 @@ class Form {
         errors.push(true);
       }
     });
-    return { isValid: errors.length === 0 };
+    return errors.length === 0;
   }
 
   showError(input) {
@@ -86,7 +134,7 @@ class Form {
   async handleSubmit(e) {
     e.preventDefault();
 
-    const { isValid } = this.handleInputValues();
+    const isValid = this.handleInputValues();
     if (isValid) {
       this.handleLoading(true);
 

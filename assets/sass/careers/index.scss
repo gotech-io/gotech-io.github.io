@@ -1,10 +1,19 @@
+$text-color: #0d148c;
+.careere-grid {
+  width: calc(100% - 150px);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
 .careers {
   &-header {
     display: flex;
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(135deg, #ea5385, #f8ea74);
-    height: 400px;
+    min-height: 400px;
+    padding-top: 100px;
+    padding-bottom: 50px;
     &-content {
       @extend .grid;
       * {
@@ -21,7 +30,7 @@
   }
 
   &-flex {
-    @extend .grid;
+    @extend .careere-grid;
     padding-top: 70px;
   }
   &-list {
@@ -37,24 +46,33 @@
 
       margin-bottom: 40px;
       display: flex;
-      align-items: center;
-      &-link {
+      align-items: flex-start;
+      &:last-child {
+        border: 0px;
+      }
+      a {
+        display: flex;
         text-decoration: none;
-        width: 500px;
+        width: 100%;
         font-size: 22px;
+        h4 {
+          width: 60%;
+        }
       }
       .tags {
         margin-left: auto;
+        width: calc(40%);
+        padding-right: 50px;
       }
       &-arrow {
-        margin-left: 50px;
-        aside {
-          width: 15px;
-          height: 15px;
-          border-top: 3px solid black;
-          transform: rotate(45deg);
-          border-right: 3px solid black;
-        }
+        width: 15px;
+        height: 15px;
+        border-top: 2px solid black;
+
+        border-right: 2px solid black;
+        position: relative;
+        align-self: center;
+        transform: rotate(45deg);
       }
     }
   }
@@ -62,20 +80,97 @@
 
 .career-page {
   padding-top: 130px;
-
+  .back-btn {
+    margin-bottom: 50px;
+  }
+  &-title {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: $text-color;
+  }
+  .tags {
+    margin-bottom: 40px;
+    max-width: 600px;
+  }
+  &-grid {
+    @extend .careere-grid;
+  }
   &-flex {
-    width: $component-width;
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex;
   }
   &-body {
     flex: 1;
     padding-right: 80px;
+    * {
+      color: $text-color;
+    }
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin-bottom: 20px;
+    }
+    h3 {
+      font-size: 1.375rem;
+      font-weight: 600;
+    }
+    ul {
+      margin-bottom: 20px;
+      li {
+        padding-left: 40px;
+        margin-bottom: 10px;
+        position: relative;
+        font-size: 1rem;
+        &::after {
+          position: absolute;
+          left: 20px;
+          top: 8px;
+          width: 8px;
+          height: 8px;
+          background: black;
+          border-radius: 50%;
+          content: "";
+        }
+      }
+    }
+    p {
+      font-size: 1rem;
+      margin-bottom: 30px;
+    }
   }
   .form {
-    width: 40%;
+    width: 35%;
+
+    label {
+      color: $text-color;
+    }
+    &-submit {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto;
+      .submit {
+        border-radius: 0px;
+        background: #177acd;
+        border: 0px;
+        color: white;
+      }
+    }
+    &-flex {
+      .input-container {
+        .input {
+          border: 1px solid #dad9d9;
+          border-radius: 0px;
+          height: 40px;
+          font-size: 13px;
+          color: $text-color;
+          &:focus {
+            border: 1px solid $text-color;
+          }
+        }
+      }
+    }
     &-title {
       margin-bottom: 20px;
       font-size: 24px;
@@ -83,34 +178,74 @@
   }
 }
 
-.tags {
-  display: flex;
-  align-items: center;
-  &-tag {
-    background: #eaeaec;
-    height: 32px;
-    padding: 0 18px;
-    border-radius: 23px;
-    margin-right: 15px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    color: #9494a3;
-    &:last-child {
-      margin-right: 0px;
+@media only screen and (max-width: 900px) {
+  .careers {
+    &-list {
+      &-item {
+        padding-right: 20px;
+        a {
+          flex-direction: column;
+          align-items: flex-start;
+          h4 {
+            margin-bottom: 20px;
+
+            font-size: 1.3rem;
+          }
+        }
+        .tags {
+          margin-left: 0px;
+          width: 100%;
+          padding-right: 0px;
+        }
+        &-arrow {
+          width: 10px;
+          height: 10px;
+          position: absolute;
+          right: 0px;
+          top: 50%;
+          transform: translate(0, -50%) rotate(45deg);
+        }
+      }
+    }
+  }
+  .career-page {
+    .form {
+      width: 100%;
+      margin-top: 50px;
+    }
+    &-body {
+      padding-right: 0px;
+    }
+    &-flex {
+      flex-direction: column;
     }
   }
 }
 
 @media only screen and (max-width: $mobile) {
-  .careers-header-content {
-    h1 {
-      font-size: 30px;
+  .careere-grid {
+    width: calc(100% - 45px);
+  }
+
+  .career {
+    &-page {
+      padding-top: 100px;
+      &-title {
+        font-size: 1.7rem;
+      }
+      &-body {
+        h3 {
+          font-size: 1.25rem;
+        }
+      }
     }
-    p {
-      font-size: 14px;
+    &-header-content {
+      h1 {
+        font-size: 30px;
+      }
+      p {
+        font-size: 14px;
+      }
     }
   }
 }

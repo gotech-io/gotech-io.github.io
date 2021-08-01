@@ -1,6 +1,122 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import "https://unpkg.com/aos@2.3.1/dist/aos.css";
 @import "https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/css/splide.min.css";
+.form {
+  position: relative; }
+  .form-submit {
+    height: 50px;
+    position: relative;
+    width: 100%;
+    margin-top: 20px; }
+    .form-submit .loader {
+      top: 50%;
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      display: none; }
+    .form-submit .submit {
+      cursor: pointer;
+      letter-spacing: 0.125rem;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 0.75rem;
+      background: transparent;
+      transition: 0.2s all;
+      border-radius: 50px;
+      width: 100%;
+      height: 100%; }
+  .form-flex {
+    display: flex;
+    flex-wrap: wrap; }
+    .form-flex .input-container {
+      width: 100%;
+      margin-bottom: 20px;
+      position: relative; }
+      .form-flex .input-container .input-error {
+        position: absolute;
+        font-size: 0.75rem;
+        top: calc(100% + 5px);
+        color: red;
+        left: 4px;
+        opacity: 0;
+        transition: 0.2s all; }
+        .form-flex .input-container .input-error-active {
+          opacity: 1; }
+      .form-flex .input-container label {
+        font-size: 0.813rem;
+        padding-left: 5px;
+        color: #070f1a;
+        padding-top: 5px; }
+      .form-flex .input-container .input {
+        margin-top: 5px;
+        width: 100%;
+        border-radius: 10px;
+        border: 2px solid #f2f4f8;
+        height: 50px;
+        font-size: 16px;
+        text-indent: 10px;
+        transition: 0.2s all; }
+        .form-flex .input-container .input:focus {
+          border: 2px solid #002e63; }
+        .form-flex .input-container .input::placeholder {
+          opacity: 0.6; }
+      .form-flex .input-container .textarea {
+        height: 150px;
+        resize: none;
+        padding-top: 10px; }
+    .form-flex .upload-container-flex {
+      display: flex;
+      align-items: center; }
+    .form-flex .upload-container-file {
+      font-size: 14px; }
+      .form-flex .upload-container-file-name {
+        display: none;
+        align-items: center; }
+        .form-flex .upload-container-file-name-text {
+          white-space: nowrap;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          max-width: 200px; }
+      .form-flex .upload-container-file-clear {
+        width: 14px;
+        height: 14px;
+        margin-left: 8px; }
+        .form-flex .upload-container-file-clear img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; }
+    .form-flex .upload-container label {
+      width: 180px; }
+    .form-flex .upload-container .input {
+      display: none;
+      margin-top: 0px;
+      border: none;
+      height: fit-content; }
+
+.tags {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap; }
+  .tags-tag {
+    background: #eaeaec;
+    margin-bottom: 10px;
+    height: 32px;
+    padding: 0 18px;
+    border-radius: 23px;
+    margin-right: 10px;
+    font-size: 0.875rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 300;
+    color: #9494a3; }
+    .tags-tag:last-child {
+      margin-right: 0px; }
+
+@media only screen and (max-width: 800px) {
+  .tags-tag {
+    font-size: 0.75rem; } }
+
 .flex-start {
   display: flex;
   justify-content: flex-start;
@@ -34,9 +150,9 @@
   align-items: center;
   justify-content: space-between; }
 
-.grid, .home-services-list, .home-clients-grid, .home-about, .careers-header-content, .careers-flex {
+.grid, .home-services-list, .home-clients-grid, .home-about, .careers-header-content {
   max-width: 950px;
-  width: calc(100% - 30px);
+  width: calc(100% - 100px);
   margin-left: auto;
   margin-right: auto; }
 
@@ -55,6 +171,24 @@ li,
 
 .text {
   font-size: 1.25rem; }
+
+.back-btn {
+  display: flex;
+  align-items: center; }
+  .back-btn a {
+    margin-left: 5px;
+    text-decoration: none;
+    font-size: 0.813rem; }
+  .back-btn-arrow {
+    width: 8px;
+    height: 8px;
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    transform: rotate(-45deg);
+    transition: 0.2s all;
+    position: relative; }
+  .back-btn:hover .back-btn-arrow {
+    transform: translate(-6px, 0) rotate(-45deg); }
 
 .link {
   height: 50px;
@@ -156,70 +290,6 @@ li,
     transform: translate(0, 0); }
   100% {
     transform: translate(24px, 0); } }
-
-.form {
-  position: relative; }
-  .form-submit {
-    height: 50px;
-    position: relative;
-    width: 100%;
-    margin-top: 20px; }
-    .form-submit .loader {
-      top: 50%;
-      position: absolute;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      display: none; }
-    .form-submit .submit {
-      cursor: pointer;
-      letter-spacing: 0.125rem;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 0.75rem;
-      background: transparent;
-      transition: 0.2s all;
-      border-radius: 50px;
-      width: 100%;
-      height: 100%; }
-  .form-flex {
-    display: flex;
-    flex-wrap: wrap; }
-    .form-flex .input-container {
-      width: 100%;
-      margin-bottom: 20px;
-      position: relative; }
-      .form-flex .input-container .input-error {
-        position: absolute;
-        font-size: 0.75rem;
-        top: calc(100% + 5px);
-        color: red;
-        left: 4px;
-        opacity: 0;
-        transition: 0.2s all; }
-        .form-flex .input-container .input-error-active {
-          opacity: 1; }
-      .form-flex .input-container label {
-        font-size: 0.625rem;
-        margin-bottom: 8px;
-        padding-left: 5px;
-        color: #070f1a;
-        padding-top: 5px; }
-      .form-flex .input-container .input {
-        width: 100%;
-        border-radius: 10px;
-        border: 2px solid #f2f4f8;
-        height: 50px;
-        font-size: 16px;
-        text-indent: 10px;
-        transition: 0.2s all; }
-        .form-flex .input-container .input:focus {
-          border: 2px solid #002e63; }
-        .form-flex .input-container .input::placeholder {
-          opacity: 0.6; }
-      .form-flex .input-container .textarea {
-        height: 150px;
-        resize: none;
-        padding-top: 10px; }
 
 @media only screen and (max-width: 800px) {
   .section {
@@ -403,7 +473,7 @@ input {
     font-weight: 500; }
   .home-services-header {
     max-width: 650px;
-    width: calc(100% - 30px);
+    width: calc(100% - 100px);
     text-align: center; }
     .home-services-header .text {
       font-size: 1.25rem; }
@@ -733,7 +803,7 @@ input {
         width: 100%; } }
 
 .home-team {
-  width: calc(100% - 30px); }
+  width: calc(100% - 100px); }
   .home-team-content {
     text-align: center; }
   .home-team-list {
@@ -1158,12 +1228,20 @@ input {
       .footer-bottom-policy {
         margin-top: 20px; } }
 
+.careere-grid, .careers-flex, .career-page-grid {
+  width: calc(100% - 150px);
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto; }
+
 .careers-header {
   display: flex;
   align-items: center;
   justify-content: center;
   background-image: linear-gradient(135deg, #ea5385, #f8ea74);
-  height: 400px; }
+  min-height: 400px;
+  padding-top: 100px;
+  padding-bottom: 50px; }
   .careers-header-content * {
     color: white; }
   .careers-header-content h1 {
@@ -1186,59 +1264,139 @@ input {
     padding-bottom: 40px;
     margin-bottom: 40px;
     display: flex;
-    align-items: center; }
-    .careers-list-item-link {
+    align-items: flex-start; }
+    .careers-list-item:last-child {
+      border: 0px; }
+    .careers-list-item a {
+      display: flex;
       text-decoration: none;
-      width: 500px;
+      width: 100%;
       font-size: 22px; }
+      .careers-list-item a h4 {
+        width: 60%; }
     .careers-list-item .tags {
-      margin-left: auto; }
+      margin-left: auto;
+      width: calc(40%);
+      padding-right: 50px; }
     .careers-list-item-arrow {
-      margin-left: 50px; }
-      .careers-list-item-arrow aside {
-        width: 15px;
-        height: 15px;
-        border-top: 3px solid black;
-        transform: rotate(45deg);
-        border-right: 3px solid black; }
+      width: 15px;
+      height: 15px;
+      border-top: 2px solid black;
+      border-right: 2px solid black;
+      position: relative;
+      align-self: center;
+      transform: rotate(45deg); }
 
 .career-page {
   padding-top: 130px; }
+  .career-page .back-btn {
+    margin-bottom: 50px; }
+  .career-page-title {
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+    font-weight: 600;
+    color: #0d148c; }
+  .career-page .tags {
+    margin-bottom: 40px;
+    max-width: 600px; }
   .career-page-flex {
-    width: calc(100% - 30px);
-    max-width: 1200px;
-    margin-left: auto;
-    margin-right: auto;
     display: flex; }
   .career-page-body {
     flex: 1;
     padding-right: 80px; }
+    .career-page-body * {
+      color: #0d148c; }
+    .career-page-body h2,
+    .career-page-body h3,
+    .career-page-body h4,
+    .career-page-body h5,
+    .career-page-body h6 {
+      margin-bottom: 20px; }
+    .career-page-body h3 {
+      font-size: 1.375rem;
+      font-weight: 600; }
+    .career-page-body ul {
+      margin-bottom: 20px; }
+      .career-page-body ul li {
+        padding-left: 40px;
+        margin-bottom: 10px;
+        position: relative;
+        font-size: 1rem; }
+        .career-page-body ul li::after {
+          position: absolute;
+          left: 20px;
+          top: 8px;
+          width: 8px;
+          height: 8px;
+          background: black;
+          border-radius: 50%;
+          content: ""; }
+    .career-page-body p {
+      font-size: 1rem;
+      margin-bottom: 30px; }
   .career-page .form {
-    width: 40%; }
+    width: 35%; }
+    .career-page .form label {
+      color: #0d148c; }
+    .career-page .form-submit {
+      max-width: 300px;
+      margin-left: auto;
+      margin-right: auto; }
+      .career-page .form-submit .submit {
+        border-radius: 0px;
+        background: #177acd;
+        border: 0px;
+        color: white; }
+    .career-page .form-flex .input-container .input {
+      border: 1px solid #dad9d9;
+      border-radius: 0px;
+      height: 40px;
+      font-size: 13px;
+      color: #0d148c; }
+      .career-page .form-flex .input-container .input:focus {
+        border: 1px solid #0d148c; }
     .career-page .form-title {
       margin-bottom: 20px;
       font-size: 24px; }
 
-.tags {
-  display: flex;
-  align-items: center; }
-  .tags-tag {
-    background: #eaeaec;
-    height: 32px;
-    padding: 0 18px;
-    border-radius: 23px;
-    margin-right: 15px;
-    font-size: 14px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    color: #9494a3; }
-    .tags-tag:last-child {
-      margin-right: 0px; }
+@media only screen and (max-width: 900px) {
+  .careers-list-item {
+    padding-right: 20px; }
+    .careers-list-item a {
+      flex-direction: column;
+      align-items: flex-start; }
+      .careers-list-item a h4 {
+        margin-bottom: 20px;
+        font-size: 1.3rem; }
+    .careers-list-item .tags {
+      margin-left: 0px;
+      width: 100%;
+      padding-right: 0px; }
+    .careers-list-item-arrow {
+      width: 10px;
+      height: 10px;
+      position: absolute;
+      right: 0px;
+      top: 50%;
+      transform: translate(0, -50%) rotate(45deg); }
+  .career-page .form {
+    width: 100%;
+    margin-top: 50px; }
+  .career-page-body {
+    padding-right: 0px; }
+  .career-page-flex {
+    flex-direction: column; } }
 
 @media only screen and (max-width: 800px) {
-  .careers-header-content h1 {
+  .careere-grid, .careers-flex, .career-page-grid {
+    width: calc(100% - 45px); }
+  .career-page {
+    padding-top: 100px; }
+    .career-page-title {
+      font-size: 1.7rem; }
+    .career-page-body h3 {
+      font-size: 1.25rem; }
+  .career-header-content h1 {
     font-size: 30px; }
-  .careers-header-content p {
+  .career-header-content p {
     font-size: 14px; } }
