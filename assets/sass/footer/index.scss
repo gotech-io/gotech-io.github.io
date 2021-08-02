@@ -8,6 +8,8 @@
   padding-left: 40px;
   padding-right: 40px;
   &-logo {
+    filter: brightness(0%);
+
     width: 100px;
     display: flex;
     margin-bottom: 20px;

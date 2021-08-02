@@ -2,7 +2,11 @@
   margin-right: auto;
   $height: 420px;
   @extend .grid;
-
+  .section-header {
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+  }
   &-text {
     max-width: 650px;
     text-align: center;
@@ -20,7 +24,7 @@
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    margin-top: 60px;
+
     margin-left: auto;
     margin-right: auto;
     .img {

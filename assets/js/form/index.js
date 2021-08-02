@@ -64,7 +64,7 @@ class Form {
     );
     if (!name) {
       input.value = "";
-      uploadBtn.style.display = "block";
+      uploadBtn.style.display = "flex";
       text.innerText = " ";
       nameContainer.style.display = "none";
     } else {
@@ -145,8 +145,8 @@ class Form {
   }
 
   handleLoading(show) {
-    const loader = getElement(`.${this.formName} .loader`);
-    const submitBtn = getElement(`.${this.formName} .submit`);
+    const loader = getElement(`form.${this.formName} .loader`);
+    const submitBtn = getElement(`form.${this.formName} .submit`);
     if (show) {
       loader.style.display = "block";
       submitBtn.style.display = "none";
@@ -161,6 +161,17 @@ class Form {
     inputs.forEach((input) => {
       input.value = "";
     });
+
+    const uploadTrigger = getElement(
+      `form.${this.formName} .upload-container-trigger`
+    );
+
+    const submitBtn = getElement(`form.${this.formName} .submit`);
+    submitBtn.style.display = "none";
+    const successText = getElement(`form.${this.formName} .success`);
+    successText.classList.add("success-active");
+    if (!uploadTrigger) return;
+    this.handleFileUploaded("", uploadTrigger);
   }
 
   init() {
