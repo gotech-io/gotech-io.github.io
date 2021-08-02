@@ -1,11 +1,9 @@
 ---
 layout: screens/home/sections/services/components/service
 delay: 200
+title: DevOps and Database experts
+image: /assets/images/home/services/Infinit.png
 ---
-
-![Infinit image](/assets/images/home/services/Infinit.png)
-
-###### DevOps and Database experts
 
 Design and implement best practices methodology using the latest and greatest open source tools such as: GCP, AWS, Kubernetes, Prometheus ,Helm, Istio, Docker, Jenkins, Ansible, Terraform.
 

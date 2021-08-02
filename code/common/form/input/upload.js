@@ -13,6 +13,7 @@ function Upload({
   error,
   _relativeURL,
   _ID,
+  btnText,
 }) {
   return (
     <div
@@ -25,8 +26,11 @@ function Upload({
           {required && <span>*</span>}
         </label>
         <div className="upload-container-file">
-          <button type="button" className="upload-container-trigger">
-            Attach Resume
+          <button type="button" className="upload-container-trigger flex">
+            <Image
+              src={handleUrl(images.common.attachment, _relativeURL, _ID)}
+            />
+            <span>{btnText}</span>
           </button>
 
           <section className="upload-container-file-name flex">

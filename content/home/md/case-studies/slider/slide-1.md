@@ -2,7 +2,7 @@
 layout: screens/home/sections/case-studies/components/slide
 image: /assets/images/home/case-studies/slide1.png
 title: Slatch
-date: Latest work
+linkUrl: /case-studies
 platforms:
   - name: Android
     img: assets/images/home/case-studies/android.png

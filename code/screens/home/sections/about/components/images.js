@@ -21,13 +21,6 @@ const Images = ({ _relativeURL, _ID, image1, image2, image3, image4 }) => {
       >
         <Image src={createRelativeURL(image3)} />
       </div>
-      <div
-        className="images-flex-3 images-flex-section"
-        data-aos={animations.up}
-        data-aos-delay="300"
-      >
-        <Image src={createRelativeURL(image4)} />
-      </div>
     </div>
   );
 };

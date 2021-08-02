@@ -1,9 +1,8 @@
 import React from "react";
 
-function List({ list, title }) {
+function List({ list }) {
   return (
     <div className="careers-list">
-      <h4 className="careers-list-title"> {title}</h4>
       <ul>{list}</ul>
     </div>
   );

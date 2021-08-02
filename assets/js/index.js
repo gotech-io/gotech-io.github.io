@@ -3,7 +3,6 @@ import navbar from "./navbar/index.js";
 export const init = () => {
   handleOnScroll();
   navbar.init();
-
   AOS.init({ once: true });
 };
 

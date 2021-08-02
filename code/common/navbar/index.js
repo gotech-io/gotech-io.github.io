@@ -4,7 +4,14 @@ import { images } from "../../../assets/js/images";
 
 import Image from "../../common/img";
 import { handleUrl } from "../../utils";
-const Navbar = ({ navigation, _relativeURL, _ID }) => {
+
+const Navbar = ({
+  navigation,
+  _relativeURL,
+  _ID,
+  contactLink,
+  mobileToggle,
+}) => {
   return (
     <nav
       className="navbar fixed"
@@ -12,11 +19,7 @@ const Navbar = ({ navigation, _relativeURL, _ID }) => {
       data-aos={animations.down}
     >
       <div className="navbar-flex">
-        <button className="navbar-mobile-toggle">
-          <Image
-            src={handleUrl(images.common.mobileToggle, _relativeURL, _ID)}
-          />
-        </button>
+        {mobileToggle}
         <a href="/#" className="navbar-root-link">
           <Image
             src={handleUrl(images.common.logo, _relativeURL, _ID)}
@@ -25,6 +28,7 @@ const Navbar = ({ navigation, _relativeURL, _ID }) => {
         </a>
         <section className="navbar-mobile-overlay"></section>
         {navigation}
+        <span className="navbar-desktop-contact">{contactLink}</span>
       </div>
     </nav>
   );

@@ -1,6 +1,6 @@
 import React from "react";
 
-const Navigation = ({ links }) => {
+const Navigation = ({ links, contactLink }) => {
   return links ? (
     <ul className="navbar-navigation flex-start">
       <aside className="navbar-navigation-indicator"></aside>
@@ -11,6 +11,9 @@ const Navigation = ({ links }) => {
           </li>
         );
       })}
+      <li className="navbar-navigation-link navbar-mobile-contact">
+        {contactLink}
+      </li>
     </ul>
   ) : null;
 };

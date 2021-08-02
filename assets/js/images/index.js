@@ -5,6 +5,7 @@ export const images = {
     favicon: "/assets/images/common/favicon.png",
     mobileToggle: "/assets/images/common/mobile-toggle.svg",
     close: "/assets/images/common/close.png",
+    attachment: "/assets/images/common/attachment.png",
   },
   home: {
     logoAnimated: "/assets/images/home/header/main.svg",

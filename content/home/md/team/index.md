@@ -10,8 +10,7 @@ list:
   - member-7.md
   - member-10.md
   - member-11.md
+title: team
 ---
-
-##### TEAM
 
 #### Meet our professional team

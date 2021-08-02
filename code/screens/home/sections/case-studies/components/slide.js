@@ -1,15 +1,26 @@
 import React from "react";
+import OtherWorks from "../../../../../common/btns/other-works";
 import Image from "../../../../../common/img";
 import { handleUrl } from "../../../../../utils";
 
-const Slide = ({ _body, title, date, _relativeURL, _ID, image, platforms }) => {
+const Slide = ({
+  _body,
+  title,
+  _relativeURL,
+  _ID,
+  image,
+  platforms,
+  linkUrl,
+}) => {
   return (
     <li class="splide__slide slide-item">
-      <Image src={handleUrl(image, _relativeURL, _ID)} />
-      <div className="splide__slide-box">
-        <aside>{date}</aside>
-        <h3>{title}</h3>
-        {_body}
+      <Image
+        customClassName="slide-item-image"
+        src={handleUrl(image, _relativeURL, _ID)}
+      />
+      <div className="slide-item-box">
+        <h3 className="slide-item-title">{title}</h3>
+        <div className="slide-item-body">{_body}</div>
         {platforms ? (
           <div className="slide-item-platforms">
             {platforms.map((platform) => {
@@ -24,6 +35,7 @@ const Slide = ({ _body, title, date, _relativeURL, _ID, image, platforms }) => {
         ) : (
           ""
         )}
+        <OtherWorks url={linkUrl} />
       </div>
     </li>
   );

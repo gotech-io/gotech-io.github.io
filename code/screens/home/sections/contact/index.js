@@ -3,7 +3,9 @@ import animations from "../../../../../assets/js/animations";
 
 const Contact = ({ _body, form }) => {
   return (
-    <div className="contact flex-between" id="contact">
+    <div className="contact flex-between">
+      <aside className="indicator" id="contact"></aside>
+
       <div className="contact-bg"></div>
       <div className="contact-flex">
         <div

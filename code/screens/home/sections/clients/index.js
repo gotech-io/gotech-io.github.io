@@ -1,19 +1,16 @@
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const Clients = ({ clients, _body }) => {
+const Clients = ({ clients, _body, title }) => {
   return (
-    <div className="home-clients section" id="clients">
-      <div className="home-clients-grid">
-        <div
-          data-aos={animations.fadeRight}
-          className="home-clients-top"
-          data-aos-delay="100"
-        >
-          {_body}
-        </div>
-        {clients}
+    <div className="home-clients section">
+      <div className="section-header" data-aos={animations.up}>
+        <h5 className="section-title">{title}</h5>
+        <section className="section-body">{_body}</section>
       </div>
+
+      <aside className="indicator" id="clients"></aside>
+      <div className="home-clients-grid">{clients}</div>
     </div>
   );
 };

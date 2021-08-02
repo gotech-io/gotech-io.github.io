@@ -5,4 +5,5 @@ type: file
 placeholder: file
 error: Resume is required
 label: Resume
+btnText: Attach Resume
 ---

@@ -1,10 +1,11 @@
 ---
 layout: screens/home/sections/about/index
+title: about
 images:
   - images.md
+sectionBtn:
+  - link.md
 ---
-
-##### about
 
 #### We Are GoTech
 
