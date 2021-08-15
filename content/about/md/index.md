@@ -6,4 +6,7 @@ sections:
   - grid/section3/index.md
 careers:
   - careers/index.md
+topImage: /assets/images/about/img1.jpeg
+team:
+  - /home/md/team/index.md
 ---

@@ -19,12 +19,11 @@ We are looking for QA & Integration Engineers for an exciting project at a compa
 
 If you have experience in testing and a desire to become an automation expert this is the place for you.
 
-What will you do?
+### What will you do?
 
-Your job will include testing a complex system, working with different video devices,
-analyzing and integrating systems for clients with various setups and developing automation tools.
+Your job will include testing a complex system, working with different video devices, analyzing and integrating systems for clients with various setups and developing automation tools.
 
-Requirements:
+### Requirements:
 
 - 5 years testing/system integration experience
 - QA Methodology knowledge
@@ -36,9 +35,7 @@ Requirements:
 - Fluent in the English language
 - B.Sc./B.A. University degree in computer science, engineering or related discipline
 - experience in network related testing
-
-Advantage:
-
+- Advantage:
 - Experience with video
 - Experience with cellular networks
 - Familiarity with DevOps tools

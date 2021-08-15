@@ -1,15 +1,13 @@
+const API = "http://localhost:5000";
 class Api {
-  async get(url) {
+  async getInstagramProfile(url) {
     try {
-      const res = await fetch(url, {
-        TYPE: "GET",
-        dataType: "jsonp",
-        crossDomain: true,
-      });
-      res.then((response) => response.json()).then((data) => data);
-      console.log(res);
-      return res;
-    } catch (error) {}
+      return fetch(API)
+        .then((response) => response.json())
+        .then((data) => data);
+    } catch (error) {
+      console.log(error);
+    }
   }
 }
 

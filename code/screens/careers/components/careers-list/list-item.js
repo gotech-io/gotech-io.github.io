@@ -8,8 +8,6 @@ function LisItem({ folderName, title, tags, active }) {
       <a href={`/careers/${folderName}`}>
         <h4> {title}</h4>
 
-        <Tags tags={tags} />
-
         <aside className="careers-list-item-arrow" />
       </a>
     </li>
