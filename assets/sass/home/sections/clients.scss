@@ -68,6 +68,12 @@
 
 @media only screen and (max-width: 500px) {
   .home-clients {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    &-grid {
+      width: 100%;
+    }
     &-list {
       &-item {
         width: calc(50% - 7px);
