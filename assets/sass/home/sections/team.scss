@@ -83,12 +83,18 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .home-team-list {
-    .home-team-member {
-      width: 100%;
-      height: 80vw;
-      margin-left: 0px;
-      min-height: 350px;
+  .home-team {
+    width: 100%;
+    padding-left: 30px;
+    padding-right: 30px;
+    &-list {
+      margin-top: 0px;
+      .home-team-member {
+        width: 100%;
+        height: 80vw;
+        margin-left: 0px;
+        min-height: 350px;
+      }
     }
   }
 }

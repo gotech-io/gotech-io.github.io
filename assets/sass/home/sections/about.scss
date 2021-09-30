@@ -68,6 +68,9 @@
 
 @media only screen and (max-width: $mobile) {
   .home-about {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
     .images-flex {
       flex-direction: column;
       &-1 {
