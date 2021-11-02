@@ -1,0 +1,8 @@
+layout: page/index
+title: GoTech | Tech as a Service
+navbar:
+  - /_shared/navbar/index.md
+main:
+  - md/index.md
+footer:
+  - /_shared/footer/index.md

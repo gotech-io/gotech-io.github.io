@@ -1,6 +1,14 @@
 import React from "react";
-import Tags from "../../../../common/tags/index";
-function CareerPage({ _body, form, title, tags, backBtn, location }) {
+import { handleUrl } from "../../../../utils";
+function CareerPage({
+  _body,
+  form,
+  title,
+  backBtn,
+  location,
+  _relativeURL,
+  _ID,
+}) {
   return (
     <div className="career-page">
       <div className="career-page-grid">
@@ -13,6 +21,10 @@ function CareerPage({ _body, form, title, tags, backBtn, location }) {
           {form}
         </div>
       </div>
+      <script
+        type="module"
+        src={handleUrl(`/assets/js/careers/index.js`, _relativeURL, _ID)}
+      />
     </div>
   );
 }

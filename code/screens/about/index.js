@@ -18,6 +18,10 @@ function About({ sections, careers, topImage, _relativeURL, _ID, team }) {
         {team}
       </div>
       {careers}
+      <script
+        type="module"
+        src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
+      />
     </div>
   );
 }
