@@ -3,7 +3,6 @@ import { init as InitApp } from "../index.js";
 import store from "../services/firebase.js";
 
 const LOCAL_STORAGE_NAME = "flappy-duck-email";
-const MIN_RESULT = 10;
 window.onload = () => {
   initForm();
   InitApp();
@@ -23,9 +22,7 @@ const onGameLoaded = () => {
 
 const onGameEnded = (score) => {
   const email = localStorage.getItem(LOCAL_STORAGE_NAME);
-  if (score >= MIN_RESULT) {
-    store.sendScore(email, score);
-  }
+  store.sendScore(email, score);
 };
 
 const loadGame = () => {
@@ -56,6 +53,7 @@ const onFormSubmit = (formContainer) => {
   formContainer.style.display = "none";
   const input = document.querySelector(".input-container input");
   const email = input.value;
+  store.sendScore(email, 0);
   loadGame();
   localStorage.setItem(LOCAL_STORAGE_NAME, email);
 };
