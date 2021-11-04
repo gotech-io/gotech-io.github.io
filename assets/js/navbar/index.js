@@ -10,7 +10,7 @@ const handleBackground = () => {
   const navbar = getElement(".navbar");
 
   const offsetTop = window.pageYOffset;
-  if (offsetTop >= 30) {
+  if (offsetTop >= 10) {
     navbar.classList.add("navbar-active");
   } else {
     navbar.classList.remove("navbar-active");

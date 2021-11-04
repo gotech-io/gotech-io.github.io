@@ -1,4 +1,4 @@
 ---
 layout: screens/about/components/big-side
-image: /assets/images/home/about/office_1.jpeg
+image: /assets/images/home/about/office2.jpg
 ---

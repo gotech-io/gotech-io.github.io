@@ -1,3 +1,14 @@
+@font-face {
+  font-family: flappy bird;
+  src: url(/assets/fonts/FB.eot);
+  src: url(/assets/fonts/FB.eot?#iefix) format("embedded-opentype"),
+    url(/assets/fonts/FB.woff) format("woff"),
+    url(/assets/fonts/FB.ttf) format("truetype"),
+    url(/assets/fonts/FB.svg#04b_19regular) format("svg");
+  font-weight: 400;
+  font-style: normal;
+}
+
 .flappy {
   padding-top: 80px;
   display: flex;
@@ -7,7 +18,13 @@
   position: relative;
   width: 100%;
   height: 100%;
-  .canvas-container {
+  &-loader {
+    position: fixed;
+    display: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    zoom: 1.3;
   }
   &-contact {
     position: fixed;
@@ -16,6 +33,8 @@
     width: 100%;
     height: 100%;
     z-index: 999;
+    display: none;
+    justify-content: center;
     &-overlay {
       position: absolute;
       left: 0px;
@@ -25,15 +44,42 @@
       width: 100%;
       height: 100%;
     }
+    &-content {
+      padding: 30px;
+      border-radius: 20px;
+      background: white;
+      position: relative;
+      height: fit-content;
+      top: 50px;
+      z-index: 99;
+      max-width: 500px;
+      width: calc(100% - 20px);
+      &-title {
+        text-align: center;
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 20px;
+      }
+    }
   }
   &-form {
-    padding: 30px;
-    border-radius: 20px;
-    background: white;
-    position: absolute;
-    left: 50%;
-    transform: translate(-50%);
-    top: 50px;
-    z-index: 99;
+    .submit {
+      background: linear-gradient(135deg, #ffa185, #fd8274);
+      border: none;
+      color: white;
+    }
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  .flappy {
+    &-contact {
+      &-content {
+        &-title {
+          font-size: 22px;
+          line-height: 30px;
+        }
+      }
+    }
   }
 }

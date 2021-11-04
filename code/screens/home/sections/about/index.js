@@ -12,7 +12,6 @@ const About = ({ _body, images, title, sectionBtn }) => {
       <aside className="indicator" id="about"></aside>
 
       {images}
-      {sectionBtn}
     </div>
   );
 };

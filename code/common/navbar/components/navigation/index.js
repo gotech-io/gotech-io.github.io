@@ -6,7 +6,7 @@ const Navigation = ({ links, contactLink }) => {
       <aside className="navbar-navigation-indicator"></aside>
       {links.map(({ name, value }) => {
         return (
-          <li className="navbar-navigation-link">
+          <li className="navbar-navigation-link" key={name}>
             <a href={value}>{name}</a>
           </li>
         );

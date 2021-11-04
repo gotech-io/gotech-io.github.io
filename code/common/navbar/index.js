@@ -13,11 +13,7 @@ const Navbar = ({
   mobileToggle,
 }) => {
   return (
-    <nav
-      className="navbar fixed"
-      data-aos-delay="400"
-      data-aos={animations.down}
-    >
+    <nav className="navbar fixed" data-aos={animations.down}>
       <div className="navbar-flex">
         {mobileToggle}
         <a href="/#" className="navbar-root-link">

@@ -7,7 +7,6 @@ const Home = ({
   services,
   clients,
   about,
-  case_studies,
   join,
   team,
   contact,
@@ -22,7 +21,6 @@ const Home = ({
       {services}
       {clients}
       {about}
-      {case_studies}
       {join}
       {team}
       {contact}

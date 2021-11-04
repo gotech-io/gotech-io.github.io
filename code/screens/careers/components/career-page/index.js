@@ -21,9 +21,10 @@ function CareerPage({
           {form}
         </div>
       </div>
+
       <script
         type="module"
-        src={handleUrl(`/assets/js/careers/index.js`, _relativeURL, _ID)}
+        src={handleUrl(`/assets/js/career-page/index.js`, _relativeURL, _ID)}
       />
     </div>
   );

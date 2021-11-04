@@ -9,6 +9,7 @@ list:
   - evgeny.md
   - miki.md
   - raz.md
+  - mor.md
 
 title: team
 ---

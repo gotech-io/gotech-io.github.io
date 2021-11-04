@@ -2,7 +2,7 @@ import React from "react";
 import { handleUrl } from "../utils";
 import MetaTags from "./components/meta";
 
-const Page = ({ title, navbar, footer, script, _relativeURL, _ID, main }) => {
+const Page = ({ title, navbar, footer, _relativeURL, _ID, main }) => {
   return (
     <html>
       <head>

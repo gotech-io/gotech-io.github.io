@@ -15,4 +15,6 @@ links:
     value: /#contact
   - name: Careers
     value: careers
+  - name: Oracle Week 2021
+    value: oracle-week-2021
 ---

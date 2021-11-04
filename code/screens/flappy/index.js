@@ -1,14 +1,21 @@
 import React from "react";
 import animations from "../../../assets/js/animations";
+import Loader from "../../common/loader";
 import { handleUrl } from "../../utils";
 
 function Flappy({ _relativeURL, _ID, form }) {
   return (
     <div className="flappy">
+      <Loader customClassName="flappy-loader" />
       <div style={{ fontFamily: "PressStart" }}></div>
       <div className="flappy-contact">
         <section className="flappy-contact-overlay"></section>
-        <div data-aos={animations.down}>{form}</div>
+        <div data-aos={animations.down} className="flappy-contact-content">
+          <h3 className="flappy-contact-content-title">
+            Please enter your email in order to play the game
+          </h3>
+          {form}
+        </div>
       </div>
       <div class="canvas-container" id="game">
         <canvas
@@ -18,11 +25,7 @@ function Flappy({ _relativeURL, _ID, form }) {
           className="canvas"
         ></canvas>
       </div>
-      <script
-        src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
-        crossorigin="anonymous"
-        referrerpolicy="no-referrer"
-      ></script>
+
       <script
         src={handleUrl("/assets/js/flappy/app.js", _relativeURL, _ID)}
       ></script>

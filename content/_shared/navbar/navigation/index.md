@@ -4,15 +4,16 @@ links:
   - name: services
     value: /#services
   - name: about
-    value: /about
+    value: /#about
   - name: clients
     value: /#clients
-  - name: case studies
-    value: /case-studies
+
   - name: team
     value: /#team
   - name: Careers
-    value: careers
+    value: /careers
+  - name: Oracle Week 2021
+    value: /oracle-week-2021
 contactLink:
   - ../contact-link.md
 ---
