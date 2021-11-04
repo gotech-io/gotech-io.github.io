@@ -3,7 +3,7 @@ import { init as InitApp } from "../index.js";
 import store from "../services/firebase.js";
 
 const LOCAL_STORAGE_NAME = "flappy-duck-email";
-const MIN_RESULT = 2;
+const MIN_RESULT = 10;
 window.onload = () => {
   initForm();
   InitApp();
