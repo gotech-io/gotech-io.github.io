@@ -1,12 +1,12 @@
 import Form from "../form/index.js";
 import { init as InitApp } from "../index.js";
-import emailJs from "../services/email-js/index.js";
+import store from "../services/firebase.js";
 
+const LOCAL_STORAGE_NAME = "flappy-duck-email";
+const MIN_RESULT = 2;
 window.onload = () => {
-  InitApp();
-  $("canvas").trigger("gameEnd");
-  addResizeEventToCanvas();
   initForm();
+  InitApp();
 };
 
 const addResizeEventToCanvas = () => {
@@ -16,23 +16,48 @@ const addResizeEventToCanvas = () => {
   });
 };
 
+const onGameLoaded = () => {
+  const loader = document.querySelector(".flappy-loader");
+  loader.style.display = "none";
+};
+
+const onGameEnded = (score) => {
+  const email = localStorage.getItem(LOCAL_STORAGE_NAME);
+  if (score >= MIN_RESULT) {
+    store.sendScore(email, score);
+  }
+};
+
+const loadGame = () => {
+  const loader = document.querySelector(".flappy-loader");
+  loader.style.display = "block";
+  init(onGameLoaded, onGameEnded);
+  $("canvas").trigger("gameEnd");
+  addResizeEventToCanvas();
+  window.scrollTo(0, 0);
+};
+
 const initForm = () => {
-  const isFormAlreadyFilled = localStorage.getItem("contact-form-filled");
+  const isFormAlreadyFilled = localStorage.getItem(LOCAL_STORAGE_NAME);
   const formContainer = document.querySelector(".flappy-contact");
 
   if (isFormAlreadyFilled) {
-    init();
+    loadGame();
     formContainer.style.display = "none";
   } else {
-    const form = new Form("flappy-form", () => {
-      // emailJs.subscribe;
-      const form = document.querySelector(".flappy-contact");
-      form.style.display = "none";
-      init();
-      localStorage.setItem("contact-form-filled", 1);
-    });
-    form.init();
+    formContainer.style.display = "flex";
+    new Form("flappy-form", (event) => {
+      onFormSubmit(formContainer);
+    }).init();
   }
+};
+
+const onFormSubmit = (formContainer) => {
+  formContainer.style.display = "none";
+  const input = document.querySelector(".input-container input");
+  const email = input.value;
+  loadGame();
+  localStorage.setItem(LOCAL_STORAGE_NAME, email);
 };
 
 const handleCanvasSize = () => {

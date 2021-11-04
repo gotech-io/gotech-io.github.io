@@ -9,6 +9,7 @@
  *
  * This notice shall be included in all copies or substantial portions of the Software.
  */
+let onGameEnded;
 var outerPadding = 0;
 (this.createjs = this.createjs || {}),
   (function () {
@@ -17947,7 +17948,8 @@ var restartable = false;
 var rd = 0;
 var token;
 var counterShow = false;
-function init() {
+function init(onLoaded, onEnd) {
+  onGameEnded = onEnd;
   document.onkeydown = handleKeyDown;
   stage = new createjs.Stage("testCanvas");
   createjs.Touch.enable(stage);
@@ -17996,10 +17998,11 @@ function init() {
     },
   ];
   loader = new createjs.LoadQueue(false);
-  loader.addEventListener("complete", handleComplete);
+  loader.addEventListener("complete", () => handleComplete(onLoaded));
   loader.loadManifest(manifest);
 }
-function handleComplete() {
+function handleComplete(onLoaded) {
+  onLoaded();
   background = new createjs.Shape();
   background.graphics
     .beginBitmapFill(loader.getResult("background"))
@@ -18226,9 +18229,12 @@ function restart() {
 }
 function die() {
   $("canvas").trigger("gameEnd");
+
   dead = true;
   bird.gotoAndPlay("dive");
+
   if (counter.text > highScore.text) {
+    onGameEnded(counter.text);
     highScore.text = counter.text;
     highScoreOutline.text = counterOutline.text;
     if (supports_html5_storage()) {
@@ -18363,7 +18369,6 @@ function goShare() {
 }
 function supports_html5_storage() {
   try {
-    localStorage.setItem("test", "foo");
     return "localStorage" in window && window.localStorage !== null;
   } catch (e) {
     return false;
@@ -18433,73 +18438,73 @@ function tick(event) {
 var apiUrl = "flappy-backend.gotech.io";
 var rootUrl = "gotech.io";
 function retreiveScore() {
-  var hash = location.hash.substring(1);
-  $.get(
-    "https://" + apiUrl + "/scores/" + hash,
-    {},
-    function (data) {
-      $(".score").html(data.count);
-    },
-    "json"
-  );
+  // var hash = location.hash.substring(1);
+  // $.get(
+  //   "https://" + apiUrl + "/scores/" + hash,
+  //   {},
+  //   function (data) {
+  //     $(".score").html(data.count);
+  //   },
+  //   "json"
+  // );
 }
 function submitScore(token) {
-  $.post(
-    "https://" + apiUrl + "/scores/" + token + "?count=" + counter.text,
-    {},
-    function (data) {
-      window.location =
-        "http://" + window.location.host + "/leaderboard/new/#" + token;
-    },
-    "json"
-  );
+  // $.post(
+  //   "https://" + apiUrl + "/scores/" + token + "?count=" + counter.text,
+  //   {},
+  //   function (data) {
+  //     window.location =
+  //       "http://" + window.location.host + "/leaderboard/new/#" + token;
+  //   },
+  //   "json"
+  // );
 }
 function updateScore(name) {
-  var hash = location.hash.substring(1);
-  $.ajax({
-    type: "post",
-    url: "https://" + apiUrl + "/scores/" + hash + "?name=" + name,
-    success: function (data) {
-      console.log(data);
-      if (data.msg === "ok") {
-        $(".error").hide();
-        window.location = "http://" + window.location.host + "/leaderboard/";
-      } else {
-        $(".error").show().text(data.msg);
-        ga("send", "event", "Flappy Bird", "Name", name);
-      }
-    },
-    error: function (data) {
-      $(".error").show().text(data.responseJSON.msg);
-    },
-  });
+  // var hash = location.hash.substring(1);
+  // $.ajax({
+  //   type: "post",
+  //   url: "https://" + apiUrl + "/scores/" + hash + "?name=" + name,
+  //   success: function (data) {
+  //     console.log(data);
+  //     if (data.msg === "ok") {
+  //       $(".error").hide();
+  //       window.location = "http://" + window.location.host + "/leaderboard/";
+  //     } else {
+  //       $(".error").show().text(data.msg);
+  //       ga("send", "event", "Flappy Bird", "Name", name);
+  //     }
+  //   },
+  //   error: function (data) {
+  //     $(".error").show().text(data.responseJSON.msg);
+  //   },
+  // });
 }
 function getNewScore(cb) {
-  $.post("https://" + apiUrl + "/scores", {}, function (data) {
-    cb(data.token);
-  });
+  // $.post("https://" + apiUrl + "/scores", {}, function (data) {
+  //   cb(data.token);
+  // });
 }
 function listScores() {
-  $.get(
-    "https://" + apiUrl + "/scores",
-    {},
-    function (data) {
-      $(".loading").remove();
-      for (var i = 0; i < data.day.length; i++) {
-        var element = $(
-          "<tr><td>" + "</td><td>" + data.day[i].count + "</td></tr>"
-        );
-        element.children("td").eq(0).text(data.day[i].name);
-        $(".day").append(element);
-      }
-      for (var n = 0; n < data.hour.length; n++) {
-        var element2 = $(
-          "<tr><td>" + "</td><td>" + data.hour[n].count + "</td></tr>"
-        );
-        element2.children("td").eq(0).text(data.hour[n].name);
-        $(".hour").append(element2);
-      }
-    },
-    "json"
-  );
+  // $.get(
+  //   "https://" + apiUrl + "/scores",
+  //   {},
+  //   function (data) {
+  //     $(".loading").remove();
+  //     for (var i = 0; i < data.day.length; i++) {
+  //       var element = $(
+  //         "<tr><td>" + "</td><td>" + data.day[i].count + "</td></tr>"
+  //       );
+  //       element.children("td").eq(0).text(data.day[i].name);
+  //       $(".day").append(element);
+  //     }
+  //     for (var n = 0; n < data.hour.length; n++) {
+  //       var element2 = $(
+  //         "<tr><td>" + "</td><td>" + data.hour[n].count + "</td></tr>"
+  //       );
+  //       element2.children("td").eq(0).text(data.hour[n].name);
+  //       $(".hour").append(element2);
+  //     }
+  //   },
+  //   "json"
+  // );
 }

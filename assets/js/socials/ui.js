@@ -3,7 +3,6 @@ import { getElement } from "../heplers.js";
 export const setPosts = (posts) => {
   const container = getElement(".socials-feed");
   posts.forEach(({ node }) => {
-    console.log({ node });
     const postElement = postConstructor(node);
     container.append(postElement);
   });
