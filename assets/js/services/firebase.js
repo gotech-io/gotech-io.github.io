@@ -28,10 +28,11 @@ class Store {
     this.database = getDatabase(this.app);
   }
 
-  sendScore = (email, score) => {
+  sendScore = (email, name, score) => {
     set(ref(this.database, "users/" + hashCode(email)), {
-      email: email,
-      score: score,
+      email,
+      score,
+      name,
     });
   };
 }

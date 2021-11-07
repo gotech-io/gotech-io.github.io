@@ -1777,6 +1777,8 @@ input {
   position: relative;
   width: 100%;
   height: 100%; }
+  .flappy-video {
+    width: 100%; }
   .flappy-loader {
     position: fixed;
     display: none;
@@ -1793,6 +1795,37 @@ input {
     z-index: 999;
     display: none;
     justify-content: center; }
+    .flappy-contact-main {
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 20px; }
+      .flappy-contact-main a {
+        text-decoration: none; }
+      .flappy-contact-main * {
+        color: #353f66; }
+      .flappy-contact-main-logo {
+        height: 100px; }
+      .flappy-contact-main-instagram {
+        width: 30px;
+        margin-left: 10px; }
+      .flappy-contact-main section {
+        display: flex;
+        align-items: center; }
+      .flappy-contact-main p {
+        font-weight: 500; }
+      .flappy-contact-main strong {
+        font-weight: bold; }
+      .flappy-contact-main-bottom {
+        width: 60%;
+        margin-top: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; }
+        .flappy-contact-main-bottom img {
+          width: 100px;
+          height: auto; }
     .flappy-contact-overlay {
       position: absolute;
       left: 0px;
@@ -1807,24 +1840,43 @@ input {
       background: white;
       position: relative;
       height: fit-content;
-      top: 50px;
+      top: 30px;
+      max-height: 90vh;
       z-index: 99;
-      max-width: 500px;
-      width: calc(100% - 20px); }
+      max-width: 620px;
+      width: calc(100% - 20px);
+      overflow: auto; }
       .flappy-contact-content-title {
         text-align: center;
         font-size: 28px;
         line-height: 32px;
         margin-bottom: 20px; }
   .flappy-form .submit {
-    background: linear-gradient(135deg, #ffa185, #fd8274);
+    background: #353f66;
     border: none;
     color: white; }
 
 @media only screen and (max-width: 700px) {
-  .flappy-contact-content-title {
-    font-size: 22px;
-    line-height: 30px; } }
+  .flappy {
+    overflow: hidden; }
+    .flappy-contact-main-bottom {
+      width: 100%;
+      justify-content: center; }
+      .flappy-contact-main-bottom img {
+        width: 70px; }
+        .flappy-contact-main-bottom img:nth-child(1) {
+          margin-right: 20vw; }
+    .flappy-contact-main-logo {
+      height: 80px; }
+    .flappy-contact-content {
+      padding-bottom: 30px;
+      padding: 20px;
+      overflow: auto;
+      height: calc(100vh - 120px);
+      top: 10px; }
+      .flappy-contact-content-title {
+        font-size: 22px;
+        line-height: 30px; } }
 
 .seminars {
   padding-top: 80px; }
