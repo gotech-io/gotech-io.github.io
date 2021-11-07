@@ -2,7 +2,9 @@ import Form from "../form/index.js";
 import { init as InitApp } from "../index.js";
 import store from "../services/firebase.js";
 
-const LOCAL_STORAGE_NAME = "flappy-duck-email";
+const LOCAL_STORAGE_EMAIL = "flappy-duck-email";
+const LOCAL_STORAGE_NAME = "flappy-duck-name";
+
 window.onload = () => {
   initForm();
   InitApp();
@@ -21,8 +23,9 @@ const onGameLoaded = () => {
 };
 
 const onGameEnded = (score) => {
-  const email = localStorage.getItem(LOCAL_STORAGE_NAME);
-  store.sendScore(email, score);
+  const email = localStorage.getItem(LOCAL_STORAGE_EMAIL);
+  const name = localStorage.getItem(LOCAL_STORAGE_NAME);
+  store.sendScore(email, name, score);
 };
 
 const loadGame = () => {
@@ -35,7 +38,7 @@ const loadGame = () => {
 };
 
 const initForm = () => {
-  const isFormAlreadyFilled = localStorage.getItem(LOCAL_STORAGE_NAME);
+  const isFormAlreadyFilled = localStorage.getItem(LOCAL_STORAGE_EMAIL);
   const formContainer = document.querySelector(".flappy-contact");
 
   if (isFormAlreadyFilled) {
@@ -44,18 +47,25 @@ const initForm = () => {
   } else {
     formContainer.style.display = "flex";
     new Form("flappy-form", (event) => {
-      onFormSubmit(formContainer);
+      onFormSubmit(formContainer, event);
     }).init();
   }
 };
 
-const onFormSubmit = (formContainer) => {
+const onFormSubmit = (formContainer, event) => {
   formContainer.style.display = "none";
-  const input = document.querySelector(".input-container input");
-  const email = input.value;
-  store.sendScore(email, 0);
+  var elements = event.elements;
+  var obj = {};
+  for (var i = 0; i < elements.length; i++) {
+    var item = elements.item(i);
+    obj[item.name] = item.value;
+  }
+  store.sendScore(obj.email, obj.name, 0);
   loadGame();
-  localStorage.setItem(LOCAL_STORAGE_NAME, email);
+  localStorage.setItem(LOCAL_STORAGE_EMAIL, obj.email);
+  if (obj.name) {
+    localStorage.setItem(LOCAL_STORAGE_NAME, obj.name);
+  }
 };
 
 const handleCanvasSize = () => {

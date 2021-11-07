@@ -86,7 +86,7 @@ class Form {
   }
 
   validateInput(input) {
-    const isRequired = getElementAttribute(input, "data-required");
+    const isRequired = JSON.parse(getElementAttribute(input, "data-required"));
     const validation = getElementAttribute(input, "data-validation");
     const value = input.value;
     switch (validation) {
@@ -111,6 +111,7 @@ class Form {
         errors.push(true);
       }
     });
+
     return errors.length === 0;
   }
 

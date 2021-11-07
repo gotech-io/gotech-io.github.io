@@ -1,7 +1,7 @@
 {
-  "name": "orbs-website",
+  "name": "gotech",
   "version": "1.0.0",
-  "description": "Website for Orbs.com",
+  "description": "Website for gotech.io",
   "main": "index.js",
   "scripts": {
     "build": "cuttlebelle",

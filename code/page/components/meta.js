@@ -9,6 +9,8 @@ const MetaTags = ({ _relativeURL, _ID }) => {
         content="GoTech is a one-stop shop for infrastructures and development services."
         name="description"
       />
+      <meta name="viewport" content="width=device-width, initial-scale=1" />
+
       <link
         href={handleUrl(images.common.favicon, _relativeURL, _ID)}
         rel="shortcut icon"

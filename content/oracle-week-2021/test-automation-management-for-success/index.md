@@ -1,7 +1,7 @@
 ---
 layout: screens/oracle-week/SeminarsMapper
-title: Containerize CI/CD PIPELINES
-folderName: containerize-ci-cd-pipelines
+title: Test Automation Management for Success
+folderName: test-automation-management-for-success
 headerImg: /assets/images/oracle-week/header.jpg
 
 speakerName: Assaf Balzamovich
