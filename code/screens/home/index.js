@@ -28,6 +28,7 @@ const Home = ({
         type="module"
         src={handleUrl(`/assets/js/home/index.js`, _relativeURL, _ID)}
       />
+    
     </div>
   );
 };

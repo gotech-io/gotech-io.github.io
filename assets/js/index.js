@@ -6,12 +6,15 @@ export const init = () => {
   AOS.init({ once: true });
 };
 
-export const handleOnScroll = () => {
+
+
+
+export const handleOnScroll = (className) => {
   setTimeout(() => {
     document.addEventListener(
       "scroll",
       () => {
-        navbar.handleScroll();
+        navbar.handleScroll(className);
       },
       { passive: true }
     );

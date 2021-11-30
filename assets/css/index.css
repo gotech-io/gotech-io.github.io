@@ -1309,8 +1309,6 @@ input {
     height: 60px; }
     .navbar-desktop-contact {
       display: none; }
-    .navbar-flex {
-      background: white; }
     .navbar-root-link {
       left: 20px; }
     .navbar-logo {
@@ -1389,7 +1387,6 @@ input {
 .footer {
   margin-top: auto;
   padding-top: 50px;
-  margin-top: 70px;
   z-index: 99;
   position: relative;
   border-top: 2px solid #f2f4f8;
@@ -1438,11 +1435,14 @@ input {
   margin-left: auto;
   margin-right: auto; }
 
+.careers-active-navbar {
+  background: linear-gradient(135deg, #092442, #0A3667); }
+
 .careers-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(135deg, #ea5385, #f8ea74);
+  background-image: linear-gradient(135deg, #092442, #0A3667);
   min-height: 400px; }
   .careers-header-content * {
     color: white; }
@@ -1618,6 +1618,9 @@ input {
     font-size: 30px; }
   .career-header-content p {
     font-size: 14px; } }
+
+.smallTitle {
+  display: none !important; }
 
 .case-studies {
   background: #f2f4f8;
