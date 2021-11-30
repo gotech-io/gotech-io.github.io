@@ -5,12 +5,17 @@ $text-color: black;
   margin-left: auto;
   margin-right: auto;
 }
+.careers-active-navbar{
+  background: linear-gradient(135deg, #092442, #0A3667);
+}
+
 .careers {
+  
   &-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(135deg, #ea5385, #f8ea74);
+    background-image: linear-gradient(135deg, #092442, #0A3667);
     min-height: 400px;
 
     &-content {
@@ -275,4 +280,8 @@ $text-color: black;
       }
     }
   }
+}
+
+.smallTitle{
+  display: none!important;
 }

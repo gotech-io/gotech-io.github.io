@@ -6,32 +6,20 @@ import {
 } from "../heplers.js";
 let leaveTimeout;
 let scrollPos = 0;
-const handleBackground = () => {
+const handleBackground = (className) => {
   const navbar = getElement(".navbar");
 
   const offsetTop = window.pageYOffset;
   if (offsetTop >= 10) {
-    navbar.classList.add("navbar-active");
+    navbar.classList.add(className || "navbar-active");
   } else {
-    navbar.classList.remove("navbar-active");
+    navbar.classList.remove(className || "navbar-active");
   }
 };
 
-const handleTransform = () => {
-  const navbar = getElement(".navbar");
 
-  if (document.body.getBoundingClientRect().top > scrollPos) {
-    navbar.classList.remove("navbar-hidden");
-  } else {
-    if (document.body.getBoundingClientRect().top < -80) {
-      navbar.classList.add("navbar-hidden");
-    }
-  }
-  scrollPos = document.body.getBoundingClientRect().top;
-};
-
-const handleScroll = () => {
-  handleBackground();
+const handleScroll = (className) => {
+  handleBackground(className);
 };
 
 const addEventToMobileToggle = () => {

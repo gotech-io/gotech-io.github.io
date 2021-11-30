@@ -18,6 +18,6 @@ const createContactForm = () => {
 
 window.onload = () => {
   init();
-  initSlider();
+  // initSlider();
   createContactForm();
 };
