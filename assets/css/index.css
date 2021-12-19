@@ -514,7 +514,6 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
@@ -1763,6 +1762,25 @@ input {
       .about-careers-header p {
         font-size: 20px;
         font-weight: 300; }
+
+.privacy-policy h1 {
+  margin: 1.2rem 0 0.6rem; }
+
+.privacy-policy h2 {
+  margin: 0.8rem 0 0.4rem; }
+
+.privacy-policy h3 {
+  margin: 0.6rem 0 0.3rem; }
+
+.privacy-policy ul {
+  list-style: disc;
+  padding-inline-start: 40px; }
+
+.privacy-policy p {
+  margin-bottom: 1rem; }
+
+.privacy-policy .about-grid {
+  margin-bottom: 4rem; }
 
 @font-face {
   font-family: flappy bird;
