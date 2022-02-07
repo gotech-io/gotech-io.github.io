@@ -2,7 +2,7 @@
 layout: common/form/input/index
 name: firstName
 type: text
-placeholder: Name
+placeholder: First name
 error: Required field
 label: First name
 required: true
