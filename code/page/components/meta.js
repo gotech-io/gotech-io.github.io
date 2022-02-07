@@ -26,7 +26,7 @@ const MetaTags = ({ _relativeURL, _ID }) => {
         property="og:description"
       />
       <meta
-        content="/assets/images/common/open-graph-logo.png"
+        content="https://gotech.io/assets/images/common/open-graph-logo.png"
         property="og:image"
       />
 
