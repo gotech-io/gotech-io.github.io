@@ -16,28 +16,37 @@
     margin-left: auto;
     margin-right: auto;
   }
+  &-cat-title {
+    text-align: center;
+    font-size: 1.5rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid #ddd;
+    margin: 1rem 0;
+  }
   &-list {
     flex-wrap: wrap;
     align-items: flex-start;
     &-item {
-      width: calc(100% / 4 - 12px);
-      margin-right: 15px;
+      width: calc(100% / 5 - 10px);
+      margin-right: 12px;
       height: 100%;
       border-radius: 20px;
       overflow: hidden;
       height: 106px;
       background: white;
-      margin-bottom: 15px;
+      margin-bottom: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: 0.3s all;
-      &:nth-of-type(4n) {
+      padding: 2% 2.8%;
+
+      &:nth-of-type(5n) {
         margin-right: 0px;
       }
       img {
-        width: 90%;
-        height: auto;
+        width: 100%;
+        height: 100%;
         object-fit: contain;
       }
       &:hover {
