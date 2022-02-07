@@ -16,13 +16,21 @@ const MetaTags = ({ _relativeURL, _ID }) => {
         rel="shortcut icon"
         type="image/x-icon"
       />
-      <meta content="GoTech" property="og:title" />
+
+      <meta property="og:url" content="https://gotech.io/" />
+      <meta property="og:type" content="website" />
+
+      <meta content="GoTech | Tech as a Service" property="og:title" />
       <meta
         content="GoTech is a one-stop shop for infrastructures and development services."
         property="og:description"
       />
-      <meta content="" property="og:image" />
-      <meta content="GoTech" property="twitter:title" />
+      <meta
+        content="/assets/images/common/open-graph-logo.png"
+        property="og:image"
+      />
+
+      <meta content="GoTech | Tech as a Service" property="twitter:title" />
       <meta
         content="GoTech is a one-stop shop for infrastructures and development services."
         property="twitter:description"

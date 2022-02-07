@@ -1,14 +1,14 @@
 ---
 layout: screens/home/sections/clients/components/list
 list:
-  - assets/images/home/clients/althsuler.png
+  - assets/images/home/clients/altshuler.png
   - assets/images/home/clients/amdocs-logo.png
   - assets/images/home/clients/applied.jpg
-  - assets/images/home/clients/Pelephone.jpg
+  - assets/images/home/clients/pelephone.png
   - assets/images/home/clients/brainlab.jpg
   - assets/images/home/clients/kazuar.jpg
   - assets/images/home/clients/johnbryce.jpg
-  - assets/images/home/clients/inspekto.jpg
+  - assets/images/home/clients/inspekto.png
   - assets/images/home/clients/pmo.jpg
   - assets/images/home/clients/police.jpg
   - assets/images/home/clients/renuar.jpg
