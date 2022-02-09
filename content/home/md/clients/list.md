@@ -3,29 +3,48 @@ layout: screens/home/sections/clients/components/list
 list:
   - assets/images/home/clients/altshuler.png
   - assets/images/home/clients/amdocs-logo.png
-  - assets/images/home/clients/applied.jpg
+  - assets/images/home/clients/applied.png
+  - assets/images/home/clients/digibank.png
+  - assets/images/home/clients/audiocodes.png
+  - assets/images/home/clients/sqream.png
+  - assets/images/home/clients/ownbackup.png
+  - assets/images/home/clients/uveye.png
   - assets/images/home/clients/pelephone.png
-  - assets/images/home/clients/brainlab.jpg
+  - assets/images/home/clients/ai21.png
+  - assets/images/home/clients/cellwize.png
+  - assets/images/home/clients/noname.svg
+  - assets/images/home/clients/scopio.png
+  - assets/images/home/clients/brainlab.png
   - assets/images/home/clients/kazuar.png
+  - assets/images/home/clients/namogoo.png
+  - assets/images/home/clients/zim.png
+  - assets/images/home/clients/carwiz.png
+  - assets/images/home/clients/telicomm.png
+  - assets/images/home/clients/surecomp.png
   - assets/images/home/clients/johnbryce.jpg
+  - assets/images/home/clients/mimun.png
+  - assets/images/home/clients/crowdvocate.png
+  - assets/images/home/clients/cellcom.png
+  - assets/images/home/clients/migdal.png
   - assets/images/home/clients/inspekto.png
   - assets/images/home/clients/pmo.png
   - assets/images/home/clients/police.png
   - assets/images/home/clients/renuar.png
   - assets/images/home/clients/salesforce.png
   - assets/images/home/clients/weissbeerger.png
-  - assets/images/home/clients/ustglobal.jpg
-  - assets/images/home/clients/cisco.jpg
-  - assets/images/home/clients/earlysense.jpg
+  - assets/images/home/clients/ustglobal.png
+  - assets/images/home/clients/stilyoapps.png
+  - assets/images/home/clients/cisco.svg
+  - assets/images/home/clients/earlysense.png
   - assets/images/home/clients/mellanox.png
   - assets/images/home/clients/cybereason.png
-  - assets/images/home/clients/stock.jpg
+  - assets/images/home/clients/tase.png
   - assets/images/home/clients/vasona.png
   - assets/images/home/clients/ca.png
   - assets/images/home/clients/beinharim.png
   - assets/images/home/clients/bisec.svg
   - assets/images/home/clients/astralink.png
-  - assets/images/home/clients/aashiping.png
+  - assets/images/home/clients/aashipping.png
   - assets/images/home/clients/celltick.png
   - assets/images/home/clients/cyberbit.png
   - assets/images/home/clients/credorax.png
@@ -47,7 +66,7 @@ list:
   - assets/images/home/clients/nsogroup.png
   - assets/images/home/clients/navy.png
   - assets/images/home/clients/odo.png
-  - assets/images/home/clients/weekin.png
+  #- assets/images/home/clients/weekin.png
   - assets/images/home/clients/pomicell.png
   - assets/images/home/clients/promo.png
   - assets/images/home/clients/paradigma.png
@@ -55,7 +74,7 @@ list:
   - assets/images/home/clients/sendajob.png
   - assets/images/home/clients/roojoom.png
   - assets/images/home/clients/riskified.png
-  - assets/images/home/clients/yourway.png
+  #- assets/images/home/clients/yourway.png
   - assets/images/home/clients/solebit.png
   - assets/images/home/clients/slatch.png
   - assets/images/home/clients/starttech.png
@@ -64,5 +83,4 @@ list:
   - assets/images/home/clients/toolway.png
   - assets/images/home/clients/tmura.png
   - assets/images/home/clients/travelersbox.png
-  - assets/images/home/clients/uveye.png
 ---
