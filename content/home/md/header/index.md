@@ -11,4 +11,4 @@ toggle_animation:
   - toggle-animation.md
 ---
 
-GoTech is a one-stop shop for infrastructures and development services. Our team consist of the best and most professional mobile and web developers, QA automation developers, DevOps, data engineers and DBAs.
+GoTech is a one-stop shop for infrastructures and development services. Our team consists of the best and most professional mobile and web developers, QA automation developers, DevOps, data engineers and DBAs.

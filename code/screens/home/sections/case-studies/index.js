@@ -10,9 +10,9 @@ const CaseStudies = ({ slides, title, _body }) => {
       </div>
       <aside className="indicator" id="case-studies"></aside>
       <div className="home-case-studies-content">
-        <div class="splide home-case-studies-slider">
-          <div class="splide__track">
-            <ul class="splide__list">
+        <div className="splide home-case-studies-slider">
+          <div className="splide__track">
+            <ul className="splide__list">
               {slides &&
                 slides.map((slide) => {
                   return slide;

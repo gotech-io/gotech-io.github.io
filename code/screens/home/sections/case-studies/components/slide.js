@@ -13,7 +13,7 @@ const Slide = ({
   linkUrl,
 }) => {
   return (
-    <li class="splide__slide slide-item">
+    <li className="splide__slide slide-item">
       <Image
         customClassName="slide-item-image"
         src={handleUrl(image, _relativeURL, _ID)}
@@ -25,7 +25,7 @@ const Slide = ({
           <div className="slide-item-platforms">
             {platforms.map((platform) => {
               return (
-                <section>
+                <section key={_ID}>
                   <img src={handleUrl(platform.img, _relativeURL, _ID)} />
                   <p>{platform.name}</p>
                 </section>

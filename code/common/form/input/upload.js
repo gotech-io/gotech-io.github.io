@@ -45,7 +45,7 @@ function Upload({
           data-input="false"
           type="file"
           name={name}
-          data-buttonText={placeholder}
+          data-buttontext={placeholder}
           data-validation={validation}
           className="input upload"
         ></input>

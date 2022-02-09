@@ -9,7 +9,7 @@ sectionBtn:
 
 #### We Are GoTech
 
-In today's challenging and rapidly changing world of technology, GoTech Group provides the best innovative solutions of development, QA automation, DevOps, Database engineers.
+In today's challenging and rapidly changing world of technology, GoTech Group provides the best innovative solutions for development, QA automation, DevOps, Database engineers.
 
 We specialize in delivering quick solutions with very high quality. With our first-class and outstanding experts.
 

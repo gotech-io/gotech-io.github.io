@@ -39,7 +39,7 @@
       align-items: center;
       justify-content: center;
       transition: 0.3s all;
-      padding: 2.4% 2.2%;
+      padding: 22.5px 20.5px;
 
       &:nth-of-type(5n) {
         margin-right: 0px;
@@ -64,6 +64,9 @@
       &-item {
         width: calc(100% / 3 - 7px);
         margin-right: 10px;
+        &:nth-child(5n) {
+          margin-right: 10px;
+        }
         &:nth-child(4n) {
           margin-right: 10px;
         }
@@ -88,6 +91,9 @@
         width: calc(50% - 7px);
         margin-right: 0px;
         height: 90px;
+        &:nth-child(5n) {
+          margin-right: 0px;
+        }
         &:nth-child(4n) {
           margin-right: 0px;
         }

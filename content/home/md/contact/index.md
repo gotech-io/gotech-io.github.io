@@ -6,7 +6,7 @@ form:
 
 ## Get in touch
 
-### Have a questions?
+### Have any questions?
 
 Call us at +972-9-866-4040
 

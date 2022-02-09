@@ -63,7 +63,7 @@ function Flappy({ _relativeURL, _ID, form }) {
           {form}
         </div>
       </div>
-      <div class="canvas-container" id="game">
+      <div className="canvas-container" id="game">
         <canvas
           id="testCanvas"
           width="768"
