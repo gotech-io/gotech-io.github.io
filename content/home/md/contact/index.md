@@ -2,8 +2,6 @@
 layout: screens/home/sections/contact/index
 form:
   - form/index.md
-map:
-  - map/index.md
 ---
 
 ## Get in touch
