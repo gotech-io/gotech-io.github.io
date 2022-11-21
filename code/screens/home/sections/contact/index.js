@@ -14,7 +14,7 @@ const Contact = ({ _body, form ,map}) => {
           data-aos={animations.fadeRight}
         >
           {_body}
-          <div>
+          <div className="map-wrapper">
             {map}
           </div>
         </div>
