@@ -1,7 +1,7 @@
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const Contact = ({ _body, form }) => {
+const Contact = ({ _body, form, map}) => {
   return (
     <div className="contact flex-between">
       <aside className="indicator" id="contact"></aside>
@@ -14,6 +14,9 @@ const Contact = ({ _body, form }) => {
           data-aos={animations.fadeRight}
         >
           {_body}
+          <div className="map-wrapper">
+            {map}
+          </div>
         </div>
         {form}
       </div>
