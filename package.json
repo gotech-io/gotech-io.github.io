@@ -19,8 +19,7 @@
   "author": "",
   "license": "MIT",
   "dependencies": {
-    "dotenv": "^10.0.0",
-    "google-map-react": "^2.2.0"
+    "dotenv": "^10.0.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-class-properties": "^7.13.0",
