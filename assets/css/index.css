@@ -406,7 +406,7 @@ li,
   border-radius: 50px;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
-  background: #40435000;
+  background: rgba(64, 67, 80, 0);
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
@@ -520,7 +520,6 @@ li,
     padding-top: 50px;
     padding-bottom: 50px;
   }
-
   .title-h4 {
     font-size: 1.5rem;
   }
@@ -1946,7 +1945,6 @@ input {
     top: 50%;
     transform: translate(0, -50%) rotate(45deg);
   }
-
   .career-page .form {
     width: 100%;
     margin-top: 50px;
@@ -1962,7 +1960,6 @@ input {
   .career-grid, .careers-flex, .career-page-grid {
     width: calc(100% - 45px);
   }
-
   .careers-list-item a h4 {
     width: 100%;
   }
@@ -1979,7 +1976,6 @@ input {
   .careers-header-content h1 {
     font-size: 36px;
   }
-
   .career-page {
     padding-top: 100px;
   }
@@ -2571,7 +2567,6 @@ input {
   .seminar-page-flex ul {
     padding-left: 20px;
   }
-
   .seminars {
     padding-top: 60px;
   }
