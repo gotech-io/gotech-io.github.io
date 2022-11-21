@@ -1,7 +1,7 @@
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const Contact = ({ _body, form ,map}) => {
+const Contact = ({ _body, form}) => {
   return (
     <div className="contact flex-between">
       <aside className="indicator" id="contact"></aside>
