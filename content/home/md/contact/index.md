@@ -8,7 +8,8 @@ form:
 
 ### Have any questions?
 
-Call us at +972-9-866-4040
+- Contact us at:  contact@gotech.io
+- Call us at:  (+972)-9-866-4040
 
 ### Find us
 

@@ -1,5 +1,5 @@
-import React from "react";
 import Loader from "../loader";
+import React from "react";
 
 function Form({ name, submit, inputs, title, successText = "Thank you!" }) {
   return (

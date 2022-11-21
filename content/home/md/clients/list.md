@@ -1,6 +1,11 @@
 ---
 layout: screens/home/sections/clients/components/list
 list:
+  - assets/images/home/clients/google.png
+  - assets/images/home/clients/walmart.png
+  - assets/images/home/clients/qualcomm.png
+  - assets/images/home/clients/cognyte.png
+  - assets/images/home/clients/orbs.png
   - assets/images/home/clients/altshuler.png
   - assets/images/home/clients/amdocs-logo.png
   - assets/images/home/clients/applied.png
