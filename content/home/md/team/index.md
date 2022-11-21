@@ -7,7 +7,6 @@ list:
   - assaf.md
   - giora.md
   - evgeny.md
-  - miki.md
   - raz.md
   - mor.md
 
