@@ -5,4 +5,3 @@ city: Netanya
 street: Ha-Melakha
 house: 5
 ---
-<!-- house: 5 -->

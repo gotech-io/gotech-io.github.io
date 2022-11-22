@@ -176,6 +176,23 @@
     font-size: 0.75rem;
   }
 }
+.map-wrapper {
+  width: 500px;
+  height: 200px;
+}
+
+.map {
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+}
+.map .gm-style .place-card-large {
+  display: none;
+}
+.map .gm-style .gm-style-cc a, .map .gm-style .gm-style .gm-style-cc button, .map .gm-style .gm-style .gm-style-cc span {
+  display: none;
+}
+
 .flex-start {
   display: flex;
   justify-content: flex-start;
