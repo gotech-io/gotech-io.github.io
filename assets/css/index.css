@@ -262,6 +262,12 @@
   font-size: 1.875rem;
 }
 
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .flex-between {
   display: flex;
   align-items: center;
@@ -1451,7 +1457,6 @@ input {
 }
 .home-header {
   height: 100vh;
-  background: white;
   padding-top: 220px;
   position: relative;
 }
@@ -1474,18 +1479,48 @@ input {
   position: absolute;
 }
 .home-header-background {
+  width: 100%;
   position: absolute;
   left: 0px;
   top: 0px;
-  width: 100%;
-  height: 100%;
   z-index: 1;
 }
-.home-header-background img {
+.home-header-background .wrapper-background {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: right;
+  height: 1000px;
+}
+.home-header-background .wrapper-background .wrapper-blobs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 1000px;
+}
+.home-header-background .orange-blobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  right: -500px;
+  top: -500px;
+  animation: rotation 50s infinite linear;
+}
+.home-header-background .green-blobs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  left: 200px;
+  bottom: -700px;
+  animation: rotation 50s infinite linear;
+}
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 .home-header-main {
   max-width: 920px;
@@ -1494,13 +1529,15 @@ input {
   z-index: 2;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 .home-header-main-content {
   max-width: 700px;
   width: 100%;
 }
 .home-header-main-content h1 {
-  font-size: 3.75rem;
+  font-size: 10rem;
+  max-height: 180px;
   font-weight: 500;
 }
 .home-header-main-content h2 {

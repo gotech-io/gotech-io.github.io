@@ -11,8 +11,8 @@ map:
 ### Have any questions?
 
 - Contact us at: contact@gotech.io
-- Call us at: (+972)-9-866-4040
+- Call us at: (+972)9-866-40-40
 
 ### Find us
 
-5 Ha-Melakha St., Netanya
+- 5 Ha-Melakha St., Netanya
