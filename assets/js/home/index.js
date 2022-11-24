@@ -1,7 +1,7 @@
-import { init } from "../index.js";
 import "https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js";
-import emailJs from "../services/email-js/index.js";
 import Form from "../form/index.js";
+import emailJs from "../services/email-js/index.js";
+import { init } from "../index.js";
 
 const initSlider = () => {
   new Splide(".home-case-studies-slider", {

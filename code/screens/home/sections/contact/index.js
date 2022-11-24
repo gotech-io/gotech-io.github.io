@@ -1,7 +1,7 @@
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const Contact = ({ _body, form, map}) => {
+const Contact = ({ _body, form, map }) => {
   return (
     <div className="contact flex-between">
       <aside className="indicator" id="contact"></aside>
@@ -12,13 +12,22 @@ const Contact = ({ _body, form, map}) => {
           className="contact-left"
           data-aos-anchor-placement="top-center"
           data-aos={animations.fadeRight}
+          data-aos-mirror="true"
+          data-aos-once="false"
         >
           {_body}
-          <div className="map-wrapper">
-            {map}
-          </div>
+          <div className="map-wrapper">{map}</div>
         </div>
-        {form}
+
+        <div
+          className="contact-left"
+          data-aos-anchor-placement="top-center"
+          data-aos={animations.zoomInUp}
+          data-aos-mirror="true"
+          data-aos-once="false"
+        >
+          {form}
+        </div>
       </div>
     </div>
   );

@@ -1,6 +1,6 @@
+import Image from "../../../../../common/img";
 import React from "react";
 import animations from "../../../../../../assets/js/animations";
-import Image from "../../../../../common/img";
 
 const List = ({ list }) => {
   return (
@@ -9,7 +9,9 @@ const List = ({ list }) => {
         return (
           <li
             key={i}
-            data-aos={animations.up}
+            data-aos={animations.zoomIn}
+            data-aos-mirror="true"
+            data-aos-once="false"
             className="home-clients-list-item"
           >
             <img src={e} alt="client images" />

@@ -1322,6 +1322,9 @@ input {
 .contact .indicator {
   top: -120px;
 }
+.contact .wrapper-contact {
+  background-color: red;
+}
 .contact-flex {
   width: 100%;
   max-width: 1080px;
@@ -1457,6 +1460,7 @@ input {
 }
 .home-header {
   height: 100vh;
+  background: white;
   padding-top: 220px;
   position: relative;
 }
@@ -1484,17 +1488,6 @@ input {
   left: 0px;
   top: 0px;
   z-index: 1;
-}
-.home-header-background .wrapper-background {
-  width: 100%;
-  height: 1000px;
-}
-.home-header-background .wrapper-background .wrapper-blobs {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  height: 1000px;
 }
 .home-header-background .orange-blobs {
   display: flex;

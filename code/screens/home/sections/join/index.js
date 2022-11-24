@@ -3,7 +3,7 @@ import animations from "../../../../../assets/js/animations";
 
 const Join = ({ _body, animation, socials }) => {
   return (
-    <div className="home-join">
+    <div className="home-join"> 
       <div className="home-join-flex">
         <div
           className="home-join-animation"
