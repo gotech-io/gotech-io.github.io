@@ -8,11 +8,21 @@ const Images = ({ _relativeURL, _ID, image1, image2, image3, image4 }) => {
   };
   return (
     <div className="home-about-images images-flex">
-      <div className="images-flex-1 images-flex-section">
+      <div
+        className="images-flex-1 images-flex-section"
+        data-aos={animations.fadeRight}
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <Image src={createRelativeURL(image1)} />
         <Image src={createRelativeURL(image2)} />
       </div>
-      <div className="images-flex-2 images-flex-section">
+      <div
+        className="images-flex-2 images-flex-section"
+        data-aos={animations.fadeLeft}
+        data-aos-mirror="true"
+        data-aos-once="false"
+      >
         <Image src={createRelativeURL(image3)} />
       </div>
     </div>

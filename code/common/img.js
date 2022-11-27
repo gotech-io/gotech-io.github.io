@@ -4,12 +4,7 @@ import animations from "../../assets/js/animations";
 const Image = ({ customClassName = "", src }) => {
   const className = `${customClassName} img`;
   return (
-    <figure
-      className={className}
-      data-aos={animations.zoomIn}
-      data-aos-mirror="true"
-      data-aos-once="false"
-    >
+    <figure className={className}>
       <img src={src} />
     </figure>
   );

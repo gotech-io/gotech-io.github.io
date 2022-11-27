@@ -1,20 +1,22 @@
+import Image from "../../../../../common/img";
 import React from "react";
 import animations from "../../../../../../assets/js/animations";
-import Image from "../../../../../common/img";
 import { handleUrl } from "../../../../../utils";
 
 const Member = ({ image, _relativeURL, _ID, _body }) => {
   return (
     <div
       className="home-team-member"
-      data-aos={animations.up}
-      data-aos-duration="1000"
+      // data-aos={animations.up}
+      // data-aos-duration="1000"
     >
       <Image src={handleUrl(image, _relativeURL, _ID)} />
       <div
         className="home-team-member-content"
-        data-aos={animations.up}
+        data-aos={animations.fadeLeft}
         data-aos-delay="150"
+        data-aos-mirror="true"
+        data-aos-once="false"
       >
         {_body}
       </div>
