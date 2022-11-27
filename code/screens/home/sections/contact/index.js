@@ -6,21 +6,14 @@ const Contact = ({ _body, form, map }) => {
     <div className="contact flex-between">
       <aside className="indicator" id="contact"></aside>
 
-      <div className="contact-bg"></div>
-      <div className="contact-flex">
-        <div
-          className="contact-left"
-          data-aos-anchor-placement="top-center"
-          data-aos={animations.fadeRight}
-          data-aos-mirror="true"
-          data-aos-once="false"
-        >
+      <div className="contact-bg">
+        <div className="contact-info-cont">
           {_body}
           <div className="map-wrapper">{map}</div>
         </div>
 
         <div
-          className="contact-left"
+          className="contact-info-cont"
           data-aos-anchor-placement="top-center"
           data-aos={animations.zoomInUp}
           data-aos-mirror="true"

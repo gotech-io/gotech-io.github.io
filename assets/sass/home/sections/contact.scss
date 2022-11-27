@@ -12,10 +12,6 @@
     top: -120px;
   }
 
-  .wrapper-contact {
-    background-color: red;
-  }
-
   &-flex {
     width: 100%;
     max-width: 1080px;
@@ -25,16 +21,15 @@
     justify-content: space-between;
   }
   &-bg {
-    position: absolute;
-    left: 0px;
-    top: 0px;
     width: 100%;
     height: 100%;
+    display: flex;
     background: $contact-background;
     border-radius: 20px;
   }
-  &-left {
-    position: relative;
+
+  &-info-cont {
+    margin: 40px;
     * {
       color: white;
     }
