@@ -1,8 +1,7 @@
+import Image from "../../common/img";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { images } from "../../../assets/js/images";
-
-import Image from "../../common/img";
 import { handleUrl } from "../../utils";
 
 const Navbar = ({

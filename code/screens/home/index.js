@@ -3,14 +3,15 @@ import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
 const Home = ({
-  header,
-  services,
-  clients,
-  about,
-  join,
-  team,
-  contact,
   navbar,
+  header,
+  // services,
+  // clients,
+  // about,
+  // join,
+  // team,
+  // contact,
+
   _relativeURL,
   _ID,
 }) => {
@@ -18,17 +19,16 @@ const Home = ({
     <div className="home" data-aos={animations.up}>
       {navbar}
       {header}
-      {services}
+      {/* {services}
       {clients}
       {about}
       {join}
       {team}
-      {contact}
+      {contact} */}
       <script
         type="module"
         src={handleUrl(`/assets/js/home/index.js`, _relativeURL, _ID)}
       />
-    
     </div>
   );
 };
