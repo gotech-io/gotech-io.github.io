@@ -187,6 +187,51 @@
   border-radius: 20px;
 }
 
+video {
+  width: 100%;
+  height: 100%;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}
+
+.gallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.gallery-image {
+  width: 60%;
+  max-height: 500px;
+}
+.gallery-image img {
+  width: 100%;
+  height: 100%;
+}
+.gallery-image img.left {
+  border-radius: 20px 0 0 20px;
+}
+.gallery-image img.right {
+  border-radius: 0 20px 20px 0;
+}
+.gallery-description {
+  width: 38%;
+  max-height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+  font-size: 15px;
+  text-align: center;
+}
+.gallery-description.left {
+  border-radius: 0 20px 20px 0;
+}
+.gallery-description.right {
+  border-radius: 20px 0 0 20px;
+}
+
 .flex-start {
   display: flex;
   justify-content: flex-start;
