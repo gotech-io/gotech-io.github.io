@@ -31,13 +31,4 @@ gallery:
       description: "Our experts are former 8200 and Mamram graduates with vast experience working for the best leading professional services companies and vendors, giving them the knowledge on how to implement the best solution that fits your budget and timeline.",
     },
   ]
-# sections:
-#   - grid/section1/index.md
-#   - grid/section2/index.md
-#   - grid/section3/index.md
-# careers:
-#   - careers/index.md
-# topImage: /assets/images/about/img1.jpeg
-# team:
-#   - /home/md/team/index.md
 ---
