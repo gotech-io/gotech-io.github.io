@@ -4,12 +4,12 @@ import { handleUrl } from "../../utils";
 
 const Home = ({
   header,
-  services,
-  clients,
-  about,
-  join,
-  team,
-  contact,
+  // services,
+  // clients,
+  // about,
+  // join,
+  // team,
+  // contact,
   navbar,
   _relativeURL,
   _ID,
@@ -18,17 +18,16 @@ const Home = ({
     <div className="home" data-aos={animations.up}>
       {navbar}
       {header}
-      {services}
+      {/* {services}
       {clients}
       {about}
       {join}
       {team}
-      {contact}
+      {contact} */}
       <script
         type="module"
         src={handleUrl(`/assets/js/home/index.js`, _relativeURL, _ID)}
       />
-    
     </div>
   );
 };
