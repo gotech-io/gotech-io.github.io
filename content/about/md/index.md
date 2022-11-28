@@ -2,7 +2,13 @@
 layout: screens/about/index
 title: GoTech Family introduce
 description: We help Fortune 500 companies, startups, and enterprises to build relevant digital products, train their teams, solve business problems, and reduce costs while increasing efficiency.
-videoList: [{ src: path, type: video/mp4 }]
+videoList:
+  [
+    {
+      src: https://dms.licdn.com/playlist/C4D05AQFmLxavnNLPxQ/mp4-720p-30fp-crf28/0/1640537394791?e=1670252400&v=beta&t=pxrl2OqClkWOMHhHrPttHic1hSZZwbaiPsNK_89FqJo,
+      type: video/mp4,
+    },
+  ]
 gallery:
   [
     {
