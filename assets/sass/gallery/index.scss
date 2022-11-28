@@ -1,0 +1,44 @@
+.about-story-gallery {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+
+  &-image {
+    width: 60%;
+    max-height: 500px;
+
+    img {
+      width: 100%;
+      height: 100%;
+
+      &.left {
+        border-radius: $radius 0 0 $radius;
+      }
+
+      &.right {
+        border-radius: 0 $radius $radius 0;
+      }
+    }
+  }
+
+  &-description {
+    width: 38%;
+    max-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $gap;
+    background-color: $default;
+    font-size: 15px;
+    text-align: center;
+
+    &.left {
+      border-radius: 0 $radius $radius 0;
+    }
+
+    &.right {
+      border-radius: $radius 0 0 $radius;
+    }
+  }
+}

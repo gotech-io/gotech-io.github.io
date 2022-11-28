@@ -1,4 +1,7 @@
+import Image from "../../common/img";
+import Left from "../../common/left";
 import React from "react";
+import Right from "../../common/right";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
@@ -6,6 +9,7 @@ function About({
   title,
   description,
   videoList,
+  gallery,
   sections,
   careers,
   topImage,
@@ -44,20 +48,24 @@ function About({
         </p>
 
         <video className="about-intro-video" controls data-aos={animations.up}>
-          {videoList.map(({ src, type }) => {
-            return <source src={src} type={type} />;
+          {videoList.map(({ src, type }, i) => {
+            return <source key={i} src={src} type={type} />;
           })}
         </video>
       </div>
 
       <div className="about-story">
         <h4 className="about-story-title" data-aos={animations.up}>
-          our story
+          Our Everyday life:
         </h4>
 
-        <div className="about-story-gallery">
-          <div className="about-story"></div>
-          <div className="about-story"></div>
+        <div className="about-story-wrapper">
+          {gallery.map(({ src, description }, i) => {
+            if (i % 2 === 0) {
+              return <Left key={i} src={src} description={description} />;
+            }
+            return <Right key={i} src={src} description={description} />;
+          })}
         </div>
       </div>
 
