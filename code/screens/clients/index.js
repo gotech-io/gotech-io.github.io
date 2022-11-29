@@ -2,13 +2,21 @@ import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-function Clients({ title, _relativeURL, _ID }) {
+function Clients({ title, description, _relativeURL, _ID }) {
   return (
-    <div>
-      {title}
+    <div className="about">
+      <div className="about-intro">
+        <h2 className="about-intro-title" data-aos={animations.up}>
+          {title}
+        </h2>
+        <p className="about-intro-description" data-aos={animations.up}>
+          {description}
+        </p>
+      </div>
+
       <script
         type="module"
-        src={handleUrl(`/assets/js/services/index.js`, _relativeURL, _ID)}
+        src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
       />
     </div>
   );
