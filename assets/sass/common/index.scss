@@ -6,6 +6,7 @@
 @import "./map.scss";
 @import "./video.scss";
 @import "./gallery.scss";
+@import "./common.scss";
 
 .flex-start {
   display: flex;
@@ -78,11 +79,7 @@
 .title-h4 {
   font-size: 1.875rem;
 }
-.flex-between {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
+
 .flex {
   display: flex;
   align-items: center;
