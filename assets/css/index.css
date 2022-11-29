@@ -1771,6 +1771,7 @@ input {
 .footer {
   width: 100%;
   padding: 50px 0 20px;
+  border-top: 2px solid #f8f9fa;
 }
 .footer-bottom {
   margin-top: 50px;
