@@ -1,4 +1,5 @@
 import React from "react";
+import animations from "../../../assets/js/animations";
 
 function Video({ videoList }) {
   return (

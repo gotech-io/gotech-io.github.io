@@ -1,6 +1,7 @@
 import Left from "../../common/gallery/left";
 import React from "react";
 import Right from "../../common/gallery/right";
+import Video from "../../common/video";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
@@ -15,11 +16,7 @@ function About({ title, description, videoList, gallery, _relativeURL, _ID }) {
           {description}
         </p>
 
-        <video className="about-intro-video" controls data-aos={animations.up}>
-          {videoList.map(({ src, type }, i) => {
-            return <source key={i} src={src} type={type} />;
-          })}
-        </video>
+        <Video videoList={videoList} />
       </div>
 
       <div className="about-story">

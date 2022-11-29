@@ -187,9 +187,10 @@
   border-radius: 20px;
 }
 
-video {
+.video {
   width: 100%;
   height: 100%;
+  margin: 50px auto;
   background-color: #f8f9fa;
   border-radius: 20px;
 }
@@ -2097,6 +2098,7 @@ input {
 .about {
   width: 100%;
   padding-top: 100px;
+  text-align: center;
 }
 .about-intro {
   max-width: 950px;
@@ -2109,13 +2111,6 @@ input {
 .about-intro-description {
   font-size: 20px;
   text-align: center;
-}
-.about-intro-video {
-  max-width: 100%;
-  height: 500px;
-  margin-top: 50px;
-  background-color: #f8f9fa;
-  border-radius: 20px;
 }
 .about-story {
   max-width: 950px;
