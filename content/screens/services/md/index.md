@@ -1,4 +1,4 @@
 ---
 layout: screens/services/index
-title: Services Page
+title: About our Abilities
 ---

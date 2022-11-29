@@ -14,7 +14,7 @@ links:
     value: /case-studies
 
   - name: Our Team
-    value: /team
+    value: /teams
 
   - name: Careers
     value: /careers

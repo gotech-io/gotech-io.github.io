@@ -2,7 +2,7 @@ import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-function Services({ title, _relativeURL, _ID }) {
+function Clients({ title, _relativeURL, _ID }) {
   return (
     <div>
       {title}
@@ -14,4 +14,4 @@ function Services({ title, _relativeURL, _ID }) {
   );
 }
 
-export default Services;
+export default Clients;
