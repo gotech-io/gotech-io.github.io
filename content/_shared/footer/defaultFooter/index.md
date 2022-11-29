@@ -1,5 +1,5 @@
 ---
-layout: common/footer/index
+layout: common/footer/default/index
 variables:
   [
     {
@@ -31,6 +31,8 @@ variables:
         ],
     },
   ]
+marquee:
+  - /_shared/marquee/index.md
 
 copyright: © Copyright GoTech. All rights reserved.
 privacy_policy_text: Privacy Policy

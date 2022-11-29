@@ -1,0 +1,9 @@
+.marquee {
+  &-wrapper {
+    width: 100%;
+    background-color: $default;
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+  }
+}
