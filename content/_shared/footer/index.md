@@ -26,7 +26,7 @@ variables:
       title: Join Us,
       list:
         [
-          { title: Phone, link:'' },
+          { title: Contact Us, phone: (+972)-9-866-40-40 },
           { title: Social Media, socials: /_shared/socials/index.md },
         ],
     },
