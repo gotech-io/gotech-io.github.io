@@ -2095,148 +2095,37 @@ input {
 }
 
 .about {
+  width: 100%;
   padding-top: 100px;
 }
-.about .home-team {
-  width: 100%;
+.about-intro {
+  max-width: 950px;
+  margin: 0 auto;
 }
-.about .home-team .section-title {
-  display: none;
+.about-intro-title {
+  font-size: 40px;
+  text-align: center;
 }
-.about .home-team-list {
-  width: 100%;
+.about-intro-description {
+  font-size: 20px;
+  text-align: center;
+}
+.about-intro-video {
   max-width: 100%;
-}
-.about-top-image {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 10px;
-  margin-bottom: 80px;
-}
-.about-title {
-  font-size: 60px;
-  text-align: center;
-  margin-bottom: 70px;
-}
-.about-grid {
-  max-width: 960px;
-  width: calc(100% - 100px);
-  margin-left: auto;
-  margin-right: auto;
-}
-.about-grid-title {
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-.about-grid-section {
-  justify-content: space-between;
-  align-items: stretch;
-  margin-bottom: 20px;
-}
-.about-grid-section-big {
-  width: 65%;
-  height: 100%;
-  border-radius: 20px;
-  overflow: hidden;
-}
-.about-grid-section-big .img {
-  width: 100%;
-  height: 100%;
-}
-.about-grid-section-big .img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about-grid-section-small {
-  display: flex;
-  flex-direction: column;
-  width: calc(35% - 20px);
-  justify-content: space-between;
-}
-.about-grid-section-small h5 {
-  color: #070f1a;
-}
-.about-grid-section-small p {
-  color: #070f1a;
-}
-.about-grid-section-small .img {
-  border-radius: 20px;
-  width: 100%;
-  overflow: hidden;
-  height: calc(50% - 10px);
-}
-.about-grid-section-small .img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.about-grid-section-small-text {
-  background: #f2f4f8;
-  border-radius: 20px;
-  padding: 20px;
-}
-.about-grid-section-small-text-half {
-  height: calc(50% - 10px);
-}
-.about-grid-section-small-text-full {
-  height: 100%;
-}
-.about-grid-section:nth-child(odd) .about-grid-section-big {
-  order: 2;
-}
-.about-grid-section:nth-child(odd) .about-grid-section-small {
-  order: 1;
-}
-.about-grid-section:nth-of-type(1) {
-  height: 400px;
-}
-.about-grid-section:nth-last-child(2) {
-  height: 200px;
-}
-.about-grid-section:last-of-type {
-  margin-bottom: 0px;
-}
-.about-careers {
-  margin-top: 80px;
-  max-width: 650px;
-  width: calc(100% - 100px);
-  margin-left: auto;
-  margin-right: auto;
-}
-.about-careers .careers-list-item {
-  padding-bottom: 0px;
-  border: 2px solid #f2f4f8;
-  padding: 0px 30px;
-  height: 80px;
-  margin-bottom: 20px;
+  height: 500px;
+  margin-top: 50px;
+  background-color: #f8f9fa;
   border-radius: 20px;
 }
-.about-careers .careers-list-item a {
-  height: 100%;
-  align-items: center;
+.about-story {
+  max-width: 950px;
+  margin: 50px auto;
 }
-.about-careers .careers-list-item a h4 {
-  font-weight: 600;
-  font-size: 20px;
+.about-story-title {
+  font-size: 25px;
 }
-.about-careers .careers-list-item .tags {
-  display: none;
-}
-.about-careers .careers-list-item-arrow {
-  display: none;
-}
-.about-careers-header {
-  text-align: center;
-  margin-bottom: 40px;
-}
-.about-careers-header h3 {
-  font-size: 30px;
-}
-.about-careers-header p {
-  font-size: 20px;
-  font-weight: 300;
+.about-story-wrapper {
+  margin-top: 50px;
 }
 
 .privacy-policy h1 {
