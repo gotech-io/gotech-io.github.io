@@ -6,12 +6,11 @@ import { handleUrl } from "../../../../utils";
 const HomeHeader = ({
   title,
   sub_title,
-  _body,
+  description,
   button,
   background,
   _relativeURL,
   _ID,
-  toggle_animation,
 }) => {
   return (
     <div className="home-header">
@@ -53,9 +52,14 @@ const HomeHeader = ({
           <h2 data-aos={animations.up} data-aos-delay="250">
             {sub_title}
           </h2>
+
+          <p data-aos={animations.up} data-aos-delay="250">
+            {description}
+          </p>
+
+          {button}
         </section>
       </div>
-      <a href="/#services">{toggle_animation}</a>
     </div>
   );
 };
