@@ -190,7 +190,6 @@
 .video {
   width: 100%;
   height: 100%;
-  margin: 50px auto;
   background-color: #f8f9fa;
   border-radius: 20px;
 }
@@ -286,9 +285,24 @@ h6 {
   color: #95979b;
 }
 
-.block {
+.page-common {
+  width: 100%;
+  padding-top: 100px;
+}
+.page-common-block {
   width: 950px;
   margin: 0 auto;
+}
+.page-common-title {
+  font-size: 40px;
+  text-align: center;
+}
+.page-common-description {
+  font-size: 20px;
+  text-align: center;
+}
+.page-common-content {
+  margin: 50px auto;
 }
 
 .flex-between {
@@ -1864,14 +1878,14 @@ input {
 }
 
 .careers-active-navbar {
-  background: linear-gradient(135deg, #092442, #0A3667);
+  background: linear-gradient(135deg, #092442, #0a3667);
 }
 
 .careers-header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: linear-gradient(135deg, #092442, #0A3667);
+  background-image: linear-gradient(135deg, #092442, #0a3667);
   min-height: 400px;
 }
 .careers-header-content * {

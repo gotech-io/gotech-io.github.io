@@ -4,14 +4,16 @@ import { handleUrl } from "../../utils";
 
 function Teams({ title, description, _relativeURL, _ID }) {
   return (
-    <div className="about">
-      <div className="about-intro">
-        <h2 className="about-intro-title" data-aos={animations.up}>
+    <div className="page-common">
+      <div className="page-common-block">
+        <h2 className="page-common-title" data-aos={animations.up}>
           {title}
         </h2>
-        <p className="about-intro-description" data-aos={animations.up}>
+        <p className="page-common-description" data-aos={animations.up}>
           {description}
         </p>
+
+        <div className="page-common-content"></div>
       </div>
 
       <script

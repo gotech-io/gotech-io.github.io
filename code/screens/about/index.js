@@ -7,16 +7,18 @@ import { handleUrl } from "../../utils";
 
 function About({ title, description, videoList, gallery, _relativeURL, _ID }) {
   return (
-    <div className="about">
-      <div className="about-intro">
-        <h2 className="about-intro-title" data-aos={animations.up}>
+    <div className="page-common">
+      <div className="page-common-block">
+        <h2 className="page-common-title" data-aos={animations.up}>
           {title}
         </h2>
-        <p className="about-intro-description" data-aos={animations.up}>
+        <p className="page-common-description" data-aos={animations.up}>
           {description}
         </p>
 
-        <Video videoList={videoList} />
+        <div className="page-common-content">
+          <Video videoList={videoList} />
+        </div>
       </div>
 
       <div className="about-story">
