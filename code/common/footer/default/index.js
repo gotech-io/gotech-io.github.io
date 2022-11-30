@@ -9,7 +9,6 @@ const Footer = ({
   variables,
   _relativeURL,
   _ID,
-  marquee,
   copyright,
   privacy_policy_text,
   privacy_policy_url,
@@ -22,7 +21,6 @@ const Footer = ({
     //     </a>
 
     <div>
-      {marquee}
       <div className="footer">
         <div className="block">
           <div className="flex-between">
