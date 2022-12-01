@@ -1,0 +1,33 @@
+.benefits {
+  width: 100%;
+  margin: $section-gap auto;
+
+  &-content {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-between;
+    margin: $section-gap auto 0;
+    padding: $content-gap;
+    background-color: $default;
+    border-radius: $radius;
+
+    &-item {
+      width: 150px;
+      border-radius: 20px;
+
+      &-icon {
+        width: 50px;
+        height: 50px;
+        margin: 0 auto;
+        border: 1px solid blue;
+      }
+
+      &-description {
+        width: 100%;
+        font-weight: 600;
+        text-align: center;
+      }
+    }
+  }
+}
