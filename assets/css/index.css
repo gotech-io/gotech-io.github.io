@@ -324,6 +324,7 @@ h6 {
 .benefits {
   width: 100%;
   margin: 20px auto;
+  text-align: center;
 }
 .benefits-content {
   width: 100%;
@@ -379,6 +380,36 @@ h6 {
 }
 .positions-item-description {
   margin: 0 20px;
+}
+
+.locations {
+  width: 100%;
+  margin: 20px auto;
+  text-align: center;
+}
+.locations-content {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  margin: 50px auto 0;
+}
+.locations-content-item {
+  width: 300px;
+  height: 100px;
+  margin: 0 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}
+.locations-content-item h6 {
+  width: 100%;
+}
+.locations-content-item-description {
+  width: 100%;
+  text-align: center;
 }
 
 .flex-start {

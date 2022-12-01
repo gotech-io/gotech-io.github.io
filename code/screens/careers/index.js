@@ -1,5 +1,6 @@
 import Benefits from "../../common/benefits";
-import Positions from "./positions";
+import Locations from "../../common/locations";
+import Positions from "./components/positions";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
@@ -14,15 +15,6 @@ function Careers({
   _ID,
 }) {
   return (
-    // <div className="careers" data-aos={animations.up}>
-    //   {header}
-
-    //   <script
-    //     type="module"
-    //     src={handleUrl(`/assets/js/careers/index.js`, _relativeURL, _ID)}
-    //   />
-    //   <script type="comeet-careers"></script>
-    // </div>
     <div className="page-common">
       <div className="page-common-block">
         <h2 className="page-common-title" data-aos={animations.up}>
@@ -39,6 +31,12 @@ function Careers({
 
       <div className="page-common-content">
         <Positions positions={positions} />
+      </div>
+
+      <div className="page-common-content">
+        <div className="page-common-block">
+          <Locations locations={locations} />
+        </div>
       </div>
 
       <script

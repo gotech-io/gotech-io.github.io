@@ -87,7 +87,15 @@ positions:
       ],
   }
 
-locations: { title: "New Offices:", options: [] }
+locations:
+  {
+    title: "New Offices:",
+    options:
+      [
+        { title: "Netanya", location: "5 Ha-Melakha St., Netanya" },
+        { title: "Tel-Aviv", location: "10 Sarona Market St., Tel-Aviv" },
+      ],
+  }
 ---
 
 <!--  layout: screens/careers/index
