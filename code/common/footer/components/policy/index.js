@@ -9,7 +9,7 @@ const Policy = ({
 }) => {
   return (
     <div className="footer-bottom flex-between">
-      <div className="block">
+      <div className="page-common-block">
         <section className="footer-bottom-section flex-between">
           {copyright}
           <div className="footer-bottom-section-policy">

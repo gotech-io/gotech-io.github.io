@@ -23,7 +23,7 @@ const Footer = ({
     <div>
       {marquee}
       <div className="footer">
-        <div className="block">
+        <div className="page-common-block">
           <div className="flex-between">
             {variables.map((variable, i) => {
               const { title, list } = variable;
