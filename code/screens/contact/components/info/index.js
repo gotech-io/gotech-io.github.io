@@ -1,25 +1,52 @@
+import GoogleMap from "../../../../common/map";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const Info = ({ body, form, map }) => {
+const Info = ({ info }) => {
+  const { phone, email, address, form } = info;
   return (
-    <div className="contact flex-between">
-      <aside className="indicator" id="contact"></aside>
-
-      <div className="contact-bg"></div>
-      <div className="contact-flex">
-        <div
-          className="contact-left"
-          data-aos-anchor-placement="top-center"
-          data-aos={animations.fadeRight}
-        >
-          {body}
-          <div className="map-wrapper">{map}</div>
+    <div className="info flex-between">
+      <div className="info-wrapper">
+        <div className="info-wrapper-block">
+          <h4>Have any questions?</h4>
+          <p>{phone}</p>
+          <p>{email}</p>
         </div>
-        {form}
+
+        <div className="info-wrapper-map">
+          <h4>Find us:</h4>
+          <div className="info-wrapper-map-block">
+            <GoogleMap address={address} />
+          </div>
+        </div>
       </div>
+      <div className="info-wrapper-form">{form}</div>
     </div>
   );
 };
 
 export default Info;
+
+// <div className="contact flex-between">
+//   <aside className="indicator" id="contact"></aside>
+//   <div className="contact-bg"></div>
+//   <div className="contact-flex">
+//     <div
+//       className="contact-left"
+//       data-aos-anchor-placement="top-center"
+//       data-aos={animations.fadeRight}
+//     >
+//       <div>
+//         <h4>Have any questions?</h4>
+//         {phone}
+//         {email}
+//       </div>
+
+//       <div className="map-wrapper">
+//         <h4>Find us:</h4>
+//         {/* <Map city={city} street={street} house={house} /> */}
+//       </div>
+//     </div>
+//     {form}
+//   </div>
+// </div>

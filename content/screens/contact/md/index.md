@@ -1,18 +1,12 @@
 ---
 layout: screens/contact/index
-title: Contact
-description: We help Fortune 500 companies, startups, and enterprises to build relevant digital products, train their teams, solve business problems, and reduce costs while increasing
-form:
-  - form/index.md
-map:
-  - map/index.md
+title: Get in touch with us!
+description: Ready to make life easier? Focus only on filling out the form. Our team will take care of everything and of the best result!
+info:
+  {
+    phone: (+972)-9-866-40-40,
+    email: contact@gotech.io,
+    address: { city: Netanya, street: Ha-Melakha, house: 5 },
+    form: /_shared/form/index.md,
+  }
 ---
-
-## Have any questions?
-
-- Contact us at: contact@gotech.io
-- Call us at: (+972)-9-866-4040
-
-### Find us
-
-5 Ha-Melakha St., Netanya

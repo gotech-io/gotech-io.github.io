@@ -3,15 +3,7 @@ import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-function ContactPage({
-  title,
-  description,
-  _body,
-  form,
-  map,
-  _relativeURL,
-  _ID,
-}) {
+function ContactPage({ title, description, info, _relativeURL, _ID }) {
   return (
     <div className="page-common">
       <div className="page-common-block">
@@ -23,7 +15,7 @@ function ContactPage({
         </p>
 
         <div className="page-common-content">
-          <Info body={_body} form={form} map={map} />
+          <Info info={info} />
         </div>
       </div>
 

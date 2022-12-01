@@ -1,0 +1,37 @@
+.info {
+  width: 100%;
+  margin-bottom: 250px;
+  position: relative;
+
+  &-wrapper {
+    width: 90%;
+    padding: $section-gap;
+    border-radius: $radius;
+    background: $contact-background;
+    h4,
+    p {
+      margin-bottom: 10px;
+      color: white;
+    }
+
+    &-map {
+      &-block {
+        width: 50%;
+        height: 200px;
+      }
+    }
+
+    &-form {
+      width: 50%;
+      height: auto;
+      position: absolute;
+      right: 0;
+      top: $section-gap;
+      background: white;
+      border-radius: $radius;
+      box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+      -webkit-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+      -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+    }
+  }
+}
