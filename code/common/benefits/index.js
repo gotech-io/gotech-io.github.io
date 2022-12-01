@@ -7,10 +7,18 @@ const Benefits = ({ benefits }) => {
       <h4>{title}</h4>
       <div className="benefits-content">
         {options.map((option, i) => {
-          const { title, description } = option;
+          const { title, description, src } = option;
           return (
             <div key={i} className="benefits-content-item">
-              <div className="benefits-content-item-icon">AA</div>
+              <lottie-player
+                src={src}
+                background="transparent"
+                style={{ width: "80px", height: "80px", margin: "0 auto" }}
+                speed="0.5"
+                loop
+                autoplay
+              ></lottie-player>
+
               <p className="benefits-content-item-description text-small">
                 {description}
               </p>

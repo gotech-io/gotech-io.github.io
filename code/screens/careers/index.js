@@ -1,4 +1,5 @@
 import Benefits from "../../common/benefits";
+import Positions from "./positions";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
@@ -34,6 +35,10 @@ function Careers({
         <div className="page-common-content">
           <Benefits benefits={benefits} />
         </div>
+      </div>
+
+      <div className="page-common-content">
+        <Positions positions={positions} />
       </div>
 
       <script
