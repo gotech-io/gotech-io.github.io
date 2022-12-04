@@ -12,14 +12,6 @@ function CaseStudies({
   _ID,
 }) {
   return (
-    // <div className="case-studies">
-    //   {projects}
-    //   <script
-    //     type="module"
-    //     src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
-    //   />
-    // </div>
-
     <div className="page-common">
       <div className="page-common-block">
         <h2 className="page-common-title" data-aos={animations.up}>

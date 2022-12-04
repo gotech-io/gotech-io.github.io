@@ -2174,18 +2174,39 @@ input {
   width: 100%;
   position: relative;
 }
-.case-studies-image {
+.case-studies-image-left {
   width: 45%;
   height: auto;
+  float: left;
 }
-.case-studies-content {
+.case-studies-image-right {
+  width: 45%;
+  height: auto;
+  float: right;
+}
+.case-studies-content-left {
   width: 60%;
   padding: 50px;
   position: absolute;
-  top: 50px;
+  top: 100px;
   right: 0;
   background-color: #f8f9fa;
   border-radius: 20px;
+  box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+}
+.case-studies-content-right {
+  width: 60%;
+  padding: 50px;
+  position: absolute;
+  top: 100px;
+  left: 0;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+  box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
 }
 .case-studies-content-description {
   margin: 20px 0;

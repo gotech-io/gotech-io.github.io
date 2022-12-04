@@ -5,6 +5,7 @@ description: Here are some examples of projects we worked on over the last few m
 subTitle: "We have some Stories for you:"
 projects:
   - projects/teaser.md
+  - projects/augury.md
 
   #- projects/index.md
 ---

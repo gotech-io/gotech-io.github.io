@@ -54,19 +54,44 @@
     position: relative;
   }
 
-  &-image {
+  &-image-left {
     width: 45%;
     height: auto;
+    float: left;
+  }
+
+  &-image-right {
+    width: 45%;
+    height: auto;
+    float: right;
   }
 
   &-content {
-    width: 60%;
-    padding: $section-gap;
-    position: absolute;
-    top: 50px;
-    right: 0;
-    background-color: $default;
-    border-radius: $radius;
+    &-left {
+      width: 60%;
+      padding: $section-gap;
+      position: absolute;
+      top: 100px;
+      right: 0;
+      background-color: $default;
+      border-radius: $radius;
+      box-shadow: $shadow;
+      -webkit-box-shadow: $shadow;
+      -moz-box-shadow: $shadow;
+    }
+
+    &-right {
+      width: 60%;
+      padding: $section-gap;
+      position: absolute;
+      top: 100px;
+      left: 0;
+      background-color: $default;
+      border-radius: $radius;
+      box-shadow: $shadow;
+      -webkit-box-shadow: $shadow;
+      -moz-box-shadow: $shadow;
+    }
 
     &-description {
       margin: $content-gap 0;
