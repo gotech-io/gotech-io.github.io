@@ -56,7 +56,6 @@ const HomeHeader = ({
           <p data-aos={animations.up} data-aos-delay="250">
             {description}
           </p>
-
           {button}
         </section>
       </div>

@@ -3,7 +3,8 @@ import React from "react";
 import animations from "../../../../../assets/js/animations";
 
 const Info = ({ info }) => {
-  const { phone, email, address, form } = info;
+  const { contact, address, form } = info;
+  const { phone, email } = contact;
   return (
     <div className="info flex-between">
       <div
@@ -15,8 +16,14 @@ const Info = ({ info }) => {
       >
         <div className="info-wrapper-block">
           <h4>Have any questions?</h4>
-          <p>{phone}</p>
-          <p>{email}</p>
+          <div className="info-wrapper-contact">
+            <img src={phone.src}></img>
+            <p>{phone.content}</p>
+          </div>
+          <div className="info-wrapper-contact">
+            <img src={email.src}></img>
+            <p>{email.content}</p>
+          </div>
         </div>
 
         <div className="info-wrapper-map">

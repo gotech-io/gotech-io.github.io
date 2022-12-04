@@ -11,18 +11,9 @@ const PositionItem = ({ option }) => {
       data-aos={animations.zoomUp}
     >
       <div className="positions-item-content">
-        <lottie-player
-          src={src}
-          background="transparent"
-          style={{
-            width: "50px",
-            height: "50px",
-            margin: "0 auto",
-          }}
-          speed="0.5"
-          loop
-          autoplay
-        ></lottie-player>
+        <div className="positions-item-icon">
+          <img src={src}></img>
+        </div>
         <h6 className="positions-item-description">{title}</h6>
       </div>
       <div className="positions-item-content">

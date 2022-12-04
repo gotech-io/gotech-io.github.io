@@ -30,6 +30,14 @@
     -webkit-box-shadow: $shadow;
     -moz-box-shadow: $shadow;
 
+    &-icon {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
     &-content {
       display: flex;
       align-items: center;
