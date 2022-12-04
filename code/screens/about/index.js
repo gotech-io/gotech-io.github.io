@@ -12,7 +12,10 @@ function About({ title, description, videoList, gallery, _relativeURL, _ID }) {
         <h2 className="page-common-title" data-aos={animations.up}>
           {title}
         </h2>
-        <p className="page-common-description" data-aos={animations.up}>
+        <p
+          className="page-common-description text-description"
+          data-aos={animations.up}
+        >
           {description}
         </p>
 
@@ -29,9 +32,25 @@ function About({ title, description, videoList, gallery, _relativeURL, _ID }) {
         <div className="about-story-wrapper">
           {gallery.map(({ src, description }, i) => {
             if (i % 2 === 0) {
-              return <Left key={i} src={src} description={description} />;
+              return (
+                <Left
+                  key={i}
+                  src={src}
+                  description={description}
+                  data-aos-anchor-placement="top-center"
+                  data-aos={animations.fadeLeft}
+                />
+              );
             }
-            return <Right key={i} src={src} description={description} />;
+            return (
+              <Right
+                key={i}
+                src={src}
+                description={description}
+                data-aos-anchor-placement="top-center"
+                data-aos={animations.fadeRight}
+              />
+            );
           })}
         </div>
       </div>

@@ -19,7 +19,7 @@ const Benefits = ({ benefits }) => {
                 autoplay
               ></lottie-player>
 
-              <p className="benefits-content-item-description text-small">
+              <p className="benefits-content-item-description text-description">
                 {description}
               </p>
             </div>

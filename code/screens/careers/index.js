@@ -20,7 +20,10 @@ function Careers({
         <h2 className="page-common-title" data-aos={animations.up}>
           {title}
         </h2>
-        <p className="page-common-description" data-aos={animations.up}>
+        <p
+          className="page-common-description text-description"
+          data-aos={animations.up}
+        >
           {description}
         </p>
 

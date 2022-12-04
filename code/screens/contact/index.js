@@ -10,7 +10,10 @@ function ContactPage({ title, description, info, _relativeURL, _ID }) {
         <h2 className="page-common-title" data-aos={animations.up}>
           {title}
         </h2>
-        <p className="page-common-description" data-aos={animations.up}>
+        <p
+          className="page-common-description text-description"
+          data-aos={animations.up}
+        >
           {description}
         </p>
 

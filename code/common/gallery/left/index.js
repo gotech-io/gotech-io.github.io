@@ -6,7 +6,9 @@ function Left({ src, description }) {
       <div className="gallery-image">
         <img className="left" src={src} />
       </div>
-      <div className="gallery-description left">{description}</div>
+      <div className="gallery-description text-description left">
+        {description}
+      </div>
     </div>
   );
 }

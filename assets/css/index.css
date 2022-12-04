@@ -294,6 +294,10 @@ h6 {
   color: #95979b;
 }
 
+.text-description {
+  font-weight: 100;
+}
+
 .page-common {
   width: 100%;
   padding-top: 100px;
@@ -342,7 +346,7 @@ h6 {
 }
 .benefits-content-item-description {
   width: 100%;
-  font-weight: 600;
+  font-size: 14px;
   text-align: center;
 }
 
