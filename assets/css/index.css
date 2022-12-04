@@ -288,6 +288,10 @@ h6 {
   font-weight: 600px;
 }
 
+p {
+  font-weight: 100;
+}
+
 .text-small {
   font-size: 14px;
   margin: 5px 0;
@@ -315,6 +319,10 @@ h6 {
   text-align: center;
 }
 .page-common-content {
+  margin: 50px auto;
+}
+.page-common-sub-section {
+  max-width: 950px;
   margin: 50px auto;
 }
 
@@ -516,7 +524,7 @@ img {
   margin-right: auto;
 }
 
-.main-grid, .case-studies-list {
+.main-grid {
   max-width: 1200px;
   width: calc(100% - 100px);
   margin-left: auto;
@@ -594,6 +602,7 @@ li,
 }
 
 .link {
+  width: 200px;
   height: 50px;
   letter-spacing: 2px;
   font-size: 12px;
@@ -2157,41 +2166,46 @@ input {
 }
 
 .case-studies {
-  background: #f2f4f8;
-  padding-bottom: 100px;
-  padding-top: 100px;
-}
-.case-studies-project {
-  min-height: 450px;
-  margin-bottom: 120px;
-  background-image: linear-gradient(180deg, #f2f4f8, #fff);
-  padding: 50px 80px;
-  border-radius: 20px;
-  justify-content: space-between;
-}
-.case-studies-project-image {
-  width: 400px;
-  height: 300px;
-  border-radius: 15px;
-  overflow: hidden;
-  box-shadow: 0px 16px 75px -31px rgba(0, 0, 0, 0.76);
-  -webkit-box-shadow: 0px 16px 75px -31px rgba(0, 0, 0, 0.76);
-  -moz-box-shadow: 0px 16px 75px -31px rgba(0, 0, 0, 0.76);
-}
-.case-studies-project-image img {
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  min-height: 500px;
+  margin-bottom: 50px;
 }
-.case-studies-project-body {
-  flex: 1;
-  max-width: 400px;
+.case-studies-wrapper {
+  width: 100%;
+  position: relative;
 }
-.case-studies-project:nth-child(odd) .case-studies-project-image {
-  order: 2;
+.case-studies-image {
+  width: 45%;
+  height: auto;
 }
-.case-studies-project:nth-child(odd) .case-studies-project-body {
-  order: 1;
+.case-studies-content {
+  width: 60%;
+  padding: 50px;
+  position: absolute;
+  top: 50px;
+  right: 0;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}
+.case-studies-content-description {
+  margin: 20px 0;
+}
+.case-studies-content-wrapper {
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+.case-studies-content-wrapper-tags {
+  width: 100%;
+  display: flex;
+}
+.case-studies-content-wrapper-tags-item {
+  color: #95979b;
+  margin-right: 10px;
+  padding: 5px;
+  border: 1px solid #95979b;
+  border-radius: 5px;
+  font-size: 12px;
 }
 
 .about {
@@ -2210,10 +2224,6 @@ input {
 .about-intro-description {
   font-size: 20px;
   text-align: center;
-}
-.about-story {
-  max-width: 950px;
-  margin: 50px auto;
 }
 .about-story-title {
   font-size: 25px;

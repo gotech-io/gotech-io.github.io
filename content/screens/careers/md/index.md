@@ -27,7 +27,6 @@ benefits:
           title: "language",
           description: "Weekly Hebrew lessons",
           src: "https://lottie.host/95a1df20-d51d-415e-b5d9-ccb7e7f35a73/uuRxCzjrGL.json",
-          sub: "for new repatriates",
         },
         {
           title: "happyHour",

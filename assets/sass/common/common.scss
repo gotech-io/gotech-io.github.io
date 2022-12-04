@@ -12,6 +12,10 @@ h6 {
   font-weight: 600px;
 }
 
+p {
+  font-weight: 100;
+}
+
 .text-small {
   font-size: 14px;
   margin: 5px 0;
@@ -42,6 +46,11 @@ h6 {
   }
 
   &-content {
+    margin: $section-gap auto;
+  }
+
+  &-sub-section {
+    max-width: $main-grid;
     margin: $section-gap auto;
   }
 }

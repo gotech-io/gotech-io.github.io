@@ -24,34 +24,38 @@ function About({ title, description, videoList, gallery, _relativeURL, _ID }) {
         </div>
       </div>
 
-      <div className="about-story">
+      <div className="page-common-sub-section">
         <h4 className="about-story-title" data-aos={animations.up}>
           Our Everyday life:
         </h4>
 
         <div className="about-story-wrapper">
-          {gallery.map(({ src, description }, i) => {
-            if (i % 2 === 0) {
+          {gallery.length ? (
+            gallery.map(({ src, description }, i) => {
+              if (i % 2 === 0) {
+                return (
+                  <Left
+                    key={i}
+                    src={src}
+                    description={description}
+                    data-aos-anchor-placement="top-center"
+                    data-aos={animations.fadeLeft}
+                  />
+                );
+              }
               return (
-                <Left
+                <Right
                   key={i}
                   src={src}
                   description={description}
                   data-aos-anchor-placement="top-center"
-                  data-aos={animations.fadeLeft}
+                  data-aos={animations.fadeRight}
                 />
               );
-            }
-            return (
-              <Right
-                key={i}
-                src={src}
-                description={description}
-                data-aos-anchor-placement="top-center"
-                data-aos={animations.fadeRight}
-              />
-            );
-          })}
+            })
+          ) : (
+            <div>Sorry! Right now we don't have a images in our gallery.</div>
+          )}
         </div>
       </div>
       <script
