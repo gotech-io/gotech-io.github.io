@@ -13,7 +13,7 @@ export const PROJECTS_INFO = {
         alt: "teaser",
       },
       parallax: {
-        src: "/assets/images/case-studies/teaser/main.png",
+        src: "/assets/images/case-studies/teaser/parallax.png",
         alt: "teaser",
       },
     },

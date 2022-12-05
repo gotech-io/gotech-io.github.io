@@ -1,14 +1,18 @@
-import Challenge from "../../../common/challenge";
 import React from "react";
 import Steps from "../../../common/challenge";
 import Tags from "../../../common/tag";
 import { PROJECTS_INFO } from "../../../../assets/js/case-studies/projects-info";
 import { handleUrl } from "../../../utils";
 
+//import simpleParallax from "simple-parallax-js";
+
 function ProjectPage({ type, _relativeURL, _ID }) {
   const { title, description, images, tags, industry, challenge } =
     PROJECTS_INFO[type];
   const { main, mockup, parallax } = images;
+
+  // const image = document.getElementById("parallax-img");
+  // new simpleParallax(image);
 
   return (
     <div className="page-common">
@@ -48,15 +52,13 @@ function ProjectPage({ type, _relativeURL, _ID }) {
         </div>
       </div>
 
-      <div className="project-page">
+      <div>
         <div className="page-common-block">
           <h4>Our Solution:</h4>
-          <p className="page-common-description text-description">
-            {description}
-          </p>
+          <p>{description}</p>
         </div>
         <div className="image-block-parallax">
-          <img src={parallax.src} alt={parallax.alt} />
+          <img id="parallax-img" src={parallax.src} alt={parallax.alt} />
         </div>
       </div>
 

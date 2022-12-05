@@ -1,23 +1,24 @@
-.challenge {
-}
-
-.steps-item {
-  margin: $content-gap 0;
-  display: flex;
-
-  &-number {
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
+.steps {
+  margin-top: $section-gap;
+  &-item {
+    margin: $content-gap 0;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
-    background-color: #fd8274;
-    border-radius: 50%;
-  }
 
-  p {
-    font-weight: 600;
+    &-number {
+      width: 30px;
+      height: 30px;
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      background-color: #fd8274;
+      border-radius: 50%;
+    }
+
+    p {
+      font-weight: 600;
+    }
   }
 }

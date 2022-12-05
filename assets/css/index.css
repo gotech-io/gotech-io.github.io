@@ -343,7 +343,10 @@ img {
   width: 100%;
   height: 500px;
   margin: 50px 0;
-  background-color: beige;
+  overflow: hidden;
+}
+.image-block-parallax img {
+  height: auto;
 }
 
 .benefits {
@@ -444,9 +447,13 @@ img {
   text-align: center;
 }
 
+.steps {
+  margin-top: 50px;
+}
 .steps-item {
   margin: 20px 0;
   display: flex;
+  align-items: center;
 }
 .steps-item-number {
   width: 30px;
@@ -2258,6 +2265,7 @@ input {
 .project-page {
   width: 100%;
   padding: 50px 0;
+  margin-bottom: 50px;
   background-color: #f8f9fa;
 }
 .project-page-intro h6 {
@@ -2276,7 +2284,6 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #f8f9fa;
   border-radius: 20px;
 }
 .main-wrapper-image {
