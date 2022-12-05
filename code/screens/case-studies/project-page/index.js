@@ -7,7 +7,7 @@ import { handleUrl } from "../../../utils";
 function ProjectPage({ type, _relativeURL, _ID }) {
   const { title, description, images, tags, industry, country, challenge } =
     PROJECTS_INFO[type];
-  const { main, mockup, parallax } = images;
+  const { main, parallax } = images;
 
   return (
     <div className="page-common">
