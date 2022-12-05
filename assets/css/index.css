@@ -339,6 +339,13 @@ img {
   object-fit: contain;
 }
 
+.image-block-parallax {
+  width: 100%;
+  height: 500px;
+  margin: 50px 0;
+  background-color: beige;
+}
+
 .benefits {
   width: 100%;
   margin: 20px auto;
@@ -435,6 +442,25 @@ img {
 .locations-content-item-description {
   width: 100%;
   text-align: center;
+}
+
+.steps-item {
+  margin: 20px 0;
+  display: flex;
+}
+.steps-item-number {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  background-color: #fd8274;
+  border-radius: 50%;
+}
+.steps-item p {
+  font-weight: 600;
 }
 
 .flex-start {
@@ -2227,6 +2253,35 @@ input {
   border: 1px solid #95979b;
   border-radius: 5px;
   font-size: 12px;
+}
+
+.project-page {
+  width: 100%;
+  padding: 50px 0;
+  background-color: #f8f9fa;
+}
+.project-page-intro h6 {
+  margin-bottom: 10px;
+}
+.project-page-block {
+  margin: 50px 0;
+}
+.project-page-block .case-studies-content-wrapper-tags {
+  flex-wrap: wrap;
+}
+
+.main-wrapper {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f8f9fa;
+  border-radius: 20px;
+}
+.main-wrapper-image {
+  width: auto;
+  height: 500px;
 }
 
 .about {
