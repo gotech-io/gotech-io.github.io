@@ -10,11 +10,8 @@ links:
   - name: Clients
     value: /clients
 
-  - name: Case Studies
+  - name: Cases
     value: /case-studies
-
-  - name: Our Team
-    value: /teams
 
   - name: Careers
     value: /careers
