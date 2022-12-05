@@ -4,15 +4,10 @@ import Tags from "../../../common/tag";
 import { PROJECTS_INFO } from "../../../../assets/js/case-studies/projects-info";
 import { handleUrl } from "../../../utils";
 
-//import simpleParallax from "simple-parallax-js";
-
 function ProjectPage({ type, _relativeURL, _ID }) {
-  const { title, description, images, tags, industry, challenge } =
+  const { title, description, images, tags, industry, country, challenge } =
     PROJECTS_INFO[type];
   const { main, mockup, parallax } = images;
-
-  // const image = document.getElementById("parallax-img");
-  // new simpleParallax(image);
 
   return (
     <div className="page-common">
@@ -30,12 +25,16 @@ function ProjectPage({ type, _relativeURL, _ID }) {
 
           <div className="project-page-block flex-between">
             <div className="project-page-intro">
-              <h6>Industry: </h6>
-              <p>{industry}</p>
+              <h6>Country</h6>
+              <p>{country}</p>
             </div>
 
             <div className="project-page-intro">
-              <h6>Technologies Stack: </h6>
+              <h6>Industry</h6>
+              <p>{industry}</p>
+            </div>
+            <div className="project-page-intro">
+              <h6>Technologies Stack </h6>
               <Tags tags={tags} count={tags.length || 0} />
             </div>
           </div>
@@ -57,8 +56,8 @@ function ProjectPage({ type, _relativeURL, _ID }) {
           <h4>Our Solution:</h4>
           <p>{description}</p>
         </div>
-        <div className="image-block-parallax">
-          <img id="parallax-img" src={parallax.src} alt={parallax.alt} />
+        <div className="image-block-parallax jarallax" data-jarallax>
+          <img className="jarallax-img" src={parallax.src} alt={parallax.alt} />
         </div>
       </div>
 

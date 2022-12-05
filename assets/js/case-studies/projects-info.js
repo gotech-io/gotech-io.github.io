@@ -19,7 +19,8 @@ export const PROJECTS_INFO = {
     },
     button: { url: "/case-studies-project/teaser", btnText: "see more" },
     tags: ["iOS", "Android", "Flutter", "Server-side"],
-    industry: "Real-estate Agencies",
+    industry: "Real-Estate Agencies",
+    country: "Israel",
     challenge: {
       description:
         "Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Turpis egestas sed tempus urna et pharetra pharetra massa.",
@@ -51,6 +52,7 @@ export const PROJECTS_INFO = {
     button: { url: "/case-studies-project/augury", btnText: "see more" },
     tags: ["iOS", "Android"],
     industry: "Health Diagnostics",
+    country: "Israel",
     challenge: {
       description:
         "Nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi. Euismod elementum nisi quis eleifend quam adipiscing vitae proin sagittis. Turpis egestas sed tempus urna et pharetra pharetra massa.",

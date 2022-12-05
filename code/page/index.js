@@ -19,8 +19,13 @@ const Page = ({ title, navbar, footer, _relativeURL, _ID, main }) => {
           rel="stylesheet"
           href={handleUrl(`/assets/css/index.css`, _relativeURL, _ID)}
         />
+        <link
+          href="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.css"
+          rel="stylesheet"
+        />
       </head>
       <body>
+        <script src="https://cdn.jsdelivr.net/npm/jarallax@2/dist/jarallax.min.js"></script>
         {navbar}
         <div className="app-wrapper">{main}</div>
         {footer}
