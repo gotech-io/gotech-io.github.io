@@ -1,3 +1,4 @@
+import Diagram from "../../../../common/diagram";
 import Image from "../../../../common/img";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
@@ -57,6 +58,8 @@ const HomeHeader = ({
             {description}
           </p>
           {button}
+
+          <Diagram />
         </section>
       </div>
     </div>
