@@ -1,18 +1,7 @@
-import Diagram from "../../../../common/diagram";
-import Image from "../../../../common/img";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
-import { handleUrl } from "../../../../utils";
 
-const HomeHeader = ({
-  title,
-  sub_title,
-  description,
-  button,
-  background,
-  _relativeURL,
-  _ID,
-}) => {
+const HomeHeader = ({ title, sub_title, description, button }) => {
   return (
     <div className="home-header">
       <div className="home-header-background">
@@ -58,8 +47,6 @@ const HomeHeader = ({
             {description}
           </p>
           {button}
-
-          <Diagram />
         </section>
       </div>
     </div>

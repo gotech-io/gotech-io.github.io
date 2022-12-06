@@ -1,5 +1,5 @@
 import React from "react";
-import Steps from "../../../common/challenge";
+import Steps from "../../../common/steps";
 import Tags from "../../../common/tag";
 import { PROJECTS_INFO } from "../../../../assets/js/case-studies/projects-info";
 import { handleUrl } from "../../../utils";
