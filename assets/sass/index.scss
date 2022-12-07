@@ -1,13 +1,21 @@
-@import "./colors.scss";
+//common
 @import "./consts.scss";
+@import "./colors.scss";
+@import "./main.scss";
 @import "./common/index.scss";
 @import "./reset.scss";
-@import "./home/index.scss";
+
+//navigation
 @import "./navbar/index.scss";
 @import "./footer/index.scss";
+
+//screens
+@import "./home/index.scss";
+@import "./about/index.scss";
+@import "./services/index.scss";
+@import "./clients/index.scss";
 @import "./careers/index.scss";
 @import "./case-studies/index.scss";
-@import "./about/index.scss";
 @import "./privacy-policy/index.scss";
 @import "./flappy/index.scss";
 @import "./oracle-week/index.scss";
