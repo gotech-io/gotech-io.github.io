@@ -1,45 +1,92 @@
 .services {
-  width: 100%;
-  height: 350px;
-  background-color: $default;
-
-  &-page {
-    position: absolute;
-    top: 0;
-  }
-
   &-content {
     width: 100%;
-    height: 200px;
-    margin-top: 50px;
+    margin: 50px 0 100px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: $default;
-    border-radius: $radius;
-    box-shadow: $shadow;
+    flex-wrap: wrap;
 
     &-item {
-      width: 25%;
-      height: 100%;
+      width: 49%;
+      height: 350px;
+      margin: 10px 0;
+      padding: $content-gap;
       display: flex;
       justify-content: center;
       align-items: center;
-      border-radius: $radius;
+      text-align: center;
+      background-color: $default;
+      box-shadow: $shadow;
       transition: 0.5s;
-      border: none;
       cursor: pointer;
+
+      &:nth-child(1) {
+        border-radius: $radius 0 0 0;
+      }
+      &:nth-child(2) {
+        border-radius: 0 $radius 0 0;
+      }
+      &:nth-child(3) {
+        border-radius: 0 0 0 $radius;
+      }
+      &:nth-child(4) {
+        border-radius: 0 0 $radius 0;
+      }
 
       &:hover {
         background: $contact-background;
-        transform: scale(1.1);
+        transform: scale(1.2);
+
+        .services-content-item-info {
+          &-img {
+            display: none;
+          }
+
+          h6 {
+            color: $main;
+            transform: scale(1);
+          }
+
+          p {
+            font-size: 16px;
+            color: $main;
+            transform: scale(1);
+          }
+
+          &-btn {
+            display: block;
+          }
+        }
+      }
+
+      &-info {
+        width: 100%;
+
+        &-img {
+          height: 40px;
+          margin: 0 auto 10px;
+        }
+
+        h6 {
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+        p {
+          width: 60%;
+          margin: $content-gap auto;
+        }
+
+        &-btn {
+          display: none;
+        }
       }
     }
   }
 
   &-intro {
     margin: $section-gap 0;
-    padding: $section-gap 0;
+    padding: 100px 0;
     text-align: center;
     background-color: $default;
   }
