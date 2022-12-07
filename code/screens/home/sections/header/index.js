@@ -1,3 +1,4 @@
+import LifeCycle from "../../../../common/life-cycle";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
