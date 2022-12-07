@@ -9,7 +9,7 @@ info:
         "content/web.md",
         "content/mobile.md",
         "content/devops.md",
-        "content/test.md",
+        "content/qa.md",
       ],
     intro:
       {
