@@ -1,10 +1,11 @@
 import React from "react";
+import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-function CaseStudies({ _relativeURL, _ID }) {
+function Services({ _relativeURL, _ID }) {
   return (
-    <div className="case-studies">
-      CaseStudies
+    <div className="about">
+      services
       <script
         type="module"
         src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
@@ -13,4 +14,4 @@ function CaseStudies({ _relativeURL, _ID }) {
   );
 }
 
-export default CaseStudies;
+export default Services;
