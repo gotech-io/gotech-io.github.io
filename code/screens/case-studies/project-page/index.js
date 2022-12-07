@@ -1,7 +1,7 @@
 import React from "react";
 import Steps from "../../../common/steps";
 import Tags from "../../../common/tag";
-import { PROJECTS_INFO } from "../../../../assets/js/case-studies/projects-info";
+import { PROJECTS_INFO } from "../../../../assets/js/common/content/case-studies-projects";
 import { handleUrl } from "../../../utils";
 
 function ProjectPage({ type, _relativeURL, _ID }) {

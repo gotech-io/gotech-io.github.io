@@ -1,7 +1,7 @@
 import Link from "../../../common/btns/link";
 import React from "react";
 import Tags from "../../../common/tag";
-import { PROJECTS_INFO } from "../../../../assets/js/case-studies/projects-info";
+import { PROJECTS_INFO } from "../../../../assets/js/common/content/case-studies-projects";
 
 function Left({ type }) {
   const { title, description, images, button, tags } = PROJECTS_INFO[type];

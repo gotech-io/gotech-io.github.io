@@ -3,14 +3,7 @@ import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-function CaseStudies({
-  title,
-  subTitle,
-  description,
-  projects,
-  _relativeURL,
-  _ID,
-}) {
+function CaseStudies({ title, description, projects, _relativeURL, _ID }) {
   return (
     <div className="page-common">
       <div className="page-common-block">
