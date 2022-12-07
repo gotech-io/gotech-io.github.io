@@ -1,7 +1,7 @@
 ---
 layout: common/navbar/components/navigation/index
 links:
- - name: About Us
+  - name: About Us
     value: /about
 
   - name: Services
