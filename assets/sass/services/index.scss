@@ -1,4 +1,18 @@
 .services {
+  &-block {
+    width: 100%;
+    margin: $section-gap 0 0;
+    padding: $section-gap 0;
+    background: $contact-background;
+
+    &-description {
+      padding: $section-gap 100px;
+      text-align: center;
+      font-size: 18px;
+      color: $main;
+    }
+  }
+
   &-content {
     width: 100%;
     margin: 50px 0 100px;
@@ -85,7 +99,6 @@
   }
 
   &-intro {
-    margin: $section-gap 0;
     padding: 100px 0;
     text-align: center;
     background-color: $default;

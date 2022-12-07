@@ -1,7 +1,15 @@
 ---
 layout: screens/services/index
 title: About our Abilities
-description: GoTech Group provides state-of-the-art services, including highly qualified experts in all areas of infrastructure and development.
+description:
+  {
+    main: "GoTech Group provides state-of-the-art services, including highly qualified experts in all areas of infrastructure and development.",
+
+    second: "GoTech offers a range of infrastructures and development services to help our clients succeed. Our team of experienced professionals is dedicated to delivering   high-quality solutions that are tailored to your specific business needs.",
+
+    third: "Our services include Web Development, Mobile Development, DevOps, and QA Automation. We have the skills and expertise to develop custom web and mobile applications that are user-friendly, efficient, and effective. Our DevOps and QA Automation services ensure that your applications are reliable and scalable, and can handle the demands of today's market",
+  }
+
 info:
   {
     services:

@@ -7,17 +7,28 @@ import { handleUrl } from "../../utils";
 
 function Services({ title, description, info, _relativeURL, _ID }) {
   const { services, intro, diagram } = info;
+  const { main, second, third } = description;
   return (
     <div className="page-common">
       <div className="page-common-block">
         <h2 className="page-common-title">{title}</h2>
-        <p className="page-common-description text-description">
-          {description}
-        </p>
+        <p className="page-common-description text-description">{main}</p>
+      </div>
+
+      <div className="services-block">
+        <div className="page-common-block">
+          <p className="services-block-description">{second}</p>
+        </div>
       </div>
 
       <div className="page-common-block">
         <ListServices services={services} />
+      </div>
+
+      <div className="services-block">
+        <div className="page-common-block">
+          <p className="services-block-description">{third}</p>
+        </div>
       </div>
 
       <div className="services-intro">

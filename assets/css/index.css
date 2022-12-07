@@ -2483,6 +2483,18 @@ input {
   margin-top: 50px;
 }
 
+.services-block {
+  width: 100%;
+  margin: 50px 0 0;
+  padding: 50px 0;
+  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+}
+.services-block-description {
+  padding: 50px 100px;
+  text-align: center;
+  font-size: 18px;
+  color: white;
+}
 .services-content {
   width: 100%;
   margin: 50px 0 100px;
@@ -2555,7 +2567,6 @@ input {
   display: none;
 }
 .services-intro {
-  margin: 50px 0;
   padding: 100px 0;
   text-align: center;
   background-color: #f8f9fa;
