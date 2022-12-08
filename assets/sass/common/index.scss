@@ -240,8 +240,8 @@ li,
 
 .contact-link-active {
   color: white;
-  background: #002e63;
-  border: solid 2px #002e63;
+  background: $green-background;
+  border: solid 2px transparent;
   a {
     color: white;
   }
@@ -259,7 +259,7 @@ li,
 
   text-transform: uppercase;
   cursor: pointer;
-  border: solid 2px #002e63;
+  border: solid 2px $blue;
 
   transition: 0.2s all;
   p {
@@ -278,7 +278,7 @@ li,
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: #002e63;
+    color: $blue;
   }
   &:hover {
     @extend .contact-link-active;

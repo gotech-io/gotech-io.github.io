@@ -2,7 +2,7 @@
   &-block {
     width: 100%;
     padding: $section-gap 0;
-    background: $contact-background;
+    background: $green-background;
 
     &-description {
       padding: $section-gap 100px;
@@ -48,7 +48,7 @@
       }
 
       &:hover {
-        background: $contact-background;
+        background: $green-background;
         transform: scale(1.1);
 
         .services-content-item-info {
