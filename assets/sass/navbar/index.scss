@@ -24,11 +24,8 @@
       -webkit-box-shadow: $shadow;
       -moz-box-shadow: $shadow;
     }
-
-    .contact-link {
-      @extend .contact-link-active;
-    }
   }
+
   &-flex {
     transition: 0.3s all;
     display: flex;
@@ -38,6 +35,7 @@
     justify-content: space-between;
     padding-right: 30px;
   }
+
   &-hidden {
     .navbar-flex {
       transform: translate(0, -100%);
@@ -47,29 +45,30 @@
   &-navigation {
     display: flex;
     justify-content: center;
-    flex: 1;
 
     &-link {
       margin-right: 20px;
+
       a {
-        text-decoration: none;
-        text-transform: uppercase;
+        color: $main;
         font-size: 0.938rem;
         letter-spacing: 0.063rem;
-        font-weight: 500;
+        font-weight: 100;
       }
     }
+
     &-indicator {
-      transition: 0.2s all;
-      position: absolute;
-      bottom: 20px;
-      opacity: 0;
-      left: 0px;
       width: 100px;
       height: 2px;
-      background: #4c4c4c;
+      position: absolute;
+      left: 0px;
+      bottom: 20px;
+      transition: 0.2s all;
+      background: $blue;
+      opacity: 0;
     }
   }
+
   &-root-link {
     display: flex;
     align-items: center;
@@ -78,26 +77,22 @@
     margin-left: 10px;
     height: 100%;
   }
+
   &-logo {
     height: 100%;
     width: 170px;
     padding-top: 5px;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
   }
 }
 
 @media only screen and (max-width: 1100px) {
   .navbar {
     height: 60px;
+
     &-desktop-contact {
       display: none;
     }
-    &-flex {
-    }
+
     &-root-link {
       left: 20px;
     }
@@ -108,6 +103,7 @@
       align-items: center;
       justify-content: center;
     }
+
     &-mobile {
       &-toggle {
         display: flex;
@@ -123,21 +119,11 @@
         transition: 0.2s all;
         border-radius: 50%;
 
-        .img {
-          width: 100%;
-          height: 100%;
-
-          img {
-            width: 100%;
-            height: 100%;
-            object-fit: contain;
-            transform: scale(0.6);
-          }
-        }
         &:hover {
           box-shadow: inset 0 0 0 2px #f2f4f8;
         }
       }
+
       &-overlay {
         display: block;
         pointer-events: none;
@@ -151,6 +137,7 @@
         transition: 0.15s all;
       }
     }
+
     &-mobile-active {
       .navbar-navigation {
         transform: translate(0%);
@@ -161,6 +148,7 @@
         pointer-events: all;
       }
     }
+
     &-navigation {
       position: fixed;
       height: 100vh;

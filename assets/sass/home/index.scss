@@ -49,6 +49,8 @@
     text-align: center;
 
     &-content {
+      opacity: 0.85;
+
       p {
         margin: $content-gap 0 $section-gap;
         color: $main;
