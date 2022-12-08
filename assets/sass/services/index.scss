@@ -1,7 +1,6 @@
 .services {
   &-block {
     width: 100%;
-    margin: $section-gap 0 0;
     padding: $section-gap 0;
     background: $contact-background;
 
@@ -50,7 +49,7 @@
 
       &:hover {
         background: $contact-background;
-        transform: scale(1.2);
+        transform: scale(1.1);
 
         .services-content-item-info {
           &-img {
@@ -108,5 +107,26 @@
     margin: 100px 0;
     height: auto;
     text-align: center;
+  }
+
+  &-technology {
+    width: 100%;
+    margin: 100px 0;
+    background-color: $default;
+
+    &-wrapper {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    &-block {
+      width: 45%;
+      margin: $section-gap 0;
+      padding: $content-gap;
+      background-color: $main;
+      border-radius: $radius;
+      box-shadow: $shadow;
+    }
   }
 }

@@ -9,10 +9,12 @@ function Services({ title, description, info, _relativeURL, _ID }) {
   const { services, intro, diagram } = info;
   const { main, second, third } = description;
   return (
-    <div className="page-common">
-      <div className="page-common-block">
-        <h2 className="page-common-title">{title}</h2>
-        <p className="page-common-description text-description">{main}</p>
+    <div>
+      <div className="page-common-header">
+        <div className="page-common-block">
+          <h2 className="page-common-title">{title}</h2>
+          <p className="page-common-description text-description">{main}</p>
+        </div>
       </div>
 
       <div className="services-block">

@@ -22,7 +22,7 @@ const LifeCycle = () => {
               <div key={i} className="stages-item">
                 <div
                   className="stages-item-wrapper"
-                  data-aos={animations.zoomInDown}
+                  data-aos={animations.zoomIn}
                 >
                   <div className="stages-item-wrapper-dot">
                     <i className={icon}></i>

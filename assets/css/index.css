@@ -306,17 +306,24 @@ p {
   width: 100%;
   padding-top: 100px;
 }
+.page-common-header {
+  width: 100%;
+  padding: 150px 0 200px;
+  background-color: #050e1c;
+}
 .page-common-block {
   width: 950px;
   margin: 0 auto;
 }
 .page-common-title {
-  font-size: 40px;
+  font-size: 60px;
   text-align: center;
+  color: white;
 }
 .page-common-description {
   font-size: 20px;
   text-align: center;
+  color: white;
 }
 .page-common-content {
   margin: 50px auto;
@@ -545,7 +552,7 @@ img {
   justify-content: space-between;
   align-items: center;
   position: absolute;
-  z-index: 100;
+  z-index: 10;
 }
 .diagram-circle-item {
   width: 200px;
@@ -606,7 +613,7 @@ img {
   justify-content: center;
   align-items: center;
   background-color: white;
-  border: 2px dashed black;
+  border: 2px solid lightgray;
   border-radius: 50%;
 }
 .stages-item-wrapper-dot {
@@ -628,7 +635,7 @@ img {
   height: 0px;
   position: absolute;
   top: 35px;
-  border-top: 2px dashed black;
+  border: 2px solid lightgray;
   border-bottom: none;
 }
 .stages-item p {
@@ -2485,7 +2492,6 @@ input {
 
 .services-block {
   width: 100%;
-  margin: 50px 0 0;
   padding: 50px 0;
   background: linear-gradient(135deg, #52e3ed, #5fe6b8);
 }
@@ -2531,7 +2537,7 @@ input {
 }
 .services-content-item:hover {
   background: linear-gradient(135deg, #52e3ed, #5fe6b8);
-  transform: scale(1.2);
+  transform: scale(1.1);
 }
 .services-content-item:hover .services-content-item-info-img {
   display: none;
@@ -2575,6 +2581,24 @@ input {
   margin: 100px 0;
   height: auto;
   text-align: center;
+}
+.services-technology {
+  width: 100%;
+  margin: 100px 0;
+  background-color: #f8f9fa;
+}
+.services-technology-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.services-technology-block {
+  width: 45%;
+  margin: 50px 0;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
 }
 
 .info {
