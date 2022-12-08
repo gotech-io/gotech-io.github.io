@@ -1940,12 +1940,11 @@ input {
   }
 }
 .navbar {
-  height: 80px;
-  z-index: 99;
-  align-items: center;
-  background: transparent;
+  height: 70px;
   display: flex;
   align-items: center;
+  background: transparent;
+  z-index: 99;
 }
 .navbar-mobile-contact {
   display: none;
@@ -1958,9 +1957,9 @@ input {
 }
 .navbar-active .navbar-flex {
   background: white;
-  box-shadow: -1px 7px 50px 0px rgba(0, 0, 0, 0.4);
-  -webkit-box-shadow: -1px 7px 50px 0px rgba(0, 0, 0, 0.4);
-  -moz-box-shadow: -1px 7px 50px 0px rgba(0, 0, 0, 0.4);
+  box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+  -webkit-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
+  -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
 }
 .navbar-flex {
   transition: 0.3s all;
@@ -1975,6 +1974,7 @@ input {
   transform: translate(0, -100%);
 }
 .navbar-navigation {
+  display: flex;
   justify-content: center;
   flex: 1;
 }

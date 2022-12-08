@@ -2,7 +2,7 @@ import React from "react";
 
 const Navigation = ({ links, contactLink }) => {
   return links ? (
-    <ul className="navbar-navigation flex-start">
+    <ul className="navbar-navigation">
       <aside className="navbar-navigation-indicator"></aside>
       {links.map(({ name, value }) => {
         return (

@@ -43,10 +43,12 @@
       transform: translate(0, -100%);
     }
   }
-  &-navigation {
-    justify-content: center;
 
+  &-navigation {
+    display: flex;
+    justify-content: center;
     flex: 1;
+
     &-link {
       margin-right: 20px;
       a {
@@ -171,6 +173,7 @@
       transform: translate(100%);
       transition: 0.2s all;
       opacity: 0.5;
+
       &-link {
         height: 50px;
         display: flex;
@@ -179,6 +182,7 @@
         margin: 0px;
       }
     }
+
     &-mobile {
       &-contact {
         display: block;
