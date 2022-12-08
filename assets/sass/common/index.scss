@@ -120,22 +120,22 @@ $component-width: calc(100% - 100px);
 $main-font: "Poppins", sans-serif;
 $headers-font: "Poppins", sans-serif;
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-family: $headers-font;
-  color: $main-text;
-}
-p,
-a,
-li,
-* {
-  font-family: $main-font;
-  color: $main-text;
-}
+// h1,
+// h2,
+// h3,
+// h4,
+// h5,
+// h6 {
+//   font-family: $headers-font;
+//   color: $main-text;
+// }
+// p,
+// a,
+// li,
+// * {
+//   font-family: $main-font;
+//   color: $main-text;
+// }
 
 .text {
   font-size: 1.25rem;

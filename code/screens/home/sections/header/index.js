@@ -1,4 +1,3 @@
-import LifeCycle from "../../../../common/life-cycle";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
@@ -35,20 +34,23 @@ const HomeHeader = ({ title, sub_title, description, button }) => {
         </div>
       </div>
 
-      <div className="home-header-main flex-center">
-        <section className="home-header-main-content">
-          <h1 data-aos={animations.up} data-aos-delay="100">
-            {title}
-          </h1>
-          <h2 data-aos={animations.up} data-aos-delay="250">
-            {sub_title}
-          </h2>
+      <div className="home-header-main">
+        <div className="page-common-block">
+          <di className="home-header-main-content">
+            <h1 data-aos={animations.up} data-aos-delay="100">
+              {title}
+            </h1>
 
-          <p data-aos={animations.up} data-aos-delay="250">
-            {description}
-          </p>
+            <h2 data-aos={animations.up} data-aos-delay="250">
+              {sub_title}
+            </h2>
+
+            <p data-aos={animations.up} data-aos-delay="250">
+              {description}
+            </p>
+          </di>
           {button}
-        </section>
+        </div>
       </div>
     </div>
   );
