@@ -104,9 +104,15 @@
   }
 
   &-diagram {
-    margin: 100px 0;
     height: auto;
+    padding: 100px 0;
     text-align: center;
+    background-color: $prime;
+
+    h4,
+    p {
+      color: $main;
+    }
   }
 
   &-technology {

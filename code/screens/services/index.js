@@ -42,8 +42,8 @@ function Services({ title, description, info, _relativeURL, _ID }) {
         <Points points={intro.points} />
       </div>
 
-      <div className="page-common-block">
-        <div className="services-diagram">
+      <div className="services-diagram">
+        <div className="page-common-block">
           <h4>{diagram.title}</h4>
           <p>{diagram.description}</p>
           <div className="services-diagram-wrapper">
