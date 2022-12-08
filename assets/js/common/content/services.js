@@ -17,16 +17,16 @@ export const SERVICES = {
           {
             key: "Frameworks",
             icons: [
-              "/assets/images/technologies/angular.png",
-              "/assets/images/technologies/react.png",
+              "../assets/images/technologies/angular.png",
+              "/../../assets/images/technologies/react.png",
             ],
           },
           {
             key: "Libraries",
             icons: [
-              "/assets/images/technologies/redux.png",
-              "/assets/images/technologies/mobx.png",
-              "/assets/images/technologies/zustand.png",
+              "../../../assets/images/technologies/redux.png",
+              "../../../../assets/images/technologies/mobx.png",
+              "../../../../../assets/images/technologies/zustand.png",
             ],
           },
         ],

@@ -232,6 +232,27 @@
   border-radius: 20px 0 0 20px;
 }
 
+.technology {
+  margin: 20px 0 0;
+  padding: 20px 0 0;
+  border-top: 1px solid lightgray;
+}
+.technology-list {
+  width: 100%;
+  margin: 20px 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.technology-item {
+  width: 100px;
+  height: auto;
+  margin: 0 5px;
+  padding: 10px;
+  border-radius: 20px;
+  background-color: #f8f9fa;
+}
+
 .marquee-container {
   width: 100%;
   height: 100px;
@@ -2584,20 +2605,21 @@ input {
 }
 .services-technology {
   width: 100%;
-  margin: 100px 0;
+  margin: 100px 0 0;
   background-color: #f8f9fa;
 }
 .services-technology-wrapper {
   width: 100%;
+  padding: 50px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
 }
 .services-technology-block {
-  width: 45%;
   margin: 50px 0;
   padding: 20px;
+  text-align: center;
   background-color: white;
   border-radius: 20px;
   box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);

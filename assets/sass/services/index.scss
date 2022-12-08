@@ -111,11 +111,12 @@
 
   &-technology {
     width: 100%;
-    margin: 100px 0;
+    margin: 100px 0 0;
     background-color: $default;
 
     &-wrapper {
       width: 100%;
+      padding: $section-gap 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -123,9 +124,9 @@
     }
 
     &-block {
-      width: 45%;
       margin: $section-gap 0;
       padding: $content-gap;
+      text-align: center;
       background-color: $main;
       border-radius: $radius;
       box-shadow: $shadow;
