@@ -1,10 +1,10 @@
 .navbar {
-  height: 80px;
-  z-index: 99;
-  align-items: center;
-  background: transparent;
+  height: 70px;
   display: flex;
   align-items: center;
+  background: transparent;
+  z-index: 99;
+
   &-mobile {
     &-contact {
       display: none;
@@ -19,11 +19,12 @@
 
   &-active {
     .navbar-flex {
-      background: white;
-      box-shadow: -1px 7px 50px 0px rgba(0, 0, 0, 0.4);
-      -webkit-box-shadow: -1px 7px 50px 0px rgba(0, 0, 0, 0.4);
-      -moz-box-shadow: -1px 7px 50px 0px rgba(0, 0, 0, 0.4);
+      background: $main;
+      box-shadow: $shadow;
+      -webkit-box-shadow: $shadow;
+      -moz-box-shadow: $shadow;
     }
+
     .contact-link {
       @extend .contact-link-active;
     }
@@ -94,7 +95,6 @@
       display: none;
     }
     &-flex {
-     
     }
     &-root-link {
       left: 20px;
