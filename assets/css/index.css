@@ -1276,7 +1276,7 @@ input {
   -webkit-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
   -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
 }
-.navbar-active a {
+.navbar-active .navbar-flex a {
   color: #050e1c;
 }
 .navbar-flex {
@@ -1357,16 +1357,6 @@ input {
     right: 20px;
     transition: 0.2s all;
     border-radius: 50%;
-  }
-  .navbar-mobile-toggle .img {
-    width: 100%;
-    height: 100%;
-  }
-  .navbar-mobile-toggle .img img {
-    width: 100%;
-    height: 100%;
-    object-fit: contain;
-    transform: scale(0.6);
   }
   .navbar-mobile-toggle:hover {
     box-shadow: inset 0 0 0 2px #f2f4f8;
