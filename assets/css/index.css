@@ -2588,9 +2588,11 @@ input {
   background-color: #f8f9fa;
 }
 .services-technology-wrapper {
+  width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 .services-technology-block {
   width: 45%;
