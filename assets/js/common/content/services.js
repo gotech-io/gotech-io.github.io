@@ -1,11 +1,10 @@
 export const SERVICES = {
   WEB_DEV: {
-    title: "web development",
+    title: "Web Development",
     details:
       "Web teams to be responsible for the coding, innovative design and layout of the website",
     description:
       "Web teams to be responsible for the coding, innovative design and layout of the website. Web developers responsibilities include building the website from concept all the way to completion.",
-    src: "/assets/images/positions/laptop-icon.svg",
     url: "/service/web",
     services: [
       {
@@ -58,11 +57,10 @@ export const SERVICES = {
     ],
   },
   MOBILE_DEV: {
-    title: "mobile development",
+    title: "Mobile Development",
     details: "Mobile app development allows your business to be at hand always",
     description:
       "Mobile app development allows your business to be at hand always",
-    src: "/assets/images/positions/mobile-icon.svg",
     url: "/service/mobile",
     services: [
       {
@@ -101,11 +99,10 @@ export const SERVICES = {
     ],
   },
   DEVOPS_DEV: {
-    title: "devops",
+    title: "DevOps",
     details: "Choose smart development and upload your business to cloud",
     description:
       "Choose smart development and upload your business to cloud. Choose smart development and upload your business to cloud.",
-    src: "/assets/images/positions/devops-icon.svg",
     url: "/service/devops",
     services: [
       {
@@ -145,11 +142,10 @@ export const SERVICES = {
       "We are interested in high quality of our products and we care about our reputation",
     description:
       "We are interested in high quality of our products and we care about our reputation",
-    src: "/assets/images/common/search.svg",
     url: "/service/qa",
     services: [
       {
-        title: "DevOps",
+        title: "QA Automation",
         description:
           "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
         technologies: [

@@ -353,6 +353,14 @@ a {
   padding: 150px 0 200px;
   background-color: #050e1c;
 }
+.page-common-header .home-header-background .orange-blobs {
+  right: -200px;
+  top: -200px;
+}
+.page-common-header .home-header-background .green-blobs {
+  left: 0;
+  top: -300px;
+}
 .page-common-block {
   width: 950px;
   margin: 0 auto;
@@ -391,7 +399,7 @@ img {
 .image-block-parallax {
   width: 100%;
   height: 500px;
-  margin: 50px 0;
+  margin: 50px 0 0;
   overflow: hidden;
 }
 .image-block-parallax img {
@@ -520,7 +528,7 @@ img {
   align-items: center;
   justify-content: center;
   color: white;
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
   border-radius: 50%;
 }
 .steps-item p {
@@ -559,7 +567,7 @@ img {
   width: 30px;
   height: 30px;
   margin: 20px auto;
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
   border-radius: 50%;
 }
 .points-item-line {
@@ -618,15 +626,15 @@ img {
 }
 .diagram-circle-item:nth-child(1) {
   background-color: #050e1c;
-  border: 2px solid #38f0e3;
+  border: 2px solid #38f0d1;
 }
 .diagram-circle-item:nth-child(2) {
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
   box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
 }
 .diagram-circle-item:nth-child(3) {
   background-color: #050e1c;
-  border: 2px solid #40a4ff;
+  border: 2px solid #2edcff;
 }
 
 @keyframes rotate {
@@ -672,7 +680,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
   border-radius: 50%;
   animation: none;
 }
@@ -890,7 +898,7 @@ img {
 
 .contact-link-active, .contact-link:hover {
   color: white;
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
   border: solid 2px transparent;
 }
 .contact-link-active a, .contact-link:hover a {
@@ -906,7 +914,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  border: solid 2px #40a4ff;
+  border: solid 2px #2edcff;
   transition: 0.2s all;
 }
 .contact-link p {
@@ -925,7 +933,7 @@ img {
   height: 100%;
   justify-content: center;
   align-items: center;
-  color: #40a4ff;
+  color: #2edcff;
 }
 .fixed {
   position: fixed;
@@ -1314,7 +1322,7 @@ input {
   left: 0px;
   bottom: 20px;
   transition: 0.2s all;
-  background: #38f0e3;
+  background: #38f0d1;
   opacity: 0;
 }
 .navbar-root-link {
@@ -1818,7 +1826,7 @@ input {
 .services-block {
   width: 100%;
   padding: 50px 0;
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
 }
 .services-block-description {
   padding: 50px 100px;
@@ -1861,7 +1869,7 @@ input {
   border-radius: 0 0 20px 0;
 }
 .services-content-item:hover {
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
   transform: scale(1.1);
 }
 .services-content-item:hover .services-content-item-info-img {
@@ -1882,9 +1890,9 @@ input {
 .services-content-item-info {
   width: 100%;
 }
-.services-content-item-info-img {
-  height: 40px;
-  margin: 0 auto 10px;
+.services-content-item-info i {
+  font-size: 40px;
+  margin-bottom: 20px;
 }
 .services-content-item-info h6 {
   text-transform: uppercase;
@@ -1939,7 +1947,7 @@ input {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
   border-radius: 50%;
 }
 .services-technology-button i {
@@ -1955,7 +1963,7 @@ input {
   width: 90%;
   padding: 50px;
   border-radius: 20px;
-  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  background: linear-gradient(90deg, #38f0d1, #2edcff);
 }
 .info-wrapper h4 {
   margin-bottom: 10px;

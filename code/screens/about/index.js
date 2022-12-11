@@ -1,3 +1,4 @@
+import Header from "../../common/header";
 import Left from "../../common/gallery/left";
 import React from "react";
 import Right from "../../common/gallery/right";
@@ -7,18 +8,10 @@ import { handleUrl } from "../../utils";
 
 function About({ title, description, videoList, gallery, _relativeURL, _ID }) {
   return (
-    <div className="page-common">
-      <div className="page-common-block">
-        <h2 className="page-common-title" data-aos={animations.up}>
-          {title}
-        </h2>
-        <p
-          className="page-common-description text-description"
-          data-aos={animations.up}
-        >
-          {description}
-        </p>
+    <div>
+      <Header title={title} description={description} />
 
+      <div className="page-common-block">
         <div className="page-common-content">
           <Video videoList={videoList} />
         </div>

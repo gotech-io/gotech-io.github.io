@@ -53,6 +53,18 @@ a {
     width: 100%;
     padding: 150px 0 200px;
     background-color: $prime;
+
+    .home-header-background {
+      .orange-blobs {
+        right: -200px;
+        top: -200px;
+      }
+
+      .green-blobs {
+        left: 0;
+        top: -300px;
+      }
+    }
   }
 
   &-block {
@@ -98,7 +110,7 @@ img {
 .image-block-parallax {
   width: 100%;
   height: 500px;
-  margin: 50px 0;
+  margin: $section-gap 0 0;
   overflow: hidden;
 
   img {

@@ -1,4 +1,4 @@
 ---
 layout: screens/services/components/item
-type: WEB_DEV
+entity: WEB_DEV
 ---

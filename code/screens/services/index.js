@@ -1,4 +1,5 @@
 import Diagram from "../../common/diagram";
+import Header from "../../common/header";
 import ListServices from "./components/list";
 import Points from "../../common/points";
 import React from "react";
@@ -10,12 +11,7 @@ function Services({ title, description, info, _relativeURL, _ID }) {
   const { main, second, third } = description;
   return (
     <div>
-      <div className="page-common-header">
-        <div className="page-common-block">
-          <h2 className="page-common-title">{title}</h2>
-          <p className="page-common-description text-description">{main}</p>
-        </div>
-      </div>
+      <Header title={title} description={main} />
 
       <div className="services-block">
         <div className="page-common-block">

@@ -76,9 +76,9 @@
       &-info {
         width: 100%;
 
-        &-img {
-          height: 40px;
-          margin: 0 auto 10px;
+        i {
+          font-size: 40px;
+          margin-bottom: $content-gap;
         }
 
         h6 {

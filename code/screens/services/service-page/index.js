@@ -1,3 +1,4 @@
+import Header from "../../../common/header";
 import LifeCycle from "../../../common/life-cycle";
 import React from "react";
 import Technologies from "../../../common/technologies";
@@ -8,14 +9,7 @@ function ServicePage({ entity, _relativeURL, _ID }) {
   const { title, description, services } = SERVICES[entity];
   return (
     <div>
-      <div className="page-common-header">
-        <div className="page-common-block">
-          <h2 className="page-common-title">{title}</h2>
-          <p className="page-common-description text-description">
-            {description}
-          </p>
-        </div>
-      </div>
+      <Header title={title} description={description} />
 
       <LifeCycle />
 

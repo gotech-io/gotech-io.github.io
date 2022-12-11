@@ -1,4 +1,4 @@
 ---
 layout: screens/services/components/item
-type: MOBILE_DEV
+entity: MOBILE_DEV
 ---

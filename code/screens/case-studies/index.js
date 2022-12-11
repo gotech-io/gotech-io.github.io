@@ -1,22 +1,12 @@
-import Left from "./components/left";
+import Header from "../../common/header";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
 function CaseStudies({ title, description, projects, _relativeURL, _ID }) {
   return (
-    <div className="page-common">
-      <div className="page-common-block">
-        <h2 className="page-common-title" data-aos={animations.up}>
-          {title}
-        </h2>
-        <p
-          className="page-common-description text-description"
-          data-aos={animations.up}
-        >
-          {description}
-        </p>
-      </div>
+    <div>
+      <Header title={title} description={description} />
 
       <div className="page-common-sub-section">
         <div className="about-story-wrapper">

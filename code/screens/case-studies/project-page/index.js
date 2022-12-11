@@ -1,3 +1,4 @@
+import Header from "../../../common/header";
 import React from "react";
 import Steps from "../../../common/steps";
 import Tags from "../../../common/tag";
@@ -10,12 +11,10 @@ function ProjectPage({ type, _relativeURL, _ID }) {
   const { main, parallax } = images;
 
   return (
-    <div className="page-common">
+    <div>
+      <Header title={title} description={description} />
+
       <div className="page-common-block">
-        <h2 className="page-common-title">{title}</h2>
-        <p className="page-common-description text-description">
-          {description}
-        </p>
         <div className="page-common-content">
           <div className="main-wrapper">
             <div className="main-wrapper-image">
