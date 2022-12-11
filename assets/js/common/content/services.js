@@ -17,16 +17,16 @@ export const SERVICES = {
           {
             key: "Frameworks",
             icons: [
-              "../assets/images/technologies/angular.png",
-              "/../../assets/images/technologies/react.png",
+              "/assets/images/technologies/angular.png",
+              "/assets/images/technologies/react.png",
             ],
           },
           {
             key: "Libraries",
             icons: [
-              "../../../assets/images/technologies/redux.png",
-              "../../../../assets/images/technologies/mobx.png",
-              "../../../../../assets/images/technologies/zustand.png",
+              "/assets/images/technologies/redux.png",
+              "/assets/images/technologies/mobx.png",
+              "/assets/images/technologies/zustand.png",
             ],
           },
         ],
@@ -39,10 +39,10 @@ export const SERVICES = {
           {
             key: "Languages",
             icons: [
-              "/assets/images/technologies/python.png",
+              "/assets/images/technologies/python.jpeg",
               "/assets/images/technologies/java.png",
               "/assets/images/technologies/kotlin.png",
-              "/assets/images/technologies/c#.png",
+              "/assets/images/technologies/c.png",
             ],
           },
           {
@@ -86,7 +86,7 @@ export const SERVICES = {
           {
             key: "Languages",
             icons: [
-              "/assets/images/technologies/python.png",
+              "/assets/images/technologies/python.jpeg",
               "/assets/images/technologies/java.png",
               "/assets/images/technologies/kotlin.png",
             ],
@@ -116,7 +116,7 @@ export const SERVICES = {
           {
             key: "Languages",
             icons: [
-              "/assets/images/technologies/python.png",
+              "/assets/images/technologies/python.jpeg",
               "/assets/images/technologies/java.png",
               "/assets/images/technologies/kotlin.png",
             ],
@@ -156,7 +156,7 @@ export const SERVICES = {
           {
             key: "Languages",
             icons: [
-              "/assets/images/technologies/python.png",
+              "/assets/images/technologies/python.jpeg",
               "/assets/images/technologies/java.png",
               "/assets/images/technologies/kotlin.png",
             ],

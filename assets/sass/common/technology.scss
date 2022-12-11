@@ -3,6 +3,12 @@
   padding: $content-gap 0 0;
   border-top: 1px solid lightgray;
 
+  &-stack {
+    h5 {
+      text-align: left;
+    }
+  }
+
   &-list {
     width: 100%;
     margin: $content-gap 0;
@@ -13,7 +19,7 @@
 
   &-item {
     width: 100px;
-    height: auto;
+    height: 100px;
     margin: 0 5px;
     padding: 10px;
     border-radius: $radius;

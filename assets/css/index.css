@@ -236,6 +236,9 @@
   padding: 20px 0 0;
   border-top: 1px solid lightgray;
 }
+.technology-stack h5 {
+  text-align: left;
+}
 .technology-list {
   width: 100%;
   margin: 20px 0;
@@ -245,7 +248,7 @@
 }
 .technology-item {
   width: 100px;
-  height: auto;
+  height: 100px;
   margin: 0 5px;
   padding: 10px;
   border-radius: 20px;
@@ -517,7 +520,7 @@ img {
   align-items: center;
   justify-content: center;
   color: white;
-  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
   border-radius: 50%;
 }
 .steps-item p {
@@ -556,7 +559,7 @@ img {
   width: 30px;
   height: 30px;
   margin: 20px auto;
-  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
   border-radius: 50%;
 }
 .points-item-line {
@@ -615,15 +618,15 @@ img {
 }
 .diagram-circle-item:nth-child(1) {
   background-color: #050e1c;
-  border: 2px solid #5fe6b8;
+  border: 2px solid #38f0e3;
 }
 .diagram-circle-item:nth-child(2) {
-  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
   box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
 }
 .diagram-circle-item:nth-child(3) {
   background-color: #050e1c;
-  border: 2px solid #52e3ed;
+  border: 2px solid #40a4ff;
 }
 
 @keyframes rotate {
@@ -669,7 +672,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
   border-radius: 50%;
   animation: none;
 }
@@ -887,7 +890,7 @@ img {
 
 .contact-link-active, .contact-link:hover {
   color: white;
-  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
   border: solid 2px transparent;
 }
 .contact-link-active a, .contact-link:hover a {
@@ -903,7 +906,7 @@ img {
   text-align: center;
   text-transform: uppercase;
   cursor: pointer;
-  border: solid 2px #52e3ed;
+  border: solid 2px #40a4ff;
   transition: 0.2s all;
 }
 .contact-link p {
@@ -922,7 +925,7 @@ img {
   height: 100%;
   justify-content: center;
   align-items: center;
-  color: #52e3ed;
+  color: #40a4ff;
 }
 .fixed {
   position: fixed;
@@ -1311,7 +1314,7 @@ input {
   left: 0px;
   bottom: 20px;
   transition: 0.2s all;
-  background: #52e3ed;
+  background: #38f0e3;
   opacity: 0;
 }
 .navbar-root-link {
@@ -1815,7 +1818,7 @@ input {
 .services-block {
   width: 100%;
   padding: 50px 0;
-  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
 }
 .services-block-description {
   padding: 50px 100px;
@@ -1858,7 +1861,7 @@ input {
   border-radius: 0 0 20px 0;
 }
 .services-content-item:hover {
-  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
   transform: scale(1.1);
 }
 .services-content-item:hover .services-content-item-info-img {
@@ -1930,6 +1933,18 @@ input {
   border-radius: 20px;
   box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.45);
 }
+.services-technology-button {
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
+  border-radius: 50%;
+}
+.services-technology-button i {
+  color: white;
+}
 
 .info {
   width: 100%;
@@ -1940,7 +1955,7 @@ input {
   width: 90%;
   padding: 50px;
   border-radius: 20px;
-  background: linear-gradient(135deg, #52e3ed, #5fe6b8);
+  background: linear-gradient(90deg, #38f0e3, #40a4ff);
 }
 .info-wrapper h4 {
   margin-bottom: 10px;

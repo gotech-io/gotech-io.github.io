@@ -25,6 +25,9 @@ function ServicePage({ entity, _relativeURL, _ID }) {
             {services.map((service, i) => {
               return (
                 <div key={i} className="services-technology-block">
+                  <div className="services-technology-button">
+                    <i className="fa-solid fa-arrow-down" />
+                  </div>
                   <h4>{service.title}</h4>
                   <p>{service.description}</p>
                   <Technologies technologies={service.technologies} />
@@ -38,7 +41,6 @@ function ServicePage({ entity, _relativeURL, _ID }) {
       <div className="services-block">
         <div className="page-common-block">
           <p className="services-block-description">
-            {" "}
             Duis aute irure dolor in reprehenderit in voluptate velit esse
             cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
             cupidatat non proident, sunt in culpa qui officia deserunt mollit
