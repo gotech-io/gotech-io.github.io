@@ -117,7 +117,7 @@
 
   &-technology {
     width: 100%;
-    margin: 100px 0 0;
+    margin: $section-gap 0 0;
     background-color: $default;
 
     &-wrapper {
@@ -132,10 +132,20 @@
     &-block {
       margin: $section-gap 0;
       padding: $content-gap;
+      position: relative;
       text-align: center;
       background-color: $main;
       border-radius: $radius;
       box-shadow: $shadow;
+
+      &-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+      }
     }
 
     &-button {
@@ -151,5 +161,22 @@
         color: $main;
       }
     }
+  }
+}
+
+.accordion {
+  &-container {
+    position: relative;
+  }
+
+  &-label {
+    position: relative;
+  }
+
+  &-content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
   }
 }

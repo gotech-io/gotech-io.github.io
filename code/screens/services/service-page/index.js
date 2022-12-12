@@ -19,12 +19,21 @@ function ServicePage({ entity, _relativeURL, _ID }) {
             {services.map((service, i) => {
               return (
                 <div key={i} className="services-technology-block">
-                  <div className="services-technology-button">
-                    <i className="fa-solid fa-arrow-down" />
+                  <div className="services-technology-block-wrapper">
+                    <div className="services-technology-button">
+                      <i className="fa-solid fa-arrow-down" />
+                    </div>
                   </div>
-                  <h4>{service.title}</h4>
-                  <p>{service.description}</p>
-                  <Technologies technologies={service.technologies} />
+
+                  <div className="accordion-container">
+                    <div className="accordion-label">
+                      <h4>{service.title}</h4>
+                      <p>{service.description}</p>
+                    </div>
+                    <div className="accordion-content">
+                      <Technologies technologies={service.technologies} />
+                    </div>
+                  </div>
                 </div>
               );
             })}
