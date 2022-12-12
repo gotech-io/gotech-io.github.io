@@ -37,7 +37,7 @@
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding-right: 30px;
+    padding-right: $content-gap;
   }
 
   &-hidden {

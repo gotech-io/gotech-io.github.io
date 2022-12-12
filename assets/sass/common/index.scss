@@ -229,11 +229,11 @@ li,
 }
 
 .contact-link-active {
-  color: white;
-  background: #002e63;
-  border: solid 2px #002e63;
+  color: $main;
+  background: $green-background;
+  border: solid 2px transparent;
   a {
-    color: white;
+    color: $main;
   }
 }
 
