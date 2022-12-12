@@ -1,8 +1,9 @@
 import React from "react";
-import Steps from "../../../common/steps";
-import Tags from "../../../common/tag";
 import { PROJECTS_INFO } from "../../../../assets/js/common/content/case-studies-projects";
 import { handleUrl } from "../../../utils";
+
+// import Steps from "../../../common/steps";
+// import Tags from "../../../common/tag";
 
 // import Header from "../../../common/header";
 
@@ -35,7 +36,7 @@ function ProjectPage({ type, _relativeURL, _ID }) {
             </div>
             <div className="project-page-intro">
               <h6>Technologies Stack </h6>
-              <Tags tags={tags} count={tags.length || 0} />
+              {/* <Tags tags={tags} count={tags.length || 0} /> */}
             </div>
           </div>
         </div>
@@ -46,7 +47,7 @@ function ProjectPage({ type, _relativeURL, _ID }) {
           <h4>Challenge Faced:</h4>
           <div>
             <p>{challenge.description}</p>
-            <Steps steps={challenge.steps} />
+            {/* <Steps steps={challenge.steps} /> */}
           </div>
         </div>
       </div>
