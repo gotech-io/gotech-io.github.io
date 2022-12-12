@@ -1,7 +1,5 @@
 import React from "react";
 
-//TOTO: Need to Add a link on item
-
 const ListItems = ({ list }) => {
   return (
     <div className="list-items">
@@ -14,13 +12,11 @@ const ListItems = ({ list }) => {
                 {title}
               </a>
             ) : (
-              <span>{title}</span>
+              <span className="text-small">{title}</span>
             )}
 
-            <div className="text-small">
-              {phone || phone}
-              {socials || socials}
-            </div>
+            <div className="text-small">{phone || phone}</div>
+            <div className="text-small">{socials || socials}</div>
           </div>
         );
       })}

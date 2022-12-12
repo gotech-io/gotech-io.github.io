@@ -1,29 +1,29 @@
 .footer {
   width: 100%;
-  padding: 50px 0 20px; // $section-gap 0 $content-gap
+  padding: $section-gap 0 $content-gap;
   position: relative;
   bottom: 0;
   z-index: 10;
   background: rgba(255, 255, 255, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-top: 2px solid lightgray; //$default
+  border-top: 2px solid $default;
 
   &-bottom {
     margin-top: 50px;
     border-top: 2px solid lightgray;
-    margin-top: 20px; //$content-gap
-    color: black; //$additional-text
+    margin-top: $content-gap;
+    color: $additional;
     font-size: 10px;
 
     &-section {
-      margin-top: 20px; //$content-gap
-      color: black; //$additional-text
+      margin-top: $content-gap;
+      color: $additional;
       font-size: 10px;
 
       &-policy {
         a {
-          color: black; //$additional-text
+          color: $additional;
           text-decoration: none;
           margin-left: 10px;
         }
@@ -33,7 +33,9 @@
 
   .list-items {
     &-link {
+      color: $additional;
       text-decoration: none;
+      text-transform: none;
       cursor: pointer;
     }
 
