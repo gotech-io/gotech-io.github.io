@@ -62,7 +62,7 @@
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding-right: $content-gap;
+    padding: 0 $content-gap;
   }
 
   &-hidden {
@@ -103,13 +103,12 @@
     align-items: center;
     justify-content: center;
     width: fit-content;
-    margin-left: 10px;
     height: 100%;
   }
 
   &-logo {
-    height: 100%;
-    width: 170px;
+    height: 60px;
+    width: auto;
     padding-top: 5px;
   }
 }
