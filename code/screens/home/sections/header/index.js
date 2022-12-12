@@ -22,13 +22,7 @@ const HomeHeader = ({ title, sub_title, description, button }) => {
           <lottie-player
             src="https://lottie.host/2a4cd7fd-ef68-4865-b56c-8fe21f2c9170/7RneaIKFUy.json"
             background="transparent"
-            style={{
-              width: "1300px",
-              height: "1300px",
-              position: "absolute",
-              left: "-550px",
-              bottom: "-500px",
-            }}
+            style={{ width: "1100px", height: "1100px" }}
             speed="1"
             loop
             autoplay
