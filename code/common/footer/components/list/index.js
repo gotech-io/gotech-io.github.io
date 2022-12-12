@@ -1,5 +1,7 @@
 import React from "react";
 
+//TOTO: Need to Add a link on item
+
 const ListItems = ({ list }) => {
   return (
     <div className="list-items">
