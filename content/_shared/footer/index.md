@@ -7,7 +7,7 @@ variables:
       list:
         [
           { title: Clients, link: "/#clients" },
-          { title: Teams, link: "/#teams" },
+          { title: Teams, link: "/#team" },
           { title: Careers, link: "/careers/" },
         ],
     },
