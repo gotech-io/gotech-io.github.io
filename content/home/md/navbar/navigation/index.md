@@ -7,7 +7,7 @@ links:
     value: /#about
   - name: clients
     value: /#clients
-  - name: case studies
+  - name: cases
     value: /#case-studies
   - name: team
     value: /#team
