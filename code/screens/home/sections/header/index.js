@@ -2,13 +2,10 @@ import Blobs from "./components/blobs";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const orangeBlobs = 1300;
-const greenBlobs = 1100;
-
 const HomeHeader = ({ title, sub_title, description, button }) => {
   return (
     <div className="home-header">
-      <Blobs orange={orangeBlobs} green={greenBlobs} />
+      <Blobs />
 
       <div className="home-header-main">
         <div className="page-common-block">
