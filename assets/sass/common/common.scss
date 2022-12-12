@@ -1,0 +1,128 @@
+h1 {
+  color: $main;
+  font-size: 10rem;
+  max-height: 200px;
+  font-weight: 600;
+}
+
+h2 {
+  color: $main;
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+h4 {
+  font-size: 25px;
+  font-weight: 600px;
+}
+
+h5 {
+  font-size: 20px;
+}
+
+h6 {
+  font-size: 16px;
+  font-weight: 600px;
+}
+
+p {
+  font-weight: 100;
+}
+
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.text-small {
+  font-size: 14px;
+  margin: 5px 0;
+  color: $additional-text;
+}
+
+.text-description {
+  font-weight: 100;
+}
+
+.page-common {
+  width: 100%;
+  padding-top: 100px;
+
+  &-header {
+    width: 100%;
+    padding: 150px 0 200px;
+    background-color: $prime;
+
+    .home-header-background {
+      .orange-blobs {
+        right: -200px;
+        top: -200px;
+      }
+
+      .green-blobs {
+        left: 0;
+        top: -300px;
+      }
+    }
+  }
+
+  &-block {
+    width: 950px;
+    margin: 0 auto;
+  }
+
+  &-title {
+    font-size: 60px;
+    text-align: center;
+    color: $main;
+  }
+
+  &-description {
+    font-size: 20px;
+    text-align: center;
+    color: $main;
+  }
+
+  &-content {
+    margin: $section-gap auto;
+  }
+
+  &-sub-section {
+    max-width: $main-grid;
+    margin: $section-gap auto;
+  }
+}
+
+.flex-between {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.image-block-parallax {
+  width: 100%;
+  height: 500px;
+  margin: $section-gap 0 0;
+  overflow: hidden;
+
+  img {
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+}
