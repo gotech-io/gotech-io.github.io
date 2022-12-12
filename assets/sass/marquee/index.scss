@@ -1,0 +1,46 @@
+.marquee-container {
+  width: 100%;
+  height: 100px;
+  background: lightgray; //$default
+  overflow: hidden;
+  position: relative;
+
+  .marquee {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    white-space: nowrap;
+    animation: marquee 60s linear infinite;
+    overflow: hidden;
+
+    &-item {
+      width: 100px;
+      height: 50px;
+      padding: 10px;
+
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+      }
+    }
+  }
+
+  .delay {
+    animation-delay: 30s;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    left: 100%;
+  }
+  100% {
+    left: -100%;
+  }
+}
