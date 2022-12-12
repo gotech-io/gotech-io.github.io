@@ -1,13 +1,12 @@
+import Header from "../../common/header";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-// import Header from "../../common/header";
-
 function CaseStudies({ title, description, projects, _relativeURL, _ID }) {
   return (
     <div>
-      {/* <Header title={title} description={description} /> */}
+      <Header title={title} description={description} />
 
       <div className="page-common-sub-section">
         <div className="about-story-wrapper">
