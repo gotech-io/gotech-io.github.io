@@ -32,6 +32,11 @@
   }
 
   .list-items {
+    &-link {
+      text-decoration: none;
+      cursor: pointer;
+    }
+
     .socials {
       .img {
         width: 30px;

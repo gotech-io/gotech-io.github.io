@@ -6,10 +6,17 @@ const ListItems = ({ list }) => {
   return (
     <div className="list-items">
       {list.map((item, j) => {
-        const { title, phone, socials } = item;
+        const { title, link, phone, socials } = item;
         return (
           <div key={j} className="text-small">
-            {title}
+            {link ? (
+              <a href={link} className="list-items-link">
+                {title}
+              </a>
+            ) : (
+              <span>{title}</span>
+            )}
+
             <div className="text-small">
               {phone || phone}
               {socials || socials}
