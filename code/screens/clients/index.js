@@ -9,7 +9,7 @@ function Clients({ title, description, _relativeURL, _ID }) {
       <Header title={title} description={description} />
       <script
         type="module"
-        src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
+        src={handleUrl(`/assets/js/screens/about/index.js`, _relativeURL, _ID)}
       />
     </div>
   );

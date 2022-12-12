@@ -17,7 +17,7 @@ function ContactPage({ title, description, info, _relativeURL, _ID }) {
 
       <script
         type="module"
-        src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
+        src={handleUrl(`/assets/js/screens/about/index.js`, _relativeURL, _ID)}
       />
     </div>
   );

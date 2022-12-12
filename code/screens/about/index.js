@@ -53,7 +53,7 @@ function About({ title, description, videoList, gallery, _relativeURL, _ID }) {
       </div>
       <script
         type="module"
-        src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
+        src={handleUrl(`/assets/js/screens/about/index.js`, _relativeURL, _ID)}
       />
     </div>
   );
