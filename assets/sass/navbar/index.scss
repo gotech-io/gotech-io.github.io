@@ -17,6 +17,19 @@
     }
   }
 
+  .contact-link {
+    border: solid 2px $main;
+    a {
+      color: $main;
+    }
+    &:hover {
+      border: solid 2px transparent;
+      a {
+        color: $main;
+      }
+    }
+  }
+
   &-active {
     .navbar-flex {
       background: $main;
@@ -26,6 +39,18 @@
 
       a {
         color: $prime;
+      }
+      .contact-link {
+        border: solid 2px $prime;
+        a {
+          color: $prime;
+        }
+        &:hover {
+          border: solid 2px transparent;
+          a {
+            color: $main;
+          }
+        }
       }
     }
   }
