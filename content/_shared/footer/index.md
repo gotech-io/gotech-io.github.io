@@ -6,20 +6,19 @@ variables:
       title: About Us,
       list:
         [
-          { title: Clients, link:'' },
-          { title: Teams, link:'' },
-          { title: Careers, link:'' },
-          { title: News, link:'' },
+          { title: Clients, link: "/#clients" },
+          { title: Teams, link: "/#teams" },
+          { title: Careers, link: "/careers/" },
         ],
     },
     {
       title: Services,
       list:
         [
-          { title: Application Development, link:'' },
-          { title: Mobile Development, link:'' },
-          { title: Test Application, link:'' },
-          { title: DevOps, link:'' },
+          { title: Application Development },
+          { title: Mobile Development },
+          { title: QA Automation },
+          { title: DevOps },
         ],
     },
     {
