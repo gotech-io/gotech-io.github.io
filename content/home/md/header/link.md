@@ -2,4 +2,4 @@
 layout: common/btns/contact
 ---
 
-[LEARN MORE](/)
+[Let’s get started!](/#services)
