@@ -35,7 +35,7 @@ function ProjectPage({ type, _relativeURL, _ID }) {
             </div>
           </div>
 
-          <div className="project-page-block flex-between">
+          <div className="project-page-block">
             <div className="project-page-intro">
               <h6>Country</h6>
               <p>{country}</p>
@@ -49,6 +49,15 @@ function ProjectPage({ type, _relativeURL, _ID }) {
             <div className="project-page-intro">
               <h6>Services Used:</h6>
               <Tags tags={services} count={services.length || 0} />
+
+              <div className="project-page-intro-link">
+                <a href="/#services">
+                  see all
+                  <span className="project-page-intro-link-button">
+                    <i className="fa-solid fa-arrow-right"></i>
+                  </span>
+                </a>
+              </div>
             </div>
 
             <div className="project-page-intro">
