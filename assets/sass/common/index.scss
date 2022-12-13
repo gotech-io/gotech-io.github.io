@@ -183,14 +183,17 @@ li,
   }
 }
 .link {
+  width: 200px;
   height: 50px;
   letter-spacing: 2px;
   font-size: 12px;
   border-radius: 50px;
-  background: #ffa185;
+  border: 2px solid $prime;
+  background: transparent;
   transition: 0.2s all;
+
   a {
-    color: white;
+    color: $prime;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -201,10 +204,16 @@ li,
     font-weight: 600;
     text-decoration: none;
   }
+
   &:hover {
-    background: #fd8274;
+    background: $green-background;
+    border: 2px solid $main;
+    a {
+      color: $main;
+    }
   }
 }
+
 .back-btn {
   display: flex;
   align-items: center;
