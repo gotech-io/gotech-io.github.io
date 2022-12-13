@@ -6,4 +6,7 @@ projects:
   - projects/novotalk.md
   - projects/memomi.md
   - projects/orbs.md
+
+contact:
+  - ../../../home/md/contact/index.md
 ---

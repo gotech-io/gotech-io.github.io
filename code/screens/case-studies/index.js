@@ -3,7 +3,14 @@ import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-function CaseStudies({ title, description, projects, _relativeURL, _ID }) {
+function CaseStudies({
+  title,
+  description,
+  projects,
+  contact,
+  _relativeURL,
+  _ID,
+}) {
   return (
     <div>
       <Header title={title} description={description} />
@@ -19,6 +26,9 @@ function CaseStudies({ title, description, projects, _relativeURL, _ID }) {
           )}
         </div>
       </div>
+
+      <div className="grey-section">{contact}</div>
+
       <script
         type="module"
         src={handleUrl(`/assets/js/screens/about/index.js`, _relativeURL, _ID)}

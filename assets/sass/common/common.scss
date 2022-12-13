@@ -90,7 +90,7 @@ a {
 
   &-sub-section {
     max-width: $main-grid;
-    margin: $section-gap auto;
+    margin: 100px auto;
   }
 }
 
@@ -115,6 +115,12 @@ img {
   img {
     height: auto;
   }
+}
+
+.grey-section {
+  width: 100%;
+  padding: 100px 0;
+  background-color: $default;
 }
 
 @media only screen and (max-width: $mobile) {

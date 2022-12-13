@@ -23,12 +23,11 @@ const Home = ({
       {about}
       {join}
       {team}
-      {contact}
+      <div className="grey-section">{contact}</div>
       <script
         type="module"
         src={handleUrl(`/assets/js/home/index.js`, _relativeURL, _ID)}
       />
-    
     </div>
   );
 };

@@ -6,7 +6,7 @@ import Tags from "../../../common/tag";
 import { PROJECTS_INFO } from "../../../../assets/js/common/content/case-studies-projects";
 import { handleUrl } from "../../../utils";
 
-function ProjectPage({ type, _relativeURL, _ID }) {
+function ProjectPage({ type, contact, _relativeURL, _ID }) {
   const {
     title,
     description,
@@ -88,6 +88,8 @@ function ProjectPage({ type, _relativeURL, _ID }) {
           <img className="jarallax-img" src={parallax.src} alt={parallax.alt} />
         </div>
       </div>
+
+      <div className="grey-section">{contact}</div>
 
       <script
         type="module"
