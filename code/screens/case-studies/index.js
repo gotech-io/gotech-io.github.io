@@ -1,7 +1,10 @@
+import ColorSection from "../../common/ColorSection";
 import Header from "../../common/header";
 import React from "react";
-import animations from "../../../assets/js/animations";
+import { COLORS } from "../../../assets/js/common/colors/colors";
 import { handleUrl } from "../../utils";
+
+const isEmpty = "Right now we don't have a new examples for you!";
 
 function CaseStudies({
   title,
@@ -16,15 +19,13 @@ function CaseStudies({
       <Header title={title} description={description} />
 
       <div>
-        <div className="about-story-wrapper">
-          {projects.length ? (
-            projects.map((project, i) => {
-              return <div key={i}>{project}</div>;
-            })
-          ) : (
-            <div>Right now we don't have a new examples for you!</div>
-          )}
-        </div>
+        {projects.length ? (
+          projects.map((project, i) => {
+            return <div key={i}>{project}</div>;
+          })
+        ) : (
+          <ColorSection color={COLORS.GREEN} title={isEmpty} />
+        )}
       </div>
 
       <div className="grey-section">{contact}</div>

@@ -1,31 +1,31 @@
-import GreenSection from "../../../common/greenSection";
+import ArrowButton from "../../../common/btns/arrow";
+import ColorSection from "../../../common/ColorSection";
 import Header from "../../../common/header";
+import IntroduceItem from "../components/introduceItem";
+import Parallax from "../../../common/parallax";
 import React from "react";
 import Steps from "../../../common/steps";
 import Tags from "../../../common/tag";
+import { COLORS } from "../../../../assets/js/common/colors/colors";
 import { PROJECTS_INFO } from "../../../../assets/js/common/content/case-studies-projects";
 import { handleUrl } from "../../../utils";
 
+const isEmpty = "Right now we don't have a description!";
+const textBtn = "see all";
+
 function ProjectPage({ type, contact, _relativeURL, _ID }) {
-  const {
-    title,
-    description,
-    images,
-    services,
-    tags,
-    industry,
-    country,
-    client,
-    challenge,
-    solution,
-  } = PROJECTS_INFO[type];
+  const { title, description, images, client, challenge, solution, introduce } =
+    PROJECTS_INFO[type];
   const { main, parallax } = images;
 
   return (
     <div>
       <Header title={title} description={description} />
-
-      <GreenSection title={client.title} description={client.description} />
+      <ColorSection
+        color={COLORS.GREEN}
+        title={client.title}
+        description={client.description}
+      />
 
       <div className="page-common-block">
         <div className="page-common-content">
@@ -36,58 +36,49 @@ function ProjectPage({ type, contact, _relativeURL, _ID }) {
           </div>
 
           <div className="project-page-block">
-            <div className="project-page-intro">
-              <h6>Country</h6>
-              <p>{country}</p>
-            </div>
-
-            <div className="project-page-intro">
-              <h6>Industry</h6>
-              <p>{industry}</p>
-            </div>
-
-            <div className="project-page-intro">
-              <h6>Services Used:</h6>
-              <Tags tags={services} count={services.length || 0} />
-
-              <div className="project-page-intro-link">
-                <a href="/#services">
-                  see all
-                  <div className="project-page-intro-link-button">
-                    <i className="fa-solid fa-arrow-right"></i>
-                  </div>
-                </a>
-              </div>
-            </div>
-
-            <div className="project-page-intro">
-              <h6>Technologies Stack </h6>
-              <Tags tags={tags} count={tags.length || 0} />
-            </div>
+            {introduce.length ? (
+              introduce.map((intro, i) => {
+                return (
+                  <IntroduceItem
+                    key={i}
+                    title={intro.title}
+                    description={intro.description || ""}
+                  >
+                    {intro.options && (
+                      <div>
+                        <Tags
+                          tags={intro.options}
+                          count={intro.options.length || 0}
+                        />
+                        {intro.link && (
+                          <ArrowButton link={intro.link} textBtn={textBtn} />
+                        )}
+                      </div>
+                    )}
+                  </IntroduceItem>
+                );
+              })
+            ) : (
+              <ColorSection color={COLORS.GREEN} title={isEmpty} />
+            )}
           </div>
         </div>
       </div>
 
-      <div className="project-page">
-        <div className="page-common-block">
-          <h4>Challenge Faced:</h4>
-          <div>
-            <p>{challenge.description}</p>
-            <Steps steps={challenge.steps} />
-          </div>
-        </div>
-      </div>
+      <ColorSection
+        color={COLORS.GRAY}
+        title={challenge.title}
+        description={challenge.description}
+      >
+        <Steps steps={challenge.steps} />
+      </ColorSection>
 
-      <div>
-        <GreenSection
-          title={solution.title}
-          description={solution.description}
-        />
-
-        <div className="image-block-parallax jarallax" data-jarallax>
-          <img className="jarallax-img" src={parallax.src} alt={parallax.alt} />
-        </div>
-      </div>
+      <ColorSection
+        color={COLORS.GREEN}
+        title={solution.title}
+        description={solution.description}
+      />
+      <Parallax src={parallax.src} alt={parallax.alt} />
 
       <div className="grey-section">{contact}</div>
 

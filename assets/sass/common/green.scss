@@ -1,18 +1,35 @@
+.color-block {
+  width: 100%;
+  padding: $section-gap 0;
+
+  &-title {
+    color: $main;
+  }
+
+  &-description {
+    padding: $content-gap 0 0;
+
+    font-size: 18px;
+    color: $main;
+  }
+}
+
 .green {
-  &-block {
-    width: 100%;
-    padding: $section-gap 0;
+  .color-block {
     background: $green-background;
+  }
+}
+
+.gray {
+  .color-block {
+    background-color: $default;
 
     &-title {
-      color: $main;
+      color: $prime;
     }
 
     &-description {
-      padding: $content-gap 0 0;
-
-      font-size: 18px;
-      color: $main;
+      color: $prime;
     }
   }
 }

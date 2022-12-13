@@ -23,6 +23,7 @@ export const PROJECTS_INFO = {
         "Novotalk develops on-demand (asynchronous), self-directed speech and language teletherapy solutions that allow individuals with speech impairments to learn, practice, gain, and maintain intelligible speech remotely, independently, and discreetly. They came to us with a range of technical challenges and performance issues. They were looking for a partner who could help them improve their platform and support their growth.",
     },
     challenge: {
+      title: "Challenge Faced:",
       description:
         "When Novotalk approached GoTech, their platform was in need of significant refactoring and performance improvements.",
       steps: [
@@ -37,11 +38,18 @@ export const PROJECTS_INFO = {
       description:
         "GoTech was able to take ownership of Novotalk's entire system and address their technical challenges. We refactored both the client-side and server-side of the platform, solving numerous performance issues along the way. We also built an entire CI/CD process on AWS, including cost optimizations to help Novotalk save money. Finally, we worked with Novotalk to develop a comprehensive QA testing plan that provided better coverage for their system. Today, GoTech is Novotalk's entire technological team, and we continue to support them as they grow. With our help, Novotalk has been able to improve the performance and reliability of their platform, and is well-positioned for future growth.",
     },
-    button: { url: "/case-studies-project/novotalk", btnText: "see more" },
+    introduce: [
+      { title: "Country", description: "Israel" },
+      { title: "Industry", description: "Language Therapy" },
+      {
+        title: "Services Used",
+        options: ["FrontEnd", "BackEnd"],
+        link: "/#services",
+      },
+      { title: "Technologies Stack", options: ["CSS", "React", "AWS"] },
+    ],
     tags: ["CSS", "React", "AWS"],
-    services: ["FrontEnd", "BackEnd"],
-    industry: "Language Therapy",
-    country: "Israel",
+    button: { url: "/case-studies-project/novotalk", btnText: "see more" },
   },
 
   MEMOMI: {
@@ -68,6 +76,7 @@ export const PROJECTS_INFO = {
         "Memomi is a developer of an augmented reality and artificial intelligence platform that enables customers to try products virtually and receive personalized product recommendations. They approached GoTech needing help integrating an AR engine between their server and mobile applications.",
     },
     challenge: {
+      title: "Challenge Faced:",
       description:
         "Memomi needed assistance integrating their complex AR engine between the server and mobile applications.",
       steps: [
@@ -80,11 +89,17 @@ export const PROJECTS_INFO = {
       description:
         "GoTech was able to help Memomi integrate the AR engine into their server and mobile applications, both for iOS and Android. Our team of experts has experience in AR and ML, and was able to deliver high-quality mobile applications that offered a seamless and engaging AR experience. We also assisted Memomi in integrating the SDK into their clients' applications, further enhancing the functionality of their platform. With GoTech's help, Memomi was able to overcome the challenges of integrating their AR engine and take their platform to the next level. Memomi was eventually acquired by Walmart.",
     },
-    button: { url: "/case-studies-project/memomi", btnText: "see more" },
+    introduce: [
+      { title: "Country", description: "Israel" },
+      { title: "Industry", description: "AR Market" },
+      { title: "Services Used", options: ["Mobile"], link: "/#services" },
+      {
+        title: "Technologies Stack",
+        options: ["iOS", "Android", "ML", "AR", "SDK"],
+      },
+    ],
     tags: ["iOS", "Android", "ML", "AR", "SDK"],
-    services: ["Mobile"],
-    industry: "AR Market",
-    country: "Israel",
+    button: { url: "/case-studies-project/memomi", btnText: "see more" },
   },
 
   ORBS: {
@@ -111,6 +126,7 @@ export const PROJECTS_INFO = {
         "Orbs is a developer of a public blockchain infrastructure designed for mass usage applications and close integration with EVM-based L1’s such as Ethereum, Binance SmartChain and Polygon. They came to GoTech needing help building complex Front-End projects, including dashboards, monitors, and the company's website.",
     },
     challenge: {
+      title: "Challenge Faced:",
       description:
         "Orbs was looking for a partner who could take ownership of entire projects, think big, and work independently while providing high-quality products. ",
       steps: [
@@ -122,10 +138,16 @@ export const PROJECTS_INFO = {
       description:
         "GoTech was able to help Memomi integrate the AR engine into their server and mobile applications, both for iOS and Android. Our team of experts has experience in AR and ML, and was able to deliver high-quality mobile applications that offered a seamless and engaging AR experience. We also assisted Memomi in integrating the SDK into their clients' applications, further enhancing the functionality of their platform. With GoTech's help, Memomi was able to overcome the challenges of integrating their AR engine and take their platform to the next level. Memomi was eventually acquired by Walmart.",
     },
-    button: { url: "/case-studies-project/orbs", btnText: "see more" },
+    introduce: [
+      { title: "Country", description: "Israel" },
+      { title: "Industry", description: "Blockchain Infrastructure" },
+      { title: "Services Used", options: ["FrontEnd"], link: "/#services" },
+      {
+        title: "Technologies Stack",
+        options: ["React", "Cuttlebelle", "Redux"],
+      },
+    ],
     tags: ["React", "Cuttlebelle", "Redux"],
-    services: ["FrontEnd"],
-    industry: "Blockchain Infrastructure",
-    country: "Israel",
+    button: { url: "/case-studies-project/orbs", btnText: "see more" },
   },
 };
