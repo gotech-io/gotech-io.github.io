@@ -5,13 +5,12 @@
     background: $green-background;
 
     &-title {
-      text-align: center;
       color: $main;
     }
 
     &-description {
       padding: $content-gap 0 0;
-      text-align: center;
+
       font-size: 18px;
       color: $main;
     }
