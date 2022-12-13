@@ -53,9 +53,9 @@ function ProjectPage({ type, _relativeURL, _ID }) {
               <div className="project-page-intro-link">
                 <a href="/#services">
                   see all
-                  <span className="project-page-intro-link-button">
+                  <div className="project-page-intro-link-button">
                     <i className="fa-solid fa-arrow-right"></i>
-                  </span>
+                  </div>
                 </a>
               </div>
             </div>
