@@ -6,13 +6,24 @@ import { PROJECTS_INFO } from "../../../../assets/js/common/content/case-studies
 import { handleUrl } from "../../../utils";
 
 function ProjectPage({ type, _relativeURL, _ID }) {
-  const { title, description, images, tags, industry, country, challenge } =
-    PROJECTS_INFO[type];
+  const {
+    title,
+    description,
+    images,
+    tags,
+    industry,
+    country,
+    client,
+    challenge,
+    solution,
+  } = PROJECTS_INFO[type];
   const { main, parallax } = images;
 
   return (
     <div>
       <Header title={title} description={description} />
+
+      {client}
 
       <div className="page-common-block">
         <div className="page-common-content">
@@ -53,7 +64,7 @@ function ProjectPage({ type, _relativeURL, _ID }) {
       <div>
         <div className="page-common-block">
           <h4>Our Solution:</h4>
-          <p>{description}</p>
+          <p>{solution}</p>
         </div>
         <div className="image-block-parallax jarallax" data-jarallax>
           <img className="jarallax-img" src={parallax.src} alt={parallax.alt} />

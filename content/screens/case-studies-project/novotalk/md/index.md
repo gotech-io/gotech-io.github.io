@@ -1,4 +1,4 @@
 ---
 layout: screens/case-studies/project-page/index
-type: TEASER
+type: NOVOTALK
 ---
