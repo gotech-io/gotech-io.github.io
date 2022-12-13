@@ -15,7 +15,7 @@ function CaseStudies({
     <div>
       <Header title={title} description={description} />
 
-      <div className="page-common-sub-section">
+      <div>
         <div className="about-story-wrapper">
           {projects.length ? (
             projects.map((project, i) => {

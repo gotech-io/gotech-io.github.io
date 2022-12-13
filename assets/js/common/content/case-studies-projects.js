@@ -4,16 +4,16 @@ export const PROJECTS_INFO = {
     description:
       "Novotalk is an open platform for people with speech impediments. you will be helped to choose an individual approach to training and you will learn how to speak and pronounce words correctly.",
     images: {
-      main: {
-        src: "/assets/images/case-studies/teaser/main.png",
+      mockup: {
+        src: "/assets/images/case-studies/novotalk/novotalk1.png",
         alt: "novotalk",
       },
-      mockup: {
-        src: "/assets/images/case-studies/teaser/mockup.png",
+      main: {
+        src: "/assets/images/case-studies/novotalk/novotalk2.png",
         alt: "novotalk",
       },
       parallax: {
-        src: "/assets/images/case-studies/teaser/parallax.png",
+        src: "/assets/images/case-studies/novotalk/novotalk3.jpg",
         alt: "novotalk",
       },
     },
@@ -49,16 +49,16 @@ export const PROJECTS_INFO = {
     description:
       "Memomi is the award-winning smart mirror software transforming the luxury shopping market.",
     images: {
-      main: {
-        src: "/assets/images/case-studies/teaser/main.png",
+      mockup: {
+        src: "/assets/images/case-studies/memomi/memomi1.png",
         alt: "memomi",
       },
-      mockup: {
-        src: "/assets/images/case-studies/teaser/mockup.png",
+      main: {
+        src: "/assets/images/case-studies/memomi/memomi2.png",
         alt: "memomi",
       },
       parallax: {
-        src: "/assets/images/case-studies/teaser/parallax.png",
+        src: "/assets/images/case-studies/memomi/memomi3.jpg",
         alt: "memomi",
       },
     },
@@ -92,16 +92,16 @@ export const PROJECTS_INFO = {
     description:
       "Orbs is an open, decentralized and public blockchain infrastructure executed by a secure network of permissionless validators using Proof-of-Stake (PoS) consensus.",
     images: {
-      main: {
-        src: "/assets/images/case-studies/teaser/main.png",
+      mockup: {
+        src: "/assets/images/case-studies/orbs/orbs1.png",
         alt: "orbs",
       },
-      mockup: {
-        src: "/assets/images/case-studies/teaser/mockup.png",
+      main: {
+        src: "/assets/images/case-studies/orbs/orbs2.png",
         alt: "orbs",
       },
       parallax: {
-        src: "/assets/images/case-studies/teaser/parallax.png",
+        src: "/assets/images/case-studies/orbs/orbs3.jpg",
         alt: "orbs",
       },
     },
