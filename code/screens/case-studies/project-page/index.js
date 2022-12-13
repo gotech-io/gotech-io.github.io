@@ -1,3 +1,4 @@
+import GreenSection from "../../../common/greenSection";
 import Header from "../../../common/header";
 import React from "react";
 import Steps from "../../../common/steps";
@@ -10,6 +11,7 @@ function ProjectPage({ type, _relativeURL, _ID }) {
     title,
     description,
     images,
+    services,
     tags,
     industry,
     country,
@@ -23,7 +25,7 @@ function ProjectPage({ type, _relativeURL, _ID }) {
     <div>
       <Header title={title} description={description} />
 
-      {client}
+      <GreenSection title={client.title} description={client.description} />
 
       <div className="page-common-block">
         <div className="page-common-content">
@@ -43,6 +45,12 @@ function ProjectPage({ type, _relativeURL, _ID }) {
               <h6>Industry</h6>
               <p>{industry}</p>
             </div>
+
+            <div className="project-page-intro">
+              <h6>Services Used:</h6>
+              <Tags tags={services} count={services.length || 0} />
+            </div>
+
             <div className="project-page-intro">
               <h6>Technologies Stack </h6>
               <Tags tags={tags} count={tags.length || 0} />
@@ -62,10 +70,11 @@ function ProjectPage({ type, _relativeURL, _ID }) {
       </div>
 
       <div>
-        <div className="page-common-block">
-          <h4>Our Solution:</h4>
-          <p>{solution}</p>
-        </div>
+        <GreenSection
+          title={solution.title}
+          description={solution.description}
+        />
+
         <div className="image-block-parallax jarallax" data-jarallax>
           <img className="jarallax-img" src={parallax.src} alt={parallax.alt} />
         </div>
