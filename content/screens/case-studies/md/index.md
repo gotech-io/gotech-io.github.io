@@ -6,6 +6,8 @@ projects:
   - projects/novotalk.md
   - projects/memomi.md
   - projects/orbs.md
+  - projects/ai21labs.md
+  - projects/base.md
 
 marquee:
   - /_shared/marquee/index.md
