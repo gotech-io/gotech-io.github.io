@@ -6,8 +6,8 @@ import Parallax from "../../../common/parallax";
 import React from "react";
 import Steps from "../../../common/steps";
 import Tags from "../../../common/tag";
+import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 import { COLORS } from "../../../../assets/js/common/colors";
-import { PROJECTS_INFO } from "../../../../assets/js/common/content/case-studies-projects";
 import { handleUrl } from "../../../utils";
 
 const isEmpty = "Right now we don't have a description!";

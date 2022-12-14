@@ -2,7 +2,7 @@ import Link from "../../../common/btns/link";
 import React from "react";
 import Tags from "../../../common/tag";
 import animations from "../../../../assets/js/animations";
-import { PROJECTS_INFO } from "../../../../assets/js/common/content/case-studies-projects";
+import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 
 function Right({ type }) {
   const { title, description, images, button, tags } = PROJECTS_INFO[type];
