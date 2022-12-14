@@ -9,6 +9,12 @@
   border-radius: 20px;
 }
 
+@media only screen and (max-width: $medium) {
+  .map-wrapper {
+    width: 90%;
+  }
+}
+
 @media only screen and (max-width: $mobile) {
   .map-wrapper {
     width: 100%;
