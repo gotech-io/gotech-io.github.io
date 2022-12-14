@@ -9,21 +9,26 @@
   -webkit-backdrop-filter: blur(5px);
   border-top: 2px solid $default;
 
+  &-list {
+    display: flex;
+    justify-content: space-between;
+  }
+
   &-bottom {
     margin-top: 50px;
-    border-top: 2px solid lightgray;
+    border-top: 2px solid $default;
     margin-top: $content-gap;
-    color: $additional;
+    color: lightgray;
     font-size: 10px;
 
     &-section {
       margin-top: $content-gap;
-      color: $additional;
+      color: lightgray;
       font-size: 10px;
 
       &-policy {
         a {
-          color: $additional;
+          color: lightgray;
           text-decoration: none;
           margin-left: 10px;
         }
@@ -37,6 +42,10 @@
       text-decoration: none;
       text-transform: none;
       cursor: pointer;
+
+      &:hover {
+        color: $prime;
+      }
     }
 
     .socials {

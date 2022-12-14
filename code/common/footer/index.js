@@ -4,7 +4,6 @@ import React from "react";
 
 const Footer = ({
   variables,
-  // marquee,
   copyright,
   privacy_policy_text,
   privacy_policy_url,
@@ -13,10 +12,9 @@ const Footer = ({
 }) => {
   return (
     <div>
-      {/* {marquee} */}
       <div className="footer">
         <div className="page-common-block">
-          <div className="flex-between">
+          <div className="footer-list">
             {variables.length
               ? variables.map((variable, i) => {
                   const { title, list } = variable;
