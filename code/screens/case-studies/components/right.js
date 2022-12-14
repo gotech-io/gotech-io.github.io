@@ -9,7 +9,7 @@ function Right({ type }) {
   const { url, btnText } = button;
   const { mockup } = images;
   return (
-    <div className="case-studies-right flex-between">
+    <div className="case-studies flex-between">
       <div className="page-common-block">
         <div className="case-studies-wrapper">
           <div

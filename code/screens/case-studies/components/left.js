@@ -19,6 +19,7 @@ function Left({ type }) {
           >
             <img src={mockup.src} alt={mockup.alt} />
           </div>
+
           <div
             className="case-studies-content-left"
             data-aos-anchor-placement="top-center"
