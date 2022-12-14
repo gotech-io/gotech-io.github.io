@@ -1,7 +1,7 @@
 import ColorSection from "../../common/ColorSection";
 import Header from "../../common/header";
 import React from "react";
-import { COLORS } from "../../../assets/js/common/colors/colors";
+import { COLORS } from "../../../assets/js/common/colors";
 import { handleUrl } from "../../utils";
 
 const isEmpty = "Right now we don't have a new examples for you!";

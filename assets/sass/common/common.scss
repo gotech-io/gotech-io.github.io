@@ -61,9 +61,14 @@ a {
       }
 
       .green-blobs {
-        left: 0;
+        left: -250px;
         top: -500px;
       }
+    }
+
+    .page-common-block {
+      position: relative;
+      z-index: 10;
     }
   }
 

@@ -5,7 +5,7 @@ import animations from "../../../../../assets/js/animations";
 const HomeHeader = ({ title, sub_title, description, button }) => {
   return (
     <div className="home-header">
-      <Blobs />
+      <Blobs orangeSize={1300} greenSize={1100} />
 
       <div className="home-header-main">
         <div className="page-common-block">

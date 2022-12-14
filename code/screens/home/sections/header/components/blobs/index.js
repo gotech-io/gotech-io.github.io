@@ -2,22 +2,23 @@ import React from "react";
 
 const blobs = [
   {
+    type: "orange",
     className: "orange-blobs",
     src: "https://assets3.lottiefiles.com/packages/lf20_5gdcuanx.json",
-    size: 1300,
   },
   {
+    type: "green",
     className: "green-blobs",
     src: "https://lottie.host/2a4cd7fd-ef68-4865-b56c-8fe21f2c9170/7RneaIKFUy.json",
-    size: 1100,
   },
 ];
 
-const Blobs = () => {
+const Blobs = ({ orangeSize, greenSize }) => {
   return (
     <div className="home-header-background">
       {blobs.map((blob) => {
-        const { className, src, size } = blob;
+        const { type, className, src } = blob;
+        const size = type === "orange" ? orangeSize : greenSize;
         return (
           <div key={className} className={className}>
             <lottie-player
