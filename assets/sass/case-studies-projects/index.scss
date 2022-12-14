@@ -33,3 +33,21 @@
     height: 500px;
   }
 }
+
+@media only screen and (max-width: $mobile) {
+  .project-page {
+    &-block {
+      flex-wrap: wrap;
+    }
+
+    &-intro {
+      margin-bottom: 20px;
+    }
+  }
+
+  .main-wrapper {
+    &-image {
+      height: auto !important;
+    }
+  }
+}

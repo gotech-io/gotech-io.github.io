@@ -81,3 +81,64 @@
     }
   }
 }
+
+@media only screen and (max-width: $medium) {
+  .case-studies {
+    &-content {
+      &-left,
+      &-right {
+        width: 100% !important;
+      }
+    }
+
+    &-image {
+      &-left,
+      &-right {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .case-studies {
+    min-height: auto !important;
+    margin: 0 !important;
+
+    &-content {
+      &-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div,
+        button {
+          width: 100%;
+          margin: 5px;
+          justify-content: center;
+          text-align: center;
+        }
+      }
+    }
+
+    &-wrapper {
+      height: auto !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: unset !important;
+    }
+
+    &-content {
+      &-left,
+      &-right {
+        position: unset !important;
+      }
+    }
+
+    &-image {
+      &-left,
+      &-right {
+        display: none;
+      }
+    }
+  }
+}

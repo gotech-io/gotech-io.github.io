@@ -72,7 +72,7 @@ a {
   }
 
   &-block {
-    width: 950px;
+    width: $main-grid;
     margin: 0 auto;
   }
 
@@ -117,5 +117,21 @@ img {
   }
   h2 {
     font-size: 25px;
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .page-common-block {
+    width: 90%;
+  }
+
+  .text-description-header {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .socials {
+    justify-content: center;
   }
 }

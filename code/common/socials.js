@@ -1,5 +1,5 @@
-import React from "react";
 import Image from "./img";
+import React from "react";
 
 const Socials = ({
   _relativeURL,
@@ -15,7 +15,7 @@ const Socials = ({
     return `${_relativeURL(url, _ID)}`;
   };
   return (
-    <section className="flex-start socials">
+    <section className="socials">
       <a href={facebook_link} target="_blank">
         <Image src={createRelativeURL(facebook_image)} />
       </a>

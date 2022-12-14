@@ -10,8 +10,10 @@
   border-top: 2px solid $default;
 
   &-list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   &-bottom {
@@ -27,6 +29,8 @@
       font-size: 10px;
 
       &-policy {
+        color: lightgray;
+
         a {
           color: lightgray;
           text-decoration: none;
@@ -56,6 +60,28 @@
         align-items: center;
         justify-content: space-between;
         margin-right: 10px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .footer {
+    &-list {
+      div {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+
+    &-bottom-section {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      div {
+        width: 100%;
+        text-align: center;
       }
     }
   }

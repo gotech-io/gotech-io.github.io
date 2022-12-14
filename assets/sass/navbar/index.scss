@@ -113,7 +113,7 @@
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: $medium) {
   .navbar {
     height: 50px;
 
@@ -198,20 +198,15 @@
         margin: 0px;
       }
     }
+  }
+}
 
-    &-mobile {
-      &-contact {
-        display: block;
-        margin-top: 10px;
-        .link {
-          color: white;
-          background: #002e63;
-          border: solid 2px #002e63;
-          a {
-            color: white;
-          }
-        }
-      }
-    }
+@media only screen and (max-width: $mobile) {
+  .navbar .contact-link {
+    border: solid 2px $prime;
+  }
+
+  .navbar-navigation-link a {
+    color: $prime !important;
   }
 }
