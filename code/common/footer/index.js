@@ -4,7 +4,7 @@ import React from "react";
 
 const Footer = ({
   variables,
-  marquee,
+  // marquee,
   copyright,
   privacy_policy_text,
   privacy_policy_url,
@@ -13,7 +13,7 @@ const Footer = ({
 }) => {
   return (
     <div>
-      {marquee}
+      {/* {marquee} */}
       <div className="footer">
         <div className="page-common-block">
           <div className="flex-between">

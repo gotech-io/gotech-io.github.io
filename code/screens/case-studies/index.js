@@ -10,6 +10,7 @@ function CaseStudies({
   title,
   description,
   projects,
+  marquee,
   contact,
   _relativeURL,
   _ID,
@@ -28,7 +29,8 @@ function CaseStudies({
         )}
       </div>
 
-      <div className="grey-section">{contact}</div>
+      <div>{marquee}</div>
+      <div className="page-common-sub-section">{contact}</div>
 
       <script
         type="module"

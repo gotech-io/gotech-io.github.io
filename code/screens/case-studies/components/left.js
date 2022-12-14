@@ -12,11 +12,7 @@ function Left({ type }) {
     <div className="case-studies flex-between">
       <div className="page-common-block">
         <div className="case-studies-wrapper">
-          <div
-            className="case-studies-image-left"
-            data-aos-anchor-placement="top-center"
-            data-aos={animations.fadeRight}
-          >
+          <div className="case-studies-image-left">
             <img src={mockup.src} alt={mockup.alt} />
           </div>
 

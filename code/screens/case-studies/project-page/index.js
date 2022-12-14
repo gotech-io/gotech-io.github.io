@@ -13,7 +13,7 @@ import { handleUrl } from "../../../utils";
 const isEmpty = "Right now we don't have a description!";
 const textBtn = "see all";
 
-function ProjectPage({ type, contact, _relativeURL, _ID }) {
+function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
   const { title, description, images, client, challenge, solution, introduce } =
     PROJECTS_INFO[type];
   const { main, parallax } = images;
@@ -80,7 +80,8 @@ function ProjectPage({ type, contact, _relativeURL, _ID }) {
       />
       <Parallax src={parallax.src} alt={parallax.alt} />
 
-      <div className="grey-section">{contact}</div>
+      <div>{marquee}</div>
+      <div className="page-common-sub-section">{contact}</div>
 
       <script
         type="module"

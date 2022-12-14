@@ -26,11 +26,7 @@ function Right({ type }) {
             </div>
           </div>
 
-          <div
-            className="case-studies-image-right"
-            data-aos-anchor-placement="top-center"
-            data-aos={animations.fadeLeft}
-          >
+          <div className="case-studies-image-right">
             <img src={mockup.src} alt={mockup.alt} />
           </div>
         </div>

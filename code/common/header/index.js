@@ -8,7 +8,7 @@ const Header = ({ title, description }) => {
 
       <div className="page-common-block">
         <h2 className="page-common-title">{title}</h2>
-        <p className="page-common-description text-description">
+        <p className="page-common-description text-description-header">
           {description}
         </p>
       </div>

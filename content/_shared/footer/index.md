@@ -31,8 +31,8 @@ variables:
     },
   ]
 
-marquee:
-  - /_shared/marquee/index.md
+# marquee:
+#   - /_shared/marquee/index.md
 
 copyright: © Copyright GoTech. All rights reserved.
 privacy_policy_text: Privacy Policy
