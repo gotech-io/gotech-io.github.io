@@ -4,7 +4,7 @@ export const MEMOMI = {
     "Memomi is the award-winning smart mirror software transforming the luxury shopping market.",
   images: {
     mockup: {
-      src: "/assets/images/case-studies/memomi/memomi1.png",
+      src: "/assets/images/case-studies/memomi/memomi1.jpg",
       alt: "memomi",
     },
     main: {
@@ -12,7 +12,7 @@ export const MEMOMI = {
       alt: "memomi",
     },
     parallax: {
-      src: "/assets/images/case-studies/memomi/memomi3.png",
+      src: "/assets/images/case-studies/memomi/memomi3.jpg",
       alt: "memomi",
     },
   },

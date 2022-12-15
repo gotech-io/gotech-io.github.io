@@ -4,7 +4,7 @@ export const AI21LABS = {
     "When Machines Become Thought Partners. AI has a way to go before it matches human intelligence. We aim to get it a little bit closer.",
   images: {
     mockup: {
-      src: "/assets/images/case-studies/ai21labs/ai21labs1.png",
+      src: "/assets/images/case-studies/ai21labs/ai21labs1.jpg",
       alt: "ai21labs",
     },
     main: {
@@ -12,7 +12,7 @@ export const AI21LABS = {
       alt: "ai21labs",
     },
     parallax: {
-      src: "/assets/images/case-studies/ai21labs/ai21labs3.png",
+      src: "/assets/images/case-studies/ai21labs/ai21labs3.jpg",
       alt: "ai21labs",
     },
   },

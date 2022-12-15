@@ -4,7 +4,7 @@ export const NOVOTALK = {
     "Novotalk is an open platform for people with speech impediments. you will be helped to choose an individual approach to training and you will learn how to speak and pronounce words correctly.",
   images: {
     mockup: {
-      src: "/assets/images/case-studies/novotalk/novotalk1.png",
+      src: "/assets/images/case-studies/novotalk/novotalk1.jpg",
       alt: "novotalk",
     },
     main: {
@@ -12,7 +12,7 @@ export const NOVOTALK = {
       alt: "novotalk",
     },
     parallax: {
-      src: "/assets/images/case-studies/novotalk/novotalk3.png",
+      src: "/assets/images/case-studies/novotalk/novotalk3.jpg",
       alt: "novotalk",
     },
   },

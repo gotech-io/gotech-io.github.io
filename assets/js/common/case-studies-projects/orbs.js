@@ -4,7 +4,7 @@ export const ORBS = {
     "Orbs is an open, decentralized and public blockchain infrastructure executed by a secure network of permissionless validators using Proof-of-Stake (PoS) consensus.",
   images: {
     mockup: {
-      src: "/assets/images/case-studies/orbs/orbs1.png",
+      src: "/assets/images/case-studies/orbs/orbs1.jpg",
       alt: "orbs",
     },
     main: {
@@ -12,7 +12,7 @@ export const ORBS = {
       alt: "orbs",
     },
     parallax: {
-      src: "/assets/images/case-studies/orbs/orbs3.png",
+      src: "/assets/images/case-studies/orbs/orbs3.jpg",
       alt: "orbs",
     },
   },
