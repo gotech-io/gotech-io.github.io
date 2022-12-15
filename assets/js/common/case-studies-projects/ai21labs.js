@@ -39,7 +39,7 @@ export const AI21LABS = {
       "Following best practices in test automation, using Playwright and Mocha, we designed the framework to be easy to use and maintain, while still providing the stability and performance that AI21 Labs needed. This allows them to have complete confidence in the results of their automated tests.",
     ],
   },
-  introduce: [
+  introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "Artificial intelligence" },
     { title: "Services Used", options: ["QA automation"], link: "/#services" },

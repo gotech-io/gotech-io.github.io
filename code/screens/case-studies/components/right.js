@@ -1,4 +1,5 @@
 import Link from "../../../common/btns/link";
+import Mockup from "../../../common/mockup";
 import React from "react";
 import Tags from "../../../common/tag";
 import animations from "../../../../assets/js/animations";
@@ -15,7 +16,7 @@ function Right({ type }) {
           <div
             className="case-studies-content-right"
             data-aos-anchor-placement="top-center"
-            data-aos={animations.fadeRight}
+            data-aos={animations?.fadeRight}
           >
             <h5>{title}</h5>
             <p className="case-studies-content-description">{description}</p>
@@ -27,7 +28,7 @@ function Right({ type }) {
           </div>
 
           <div className="case-studies-image-right">
-            <img src={mockup.src} alt={mockup.alt} />
+            <Mockup image={mockup} />
           </div>
         </div>
       </div>

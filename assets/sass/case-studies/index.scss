@@ -4,9 +4,8 @@
   margin-bottom: $section-gap;
 
   &-wrapper {
-    width: 100%;
     height: 500px;
-    margin: $section-gap 0;
+    margin: $section-gap auto;
     position: relative;
     display: flex;
     justify-content: space-between;

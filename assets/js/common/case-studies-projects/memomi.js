@@ -38,7 +38,7 @@ export const MEMOMI = {
       "We also assisted Memomi in integrating the SDK into their clients' applications, further enhancing the functionality of their platform. With GoTech's help, Memomi was able to overcome the challenges of integrating their AR engine and take their platform to the next level. Memomi was eventually acquired by Walmart.",
     ],
   },
-  introduce: [
+  introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "AR Market" },
     { title: "Services Used", options: ["Mobile"], link: "/#services" },

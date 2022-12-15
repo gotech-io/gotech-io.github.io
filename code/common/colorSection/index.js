@@ -1,3 +1,4 @@
+import Paragraphs from "./paragraphs";
 import React from "react";
 
 const ColorSection = ({ color, title, description, paragraphs, children }) => {
@@ -10,16 +11,7 @@ const ColorSection = ({ color, title, description, paragraphs, children }) => {
             <p className="color-block-description">{description}</p>
           )}
 
-          <div className="color-block-paragraphs">
-            {paragraphs &&
-              paragraphs.map((par, i) => {
-                return (
-                  <p key={i} className="color-block-description">
-                    {par}
-                  </p>
-                );
-              })}
-          </div>
+          {paragraphs && <Paragraphs paragraphs={paragraphs} />}
 
           {children}
         </div>

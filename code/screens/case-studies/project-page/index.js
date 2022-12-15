@@ -1,21 +1,24 @@
-import ArrowButton from "../../../common/btns/arrow";
 import ColorSection from "../../../common/ColorSection";
 import Header from "../../../common/header";
-import IntroduceItem from "../components/introduceItem";
+import IntroductionSection from "../components/introductionSection";
+import Mockup from "../../../common/mockup";
 import Parallax from "../../../common/parallax";
 import React from "react";
 import Steps from "../../../common/steps";
-import Tags from "../../../common/tag";
 import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 import { COLORS } from "../../../../assets/js/common/colors";
 import { handleUrl } from "../../../utils";
 
-const isEmpty = "Right now we don't have a description!";
-const textBtn = "see all";
-
 function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
-  const { title, description, images, client, challenge, solution, introduce } =
-    PROJECTS_INFO[type];
+  const {
+    title,
+    description,
+    images,
+    client,
+    challenge,
+    solution,
+    introduction,
+  } = PROJECTS_INFO[type];
   const { main, parallax } = images;
 
   return (
@@ -29,39 +32,10 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
 
       <div className="page-common-block">
         <div className="page-common-content">
-          <div className="main-wrapper">
-            <div className="main-wrapper-image">
-              <img src={main.src} alt={main.alt} />
-            </div>
+          <div className="main-wrapper-image">
+            <Mockup image={main} />
           </div>
-
-          <div className="project-page-block">
-            {introduce.length ? (
-              introduce.map((intro, i) => {
-                return (
-                  <IntroduceItem
-                    key={i}
-                    title={intro.title}
-                    description={intro.description || ""}
-                  >
-                    {intro.options && (
-                      <div>
-                        <Tags
-                          tags={intro.options}
-                          count={intro.options.length || 0}
-                        />
-                        {intro.link && (
-                          <ArrowButton link={intro.link} textBtn={textBtn} />
-                        )}
-                      </div>
-                    )}
-                  </IntroduceItem>
-                );
-              })
-            ) : (
-              <ColorSection color={COLORS.GREEN} title={isEmpty} />
-            )}
-          </div>
+          <IntroductionSection introduction={introduction} />
         </div>
       </div>
 

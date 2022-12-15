@@ -38,7 +38,7 @@ export const BASE = {
       "We made automation an integral part of their manual regression testing, providing visibility through reporting, logging, and integration with external systems. This allowed our teams to work together effectively and provided Base with the confidence and reliability they needed to succeed.",
     ],
   },
-  introduce: [
+  introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "B2B Businesses" },
     { title: "Services Used", options: ["QA automation"], link: "/#services" },

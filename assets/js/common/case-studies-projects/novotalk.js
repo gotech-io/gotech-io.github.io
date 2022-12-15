@@ -42,7 +42,7 @@ export const NOVOTALK = {
       "Today, GoTech is Novotalk's entire technological team, and we continue to support them as they grow. With our help, Novotalk has been able to improve the performance and reliability of their platform, and is well-positioned for future growth.",
     ],
   },
-  introduce: [
+  introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "Language Therapy" },
     {

@@ -21,8 +21,8 @@ function CaseStudies({
 
       <div>
         {projects.length ? (
-          projects.map((project, i) => {
-            return <div key={i}>{project}</div>;
+          projects.map((project) => {
+            return <div key={performance.now()}>{project}</div>;
           })
         ) : (
           <ColorSection color={COLORS.GREEN} title={isEmpty} />

@@ -39,7 +39,7 @@ export const ORBS = {
       "With GoTech's help, Memomi was able to overcome the challenges of integrating their AR engine and take their platform to the next level. Memomi was eventually acquired by Walmart.",
     ],
   },
-  introduce: [
+  introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "Blockchain Infrastructure" },
     { title: "Services Used", options: ["FrontEnd"], link: "/#services" },
