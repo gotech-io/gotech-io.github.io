@@ -10,16 +10,16 @@ const ColorSection = ({ color, title, description, paragraphs, children }) => {
             <p className="color-block-description">{description}</p>
           )}
 
-          <ul className="color-block-paragraphs">
+          <div className="color-block-paragraphs">
             {paragraphs &&
               paragraphs.map((par, i) => {
                 return (
-                  <li key={i} className="color-block-description">
+                  <p key={i} className="color-block-description">
                     {par}
-                  </li>
+                  </p>
                 );
               })}
-          </ul>
+          </div>
 
           {children}
         </div>
