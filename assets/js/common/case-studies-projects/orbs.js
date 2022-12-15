@@ -12,7 +12,7 @@ export const ORBS = {
       alt: "orbs",
     },
     parallax: {
-      src: "/assets/images/case-studies/orbs/orbs3.jpg",
+      src: "/assets/images/case-studies/orbs/orbs3.png",
       alt: "orbs",
     },
   },

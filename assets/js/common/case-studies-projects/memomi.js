@@ -12,7 +12,7 @@ export const MEMOMI = {
       alt: "memomi",
     },
     parallax: {
-      src: "/assets/images/case-studies/memomi/memomi3.jpg",
+      src: "/assets/images/case-studies/memomi/memomi3.png",
       alt: "memomi",
     },
   },

@@ -4,15 +4,15 @@ export const BASE = {
     "Base helps B2B companies engage their customers automatically throughout their lifecycle.",
   images: {
     mockup: {
-      src: "/assets/images/case-studies/memomi/memomi1.png",
+      src: "/assets/images/case-studies/base/base1.png",
       alt: "base",
     },
     main: {
-      src: "/assets/images/case-studies/memomi/memomi2.png",
+      src: "/assets/images/case-studies/base/base2.png",
       alt: "base",
     },
     parallax: {
-      src: "/assets/images/case-studies/memomi/memomi3.jpg",
+      src: "/assets/images/case-studies/base/base3.png",
       alt: "base",
     },
   },

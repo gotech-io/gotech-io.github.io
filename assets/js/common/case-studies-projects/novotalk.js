@@ -12,7 +12,7 @@ export const NOVOTALK = {
       alt: "novotalk",
     },
     parallax: {
-      src: "/assets/images/case-studies/novotalk/novotalk3.jpg",
+      src: "/assets/images/case-studies/novotalk/novotalk3.png",
       alt: "novotalk",
     },
   },

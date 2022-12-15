@@ -15,8 +15,10 @@
   &-image-left {
     width: 90%;
     height: 90%;
-    border-radius: $radius;
-    background-color: lightgray;
+
+    img {
+      border-radius: $radius;
+    }
   }
 
   &-image-right {
@@ -24,8 +26,10 @@
     height: 90%;
     position: absolute;
     right: 0;
-    border-radius: $radius;
-    background-color: lightgray;
+
+    img {
+      border-radius: $radius;
+    }
   }
 
   &-content {
