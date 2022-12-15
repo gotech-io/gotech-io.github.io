@@ -18,8 +18,10 @@ export const BASE = {
   },
   client: {
     title: "About Client:",
-    description:
-      "Base is a B2B company that helps other businesses engage with their customers throughout their lifecycle. They offer a range of services, including advocacy, feedback, lead generation, and social amplification, all aimed at improving customer interactions and driving business growth. Base can help increase references, referrals, product reviews, ranking, loyalty, customer-based lead generation, crowd-based content creation, ideation, and more.",
+    paragraphs: [
+      "Base is a B2B company that helps other businesses engage with their customers throughout their lifecycle.",
+      "They offer a range of services, including advocacy, feedback, lead generation, and social amplification, all aimed at improving customer interactions and driving business growth. Base can help increase references, referrals, product reviews, ranking, loyalty, customer-based lead generation, crowd-based content creation, ideation, and more.",
+    ],
   },
   challenge: {
     title: "Challenge Faced:",
@@ -31,8 +33,10 @@ export const BASE = {
   },
   solution: {
     title: "Our Solution:",
-    description:
-      "We took full ownership of Base's End-to-End and API automated testing. Using Java, Cucumber, and Playwright, we designed a comprehensive framework that integrated smoothly into Base's CI processes. We made automation an integral part of their manual regression testing, providing visibility through reporting, logging, and integration with external systems. This allowed our teams to work together effectively and provided Base with the confidence and reliability they needed to succeed.",
+    paragraphs: [
+      "We took full ownership of Base's End-to-End and API automated testing. Using Java, Cucumber, and Playwright, we designed a comprehensive framework that integrated smoothly into Base's CI processes.",
+      "We made automation an integral part of their manual regression testing, providing visibility through reporting, logging, and integration with external systems. This allowed our teams to work together effectively and provided Base with the confidence and reliability they needed to succeed.",
+    ],
   },
   introduce: [
     { title: "Country", description: "Israel" },

@@ -18,8 +18,10 @@ export const ORBS = {
   },
   client: {
     title: "About Client:",
-    description:
-      "Orbs is a developer of a public blockchain infrastructure designed for mass usage applications and close integration with EVM-based L1’s such as Ethereum, Binance SmartChain and Polygon. They came to GoTech needing help building complex Front-End projects, including dashboards, monitors, and the company's website.",
+    paragraphs: [
+      "Orbs is a developer of a public blockchain infrastructure designed for mass usage applications and close integration with EVM-based L1’s such as Ethereum, Binance SmartChain and Polygon.",
+      "They came to GoTech needing help building complex Front-End projects, including dashboards, monitors, and the company's website.",
+    ],
   },
   challenge: {
     title: "Challenge Faced:",
@@ -31,8 +33,11 @@ export const ORBS = {
   },
   solution: {
     title: "Our Solution:",
-    description:
-      "GoTech was able to help Memomi integrate the AR engine into their server and mobile applications, both for iOS and Android. Our team of experts has experience in AR and ML, and was able to deliver high-quality mobile applications that offered a seamless and engaging AR experience. We also assisted Memomi in integrating the SDK into their clients' applications, further enhancing the functionality of their platform. With GoTech's help, Memomi was able to overcome the challenges of integrating their AR engine and take their platform to the next level. Memomi was eventually acquired by Walmart.",
+    paragraphs: [
+      "GoTech was able to help Memomi integrate the AR engine into their server and mobile applications, both for iOS and Android.",
+      "Our team of experts has experience in AR and ML, and was able to deliver high-quality mobile applications that offered a seamless and engaging AR experience. We also assisted Memomi in integrating the SDK into their clients' applications, further enhancing the functionality of their platform.",
+      "With GoTech's help, Memomi was able to overcome the challenges of integrating their AR engine and take their platform to the next level. Memomi was eventually acquired by Walmart.",
+    ],
   },
   introduce: [
     { title: "Country", description: "Israel" },

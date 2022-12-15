@@ -18,8 +18,10 @@ export const NOVOTALK = {
   },
   client: {
     title: "About Client:",
-    description:
-      "Novotalk develops on-demand (asynchronous), self-directed speech and language teletherapy solutions that allow individuals with speech impairments to learn, practice, gain, and maintain intelligible speech remotely, independently, and discreetly. They came to us with a range of technical challenges and performance issues. They were looking for a partner who could help them improve their platform and support their growth.",
+    paragraphs: [
+      "Novotalk develops on-demand (asynchronous), self-directed speech and language teletherapy solutions that allow individuals with speech impairments to learn, practice, gain, and maintain intelligible speech remotely, independently, and discreetly.",
+      "They came to us with a range of technical challenges and performance issues. They were looking for a partner who could help them improve their platform and support their growth.",
+    ],
   },
   challenge: {
     title: "Challenge Faced:",
@@ -34,8 +36,11 @@ export const NOVOTALK = {
   },
   solution: {
     title: "Our Solution:",
-    description:
-      "GoTech was able to take ownership of Novotalk's entire system and address their technical challenges. We refactored both the client-side and server-side of the platform, solving numerous performance issues along the way. We also built an entire CI/CD process on AWS, including cost optimizations to help Novotalk save money. Finally, we worked with Novotalk to develop a comprehensive QA testing plan that provided better coverage for their system. Today, GoTech is Novotalk's entire technological team, and we continue to support them as they grow. With our help, Novotalk has been able to improve the performance and reliability of their platform, and is well-positioned for future growth.",
+    paragraphs: [
+      "GoTech was able to take ownership of Novotalk's entire system and address their technical challenges. We refactored both the client-side and server-side of the platform, solving numerous performance issues along the way. We also built an entire CI/CD process on AWS, including cost optimizations to help Novotalk save money.",
+      "Finally, we worked with Novotalk to develop a comprehensive QA testing plan that provided better coverage for their system.",
+      "Today, GoTech is Novotalk's entire technological team, and we continue to support them as they grow. With our help, Novotalk has been able to improve the performance and reliability of their platform, and is well-positioned for future growth.",
+    ],
   },
   introduce: [
     { title: "Country", description: "Israel" },

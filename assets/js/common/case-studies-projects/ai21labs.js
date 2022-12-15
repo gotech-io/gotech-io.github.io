@@ -18,8 +18,10 @@ export const AI21LABS = {
   },
   client: {
     title: "About Client:",
-    description:
-      "AI21 Labs is a cutting-edge technology company that specializes in developing solutions to augment human writing. They are the creators of Wordtune, a popular tool that helps users write clearly and authentically by suggesting the right sentences.",
+    paragraphs: [
+      "AI21 Labs is a cutting-edge technology company that specializes in developing solutions to augment human writing.",
+      "They are the creators of Wordtune, a popular tool that helps users write clearly and authentically by suggesting the right sentences.",
+    ],
   },
   challenge: {
     title: "Challenge Faced:",
@@ -32,8 +34,10 @@ export const AI21LABS = {
   },
   solution: {
     title: "Our Solution:",
-    description:
-      "We designed a stable, high-performance, and easy-to-maintain test framework that suited AI21 Labs' specific needs. Following best practices in test automation, using Playwright and Mocha, we designed the framework to be easy to use and maintain, while still providing the stability and performance that AI21 Labs needed. This allows them to have complete confidence in the results of their automated tests.",
+    paragraphs: [
+      "We designed a stable, high-performance, and easy-to-maintain test framework that suited AI21 Labs' specific needs.",
+      "Following best practices in test automation, using Playwright and Mocha, we designed the framework to be easy to use and maintain, while still providing the stability and performance that AI21 Labs needed. This allows them to have complete confidence in the results of their automated tests.",
+    ],
   },
   introduce: [
     { title: "Country", description: "Israel" },

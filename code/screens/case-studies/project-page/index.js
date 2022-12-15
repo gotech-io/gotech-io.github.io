@@ -24,7 +24,7 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
       <ColorSection
         color={COLORS.GREEN}
         title={client.title}
-        description={client.description}
+        paragraphs={client.paragraphs}
       />
 
       <div className="page-common-block">
@@ -76,7 +76,7 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
       <ColorSection
         color={COLORS.GREEN}
         title={solution.title}
-        description={solution.description}
+        paragraphs={solution.paragraphs}
       />
       <Parallax src={parallax.src} alt={parallax.alt} />
 
