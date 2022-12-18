@@ -36,19 +36,15 @@
       cursor: pointer;
 
       &-info {
-        width: 80%;
+        width: 90%;
         height: 100%;
         display: flex;
         align-content: space-between;
         flex-wrap: wrap;
 
-        // i {
-        //   font-size: 40px;
-        //   margin-bottom: $content-gap;
-        // }
-
         h6 {
-          width: 100%;
+          width: 90%;
+          margin: 0 auto;
           color: $prime;
           text-transform: uppercase;
           font-size: 40px;
@@ -65,9 +61,21 @@
           display: flex;
           justify-content: end;
 
+          .button-arrow-wrapper {
+            margin: 0;
+
+            a {
+              color: $main;
+            }
+          }
+
           .button-arrow-wrapper-icon {
             width: 40px;
             height: 40px;
+
+            i {
+              font-size: 20px;
+            }
           }
         }
       }
@@ -77,8 +85,7 @@
 
         .services-content-item-info {
           h6 {
-            font-size: 20px;
-            color: $main;
+            display: none;
           }
 
           p {
@@ -86,6 +93,23 @@
             color: $main;
             display: block;
           }
+        }
+      }
+
+      &-type {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $green-background;
+        border-radius: 0 0 $circle $circle;
+        margin-top: -20px;
+        padding: 10px;
+
+        i {
+          font-size: 25px;
+          color: $main;
         }
       }
     }

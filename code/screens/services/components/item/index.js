@@ -9,7 +9,10 @@ const ItemServices = ({ entity }) => {
   const { title, details, url } = SERVICES[entity];
   return (
     <div className="services-content-item-info">
-      <i className={ICONS[entity]} />
+      <div className="services-content-item-type">
+        <i className={ICONS[entity]} />
+      </div>
+
       <h6>{title}</h6>
       <p>{details}</p>
 
