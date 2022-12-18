@@ -1,11 +1,9 @@
-import ColorSection from "../../../common/ColorSection";
 import DetailsProject from "../components/detailsProject";
-import Header from "../../../common/header";
+import PageWrapper from "../../../common/pageWrapper";
 import Parallax from "../../../common/parallax";
 import React from "react";
 import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 import { COLORS } from "../../../../assets/js/common/colors";
-import { handleUrl } from "../../../utils";
 
 export const TYPES = {
   CLIENT: "client",
@@ -32,9 +30,14 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
   ];
 
   return (
-    <div>
-      <Header title={title} description={description} />
-
+    <PageWrapper
+      title={title}
+      description={description}
+      marquee={marquee}
+      contact={contact}
+      _relativeURL={_relativeURL}
+      _ID={_ID}
+    >
       <DetailsProject
         details={details}
         introduction={introduction}
@@ -42,15 +45,7 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
       />
 
       <Parallax src={parallax.src} alt={parallax.alt} />
-
-      <div>{marquee}</div>
-      <div className="page-common-sub-section">{contact}</div>
-
-      <script
-        type="module"
-        src={handleUrl(`/assets/js/screens/about/index.js`, _relativeURL, _ID)}
-      />
-    </div>
+    </PageWrapper>
   );
 }
 

@@ -2,7 +2,9 @@ import Loader from "../loader";
 import React from "react";
 import animations from "../../../assets/js/animations";
 
-function Form({ name, submit, inputs, title, successText = "Thank you!" }) {
+const SUCCESS_TEXT = "Thank you!";
+
+function Form({ name, submit, inputs, title, successText = SUCCESS_TEXT }) {
   return (
     <form
       className={`${name} form`}

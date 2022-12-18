@@ -1,8 +1,7 @@
 import ColorSection from "../../common/ColorSection";
-import Header from "../../common/header";
+import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import { COLORS } from "../../../assets/js/common/colors";
-import { handleUrl } from "../../utils";
 
 const isEmpty = "Right now we don't have a new examples for you!";
 
@@ -16,27 +15,22 @@ function CaseStudies({
   _ID,
 }) {
   return (
-    <div>
-      <Header title={title} description={description} />
-
-      <div>
-        {projects.length ? (
-          projects.map((project) => {
-            return <div key={project.key}>{project}</div>;
-          })
-        ) : (
-          <ColorSection color={COLORS.GREEN} title={isEmpty} />
-        )}
-      </div>
-
-      <div>{marquee}</div>
-      <div className="page-common-sub-section">{contact}</div>
-
-      <script
-        type="module"
-        src={handleUrl(`/assets/js/screens/about/index.js`, _relativeURL, _ID)}
-      />
-    </div>
+    <PageWrapper
+      title={title}
+      description={description}
+      marquee={marquee}
+      contact={contact}
+      _relativeURL={_relativeURL}
+      _ID={_ID}
+    >
+      {projects.length ? (
+        projects.map((project) => {
+          return <div key={project.key}>{project}</div>;
+        })
+      ) : (
+        <ColorSection color={COLORS.GREEN} title={isEmpty} />
+      )}
+    </PageWrapper>
   );
 }
 
