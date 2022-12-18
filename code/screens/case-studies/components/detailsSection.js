@@ -2,7 +2,7 @@ import IntroductionSection from "./introductionSection";
 import Mockup from "../../../common/mockup";
 import React from "react";
 
-function ProjectDetails({ main, introduction }) {
+function DetailsSection({ main, introduction }) {
   return (
     <div className="page-common-block">
       <div className="page-common-content">
@@ -15,4 +15,4 @@ function ProjectDetails({ main, introduction }) {
   );
 }
 
-export default ProjectDetails;
+export default DetailsSection;

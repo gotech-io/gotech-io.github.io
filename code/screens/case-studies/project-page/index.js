@@ -1,9 +1,8 @@
 import ColorSection from "../../../common/ColorSection";
+import DetailsProject from "../components/detailsProject";
 import Header from "../../../common/header";
 import Parallax from "../../../common/parallax";
-import ProjectDetails from "../components/projectDetails";
 import React from "react";
-import Steps from "../../../common/steps";
 import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 import { COLORS } from "../../../../assets/js/common/colors";
 import { handleUrl } from "../../../utils";
@@ -31,29 +30,16 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
     { type: TYPES.CHALLENGE, content: challenge, color: COLORS.GRAY },
     { type: TYPES.SOLUTION, content: solution, color: COLORS.GREEN },
   ];
+
   return (
     <div>
       <Header title={title} description={description} />
 
-      {details.length &&
-        details.map(({ type, content, color }) => {
-          return (
-            <div key={type}>
-              <ColorSection
-                color={color}
-                title={content.title}
-                description={content.description}
-                paragraphs={content.paragraphs}
-              >
-                {type === TYPES.CHALLENGE && <Steps steps={content.steps} />}
-              </ColorSection>
-
-              {type === TYPES.CLIENT && (
-                <ProjectDetails main={main} introduction={introduction} />
-              )}
-            </div>
-          );
-        })}
+      <DetailsProject
+        details={details}
+        introduction={introduction}
+        main={main}
+      />
 
       <Parallax src={parallax.src} alt={parallax.alt} />
 
