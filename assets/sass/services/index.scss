@@ -37,13 +37,18 @@
 
       &-info {
         width: 80%;
+        height: 100%;
+        display: flex;
+        align-content: space-between;
+        flex-wrap: wrap;
 
-        i {
-          font-size: 40px;
-          margin-bottom: $content-gap;
-        }
+        // i {
+        //   font-size: 40px;
+        //   margin-bottom: $content-gap;
+        // }
 
         h6 {
+          width: 100%;
           color: $prime;
           text-transform: uppercase;
           font-size: 40px;
@@ -53,6 +58,17 @@
           width: 100%;
           margin: $content-gap auto;
           display: none;
+        }
+
+        &-btn {
+          width: 100%;
+          display: flex;
+          justify-content: end;
+
+          .button-arrow-wrapper-icon {
+            width: 40px;
+            height: 40px;
+          }
         }
       }
 
