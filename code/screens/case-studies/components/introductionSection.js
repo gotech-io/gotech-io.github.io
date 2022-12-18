@@ -11,10 +11,10 @@ function IntroductionSection({ introduction }) {
   return (
     <div className="project-page-block">
       {introduction.length ? (
-        introduction.map((intro, i) => {
+        introduction.map((intro) => {
           return (
             <IntroductionItem
-              key={i}
+              key={intro.title}
               title={intro.title}
               description={intro.description || ""}
             >

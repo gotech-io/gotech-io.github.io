@@ -16,10 +16,10 @@ const Footer = ({
         <div className="page-common-block">
           <div className="footer-list">
             {variables.length
-              ? variables.map((variable, i) => {
+              ? variables.map((variable) => {
                   const { title, list } = variable;
                   return (
-                    <div key={i}>
+                    <div key={title}>
                       <h6>{title}</h6>
                       <ListItems list={list} />
                     </div>

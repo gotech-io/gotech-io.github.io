@@ -4,9 +4,9 @@ function Paragraphs({ paragraphs }) {
   return (
     <div className="color-block-paragraphs">
       {paragraphs.length &&
-        paragraphs.map((par, i) => {
+        paragraphs.map((par) => {
           return (
-            <p key={i} className="color-block-description">
+            <p key={par} className="color-block-description">
               {par}
             </p>
           );

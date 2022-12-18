@@ -7,10 +7,7 @@ const Tags = ({ tags, count }) => {
         tags.map((tag, i) => {
           if (i < count) {
             return (
-              <div
-                key={performance.now()}
-                className="case-studies-content-wrapper-tags-item"
-              >
+              <div key={tag} className="case-studies-content-wrapper-tags-item">
                 {tag}
               </div>
             );

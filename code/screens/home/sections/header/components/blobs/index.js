@@ -20,7 +20,7 @@ const Blobs = ({ orangeSize, greenSize }) => {
         const { type, className, src } = blob;
         const size = type === "orange" ? orangeSize : greenSize;
         return (
-          <div key={className} className={className}>
+          <div key={type} className={className}>
             <lottie-player
               src={src}
               background="transparent"

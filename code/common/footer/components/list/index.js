@@ -3,10 +3,10 @@ import React from "react";
 const ListItems = ({ list }) => {
   return (
     <div className="list-items">
-      {list.map((item, j) => {
+      {list.map((item) => {
         const { title, link, phone, socials } = item;
         return (
-          <div key={j} className="text-small">
+          <div key={title} className="text-small">
             {link ? (
               <a href={link} className="list-items-link">
                 {title}
