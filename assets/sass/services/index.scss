@@ -1,0 +1,182 @@
+.services {
+  &-block {
+    width: 100%;
+    padding: $section-gap 0;
+    background: $green-background;
+
+    &-description {
+      padding: $section-gap 100px;
+      text-align: center;
+      font-size: 18px;
+      color: $main;
+    }
+  }
+
+  &-content {
+    width: 100%;
+    margin: 50px 0 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    &-item {
+      width: 49%;
+      height: 350px;
+      margin: 10px 0;
+      padding: $content-gap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      background-color: $default;
+      box-shadow: $shadow;
+      transition: 0.5s;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        border-radius: $radius 0 0 0;
+      }
+      &:nth-child(2) {
+        border-radius: 0 $radius 0 0;
+      }
+      &:nth-child(3) {
+        border-radius: 0 0 0 $radius;
+      }
+      &:nth-child(4) {
+        border-radius: 0 0 $radius 0;
+      }
+
+      &:hover {
+        background: $green-background;
+        transform: scale(1.1);
+
+        .services-content-item-info {
+          &-img {
+            display: none;
+          }
+
+          h6 {
+            color: $main;
+            transform: scale(1);
+          }
+
+          p {
+            font-size: 16px;
+            color: $main;
+            transform: scale(1);
+          }
+
+          &-btn {
+            display: block;
+          }
+        }
+      }
+
+      &-info {
+        width: 100%;
+
+        i {
+          font-size: 40px;
+          margin-bottom: $content-gap;
+        }
+
+        h6 {
+          text-transform: uppercase;
+          font-size: 20px;
+        }
+        p {
+          width: 60%;
+          margin: $content-gap auto;
+        }
+
+        &-btn {
+          display: none;
+        }
+      }
+    }
+  }
+
+  &-intro {
+    padding: 100px 0;
+    text-align: center;
+    background-color: $default;
+  }
+
+  &-diagram {
+    height: auto;
+    padding: 100px 0;
+    text-align: center;
+    background-color: $prime;
+
+    h4,
+    p {
+      color: $main;
+    }
+  }
+
+  &-technology {
+    width: 100%;
+    margin: $section-gap 0 0;
+    background-color: $default;
+
+    &-wrapper {
+      width: 100%;
+      padding: $section-gap 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &-block {
+      margin: $section-gap 0;
+      padding: $content-gap;
+      position: relative;
+      text-align: center;
+      background-color: $main;
+      border-radius: $radius;
+      box-shadow: $shadow;
+
+      &-wrapper {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        bottom: -15px;
+        left: 0;
+      }
+    }
+
+    &-button {
+      width: 30px;
+      height: 30px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: $green-background;
+      border-radius: 50%;
+
+      i {
+        color: $main;
+      }
+    }
+  }
+}
+
+.accordion {
+  &-container {
+    position: relative;
+  }
+
+  &-label {
+    position: relative;
+  }
+
+  &-content {
+    position: relative;
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+  }
+}
