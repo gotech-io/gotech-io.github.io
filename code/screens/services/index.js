@@ -2,6 +2,7 @@ import Diagram from "../../common/diagram";
 import Header from "../../common/header";
 import ListServices from "./components/list";
 import Points from "../../common/points";
+import PointsSection from "./components/PointsSection";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
@@ -29,24 +30,9 @@ function Services({ title, description, info, _relativeURL, _ID }) {
         </div>
       </div>
 
-      <div className="services-intro">
-        <div className="page-common-block">
-          <h4>{intro.title}</h4>
-          <p>{intro.description}</p>
-        </div>
+      <PointsSection intro={intro} />
 
-        <Points points={intro.points} />
-      </div>
-
-      <div className="services-diagram">
-        <div className="page-common-block">
-          <h4>{diagram.title}</h4>
-          <p>{diagram.description}</p>
-          <div className="services-diagram-wrapper">
-            <Diagram />
-          </div>
-        </div>
-      </div>
+      <DiagramSection diagram={diagram} />
 
       <script
         type="module"
