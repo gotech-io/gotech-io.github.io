@@ -12,7 +12,7 @@ const ItemServices = ({ entity }) => {
       <i className={ICONS[entity]} />
 
       <h6>{title}</h6>
-      <p>{details}</p>
+      {/* <p>{details}</p> */}
       <div className="services-content-item-info-btn">
         <Link url={url} btnText={btnText} />
       </div>
