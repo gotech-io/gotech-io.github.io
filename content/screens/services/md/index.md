@@ -10,11 +10,15 @@ description:
     third: "Our services include Web Development, Mobile Development, DevOps, and QA Automation. We have the skills and expertise to develop custom web and mobile applications that are user-friendly, efficient, and effective. Our DevOps and QA Automation services ensure that your applications are reliable and scalable, and can handle the demands of today's market",
   }
 
-info: {
-    services: ["content/web.md"],
-    # "content/mobile.md",
-    # "content/devops.md",
-    # "content/qa.md",
+info:
+  {
+    services:
+      [
+        "content/web.md",
+        "content/mobile.md",
+        "content/devops.md",
+        "content/qa.md",
+      ],
     intro:
       {
         title: "Why Choose Us?",
