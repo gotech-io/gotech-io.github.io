@@ -2,7 +2,7 @@
 layout: common/navbar/components/navigation/index
 links:
   - name: services
-    value: /#services
+    value: /services
   - name: about
     value: /#about
   - name: clients
