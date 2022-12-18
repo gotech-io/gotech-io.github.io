@@ -1,9 +1,16 @@
 import Loader from "../loader";
 import React from "react";
+import animations from "../../../assets/js/animations";
 
-function Form({ name, submit, inputs, title, successText = "Thank you!" }) {
+const SUCCESS_TEXT = "Thank you!";
+
+function Form({ name, submit, inputs, title, successText = SUCCESS_TEXT }) {
   return (
-    <form className={`${name} form`}>
+    <form
+      className={`${name} form`}
+      data-aos-anchor-placement="top-center"
+      data-aos={animations.zoomIn}
+    >
       {title && <h4 className="form-title">{title}</h4>}
       <div className="form-flex">{inputs}</div>
       <section className="form-submit">

@@ -83,6 +83,7 @@
         font-size: 0.938rem;
         letter-spacing: 0.063rem;
         font-weight: 100;
+        text-transform: uppercase;
       }
     }
 
@@ -107,15 +108,15 @@
   }
 
   &-logo {
-    height: 60px;
+    height: 50px;
     width: auto;
     padding-top: 5px;
   }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: $medium) {
   .navbar {
-    height: 60px;
+    height: 50px;
 
     &-desktop-contact {
       display: none;
@@ -198,20 +199,15 @@
         margin: 0px;
       }
     }
+  }
+}
 
-    &-mobile {
-      &-contact {
-        display: block;
-        margin-top: 10px;
-        .link {
-          color: white;
-          background: #002e63;
-          border: solid 2px #002e63;
-          a {
-            color: white;
-          }
-        }
-      }
-    }
+@media only screen and (max-width: $mobile) {
+  .navbar .contact-link {
+    border: solid 2px $prime;
+  }
+
+  .navbar-navigation-link a {
+    color: $prime !important;
   }
 }

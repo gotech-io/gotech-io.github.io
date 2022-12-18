@@ -11,7 +11,7 @@ const Policy = ({
     <div className="footer-bottom flex-between">
       <div className="page-common-block">
         <section className="footer-bottom-section flex-between">
-          {copyright}
+          <div className="footer-bottom-section-policy">{copyright}</div>
           <div className="footer-bottom-section-policy">
             <a href={privacy_policy_url}>{privacy_policy_text}</a>
             <a href={terms_of_use_url}>{terms_of_use_text}</a>
