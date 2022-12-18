@@ -1,8 +1,8 @@
+import Diagram from "../../common/diagram";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-//import Diagram from "../../common/diagram";
 //import Header from "../../common/header";
 //import ListServices from "./components/list";
 //import Points from "../../common/points";
@@ -41,8 +41,7 @@ function Services({ title, description, info, _relativeURL, _ID }) {
           <h4>{diagram.title}</h4>
           <p>{diagram.description}</p>
           <div className="services-diagram-wrapper">
-            Diagram
-            {/* <Diagram /> */}
+            <Diagram />
           </div>
         </div>
       </div>
