@@ -11,8 +11,7 @@ description:
   }
 
 info: {
-    services: [],
-    # "content/web.md",
+    services: ["content/web.md"],
     # "content/mobile.md",
     # "content/devops.md",
     # "content/qa.md",
