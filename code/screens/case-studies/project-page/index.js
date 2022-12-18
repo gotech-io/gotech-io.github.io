@@ -1,13 +1,18 @@
 import ColorSection from "../../../common/ColorSection";
 import Header from "../../../common/header";
-import IntroductionSection from "../components/introductionSection";
-import Mockup from "../../../common/mockup";
 import Parallax from "../../../common/parallax";
+import ProjectDetails from "../components/projectDetails";
 import React from "react";
 import Steps from "../../../common/steps";
 import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 import { COLORS } from "../../../../assets/js/common/colors";
 import { handleUrl } from "../../../utils";
+
+export const TYPES = {
+  CLIENT: "client",
+  CHALLENGE: "challenge",
+  SOLUTION: "solution",
+};
 
 function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
   const {
@@ -21,37 +26,35 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
   } = PROJECTS_INFO[type];
   const { main, parallax } = images;
 
+  const details = [
+    { type: TYPES.CLIENT, content: client, color: COLORS.GREEN },
+    { type: TYPES.CHALLENGE, content: challenge, color: COLORS.GRAY },
+    { type: TYPES.SOLUTION, content: solution, color: COLORS.GREEN },
+  ];
   return (
     <div>
       <Header title={title} description={description} />
-      <ColorSection
-        color={COLORS.GREEN}
-        title={client.title}
-        paragraphs={client.paragraphs}
-      />
 
-      <div className="page-common-block">
-        <div className="page-common-content">
-          <div className="main-wrapper-image">
-            <Mockup image={main} />
-          </div>
-          <IntroductionSection introduction={introduction} />
-        </div>
-      </div>
+      {details.length &&
+        details.map(({ type, content, color }) => {
+          return (
+            <div key={type}>
+              <ColorSection
+                color={color}
+                title={content.title}
+                description={content.description}
+                paragraphs={content.paragraphs}
+              >
+                {type === TYPES.CHALLENGE && <Steps steps={content.steps} />}
+              </ColorSection>
 
-      <ColorSection
-        color={COLORS.GRAY}
-        title={challenge.title}
-        description={challenge.description}
-      >
-        <Steps steps={challenge.steps} />
-      </ColorSection>
+              {type === TYPES.CLIENT && (
+                <ProjectDetails main={main} introduction={introduction} />
+              )}
+            </div>
+          );
+        })}
 
-      <ColorSection
-        color={COLORS.GREEN}
-        title={solution.title}
-        paragraphs={solution.paragraphs}
-      />
       <Parallax src={parallax.src} alt={parallax.alt} />
 
       <div>{marquee}</div>
