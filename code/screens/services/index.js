@@ -18,14 +18,17 @@ function Services({ title, description, info, _relativeURL, _ID }) {
           <p className="services-block-description">{second}</p>
         </div>
       </div>
+
       <div className="page-common-block">
         <ListServices services={services} />
       </div>
+
       <div className="services-block">
         <div className="page-common-block">
           <p className="services-block-description">{third}</p>
         </div>
       </div>
+
       <div className="services-intro">
         <div className="page-common-block">
           <h4>{intro.title}</h4>
@@ -34,6 +37,7 @@ function Services({ title, description, info, _relativeURL, _ID }) {
 
         <Points points={intro.points} />
       </div>
+
       <div className="services-diagram">
         <div className="page-common-block">
           <h4>{diagram.title}</h4>
@@ -43,6 +47,7 @@ function Services({ title, description, info, _relativeURL, _ID }) {
           </div>
         </div>
       </div>
+
       <script
         type="module"
         src={handleUrl(`/assets/js/screens/about/index.js`, _relativeURL, _ID)}
