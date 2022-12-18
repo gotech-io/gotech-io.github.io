@@ -1,11 +1,11 @@
 import Diagram from "../../common/diagram";
+import Points from "../../common/points";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
 //import Header from "../../common/header";
 //import ListServices from "./components/list";
-//import Points from "../../common/points";
 
 function Services({ title, description, info, _relativeURL, _ID }) {
   const { services, intro, diagram } = info;
@@ -33,8 +33,8 @@ function Services({ title, description, info, _relativeURL, _ID }) {
           <h4>{intro.title}</h4>
           <p>{intro.description}</p>
         </div>
-        Points
-        {/* <Points points={intro.points} /> */}
+
+        <Points points={intro.points} />
       </div>
       <div className="services-diagram">
         <div className="page-common-block">
