@@ -1,11 +1,11 @@
 import Diagram from "../../common/diagram";
+import ListServices from "./components/list";
 import Points from "../../common/points";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
 //import Header from "../../common/header";
-//import ListServices from "./components/list";
 
 function Services({ title, description, info, _relativeURL, _ID }) {
   const { services, intro, diagram } = info;
@@ -20,8 +20,7 @@ function Services({ title, description, info, _relativeURL, _ID }) {
         </div>
       </div>
       <div className="page-common-block">
-        ListServices
-        {/* <ListServices services={services} /> */}
+        <ListServices services={services} />
       </div>
       <div className="services-block">
         <div className="page-common-block">
