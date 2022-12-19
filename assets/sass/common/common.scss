@@ -51,7 +51,9 @@ a {
   &-header {
     width: 100%;
     padding: 150px 0 200px;
+    position: relative;
     background-color: $prime;
+    overflow: hidden;
 
     .home-header-background {
       .orange-blobs {
