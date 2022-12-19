@@ -5,5 +5,6 @@ entity: WEB_DEV
 marquee:
   - /_shared/marquee/index.md
 
-contact: -../../../home/md/contact/index.md
+contact:
+  - ../../../home/md/contact/index.md
 ---

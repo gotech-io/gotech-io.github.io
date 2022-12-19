@@ -13,11 +13,6 @@ const stages = [
 const StagesCycle = () => {
   return (
     <div className="stages-cycle">
-      <div className="page-common-block">
-        <h4>Title</h4>
-        <p>gfcvhgjhkjlk;lkghfdgh gjhgjhgkjhkhkjg</p>
-      </div>
-
       <div className="stages">
         <div className="stages-item-line" />
         <div className="page-common-block stages-wrapper">

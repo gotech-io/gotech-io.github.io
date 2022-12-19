@@ -19,6 +19,12 @@
   }
 }
 
+.dark {
+  .color-block {
+    background: $prime;
+  }
+}
+
 .gray {
   .color-block {
     background-color: $default;
