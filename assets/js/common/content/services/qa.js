@@ -5,6 +5,9 @@ export const QA_DEV = {
   description:
     "We are interested in high quality of our products and we care about our reputation",
   url: "/service/qa",
+
+  paragraphs: [{ type: "paragraphs", content: ["", ""] }],
+
   services: [
     {
       title: "QA Automation",
