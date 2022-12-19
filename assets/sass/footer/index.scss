@@ -1,63 +1,87 @@
 .footer {
-  margin-top: auto;
-  padding-top: 50px;
-  z-index: 99;
+  width: 100%;
+  padding: $section-gap 0 $content-gap;
   position: relative;
-  padding-left: 40px;
-  padding-right: 40px;
-  &-logo {
-    filter: brightness(0%);
+  bottom: 0;
+  z-index: 10;
+  background: rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border-top: 2px solid $default;
 
-    width: 100px;
-    display: flex;
-    margin-bottom: 20px;
-    .img {
-      width: 100%;
-      img {
-        width: 100%;
-        height: 100%;
-        object-fit: contain;
-      }
-    }
-  }
-  .socials {
-    a {
-      .img {
-        background: #f2f4f8;
-      }
-    }
-  }
-  &-bottom {
+  &-list {
+    width: 100%;
     display: flex;
     justify-content: space-between;
-    margin-top: 20px;
-    border-top: 2px solid #f2f4f8;
-    padding: 20px 10px;
+    flex-wrap: wrap;
+  }
 
-    &-policy {
-      a {
-        text-decoration: none;
-        &:nth-child(1) {
-          margin-right: 15px;
+  &-bottom {
+    margin-top: 50px;
+    border-top: 2px solid $default;
+    margin-top: $content-gap;
+    color: lightgray;
+    font-size: 10px;
+
+    &-section {
+      margin-top: $content-gap;
+      color: lightgray;
+      font-size: 10px;
+
+      &-policy {
+        color: lightgray;
+
+        a {
+          color: lightgray;
+          text-decoration: none;
+          margin-left: 10px;
         }
       }
     }
-    a,
-    p {
-      color: #95979b;
-      font-size: 0.75rem;
+  }
+
+  .list-items {
+    &-link {
+      color: $additional;
+      text-decoration: none;
+      text-transform: none;
+      cursor: pointer;
+
+      &:hover {
+        color: $prime;
+      }
+    }
+
+    .socials {
+      .img {
+        width: 30px;
+        opacity: 0.3;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-right: 10px;
+      }
     }
   }
 }
 
 @media only screen and (max-width: $mobile) {
   .footer {
-    padding-left: 20px;
-    padding-right: 20px;
-    &-bottom {
-      flex-direction: column;
-      &-policy {
-        margin-top: 20px;
+    &-list {
+      div {
+        width: 100%;
+        margin: 10px 0;
+        text-align: center;
+      }
+    }
+
+    &-bottom-section {
+      justify-content: center;
+      flex-wrap: wrap;
+
+      div {
+        width: 100%;
+        text-align: center;
       }
     }
   }

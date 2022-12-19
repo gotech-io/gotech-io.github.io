@@ -4,6 +4,7 @@
   "description": "Website for gotech.io",
   "main": "index.js",
   "scripts": {
+    "prebuild": "rm -rf ./site",
     "build": "yarn sass-prebuild && cuttlebelle",
     "sass-prebuild": "sass ./assets/sass/index.scss ./assets/css/index.css",
     "watch-sass": "sass -w ./assets/sass/index.scss ./assets/css/index.css",

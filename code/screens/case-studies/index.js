@@ -1,15 +1,36 @@
+import ColorSection from "../../common/ColorSection";
+import PageWrapper from "../../common/pageWrapper";
 import React from "react";
-import { handleUrl } from "../../utils";
+import { COLORS } from "../../../assets/js/common/colors";
 
-function CaseStudies({ projects, _relativeURL, _ID }) {
+const isEmpty = "Right now we don't have a new examples for you!";
+
+function CaseStudies({
+  title,
+  description,
+  projects,
+  marquee,
+  contact,
+  _relativeURL,
+  _ID,
+}) {
   return (
-    <div className="case-studies">
-      {projects}
-      <script
-        type="module"
-        src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
-      />
-    </div>
+    <PageWrapper
+      title={title}
+      description={description}
+      marquee={marquee}
+      contact={contact}
+      _relativeURL={_relativeURL}
+      _ID={_ID}
+    >
+      {projects.length ? (
+        projects.map((project) => {
+          return <div key={project.key}>{project}</div>;
+        })
+      ) : (
+        <ColorSection color={COLORS.GREEN} title={isEmpty} />
+      )}
+    </PageWrapper>
   );
 }
 

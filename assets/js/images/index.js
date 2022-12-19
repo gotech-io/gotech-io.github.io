@@ -1,6 +1,7 @@
 export const images = {
   common: {
-    logo: "/assets/images/common/logo.svg",
+    default_mockup: "/assets/images/common/default_mockup.jpg",
+    logo: "/assets/images/common/gotech.png",
     whiteLogo: "/assets/images/common/white-logo.svg",
     twitterCard: "/assets/images/common/gotech-wide2x.png",
     favicon: "/assets/images/common/favicon.png",

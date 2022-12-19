@@ -1,9 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;600;700&display=swap");
 @import "https://unpkg.com/aos@2.3.1/dist/aos.css";
+@import "./common.scss";
+@import "./btns.scss";
 @import "./form.scss";
 @import "./tags.scss";
 @import "./map.scss";
+@import "./colorSection.scss";
+@import "./steps.scss";
+@import "./parallax.scss";
 
 .flex-start {
   display: flex;
@@ -112,8 +117,6 @@ $component-width: calc(100% - 100px);
 $main-font: "Poppins", sans-serif;
 $headers-font: "Heebo", sans-serif;
 
-h1,
-h2,
 h3,
 h4,
 h5,
@@ -183,14 +186,17 @@ li,
   }
 }
 .link {
+  width: 200px;
   height: 50px;
   letter-spacing: 2px;
   font-size: 12px;
   border-radius: 50px;
-  background: #ffa185;
+  border: 2px solid $prime;
+  background: transparent;
   transition: 0.2s all;
+
   a {
-    color: white;
+    color: $prime;
     text-transform: uppercase;
     display: flex;
     align-items: center;
@@ -201,10 +207,16 @@ li,
     font-weight: 600;
     text-decoration: none;
   }
+
   &:hover {
-    background: #fd8274;
+    background: $green-background;
+    border: 2px solid $main;
+    a {
+      color: $main;
+    }
   }
 }
+
 .back-btn {
   display: flex;
   align-items: center;
@@ -230,11 +242,11 @@ li,
 }
 
 .contact-link-active {
-  color: white;
-  background: #002e63;
-  border: solid 2px #002e63;
+  color: $main;
+  background: $green-background;
+  border: solid 2px transparent;
   a {
-    color: white;
+    color: $main;
   }
 }
 
@@ -250,7 +262,7 @@ li,
 
   text-transform: uppercase;
   cursor: pointer;
-  border: solid 2px #002e63;
+  border: solid 2px $green;
 
   transition: 0.2s all;
   p {
@@ -269,7 +281,7 @@ li,
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: #002e63;
+    color: $green;
   }
   &:hover {
     @extend .contact-link-active;
@@ -284,6 +296,8 @@ li,
 }
 
 .socials {
+  display: flex;
+
   .img {
     width: 40px;
     height: 40px;

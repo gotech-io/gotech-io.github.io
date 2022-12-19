@@ -25,7 +25,7 @@
     top: 0px;
     width: 100%;
     height: 100%;
-    background: $contact-background;
+    background: $green-background;
     border-radius: 20px;
   }
   &-left {
@@ -130,6 +130,21 @@
     }
   }
 }
+
+@media only screen and (max-width: $medium) {
+  .contact {
+    &-left {
+      width: 50%;
+
+      h2 {
+        font-size: 40px;
+        font-weight: 600;
+        margin-bottom: 0;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: $mobile) {
   .contact {
     padding-top: 30px;
@@ -137,6 +152,9 @@
       flex-direction: column;
     }
     &-left {
+      width: 100%;
+      text-align: center;
+
       h2 {
         font-size: 30px;
       }

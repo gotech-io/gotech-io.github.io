@@ -1,44 +1,146 @@
 .case-studies {
-  background: #f2f4f8;
-  padding-bottom: 100px;
-  padding-top: 100px;
-  &-list {
-    @extend .main-grid;
-  }
-  &-project {
-    min-height: 450px;
-    margin-bottom: 120px;
+  width: 100%;
+  min-height: 500px;
+  margin-bottom: $section-gap;
 
-    background-image: linear-gradient(180deg, #f2f4f8, #fff);
-    padding: 50px 80px;
-    border-radius: 20px;
+  &-wrapper {
+    height: 500px;
+    margin: $section-gap auto;
+    position: relative;
+    display: flex;
     justify-content: space-between;
-    &-image {
-      width: 400px;
-      height: 300px;
-      border-radius: 15px;
-      overflow: hidden;
-      box-shadow: 0px 16px 75px -31px rgba(0, 0, 0, 0.76);
-      -webkit-box-shadow: 0px 16px 75px -31px rgba(0, 0, 0, 0.76);
-      -moz-box-shadow: 0px 16px 75px -31px rgba(0, 0, 0, 0.76);
-      img {
+  }
+
+  &-image-left {
+    width: 90%;
+    height: 90%;
+
+    img {
+      border-radius: $radius;
+    }
+  }
+
+  &-image-right {
+    width: 90%;
+    height: 90%;
+    position: absolute;
+    right: 0;
+
+    img {
+      border-radius: $radius;
+    }
+  }
+
+  &-content {
+    &-left {
+      width: 60%;
+      padding: $section-gap;
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      background-color: $main;
+      border-radius: $radius;
+      box-shadow: $shadow;
+      -webkit-box-shadow: $shadow;
+      -moz-box-shadow: $shadow;
+    }
+
+    &-right {
+      width: 60%;
+      padding: $section-gap;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      z-index: 10;
+      background-color: $main;
+      border-radius: $radius;
+      box-shadow: $shadow;
+      -webkit-box-shadow: $shadow;
+      -moz-box-shadow: $shadow;
+    }
+
+    &-description {
+      margin: $content-gap 0;
+    }
+
+    &-wrapper {
+      width: 100%;
+      display: flex;
+      align-items: center;
+
+      &-tags {
         width: 100%;
-        height: 100%;
-        object-fit: cover;
+        display: flex;
+
+        &-item {
+          color: $additional;
+          margin-right: 10px;
+          padding: 5px;
+          border: 1px solid $additional;
+          border-radius: 5px;
+          font-size: 12px;
+        }
       }
     }
-    &-body {
-      flex: 1;
-      max-width: 400px;
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .case-studies {
+    &-content {
+      &-left,
+      &-right {
+        width: 100% !important;
+      }
     }
-    &:nth-child(odd) {
-      .case-studies-project {
-        &-image {
-          order: 2;
+
+    &-image {
+      &-left,
+      &-right {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .case-studies {
+    min-height: auto !important;
+    margin: 0 !important;
+
+    &-content {
+      &-wrapper {
+        flex-wrap: wrap;
+        justify-content: center;
+
+        div,
+        button {
+          width: 100%;
+          margin: 5px;
+          justify-content: center;
+          text-align: center;
         }
-        &-body {
-          order: 1;
-        }
+      }
+    }
+
+    &-wrapper {
+      height: auto !important;
+      flex-wrap: wrap;
+      justify-content: center;
+      position: unset !important;
+    }
+
+    &-content {
+      &-left,
+      &-right {
+        position: unset !important;
+      }
+    }
+
+    &-image {
+      &-left,
+      &-right {
+        display: none;
       }
     }
   }

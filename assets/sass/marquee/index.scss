@@ -1,0 +1,40 @@
+.marquee-wrapper {
+  background: $default;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee {
+  width: 100%;
+  display: flex;
+  animation-name: marquee;
+  animation-duration: 30s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+  transform: translateX(0);
+
+  .marquee-item {
+    margin: $content-gap;
+  }
+
+  img {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .marquee-wrapper {
+    display: none;
+  }
+}
