@@ -1,0 +1,42 @@
+.color-block {
+  width: 100%;
+  padding: $section-gap 0;
+
+  &-title {
+    color: $main;
+  }
+
+  &-description {
+    padding: $content-gap 0 0;
+    font-size: 20px;
+    color: $main;
+  }
+}
+
+.green {
+  .color-block {
+    background: $green-background;
+  }
+}
+
+.gray {
+  .color-block {
+    background-color: $default;
+
+    &-title {
+      color: $prime;
+    }
+
+    &-description {
+      color: $prime;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .color-block {
+    &-description {
+      font-size: 15px;
+    }
+  }
+}
