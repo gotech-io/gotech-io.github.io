@@ -2,7 +2,7 @@ import Header from "../../../common/header";
 import React from "react";
 import StagesCycle from "../../../common/stages-cycle";
 import Technologies from "../../../common/technologies";
-import { SERVICES } from "../../../../assets/js/common/content/services";
+import { SERVICES } from "../../../../assets/js/common/services/content";
 import { handleUrl } from "../../../utils";
 
 function ServicePage({ entity, _relativeURL, _ID }) {
