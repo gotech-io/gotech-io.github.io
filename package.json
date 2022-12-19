@@ -5,11 +5,11 @@
   "main": "index.js",
   "scripts": {
     "prebuild": "rm -rf ./site",
-    "build": "yarn sass-prebuild && cuttlebelle",
+    "build": "npm run sass-prebuild && cuttlebelle",
     "sass-prebuild": "sass ./assets/sass/index.scss ./assets/css/index.css",
     "watch-sass": "sass -w ./assets/sass/index.scss ./assets/css/index.css",
-    "watch": "yarn watch-sass & cuttlebelle -w",
-    "watch-win": "yarn sass-prebuild && cuttlebelle -w"
+    "watch": "npm run watch-sass & cuttlebelle -w",
+    "watch-win": "npm run sass-prebuild && cuttlebelle -w"
   },
   "cuttlebelle": {
     "site": {
