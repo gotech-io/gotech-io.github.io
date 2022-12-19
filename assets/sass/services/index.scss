@@ -135,12 +135,13 @@
 
   &-technology {
     width: 100%;
-    margin: $section-gap 0 0;
+    padding: 100px 0;
+    text-align: center;
     background-color: $default;
 
     &-wrapper {
       width: 100%;
-      padding: $section-gap 0;
+      margin: $content-gap 0 0;
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -155,46 +156,6 @@
       background-color: $main;
       border-radius: 20px; //$radius;
       box-shadow: $shadow;
-
-      &-wrapper {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        position: absolute;
-        bottom: -15px;
-        left: 0;
-      }
     }
-
-    &-button {
-      width: 30px;
-      height: 30px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background: $green-background;
-      border-radius: 50%;
-
-      i {
-        color: $main;
-      }
-    }
-  }
-}
-
-.accordion {
-  &-container {
-    position: relative;
-  }
-
-  &-label {
-    position: relative;
-  }
-
-  &-content {
-    position: relative;
-    height: 0;
-    overflow: hidden;
-    transition: 0.5s;
   }
 }
