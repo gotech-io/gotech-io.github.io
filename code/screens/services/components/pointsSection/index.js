@@ -1,3 +1,4 @@
+import Points from "../../../../common/points";
 import React from "react";
 
 const PointsSection = ({ intro }) => {
