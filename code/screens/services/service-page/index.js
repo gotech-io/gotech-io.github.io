@@ -1,9 +1,9 @@
 import Header from "../../../common/header";
 import React from "react";
+import StagesCycle from "../../../common/stages-cycle";
 import { SERVICES } from "../../../../assets/js/common/content/services";
 import { handleUrl } from "../../../utils";
 
-//import LifeCycle from "../../../common/life-cycle";
 //import Technologies from "../../../common/technologies";
 
 function ServicePage({ entity, _relativeURL, _ID }) {
@@ -12,9 +12,24 @@ function ServicePage({ entity, _relativeURL, _ID }) {
     <div>
       <Header title={title} description={description} />
 
-      {/* <LifeCycle />
-    
-      <div className="services-technology">
+      <div className="services-block">
+        <div className="page-common-block">
+          <p className="services-block-description">
+            "Our QA Automation services provide complete solutions for
+            automating your software testing processes. We offer services such
+            as implementing and integrating automation infrastructure,
+            developing test tools and reporting tools, and providing automation
+            training to your team. Our experts have extensive experience in
+            automation, and can help you create stable and maintainable test
+            automation systems that will save time and improve the reliability
+            of your software."
+          </p>
+        </div>
+      </div>
+
+      <StagesCycle />
+
+      {/* <div className="services-technology">
         <div className="page-common-block">
           <div className="services-technology-wrapper">
             {services.map((service) => {
@@ -58,7 +73,7 @@ function ServicePage({ entity, _relativeURL, _ID }) {
 
       <script
         type="module"
-        src={handleUrl(`/assets/js/screens/about/index.js`, _relativeURL, _ID)}
+        src={handleUrl(`/assets/js/about/index.js`, _relativeURL, _ID)}
       />
     </div>
   );
