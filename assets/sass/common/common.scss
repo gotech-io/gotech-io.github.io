@@ -113,15 +113,6 @@ img {
   object-fit: contain;
 }
 
-@media only screen and (max-width: $mobile) {
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-}
-
 @media only screen and (max-width: $medium) {
   .page-common-block {
     width: 90%;
@@ -133,7 +124,23 @@ img {
 }
 
 @media only screen and (max-width: $mobile) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
   .socials {
     justify-content: center;
+  }
+
+  .orange-blobs {
+    right: -200px;
+    top: -300px;
+  }
+
+  .green-blobs {
+    left: -250px;
+    top: -50px;
   }
 }

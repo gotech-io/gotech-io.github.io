@@ -154,8 +154,31 @@
       position: relative;
       text-align: center;
       background-color: $main;
-      border-radius: 20px; //$radius;
+      border-radius: $radius;
       box-shadow: $shadow;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .services-content-item-info h6 {
+    font-size: 30px;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .services {
+    &-diagram {
+      padding: $section-gap 0;
+    }
+
+    &-content-item {
+      width: 100%;
+      height: auto;
+    }
+
+    &-content-item-info h6 {
+      font-size: 20px;
     }
   }
 }
