@@ -12,9 +12,8 @@ const ColorSection = ({ color, title, description, paragraphs, children }) => {
           )}
 
           {paragraphs && <Paragraphs paragraphs={paragraphs} />}
-
-          {children}
         </div>
+        {children}
       </div>
     </div>
   );

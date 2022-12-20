@@ -1,8 +1,10 @@
 .steps {
   margin-top: $section-gap;
+
   &-item {
     margin: $content-gap 0;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
 
     &-number {
@@ -20,5 +22,12 @@
     p {
       font-weight: 600;
     }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .steps-item p {
+    width: 100%;
+    font-weight: 600;
   }
 }

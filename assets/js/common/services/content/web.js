@@ -8,28 +8,48 @@ export const WEB_DEV = {
 
   sections: [
     {
-      type: "section-first",
+      type: "section-alpha",
       color: "green",
+      title: "our services",
+      description:
+        "GoTech is your reliable partner for any business-changing solutions",
+    },
+    {
+      type: "section-beta",
+      color: "white",
+      title: "app development process",
+      description:
+        "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
+    },
+    {
+      type: "section-gamma",
+      color: "orange",
       paragraphs: [
         "We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
         "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
       ],
     },
     {
-      type: "section-second",
-      color: "green",
-      paragraphs: [
-        "In addition to standard QA automation, we also offer specialized services such as volume and performance testing, and can assist with the migration of manual testing to automated testing.",
-        "Whether you're looking to improve the efficiency of your existing QA processes or implement automation for the first time, we have the expertise and experience to help your business succeed.",
-      ],
+      type: "section-delta",
+      color: "white",
+      title: "technologies",
+      description:
+        "We offer only well-recognized and time-tested technologies to support any of your business goals.",
     },
     {
-      type: "section-third",
+      type: "section-epsilon",
       color: "dark",
       paragraphs: [
         "We provide complete solutions for automating your software testing processes. We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
         "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
       ],
+    },
+    {
+      type: "section-zeta",
+      color: "white",
+      title: "case studies example",
+      description:
+        "We have a proven track record of building high quality solutions for customers all over the world.",
     },
   ],
 
@@ -46,17 +66,14 @@ export const WEB_DEV = {
     },
   ],
 
-  technologies: {
-    title: "technologies",
-    description:
-      "We offer only well-recognized and time-tested technologies to support any of your business goals.",
-    content: [
-      "/assets/images/technologies/python.jpeg",
-      "/assets/images/technologies/java.png",
-      "/assets/images/technologies/kotlin.png",
-      "/assets/images/technologies/c.png",
-      "/assets/images/technologies/django.png",
-      "/assets/images/technologies/node.png",
-    ],
-  },
+  technologies: [
+    "/assets/images/technologies/python.jpeg",
+    "/assets/images/technologies/java.png",
+    "/assets/images/technologies/kotlin.png",
+    "/assets/images/technologies/c.png",
+    "/assets/images/technologies/django.png",
+    "/assets/images/technologies/node.png",
+  ],
+
+  example: "NOVOTALK",
 };

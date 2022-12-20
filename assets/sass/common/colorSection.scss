@@ -7,7 +7,7 @@
   }
 
   &-description {
-    padding: $content-gap 0 0;
+    padding-top: $content-gap;
     font-size: 20px;
     color: $main;
   }
@@ -28,6 +28,20 @@
 .orange {
   .color-block {
     background: $orange;
+  }
+}
+
+.white {
+  .color-block {
+    background-color: $main;
+
+    &-title {
+      color: $prime;
+    }
+
+    &-description {
+      color: $prime;
+    }
   }
 }
 
