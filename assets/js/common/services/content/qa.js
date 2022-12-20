@@ -30,28 +30,50 @@ export const QA_DEV = {
       ],
     },
   ],
-
-  services: {
+  services: [
+    {
+      title: "QA A",
+      description: "Text",
+    },
+  ],
+  technologies: {
     title: "technologies",
     description:
       "We offer only well-recognized and time-tested technologies to support any of your business goals.",
-    technologies: [
-      {
-        key: "Languages",
-        icons: [
-          "/assets/images/technologies/python.jpeg",
-          "/assets/images/technologies/java.png",
-          "/assets/images/technologies/kotlin.png",
-        ],
-      },
-      {
-        key: "Frameworks",
-        icons: [
-          "/assets/images/technologies/django.png",
-          "/assets/images/technologies/node.png",
-        ],
-      },
-      { key: "Libraries", icons: [] },
+    content: [
+      "/assets/images/technologies/python.jpeg",
+      "/assets/images/technologies/java.png",
+      "/assets/images/technologies/kotlin.png",
+      "/assets/images/technologies/django.png",
+      "/assets/images/technologies/node.png",
+      "/assets/images/technologies/java.png",
+      "/assets/images/technologies/kotlin.png",
+      "/assets/images/technologies/django.png",
+      "/assets/images/technologies/node.png",
     ],
   },
+
+  // services: {
+  //   title: "technologies",
+  //   description:
+  //     "We offer only well-recognized and time-tested technologies to support any of your business goals.",
+  //   technologies: [
+  //     {
+  //       key: "Languages",
+  //       icons: [
+  //         "/assets/images/technologies/python.jpeg",
+  //         "/assets/images/technologies/java.png",
+  //         "/assets/images/technologies/kotlin.png",
+  //       ],
+  //     },
+  //     {
+  //       key: "Frameworks",
+  //       icons: [
+  //         "/assets/images/technologies/django.png",
+  //         "/assets/images/technologies/node.png",
+  //       ],
+  //     },
+  //     { key: "Libraries", icons: [] },
+  //   ],
+  // },
 };

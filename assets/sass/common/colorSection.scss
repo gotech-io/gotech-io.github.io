@@ -1,6 +1,6 @@
 .color-block {
   width: 100%;
-  padding: $section-gap 0;
+  padding: $title-gap 0;
 
   &-title {
     color: $main;
@@ -15,13 +15,19 @@
 
 .green {
   .color-block {
-    background: $green-background;
+    background: $green; //$green-background;
   }
 }
 
 .dark {
   .color-block {
     background: $prime;
+  }
+}
+
+.orange {
+  .color-block {
+    background: $orange;
   }
 }
 

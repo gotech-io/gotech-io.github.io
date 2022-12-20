@@ -32,38 +32,33 @@ export const MOBILE_DEV = {
     },
   ],
 
-  services:
-    // {
-    //   title: "iOS",
-    //   description:
-    //     "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    //   technologies: [
-    //     {
-    //       key: "Languages",
-    //       icons: ["/assets/images/technologies/swift.png"],
-    //     },
-    //     { key: "Frameworks", icons: [] },
-    //     { key: "Libraries", icons: [] },
-    //   ],
-    // },
+  services: [
     {
-      title: "technologies",
+      title: "Cross-platform",
       description:
-        "We offer only well-recognized and time-tested technologies to support any of your business goals.",
-      technologies: [
-        {
-          key: "Languages",
-          icons: [
-            "/assets/images/technologies/python.jpeg",
-            "/assets/images/technologies/java.png",
-            "/assets/images/technologies/kotlin.png",
-          ],
-        },
-        {
-          key: "Frameworks",
-          icons: ["/assets/images/technologies/django.png"],
-        },
-        { key: "Libraries", icons: [] },
-      ],
+        "Cross-platform mobile apps can run on multiple mobile platforms and have a number of other benefits. For instance, a single-source code can be used here. It requires less time for developing and deploying cross-platform mobile apps at app stores. During the implementation of an MVP, there is no fragmentation or any need for subsequent upgrades.",
     },
+    {
+      title: "Native Development",
+      description:
+        "It also takes less time and effort to solve bug problems. One single solution is suitable for simple applications running both on iOS and Android.",
+    },
+    {
+      title: "Progressive Web Applications",
+      description:
+        "Developing a PWA is a fast and cost-effective process, but it all will work out only under one condition — you need to have a website to make a PWA.",
+    },
+  ],
+
+  technologies: {
+    title: "technologies",
+    description:
+      "We offer only well-recognized and time-tested technologies to support any of your business goals.",
+    content: [
+      "/assets/images/technologies/python.jpeg",
+      "/assets/images/technologies/java.png",
+      "/assets/images/technologies/kotlin.png",
+      "/assets/images/technologies/django.png",
+    ],
+  },
 };

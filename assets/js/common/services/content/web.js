@@ -33,52 +33,30 @@ export const WEB_DEV = {
     },
   ],
 
-  services:
-    // {
-    //   title: "Frontend",
-    //   description:
-    //     "The highly skilled GoTech teams are experts at developing applications. Utilizing the most innovative technologies, we develop web applications for organizations and entrepreneurs from a large range of fields. By creating coherent interfaces, we ensure a positive and empowering user experience.",
-    //   technologies: [
-    //     { key: "Languages", icons: [] },
-    //     {
-    //       key: "Frameworks",
-    //       icons: [
-    //         "/assets/images/technologies/angular.png",
-    //         "/assets/images/technologies/react.png",
-    //       ],
-    //     },
-    //     {
-    //       key: "Libraries",
-    //       icons: [
-    //         "/assets/images/technologies/redux.png",
-    //         "/assets/images/technologies/mobx.png",
-    //         "/assets/images/technologies/zustand.png",
-    //       ],
-    //     },
-    //   ],
-    // },
+  services: [
     {
-      title: "technologies",
+      title: "Front-end Development",
       description:
-        "We offer only well-recognized and time-tested technologies to support any of your business goals.",
-      technologies: [
-        {
-          key: "Languages",
-          icons: [
-            "/assets/images/technologies/python.jpeg",
-            "/assets/images/technologies/java.png",
-            "/assets/images/technologies/kotlin.png",
-            "/assets/images/technologies/c.png",
-          ],
-        },
-        {
-          key: "Frameworks",
-          icons: [
-            "/assets/images/technologies/django.png",
-            "/assets/images/technologies/node.png",
-          ],
-        },
-        { key: "Libraries", icons: [] },
-      ],
+        "Front-end development primarily focuses on user experience. Using the related coding and design techniques, you as front-end developers build the elements of an application that are directly accessed by end-users with a goal of rendering the entire interface elegant, easy to use, fast, and secure, fostering user engagement and interaction.",
     },
+    {
+      title: "Back-end Development",
+      description:
+        "Back-end development is the process of building the components for running the application behind the scenes. Examples are components for data storage, infrastructure, integration with external systems, and code written in one or more programming languages. Users cannot access the back end.",
+    },
+  ],
+
+  technologies: {
+    title: "technologies",
+    description:
+      "We offer only well-recognized and time-tested technologies to support any of your business goals.",
+    content: [
+      "/assets/images/technologies/python.jpeg",
+      "/assets/images/technologies/java.png",
+      "/assets/images/technologies/kotlin.png",
+      "/assets/images/technologies/c.png",
+      "/assets/images/technologies/django.png",
+      "/assets/images/technologies/node.png",
+    ],
+  },
 };

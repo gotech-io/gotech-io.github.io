@@ -13,6 +13,16 @@ const stages = [
 const StagesCycle = () => {
   return (
     <div className="stages-cycle">
+      <div className="page-common-block">
+        <h5>App Development Process</h5>
+        <p>
+          There is a long and complex process that starts with receiving a
+          client’s request and finishes with developing an application and
+          successfully launching it. Yet we apply the best methods and
+          techniques to make this process run smoothly and to facilitate the
+          efficiency of each of its stages.
+        </p>
+      </div>
       <div className="stages">
         <div className="stages-item-line" />
         <div className="page-common-block stages-wrapper">
