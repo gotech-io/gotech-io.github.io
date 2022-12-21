@@ -17,4 +17,8 @@ export const ICONS = {
   ENV_DEV: "fa-solid fa-user-gear",
   EtE_TEST: "fa-solid fa-check-double",
   INTEGRATION: "fa-solid fa-arrows-spin",
+
+  FACEBOOK: "fa-brands fa-square-facebook",
+  LINKEDIN: "fa-brands fa-linkedin",
+  INSTAGRAM: "fa-brands fa-square-instagram",
 };

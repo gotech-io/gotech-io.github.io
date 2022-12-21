@@ -1,31 +1,19 @@
-import Image from "./img";
 import React from "react";
+import { CONTACT } from "../../assets/js/common/contact";
+import { ICONS } from "../../assets/js/common/services/icons";
 
-const Socials = ({
-  _relativeURL,
-  _ID,
-  facebook_link,
-  facebook_image,
-  linkedin_link,
-  linkedin_image,
-  instagram_link,
-  instagram_image,
-}) => {
-  const createRelativeURL = (url) => {
-    return `${_relativeURL(url, _ID)}`;
-  };
+const Socials = () => {
   return (
-    <section className="socials">
-      <a href={facebook_link} target="_blank">
-        <Image src={createRelativeURL(facebook_image)} />
-      </a>
-      <a href={linkedin_link} target="_blank">
-        <Image src={createRelativeURL(linkedin_image)} />
-      </a>
-      <a href={instagram_link} target="_blank">
-        <Image src={createRelativeURL(instagram_image)} />
-      </a>
-    </section>
+    <div className="socials">
+      {CONTACT.SOCIAL_MEDIA.content.length &&
+        CONTACT.SOCIAL_MEDIA.content.map(({ icon, link }) => {
+          return (
+            <a key={icon} href={link} target="_blank" className="socials-link">
+              <i className={ICONS[icon]} />
+            </a>
+          );
+        })}
+    </div>
   );
 };
 
