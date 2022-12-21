@@ -71,3 +71,22 @@
     }
   }
 }
+
+@media only screen and (max-width: $mobile) {
+  .stages {
+    margin-top: $section-gap;
+
+    &-wrapper {
+      flex-wrap: wrap;
+    }
+
+    &-item {
+      width: 30%;
+      margin-top: $content-gap;
+
+      &-line {
+        display: none;
+      }
+    }
+  }
+}

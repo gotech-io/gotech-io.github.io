@@ -137,19 +137,13 @@
         display: flex;
         align-items: center;
         justify-content: center;
-        z-index: 99;
         width: 40px;
         height: 40px;
         position: absolute;
-        top: 50%;
-        transform: translate(0, -50%);
+        top: 0;
         right: 20px;
-        transition: 0.2s all;
-        border-radius: 50%;
-
-        &:hover {
-          box-shadow: inset 0 0 0 2px #f2f4f8;
-        }
+        z-index: 99;
+        font-size: 25px;
       }
 
       &-overlay {
@@ -202,11 +196,18 @@
 }
 
 @media only screen and (max-width: $mobile) {
-  .navbar .contact-link {
-    border: solid 2px $prime;
-  }
+  .navbar {
+    .contact-link {
+      border: solid 2px $prime;
+    }
 
-  .navbar-navigation-link a {
-    color: $prime !important;
+    &-navigation-link a {
+      color: $prime !important;
+    }
+
+    &-logo {
+      height: 40px;
+      padding: 0;
+    }
   }
 }

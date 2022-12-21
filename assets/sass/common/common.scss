@@ -131,17 +131,34 @@ img {
   h2 {
     font-size: 25px;
   }
+  p {
+    font-size: 15px;
+  }
   .socials {
     justify-content: center;
   }
 
-  .orange-blobs {
-    right: -200px;
-    top: -300px;
+  .home-header .home-header-background {
+    .orange-blobs {
+      right: -700px;
+      top: -700px;
+    }
+
+    .green-blobs {
+      left: -750px;
+      top: -700px;
+    }
   }
 
-  .green-blobs {
-    left: -250px;
-    top: -50px;
+  .page-common-header.home-header-background {
+    .orange-blobs {
+      right: -200px;
+      top: -300px;
+    }
+
+    .green-blobs {
+      left: -250px;
+      top: -50px;
+    }
   }
 }

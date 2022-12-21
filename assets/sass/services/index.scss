@@ -137,7 +137,6 @@
     width: 100%;
     padding: $inner-gap 0;
     text-align: center;
-    // background-color: $default;
 
     &-wrapper {
       width: 100%;
@@ -198,6 +197,14 @@
 
 @media only screen and (max-width: $mobile) {
   .services {
+    &-content {
+      padding: $title-gap 0;
+    }
+
+    &-intro {
+      padding: $title-gap 0;
+    }
+
     &-diagram {
       padding: $section-gap 0;
     }
@@ -209,6 +216,12 @@
 
     &-content-item-info h6 {
       font-size: 20px;
+    }
+  }
+
+  .service {
+    &-wrapper-detail {
+      width: 100%;
     }
   }
 }

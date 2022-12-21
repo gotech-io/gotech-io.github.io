@@ -61,20 +61,23 @@ $points-height: 100px;
 }
 
 @media only screen and (max-width: $mobile) {
-  .points-item {
-    &-number {
-      height: auto;
-      font-size: 30px;
-    }
+  .points {
+    margin-top: $section-gap;
+    &-item {
+      &-number {
+        height: auto;
+        font-size: 30px;
+      }
 
-    &-dot {
-      width: 20px;
-      height: 20px;
-      margin: 0;
-    }
+      &-dot {
+        width: 20px;
+        height: 20px;
+        margin: 0;
+      }
 
-    p {
-      height: auto;
+      p {
+        height: auto;
+      }
     }
   }
 }
