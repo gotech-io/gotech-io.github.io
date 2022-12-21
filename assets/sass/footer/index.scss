@@ -88,11 +88,9 @@
         text-align: center;
       }
     }
+  }
 
-    .socials {
-      &-link {
-        margin: 0 10px;
-      }
-    }
+  .footer .list-items .socials-link {
+    margin: 0 10px;
   }
 }

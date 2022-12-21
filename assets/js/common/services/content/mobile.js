@@ -68,16 +68,23 @@ export const MOBILE_DEV = {
   ],
 
   technologies: [
-    "/assets/images/technologies/mobile/android.png",
-    "/assets/images/technologies/mobile/cdk.png",
-    "/assets/images/technologies/mobile/django.png",
-    "/assets/images/technologies/mobile/flutter.png",
-    "/assets/images/technologies/mobile/ios.png",
-    "/assets/images/technologies/mobile/java.png",
-    "/assets/images/technologies/mobile/python.png",
-    "/assets/images/technologies/mobile/react.png",
-    "/assets/images/technologies/mobile/kotlin.png",
-    "/assets/images/technologies/mobile/swift.png",
+    {
+      title: "android",
+      icon: "/assets/images/technologies/mobile/android.png",
+    },
+    { title: "cdk", icon: "/assets/images/technologies/mobile/cdk.png" },
+    { title: "django", icon: "/assets/images/technologies/mobile/django.png" },
+    {
+      title: "flutter",
+      icon: "/assets/images/technologies/mobile/flutter.png",
+    },
+    { title: "ios", icon: "/assets/images/technologies/mobile/ios.png" },
+    { title: "java", icon: "/assets/images/technologies/mobile/java.png" },
+    { title: "spring", icon: "/assets/images/technologies/mobile/spring.png" },
+    { title: "python", icon: "/assets/images/technologies/mobile/python.png" },
+    { title: "react", icon: "/assets/images/technologies/mobile/react.png" },
+    { title: "kotlin", icon: "/assets/images/technologies/mobile/kotlin.png" },
+    { title: "swift", icon: "/assets/images/technologies/mobile/swift.png" },
   ],
 
   example: "MEMOMI",

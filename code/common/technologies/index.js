@@ -5,14 +5,11 @@ const Technologies = ({ technologies }) => {
     <div className="page-common-block">
       <div className="technology">
         {technologies.length
-          ? technologies.map((technology) => {
-              console.log({ technology });
+          ? technologies.map(({ title, icon }) => {
               return (
-                <div key={technology} className="technology-item">
-                  <img
-                    src="https://www.w3schools.com/images/lamp.jpg"
-                    alt="technology"
-                  />
+                <div key={title} className="technology-item">
+                  <img src={icon} alt="technology" />
+                  <p>{title}</p>
                 </div>
               );
             })

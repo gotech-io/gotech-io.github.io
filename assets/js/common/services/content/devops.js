@@ -73,14 +73,20 @@ export const DEVOPS_DEV = {
   ],
 
   technologies: [
-    "/assets/images/technologies/devops/aws.jpeg",
-    "/assets/images/technologies/devops/azure.png",
-    "/assets/images/technologies/devops/digitalOcean.png",
-    "/assets/images/technologies/devops/docker.png",
-    "/assets/images/technologies/devops/gitlab.png",
-    "/assets/images/technologies/devops/googleCloud.png",
-    "/assets/images/technologies/devops/linux.png",
-    "/assets/images/technologies/devops/php.png",
-    "/assets/images/technologies/devops/python.png",
+    { title: "aws", icon: "/assets/images/technologies/devops/aws.png" },
+    { title: "azure", icon: "/assets/images/technologies/devops/azure.png" },
+    {
+      title: "digitalOcean",
+      icon: "/assets/images/technologies/devops/digitalOcean.png",
+    },
+    { title: "docker", icon: "/assets/images/technologies/devops/docker.png" },
+    { title: "gitlab", icon: "/assets/images/technologies/devops/gitlab.png" },
+    {
+      title: "googleCloud",
+      icon: "/assets/images/technologies/devops/googleCloud.png",
+    },
+    { title: "linux", icon: "/assets/images/technologies/devops/linux.png" },
+    { title: "php", icon: "/assets/images/technologies/devops/php.png" },
+    { title: "python", icon: "/assets/images/technologies/devops/python.png" },
   ],
 };

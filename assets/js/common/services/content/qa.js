@@ -67,10 +67,10 @@ export const QA_DEV = {
   ],
 
   technologies: [
-    "/assets/images/technologies/qa/cucumber.jpeg",
-    "/assets/images/technologies/qa/jenkins.png",
-    "/assets/images/technologies/qa/postman.png",
-    "/assets/images/technologies/qa/selenium.png",
+    { title: "jenkins", icon: "/assets/images/technologies/qa/jenkins.png" },
+    { title: "postman", icon: "/assets/images/technologies/qa/postman.png" },
+    { title: "selenium", icon: "/assets/images/technologies/qa/selenium.png" },
+    { title: "cucumber", icon: "/assets/images/technologies/qa/cucumber.png" },
   ],
 
   example: "BASE",
