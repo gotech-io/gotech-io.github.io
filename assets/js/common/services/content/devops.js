@@ -47,29 +47,28 @@ export const DEVOPS_DEV = {
 
   services: [
     {
+      icon: "AUTO_DEV",
       title: "DevOps Automation",
       description:
-        "We are provides DevOps Automation services to make sure that our clients are agile enough when performing specific tasks. Our chief goal is to mitigate any risks and reduce production time while keeping the quality bar high.",
+        "Automate your delivery pipeline to ensure smooth deployments and seamless rollbacks across IT processes. We can help segment your bulky enterprise apps into self-sustained services, migrate your IT infrastructure to the cloud, fix bugs, and deploy new features with zero risks.",
     },
     {
-      title: "Staff Augmentation",
+      icon: "ENV_DEV",
+      title: "Environment Configuration",
       description:
-        "Finding a professional and reliable DevOps team is not an easy task to do, and it takes a lot of time. Fortunately, We already selected the best of the best engineers in the niche. Our employees will love to join your team and contribute to your success.",
+        "Our DevOps services company specializes in setting up server environments using AWS, Microsoft Azure, and Google Cloud. We ensure consistency and save your time by having your servers configured for optimal load balancing.",
     },
     {
-      title: "Management",
+      icon: "EtE_TEST",
+      title: "End-to-end Testing",
       description:
-        "Configuration management is a vital process that helps to establish and maintain consistency in the performance and functional of a product. Using the agile approach, our professional DevOps engineers will facilitate your business processes and promote the automation of its tasks.",
+        "Our DevOps services conduct end-to-end DevOps testing, which involves regression and functionality tests and validation of environment configuration to ensure every piece of information is passed between different software components within the system in a seamless and optimum way.",
     },
     {
-      title: "Virtualization",
+      icon: "INTEGRATION",
+      title: "Continuous Integration",
       description:
-        "Virtualization is the most effective tool to ensure rapid and stable deployments. It helps to facilitate the speed and quality of many software development processes. Using the virtualization approach, our DevOps team can erase all unwanted barriers on the way to your goals.",
-    },
-    {
-      title: "Code Inspection",
-      description:
-        "The core prerequisite of future success in software development is a clear code of a product. Our DevOps engineers who will check your code and constantly improve it. Our experts will ensure that your product’s code component is of the best possible quality.",
+        "GoTech team of skilled coders and extensively experienced DevOps engineers integrate code into a shared repository and verify each integration through automated tests for better code quality and improved build.",
     },
   ],
 

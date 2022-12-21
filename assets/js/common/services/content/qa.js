@@ -53,8 +53,16 @@ export const QA_DEV = {
 
   services: [
     {
-      title: "QA A",
-      description: "Text",
+      icon: "QA_AUTO",
+      title: "Automated Testing",
+      description:
+        "Our software teams will unleash the full potential of Automation Testing for your company, reduce QA costs, speed up your time to market, and give a transparent overview of the state of your product at any time",
+    },
+    {
+      icon: "QA_MANUAL",
+      title: "Manual Testing",
+      description:
+        "Manual Testing is a type of software testing in which test cases are executed manually by a tester without using any automated tools. The purpose of Manual Testing is to identify the bugs, issues, and defects in the software application. Manual software testing is the most primitive technique of all testing types and it helps to find critical bugs in the software application.",
     },
   ],
 

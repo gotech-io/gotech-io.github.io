@@ -55,11 +55,13 @@ export const WEB_DEV = {
 
   services: [
     {
+      icon: "FRONT_DEV",
       title: "Front-end Development",
       description:
         "Front-end development primarily focuses on user experience. Using the related coding and design techniques, you as front-end developers build the elements of an application that are directly accessed by end-users with a goal of rendering the entire interface elegant, easy to use, fast, and secure, fostering user engagement and interaction.",
     },
     {
+      icon: "BACK_DEV",
       title: "Back-end Development",
       description:
         "Back-end development is the process of building the components for running the application behind the scenes. Examples are components for data storage, infrastructure, integration with external systems, and code written in one or more programming languages. Users cannot access the back end.",

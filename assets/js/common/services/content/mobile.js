@@ -54,19 +54,16 @@ export const MOBILE_DEV = {
 
   services: [
     {
+      icon: "CROSS_DEV",
       title: "Cross-platform",
       description:
         "Cross-platform mobile apps can run on multiple mobile platforms and have a number of other benefits. For instance, a single-source code can be used here. It requires less time for developing and deploying cross-platform mobile apps at app stores. During the implementation of an MVP, there is no fragmentation or any need for subsequent upgrades.",
     },
     {
+      icon: "NATIVE_DEV",
       title: "Native Development",
       description:
-        "It also takes less time and effort to solve bug problems. One single solution is suitable for simple applications running both on iOS and Android.",
-    },
-    {
-      title: "Progressive Web Applications",
-      description:
-        "Developing a PWA is a fast and cost-effective process, but it all will work out only under one condition — you need to have a website to make a PWA.",
+        "Native applications are more complicated to create than mobile websites. They must be developed for platform-specific iOS or Android. You may use the native capabilities of mobile operating systems to create a richer user experience and implement app features.",
     },
   ],
 
