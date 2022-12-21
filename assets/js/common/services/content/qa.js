@@ -67,15 +67,10 @@ export const QA_DEV = {
   ],
 
   technologies: [
-    "/assets/images/technologies/python.jpeg",
-    "/assets/images/technologies/java.png",
-    "/assets/images/technologies/kotlin.png",
-    "/assets/images/technologies/django.png",
-    "/assets/images/technologies/node.png",
-    "/assets/images/technologies/java.png",
-    "/assets/images/technologies/kotlin.png",
-    "/assets/images/technologies/django.png",
-    "/assets/images/technologies/node.png",
+    "/assets/images/technologies/qa/cucumber.jpeg",
+    "/assets/images/technologies/qa/jenkins.png",
+    "/assets/images/technologies/qa/postman.png",
+    "/assets/images/technologies/qa/selenium.png",
   ],
 
   example: "BASE",

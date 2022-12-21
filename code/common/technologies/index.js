@@ -6,7 +6,7 @@ const Technologies = ({ technologies }) => {
       <div className="technology">
         {technologies.length
           ? technologies.map((technology) => {
-              // console.log({ technology });
+              console.log({ technology });
               return (
                 <div key={technology} className="technology-item">
                   <img

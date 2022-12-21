@@ -73,14 +73,14 @@ export const DEVOPS_DEV = {
   ],
 
   technologies: [
-    "/assets/images/technologies/python.jpeg",
-    "/assets/images/technologies/java.png",
-    "/assets/images/technologies/kotlin.png",
-
-    "/assets/images/technologies/django.png",
-    "/assets/images/technologies/node.png",
-
-    "/assets/images/technologies/docker.png",
-    "/assets/images/technologies/kubernetes.png",
+    "/assets/images/technologies/devops/aws.jpeg",
+    "/assets/images/technologies/devops/azure.png",
+    "/assets/images/technologies/devops/digitalOcean.png",
+    "/assets/images/technologies/devops/docker.png",
+    "/assets/images/technologies/devops/gitlab.png",
+    "/assets/images/technologies/devops/googleCloud.png",
+    "/assets/images/technologies/devops/linux.png",
+    "/assets/images/technologies/devops/php.png",
+    "/assets/images/technologies/devops/python.png",
   ],
 };

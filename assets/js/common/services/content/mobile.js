@@ -68,10 +68,16 @@ export const MOBILE_DEV = {
   ],
 
   technologies: [
-    "/assets/images/technologies/python.jpeg",
-    "/assets/images/technologies/java.png",
-    "/assets/images/technologies/kotlin.png",
-    "/assets/images/technologies/django.png",
+    "/assets/images/technologies/mobile/android.png",
+    "/assets/images/technologies/mobile/cdk.png",
+    "/assets/images/technologies/mobile/django.png",
+    "/assets/images/technologies/mobile/flutter.png",
+    "/assets/images/technologies/mobile/ios.png",
+    "/assets/images/technologies/mobile/java.png",
+    "/assets/images/technologies/mobile/python.png",
+    "/assets/images/technologies/mobile/react.png",
+    "/assets/images/technologies/mobile/kotlin.png",
+    "/assets/images/technologies/mobile/swift.png",
   ],
 
   example: "MEMOMI",
