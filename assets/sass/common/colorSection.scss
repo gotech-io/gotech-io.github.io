@@ -35,6 +35,20 @@
 
 .default {
   .color-block {
+    background-color: $default;
+
+    &-title {
+      color: $prime;
+    }
+
+    &-description {
+      color: $prime;
+    }
+  }
+}
+
+.main {
+  .color-block {
     background-color: $main;
 
     &-title {

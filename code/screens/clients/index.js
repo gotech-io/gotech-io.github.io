@@ -25,8 +25,22 @@ function Clients({
       _relativeURL={_relativeURL}
       _ID={_ID}
     >
-      <ColorSection color={COLORS.DEFAULT} title="Clients">
-        <StagesCycle stages={stages} />
+      <StagesCycle stages={stages} />
+
+      <ColorSection color={COLORS.DEFAULT}>
+        <div className="clients-categories-wrapper">
+          <div className="test">
+            <i className="fa-brands fa-twitter"></i>
+          </div>
+
+          <div>
+            <h4>dfghjklgf</h4>
+            <p>
+              fgiloof hkghdgildsjfhvhgsdhjcjlfvhhjdf gjdhhfk olifghgdfjfj
+              fgjfghvkf
+            </p>
+          </div>
+        </div>
       </ColorSection>
     </PageWrapper>
   );

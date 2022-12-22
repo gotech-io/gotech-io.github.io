@@ -6,5 +6,6 @@ export const COLORS = {
   PINK: "pink",
   PURPLE: "purple",
   PRIME: "prime",
+  MAIN: "main",
   DEFAULT: "default",
 };
