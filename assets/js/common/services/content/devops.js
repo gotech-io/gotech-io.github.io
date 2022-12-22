@@ -1,8 +1,7 @@
 export const DEVOPS_DEV = {
   title: "DevOps",
   details: "Choose smart development and upload your business to cloud",
-  description:
-    "Choose smart development and upload your business to cloud. Choose smart development and upload your business to cloud.",
+  description: "Choose smart development and upload your business to cloud.",
   url: "/service/devops",
 
   sections: [

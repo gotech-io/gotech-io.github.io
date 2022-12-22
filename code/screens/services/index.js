@@ -4,7 +4,7 @@ import ListServices from "./components/list";
 import PageWrapper from "../../common/pageWrapper";
 import PointsSection from "./components/PointsSection";
 import React from "react";
-import { PAGE_DETAILS } from "../../../assets/js/common/services/page-details";
+import { PAGE_DETAILS } from "../../../assets/js/common/services";
 
 function Services({ services, marquee, contact, _relativeURL, _ID }) {
   const { title, description, sections, intro, diagram } = PAGE_DETAILS;

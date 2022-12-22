@@ -1,5 +1,5 @@
 import React from "react";
-import { ICONS } from "../../../../../assets/js/common/services/icons";
+import { ICONS } from "../../../../../assets/js/common/icons";
 
 const ServicesSection = ({ services }) => {
   return (

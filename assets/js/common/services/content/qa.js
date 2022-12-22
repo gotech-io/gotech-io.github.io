@@ -31,7 +31,7 @@ export const QA_DEV = {
     {
       type: "section-delta",
       color: "white",
-      title: "technologies",
+      title: "technologies used",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals.",
     },

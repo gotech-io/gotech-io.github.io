@@ -1,4 +1,5 @@
 import React from "react";
+import animations from "../../../assets/js/animations";
 
 const Technologies = ({ technologies }) => {
   return (
@@ -7,7 +8,12 @@ const Technologies = ({ technologies }) => {
         {technologies.length
           ? technologies.map(({ title, icon }) => {
               return (
-                <div key={title} className="technology-item">
+                <div
+                  key={title}
+                  className="technology-item"
+                  data-aos-anchor-placement="top-center"
+                  data-aos={animations.zoomIn}
+                >
                   <img src={icon} alt="technology" />
                   <p>{title}</p>
                 </div>

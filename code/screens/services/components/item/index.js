@@ -1,7 +1,7 @@
 import ArrowButton from "../../../../common/btns/arrow";
 import React from "react";
+import { ICONS } from "../../../../../assets/js/common/icons";
 import { SERVICES } from "../../../../../assets/js/common/services/content";
-import { ICONS } from "../../../../../assets/js/common/services/icons";
 
 const textBtn = "read more";
 

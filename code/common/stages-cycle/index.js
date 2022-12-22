@@ -19,7 +19,12 @@ const StagesCycle = () => {
           stages.map((stage) => {
             const { title, icon } = stage;
             return (
-              <div key={performance.now()} className="stages-item">
+              <div
+                key={performance.now()}
+                className="stages-item"
+                data-aos-anchor-placement="top-center"
+                data-aos={animations.zoomIn}
+              >
                 <div
                   className="stages-item-wrapper"
                   data-aos={animations.zoomIn}

@@ -1,6 +1,6 @@
 import React from "react";
 import { CONTACT } from "../../assets/js/common/contact";
-import { ICONS } from "../../assets/js/common/services/icons";
+import { ICONS } from "../../assets/js/common/icons";
 
 const Socials = () => {
   return (
