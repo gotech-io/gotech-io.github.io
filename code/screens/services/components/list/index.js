@@ -1,4 +1,5 @@
 import React from "react";
+import animations from "../../../../../assets/js/animations";
 
 const ListServices = ({ services }) => {
   return (
@@ -6,7 +7,12 @@ const ListServices = ({ services }) => {
       {services.length &&
         services.map((service, i) => {
           return (
-            <div key={i} className="services-content-item">
+            <div
+              key={i}
+              className="services-content-item"
+              data-aos-anchor-placement="top-center"
+              data-aos={animations.zoomIn}
+            >
               {service}
             </div>
           );

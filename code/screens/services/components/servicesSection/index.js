@@ -1,4 +1,5 @@
 import React from "react";
+import animations from "../../../../../assets/js/animations";
 import { ICONS } from "../../../../../assets/js/common/icons";
 
 const ServicesSection = ({ services }) => {
@@ -8,7 +9,12 @@ const ServicesSection = ({ services }) => {
         {services.length &&
           services.map(({ icon, title, description }) => {
             return (
-              <div key={title} className="service-wrapper-detail">
+              <div
+                key={title}
+                className="service-wrapper-detail"
+                data-aos-anchor-placement="top-center"
+                data-aos={animations.zoomInUp}
+              >
                 <div>
                   <div className="services-content-item-type">
                     <i className={ICONS[icon]} />
