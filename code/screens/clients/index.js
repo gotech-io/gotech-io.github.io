@@ -2,22 +2,15 @@ import ColorSection from "../../common/ColorSection";
 import Flag from "../../common/flag";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
-import StagesCycle from "../../common/stages-cycle";
-import { categories } from "../../../assets/js/common/categories";
+import TitleSection from "../../common/titleSection";
+import { CLIENT_CATEGORIES } from "../../../assets/js/common/clients";
 import { COLORS } from "../../../assets/js/common/colors";
-import { ICONS } from "../../../assets/js/common/icons";
 
-const stages = [categories.medicine, categories.education, categories.shopping];
+//import { TitleSection } from "../../common/titleSection";
 
-function Clients({
-  title,
-  description,
-  projects,
-  marquee,
-  contact,
-  _relativeURL,
-  _ID,
-}) {
+//const stages = [categories.medicine];
+
+function Clients({ title, description, marquee, contact, _relativeURL, _ID }) {
   return (
     <PageWrapper
       title={title}
@@ -27,25 +20,37 @@ function Clients({
       _relativeURL={_relativeURL}
       _ID={_ID}
     >
-      <StagesCycle stages={stages} />
+      {CLIENT_CATEGORIES.length &&
+        CLIENT_CATEGORIES.map(({ title, description, type, color }) => {
+          return (
+            <div key={type}>
+              <ColorSection color={COLORS.DEFAULT}>
+                <div className="clients-categories-wrapper">
+                  <div className="clients-flags-wrapper">
+                    <Flag icon={type} color={color} />
+                  </div>
+
+                  <TitleSection title={title} description={description} />
+                </div>
+              </ColorSection>
+            </div>
+          );
+        })}
+      {/* <StagesCycle stages={stages} />
 
       <ColorSection color={COLORS.DEFAULT}>
         <div className="clients-categories-wrapper">
           <div className="clients-flags-wrapper">
             <Flag icon="MEDICINE" color="green" />
-            <Flag icon="EDUCATION" color="blue" />
-            <Flag icon="SHOPPING" color="pink" />
           </div>
 
-          <div>
-            <h4>dfghjklgf</h4>
-            <p>
-              fgiloof hkghdgildsjfhvhgsdhjcjlfvhhjdf gjdhhfk olifghgdfjfj
-              fgjfghvkf
-            </p>
-          </div>
+          <TitleSection
+            title="dfghjklgf"
+            description="fgiloof hkghdgildsjfhvhgsdhjcjlfvhhjdf gjdhhfk olifghgdfjfj
+              fgjfghvkf"
+          />
         </div>
-      </ColorSection>
+      </ColorSection> */}
     </PageWrapper>
   );
 }
