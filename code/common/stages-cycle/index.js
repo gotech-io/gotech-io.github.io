@@ -1,6 +1,15 @@
 import React from "react";
 import animations from "../../../assets/js/animations";
 
+// const stages = [
+//   { title: "Strategy", icon: "fa-solid fa-pencil" },
+//   { title: "Design", icon: "fa-solid fa-wand-magic-sparkles" },
+//   { title: "Develop", icon: "fa-solid fa-user-gear" },
+//   { title: "Testing", icon: "fa-solid fa-bug" },
+//   { title: "Launch", icon: "fa-solid fa-handshake" },
+//   { title: "Support", icon: "fa-solid fa-headset" },
+// ];
+
 const stages = [
   { title: "medicine", color: "green", icon: "fa-solid fa-stethoscope" },
   { title: "education", color: "blue", icon: "fa-solid fa-graduation-cap" },
