@@ -1,13 +1,12 @@
 import Diagram from "../../../../common/diagram";
 import React from "react";
+import TitleSection from "../../../../common/titleSection";
 
 const DiagramSection = ({ diagram }) => {
   return (
     <div className="services-diagram">
       <div className="page-common-block">
-        <h4>{diagram.title}</h4>
-        <p>{diagram.description}</p>
-
+        <TitleSection title={diagram.title} description={diagram.description} />
         <div className="services-diagram-wrapper">
           <Diagram />
         </div>

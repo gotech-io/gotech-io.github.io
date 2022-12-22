@@ -26,13 +26,13 @@ function Services({ services, marquee, contact, _relativeURL, _ID }) {
                 paragraphs={paragraphs}
               ></ColorSection>
 
-              {type === "section-first" && (
+              {type === "section-alpha" && (
                 <div className="page-common-block">
                   <ListServices services={services} />
                 </div>
               )}
 
-              {type === "section-second" && (
+              {type === "section-beta" && (
                 <div>
                   <PointsSection intro={intro} />
                   <DiagramSection diagram={diagram} />

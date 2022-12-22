@@ -1,12 +1,16 @@
 import React from "react";
 import animations from "../../../assets/js/animations";
 
+const diagramCircle = [1, 2];
+const diagramItems = ["client", "product", "gotech"];
+
 const Diagram = () => {
   return (
     <div className="diagram">
       <div className="diagram-dot">
-        <div className="diagram-dot-item" />
-        <div className="diagram-dot-item" />
+        {diagramCircle.map((item) => {
+          return <div key={item} className="diagram-dot-item" />;
+        })}
       </div>
 
       <div
@@ -14,9 +18,13 @@ const Diagram = () => {
         data-aos-anchor-placement="top-center"
         data-aos={animations.zoomIn}
       >
-        <div className="diagram-circle-item">client</div>
-        <div className="diagram-circle-item">product</div>
-        <div className="diagram-circle-item">gotech</div>
+        {diagramItems.map((item) => {
+          return (
+            <div key={item} className="diagram-circle-item">
+              {item}
+            </div>
+          );
+        })}
       </div>
     </div>
   );

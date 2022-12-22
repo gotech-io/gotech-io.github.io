@@ -2,9 +2,10 @@ export const PAGE_DETAILS = {
   title: "About our Abilities",
   description:
     "GoTech Group provides state-of-the-art services, including highly qualified experts in all areas of infrastructure and development.",
+
   sections: [
     {
-      type: "section-first",
+      type: "section-alpha",
       color: "green",
       paragraphs: [
         "GoTech offers a range of infrastructures and development services to help our clients succeed. Our team of experienced professionals is dedicated to delivering high-quality solutions that are tailored to your specific business needs.",
@@ -12,7 +13,7 @@ export const PAGE_DETAILS = {
       ],
     },
     {
-      type: "section-second",
+      type: "section-beta",
       color: "orange",
       paragraphs: [
         "We have the skills and expertise to develop custom web and mobile applications that are user-friendly, efficient, and effective.",
@@ -20,6 +21,7 @@ export const PAGE_DETAILS = {
       ],
     },
   ],
+
   intro: {
     title: "Why Choose Us?",
     description:
@@ -31,6 +33,7 @@ export const PAGE_DETAILS = {
       { title: "Team Members", count: "100+" },
     ],
   },
+
   diagram: {
     title: "How it works?",
     description:
