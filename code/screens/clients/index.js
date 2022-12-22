@@ -2,7 +2,10 @@ import ColorSection from "../../common/ColorSection";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import StagesCycle from "../../common/stages-cycle";
+import { categories } from "../../../assets/js/common/categories";
 import { COLORS } from "../../../assets/js/common/colors";
+
+const stages = [categories.medicine, categories.education, categories.shopping];
 
 function Clients({
   title,
@@ -23,7 +26,7 @@ function Clients({
       _ID={_ID}
     >
       <ColorSection color={COLORS.DEFAULT} title="Clients">
-        <StagesCycle />
+        <StagesCycle stages={stages} />
       </ColorSection>
     </PageWrapper>
   );
