@@ -1,5 +1,28 @@
 .clients {
-  categories-wrapper {
+  &-categories-wrapper {
+  }
+
+  &-flags-wrapper {
+    width: 100%;
+    display: flex;
+
+    .flags {
+      width: 100px;
+      height: 100px;
+      margin: -50px 0 100px;
+
+      i {
+        font-size: 40px;
+      }
+
+      &:hover {
+        background-color: transparent;
+
+        i {
+          color: $additional;
+        }
+      }
+    }
   }
 }
 

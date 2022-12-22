@@ -1,0 +1,14 @@
+.flags {
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0 0 50% 50%;
+
+  i {
+    font-size: 25px;
+    color: $main;
+  }
+}

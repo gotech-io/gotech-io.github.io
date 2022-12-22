@@ -1,9 +1,11 @@
 import ColorSection from "../../common/ColorSection";
+import Flag from "../../common/flag";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import StagesCycle from "../../common/stages-cycle";
 import { categories } from "../../../assets/js/common/categories";
 import { COLORS } from "../../../assets/js/common/colors";
+import { ICONS } from "../../../assets/js/common/icons";
 
 const stages = [categories.medicine, categories.education, categories.shopping];
 
@@ -29,8 +31,10 @@ function Clients({
 
       <ColorSection color={COLORS.DEFAULT}>
         <div className="clients-categories-wrapper">
-          <div className="test">
-            <i className="fa-brands fa-twitter"></i>
+          <div className="clients-flags-wrapper">
+            <Flag icon="MEDICINE" color="green" />
+            <Flag icon="EDUCATION" color="blue" />
+            <Flag icon="SHOPPING" color="pink" />
           </div>
 
           <div>
