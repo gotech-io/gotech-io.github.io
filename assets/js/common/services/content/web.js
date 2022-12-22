@@ -80,6 +80,7 @@ export const WEB_DEV = {
     { title: "css", icon: "/assets/images/technologies/web/css.png" },
     { title: "sass", icon: "/assets/images/technologies/web/sass.png" },
     { title: "java", icon: "/assets/images/technologies/web/java.png" },
+    { title: "spring", icon: "/assets/images/technologies/web/spring.png" },
     { title: "python", icon: "/assets/images/technologies/web/python.png" },
     { title: "django", icon: "/assets/images/technologies/web/django.png" },
     { title: "js", icon: "/assets/images/technologies/web/js.png" },
@@ -89,6 +90,8 @@ export const WEB_DEV = {
     { title: "mobx", icon: "/assets/images/technologies/web/mobx.png" },
     { title: "rxjs", icon: "/assets/images/technologies/web/rxjs.png" },
     { title: "zustand", icon: "/assets/images/technologies/web/zustand.png" },
+    { title: "prisma", icon: "/assets/images/technologies/web/prisma.png" },
+    { title: "typeorm", icon: "/assets/images/technologies/web/typeorm.png" },
   ],
 
   example: "NOVOTALK",

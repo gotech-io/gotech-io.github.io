@@ -87,5 +87,24 @@ export const DEVOPS_DEV = {
     { title: "linux", icon: "/assets/images/technologies/devops/linux.png" },
     { title: "php", icon: "/assets/images/technologies/devops/php.png" },
     { title: "python", icon: "/assets/images/technologies/devops/python.png" },
+
+    { title: "argo", icon: "/assets/images/technologies/devops/argo.png" },
+    {
+      title: "datadog",
+      icon: "/assets/images/technologies/devops/datadog.png",
+    },
+    {
+      title: "kubernetes",
+      icon: "/assets/images/technologies/devops/kubernetes.png",
+    },
+    { title: "redis", icon: "/assets/images/technologies/devops/redis.png" },
+    {
+      title: "snowflake",
+      icon: "/assets/images/technologies/devops/snowflake.png",
+    },
+    {
+      title: "terraform",
+      icon: "/assets/images/technologies/devops/terraform.png",
+    },
   ],
 };

@@ -73,7 +73,7 @@ export const MOBILE_DEV = {
       icon: "/assets/images/technologies/mobile/android.png",
     },
     { title: "cdk", icon: "/assets/images/technologies/mobile/cdk.png" },
-    { title: "django", icon: "/assets/images/technologies/mobile/django.png" },
+
     {
       title: "flutter",
       icon: "/assets/images/technologies/mobile/flutter.png",
@@ -81,10 +81,24 @@ export const MOBILE_DEV = {
     { title: "ios", icon: "/assets/images/technologies/mobile/ios.png" },
     { title: "java", icon: "/assets/images/technologies/mobile/java.png" },
     { title: "spring", icon: "/assets/images/technologies/mobile/spring.png" },
+    { title: "lonic", icon: "/assets/images/technologies/mobile/lonic.png" },
     { title: "python", icon: "/assets/images/technologies/mobile/python.png" },
-    { title: "react", icon: "/assets/images/technologies/mobile/react.png" },
+    {
+      title: "react native",
+      icon: "/assets/images/technologies/mobile/react.png",
+    },
     { title: "kotlin", icon: "/assets/images/technologies/mobile/kotlin.png" },
     { title: "swift", icon: "/assets/images/technologies/mobile/swift.png" },
+
+    { title: "dart", icon: "/assets/images/technologies/mobile/dart.png" },
+    {
+      title: "fastlane",
+      icon: "/assets/images/technologies/mobile/fastlane.png",
+    },
+    {
+      title: "rxswift",
+      icon: "/assets/images/technologies/mobile/rxswift.png",
+    },
   ],
 
   example: "MEMOMI",

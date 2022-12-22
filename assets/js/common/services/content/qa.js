@@ -71,6 +71,19 @@ export const QA_DEV = {
     { title: "postman", icon: "/assets/images/technologies/qa/postman.png" },
     { title: "selenium", icon: "/assets/images/technologies/qa/selenium.png" },
     { title: "cucumber", icon: "/assets/images/technologies/qa/cucumber.png" },
+    { title: "appium", icon: "/assets/images/technologies/qa/appium.png" },
+    { title: "chai", icon: "/assets/images/technologies/qa/chai.png" },
+    { title: "mocha", icon: "/assets/images/technologies/qa/mocha.png" },
+    {
+      title: "cinelytic",
+      icon: "/assets/images/technologies/qa/cinelytic.png",
+    },
+    { title: "junit", icon: "/assets/images/technologies/qa/junit.png" },
+    { title: "nunit", icon: "/assets/images/technologies/qa/nunit.png" },
+    {
+      title: "playwrihht",
+      icon: "/assets/images/technologies/qa/playwright.png",
+    },
   ],
 
   example: "BASE",
