@@ -90,6 +90,10 @@ export const DEVOPS_DEV = {
 
     { title: "argo", icon: "/assets/images/technologies/devops/argo.png" },
     {
+      title: "jenkins",
+      icon: "/assets/images/technologies/devops/jenkins.png",
+    },
+    {
       title: "datadog",
       icon: "/assets/images/technologies/devops/datadog.png",
     },
