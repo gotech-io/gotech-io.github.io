@@ -1,6 +1,7 @@
 import ColorSection from "../../common/ColorSection";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
+import StagesCycle from "../../common/stages-cycle";
 import { COLORS } from "../../../assets/js/common/colors";
 
 function Clients({
@@ -21,7 +22,9 @@ function Clients({
       _relativeURL={_relativeURL}
       _ID={_ID}
     >
-      <ColorSection color={COLORS.GREEN} title="Clients" />
+      <ColorSection color={COLORS.DEFAULT} title="Clients">
+        <StagesCycle />
+      </ColorSection>
     </PageWrapper>
   );
 }

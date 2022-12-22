@@ -33,6 +33,20 @@
   }
 }
 
+.default {
+  .color-block {
+    background-color: $main;
+
+    &-title {
+      color: $prime;
+    }
+
+    &-description {
+      color: $prime;
+    }
+  }
+}
+
 @media only screen and (max-width: $mobile) {
   .color-block {
     &-description {
