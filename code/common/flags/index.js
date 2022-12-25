@@ -6,7 +6,13 @@ function Flags({ flags }) {
     <div className="clients-flags-wrapper">
       {flags.length &&
         flags.map(({ title, color, icon }) => {
-          return <Flag key={title} icon={icon} color={color} />;
+          return (
+            <div key={title}>
+              <a href="/clients/education">
+                <Flag icon={icon} color={color} />
+              </a>
+            </div>
+          );
         })}
     </div>
   );

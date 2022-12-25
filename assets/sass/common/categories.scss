@@ -1,0 +1,89 @@
+.categories {
+  width: 100%;
+  display: flex;
+  margin: -$section-gap 0 $title-gap;
+  justify-content: space-between;
+
+  &-item {
+    width: 16%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: space-between;
+    flex-wrap: wrap;
+    z-index: 10;
+
+    &-wrapper {
+      width: 100px;
+      height: 100px;
+      margin: 0 auto $content-gap;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $main;
+      border-radius: $circle;
+
+      &-dot {
+        width: 70px;
+        height: 70px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: $circle;
+        cursor: pointer;
+
+        i {
+          font-size: 30px;
+          color: $additional;
+        }
+      }
+    }
+
+    p {
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+    }
+  }
+}
+
+.category-green {
+  &:hover {
+    background-color: $green;
+    box-shadow: $shadow;
+  }
+}
+.category-blue {
+  &:hover {
+    background-color: $blue;
+    box-shadow: $shadow;
+  }
+}
+.category-orange {
+  &:hover {
+    background-color: $orange;
+    box-shadow: $shadow;
+  }
+}
+.category-pink {
+  &:hover {
+    background-color: $pink;
+    box-shadow: $shadow;
+  }
+}
+.category-purple {
+  &:hover {
+    background-color: $purple;
+    box-shadow: $shadow;
+  }
+}
+.category-prime {
+  &:hover {
+    background-color: $prime;
+    box-shadow: $shadow;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+}

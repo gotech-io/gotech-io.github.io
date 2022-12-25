@@ -1,3 +1,5 @@
+import Categories from "../../common/categories";
+import Category from "./components/category";
 import ColorSection from "../../common/ColorSection";
 import Flags from "../../common/flags";
 import Left from "./components/left";
@@ -10,8 +12,8 @@ import { CLIENT_TITLES } from "../../../assets/js/common/clients/const";
 import { listClients } from "../../../assets/js/common/clients/listClient";
 import { COLORS } from "../../../assets/js/common/colors";
 
-function Clients({ title, description, marquee, contact, _relativeURL, _ID }) {
-  const { content } = CLIENT_CATEGORIES["MEDICINE"];
+function Clients({ marquee, contact, _relativeURL, _ID }) {
+  const { title, description, sections } = CLIENT_CATEGORIES;
 
   return (
     <PageWrapper
@@ -22,30 +24,29 @@ function Clients({ title, description, marquee, contact, _relativeURL, _ID }) {
       _relativeURL={_relativeURL}
       _ID={_ID}
     >
-      <div>
-        <TitleSection
-          title={"All Our Categories"}
-          description={
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-          }
-        />
-        <StagesCycle stages={listClients} />
-      </div>
+      {sections.length &&
+        sections.map(({ type, color, title, description }) => {
+          return (
+            <div key={type} className="clients">
+              <ColorSection
+                color={color}
+                title={title}
+                description={description}
+              >
+                {/* {type === "section-beta" && (
+                <div className="clients-categories-wrapper">
+                  <Flags flags={listClients} />
+                  <Category />
+                </div>
+              )} */}
+              </ColorSection>
 
-      <ColorSection color={COLORS.DEFAULT}>
-        <div className="clients-categories-wrapper">
-          <Flags flags={listClients} />
-
-          <div>
-            <TitleSection
-              title={content.title}
-              description={content.description}
-            />
-            <Left />
-            <Left />
-          </div>
-        </div>
-      </ColorSection>
+              {type === "section-beta" && (
+                <Categories categories={listClients} />
+              )}
+            </div>
+          );
+        })}
     </PageWrapper>
   );
 }

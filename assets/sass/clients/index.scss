@@ -1,10 +1,9 @@
 .clients {
-  &-categories-wrapper {
-  }
+  position: relative;
 
   &-flags-wrapper {
     width: 100%;
-    margin: -50px 0 $title-gap;
+    margin: -$title-gap 0 $title-gap;
     display: flex;
     justify-content: center;
 

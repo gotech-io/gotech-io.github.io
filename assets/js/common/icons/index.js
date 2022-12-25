@@ -35,4 +35,6 @@ export const ICONS = {
   CRYPTOCURRENCY: "fa-brands fa-bitcoin",
   AI: "fa-solid fa-code-branch",
   GOVERNMENT: "fa-solid fa-building-shield",
+
+  STAR: "fa-solid fa-star",
 };

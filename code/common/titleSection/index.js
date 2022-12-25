@@ -4,7 +4,7 @@ const TitleSection = ({ title, description }) => {
   return (
     <div className="page-common-block title-section">
       <h4>{title}</h4>
-      <p>{description}</p>
+      {description && <p>{description}</p>}
     </div>
   );
 };
