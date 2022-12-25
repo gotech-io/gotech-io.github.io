@@ -1,10 +1,11 @@
 import React from "react";
-import { ICONS } from "../../../assets/js/common/icons";
+
+//import { ICONS } from "../../../assets/js/common/icons";
 
 function Flag({ icon, color }) {
   return (
     <div className={`flags ${color}`}>
-      <i className={ICONS[icon]} />
+      <i className={icon} />
     </div>
   );
 }

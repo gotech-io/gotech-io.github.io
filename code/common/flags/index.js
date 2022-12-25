@@ -3,14 +3,10 @@ import React from "react";
 
 function Flags({ flags }) {
   return (
-    <div>
+    <div className="clients-flags-wrapper">
       {flags.length &&
-        flags.map(({ title, color }) => {
-          return (
-            <div key={title} className="clients-flags-wrapper">
-              <Flag icon={title} color={color} />
-            </div>
-          );
+        flags.map(({ title, color, icon }) => {
+          return <Flag key={title} icon={icon} color={color} />;
         })}
     </div>
   );

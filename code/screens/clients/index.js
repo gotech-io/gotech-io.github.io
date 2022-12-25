@@ -1,17 +1,18 @@
 import ColorSection from "../../common/ColorSection";
-import Flag from "../../common/flag";
 import Flags from "../../common/flags";
+import Left from "./components/left";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import StagesCycle from "../../common/stages-cycle";
 import TitleSection from "../../common/titleSection";
 import { CLIENT_CATEGORIES } from "../../../assets/js/common/clients";
-import { ListClients } from "../../../assets/js/common/clients/listClient";
+import { CLIENT_TITLES } from "../../../assets/js/common/clients/const";
+import { listClients } from "../../../assets/js/common/clients/listClient";
 import { COLORS } from "../../../assets/js/common/colors";
 
-// const stages = [categories.medicine];
-
 function Clients({ title, description, marquee, contact, _relativeURL, _ID }) {
+  const { content } = CLIENT_CATEGORIES["MEDICINE"];
+
   return (
     <PageWrapper
       title={title}
@@ -28,35 +29,23 @@ function Clients({ title, description, marquee, contact, _relativeURL, _ID }) {
             "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
           }
         />
-        <StagesCycle stages={ListClients} />
+        <StagesCycle stages={listClients} />
       </div>
 
       <ColorSection color={COLORS.DEFAULT}>
         <div className="clients-categories-wrapper">
-          <div className="clients-flags-wrapper">
-            <Flags flags={ListClients} />
-          </div>
+          <Flags flags={listClients} />
 
-          <div>CONTENT</div>
+          <div>
+            <TitleSection
+              title={content.title}
+              description={content.description}
+            />
+            <Left />
+            <Left />
+          </div>
         </div>
       </ColorSection>
-
-      {/* {CLIENT_CATEGORIES.length &&
-        CLIENT_CATEGORIES.map(({ title, description, type, color }) => {
-          return (
-            <div key={type}>
-              <ColorSection color={COLORS.DEFAULT}>
-                <div className="clients-categories-wrapper">
-                  <div className="clients-flags-wrapper">
-                    <Flag icon={type} color={color} />
-                  </div>
-
-                  <TitleSection title={title} description={description} />
-                </div>
-              </ColorSection>
-            </div>
-          );
-        })} */}
     </PageWrapper>
   );
 }

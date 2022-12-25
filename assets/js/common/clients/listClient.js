@@ -2,7 +2,7 @@ import { COLORS } from "../colors";
 import { ICONS } from "../icons";
 import { CLIENT_TITLES } from "./const";
 
-export const ListClients = [
+export const listClients = [
   {
     title: CLIENT_TITLES.MEDICINE,
     color: COLORS.GREEN,

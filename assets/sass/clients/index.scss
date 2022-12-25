@@ -4,22 +4,29 @@
 
   &-flags-wrapper {
     width: 100%;
+    margin: -50px 0 $title-gap;
     display: flex;
+    justify-content: center;
 
     .flags {
       width: 100px;
       height: 100px;
-      margin: -50px 0 100px;
+      background-color: transparent;
+      transition: background-color 0.3s;
+      cursor: pointer;
 
       i {
         font-size: 40px;
+        color: $additional;
+        transition: color 0.3s;
       }
 
       &:hover {
-        background-color: transparent;
+        background-color: $green;
+        //background-color: transparent;
 
         i {
-          color: $additional;
+          color: $main;
         }
       }
     }
