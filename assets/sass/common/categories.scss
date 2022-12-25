@@ -36,6 +36,12 @@
           font-size: 30px;
           color: $additional;
         }
+
+        &:hover {
+          i {
+            color: $main;
+          }
+        }
       }
     }
 
