@@ -9,7 +9,7 @@
     justify-content: space-between;
   }
 
-  &-image-left {
+  &-image-item {
     width: 40%;
     height: 90%;
 
@@ -19,7 +19,7 @@
   }
 
   &-content {
-    &-left {
+    &-item {
       width: 70%;
       padding: $section-gap;
       position: absolute;
@@ -30,6 +30,10 @@
       box-shadow: $shadow;
       -webkit-box-shadow: $shadow;
       -moz-box-shadow: $shadow;
+
+      .reverse {
+        left: 0;
+      }
     }
 
     &-description {
@@ -76,12 +80,12 @@
     display: block;
   }
 
-  .reviews-image-left {
+  .reviews-image-item {
     width: 100%;
     height: auto;
   }
 
-  .reviews-content-left {
+  .reviews-content-item {
     width: 100%;
     position: unset;
   }

@@ -10,7 +10,7 @@ function ListReviews({ content, color }) {
       <TitleSection title={title} description={description} />
 
       {clients.length &&
-        clients.map(({ title, description, range, clientName }) => {
+        clients.map(({ title, description, range, clientName }, i) => {
           return (
             <Reviews
               key={title}
@@ -19,6 +19,7 @@ function ListReviews({ content, color }) {
               color={color}
               range={range}
               clientName={clientName}
+              reverse={i % 2 === 0 ? "reverse" : ""}
             />
           );
         })}
