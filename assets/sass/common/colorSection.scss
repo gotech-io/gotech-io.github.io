@@ -14,10 +14,46 @@
   }
 }
 
-.green {
+.green,
+.blue {
   .color-block {
     background: $green-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
 
+.pink {
+  .color-block {
+    background: $pink-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
+
+.orange {
+  .color-block {
+    background: $orange-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
+
+.purple,
+.prime {
+  .color-block {
     .title-section {
       h4,
       p {

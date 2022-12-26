@@ -3,7 +3,7 @@ import Reviews from "./reviews";
 import TitleSection from "../../../common/titleSection";
 import { COLORS } from "../../../../assets/js/common/colors";
 
-function ListReviews({ content }) {
+function ListReviews({ content, color }) {
   const { title, description, clients } = content;
   return (
     <div>
@@ -16,7 +16,7 @@ function ListReviews({ content }) {
               key={title}
               title={title}
               description={description}
-              color={COLORS.GREEN}
+              color={color}
               range={range}
               clientName={clientName}
             />

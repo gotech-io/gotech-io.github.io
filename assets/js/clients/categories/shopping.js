@@ -2,14 +2,14 @@ import { COLORS } from "../../common/colors";
 import { ICONS } from "../../common/icons";
 import { CLIENT_TITLES } from "../titles";
 
-export const MEDICINE = {
-  type: "MEDICINE",
-  title: CLIENT_TITLES.MEDICINE,
+export const SHOPPING = {
+  type: "SHOPPING",
+  title: CLIENT_TITLES.SHOPPING,
   description:
     "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
-  color: COLORS.GREEN,
-  icon: ICONS.MEDICINE,
-  link: "/clients/medicine",
+  color: COLORS.PINK,
+  icon: ICONS.SHOPPING,
+  link: "/clients/shopping",
 
   content: {
     title: "Our Clients on Medicine Category",
@@ -20,7 +20,7 @@ export const MEDICINE = {
         title: "Project Name 1",
         description:
           "fghjlk jjgfg vcjvkjdhvj dgv fhvjhdfgvjhdg vjhdg vdfvgdjhvgdjhvg jdhfvbdjhvdjhfvjhdfgvbhjdb",
-        range: 4,
+        range: 5,
         clientName: "Client First",
         image: "/",
       },
@@ -28,7 +28,7 @@ export const MEDICINE = {
         title: "Project Name 2",
         description:
           "fghjlk jjgfg vcjvkjdhvj dgv fhvjhdfgvjhdg vjhdg vdfvgdjhvgdjhvg jdhfvbdjhvdjhfvjhdfgvbhjdb",
-        range: 5,
+        range: 3,
         clientName: "Client Second",
         image: "/",
       },

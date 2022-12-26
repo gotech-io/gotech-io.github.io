@@ -1,43 +1,15 @@
-import { COLORS } from "../common/colors";
-import { ICONS } from "../common/icons";
+import { AI } from "./categories/ai";
+import { CRYPTOCURRENCY } from "./categories/cryptocurrency";
+import { EDUCATION } from "./categories/education";
+import { GOVERNMENT } from "./categories/government";
 import { MEDICINE } from "./categories/medicine";
-import { CLIENT_TITLES } from "./titles";
+import { SHOPPING } from "./categories/shopping";
 
 export const listCategories = [
   MEDICINE,
-  {
-    type: "EDUCATION",
-    title: CLIENT_TITLES.EDUCATION,
-    color: COLORS.BLUE,
-    icon: ICONS.EDUCATION,
-    link: "clients/education",
-  },
-  {
-    type: "SHOPPING",
-    title: CLIENT_TITLES.SHOPPING,
-    color: COLORS.PINK,
-    icon: ICONS.SHOPPING,
-    link: "clients/shopping",
-  },
-  {
-    type: "CRYPTOCURRENCY",
-    title: CLIENT_TITLES.CRYPTOCURRENCY,
-    color: COLORS.ORANGE,
-    icon: ICONS.CRYPTOCURRENCY,
-    link: "clients/cryptocurrency",
-  },
-  {
-    type: "AI",
-    title: CLIENT_TITLES.AI,
-    color: COLORS.PURPLE,
-    icon: ICONS.AI,
-    link: "clients/ai",
-  },
-  {
-    type: "GOVERNMENT",
-    title: CLIENT_TITLES.GOVERNMENT,
-    color: COLORS.PRIME,
-    icon: ICONS.GOVERNMENT,
-    link: "clients/government",
-  },
+  EDUCATION,
+  SHOPPING,
+  CRYPTOCURRENCY,
+  AI,
+  GOVERNMENT,
 ];

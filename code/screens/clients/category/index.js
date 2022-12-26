@@ -38,7 +38,7 @@ function Clients({ type, marquee, contact, _relativeURL, _ID }) {
                   {section.type === "section-alpha" && (
                     <div className="clients-categories-wrapper">
                       <Flags flags={listCategories} activeType={type} />
-                      <ListReviews content={content} />
+                      <ListReviews content={content} color={color} />
                     </div>
                   )}
 

@@ -13,9 +13,8 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      //background: $green-background;
-      border-radius: 50%;
+      color: $main;
+      border-radius: $circle;
     }
 
     p {
