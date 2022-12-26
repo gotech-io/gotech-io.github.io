@@ -63,6 +63,8 @@
 
 @media only screen and (max-width: $mobile) {
   .color-block {
+    padding: $title-gap 0 0;
+
     &-description {
       font-size: 15px;
     }

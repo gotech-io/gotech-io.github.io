@@ -32,20 +32,6 @@
       -moz-box-shadow: $shadow;
     }
 
-    &-right {
-      width: 70%;
-      padding: $section-gap;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      z-index: 10;
-      background-color: $main;
-      border-radius: $radius;
-      box-shadow: $shadow;
-      -webkit-box-shadow: $shadow;
-      -moz-box-shadow: $shadow;
-    }
-
     &-description {
       margin: $content-gap 0;
     }
@@ -53,7 +39,17 @@
 }
 
 @media only screen and (max-width: $medium) {
-}
+  .reviews-wrapper {
+    display: block;
+  }
 
-@media only screen and (max-width: $mobile) {
+  .reviews-image-left {
+    width: 100%;
+    height: auto;
+  }
+
+  .reviews-content-left {
+    width: 100%;
+    position: unset;
+  }
 }
