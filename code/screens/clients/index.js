@@ -7,13 +7,13 @@ import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import StagesCycle from "../../common/stages-cycle";
 import TitleSection from "../../common/titleSection";
-import { CLIENT_CATEGORIES } from "../../../assets/js/common/clients";
+import { CLIENT_DETAILS } from "../../../assets/js/common/clients";
 import { CLIENT_TITLES } from "../../../assets/js/common/clients/const";
-import { listClients } from "../../../assets/js/common/clients/listClient";
+import { listCategories } from "../../../assets/js/common/clients/listCategories";
 import { COLORS } from "../../../assets/js/common/colors";
 
 function Clients({ marquee, contact, _relativeURL, _ID }) {
-  const { title, description, sections } = CLIENT_CATEGORIES;
+  const { title, description, sections } = CLIENT_DETAILS;
 
   return (
     <PageWrapper
@@ -32,17 +32,10 @@ function Clients({ marquee, contact, _relativeURL, _ID }) {
                 color={color}
                 title={title}
                 description={description}
-              >
-                {/* {type === "section-beta" && (
-                <div className="clients-categories-wrapper">
-                  <Flags flags={listClients} />
-                  <Category />
-                </div>
-              )} */}
-              </ColorSection>
+              ></ColorSection>
 
               {type === "section-beta" && (
-                <Categories categories={listClients} />
+                <Categories categories={listCategories} />
               )}
             </div>
           );

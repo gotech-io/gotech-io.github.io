@@ -1,5 +1,5 @@
 ---
-layout: screens/clients/index
+layout: screens/clients/category/index
 type: MEDICINE
 
 marquee:

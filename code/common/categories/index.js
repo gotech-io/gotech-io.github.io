@@ -15,10 +15,7 @@ const Categories = ({ categories }) => {
                 data-aos-anchor-placement="top-center"
                 data-aos={animations.zoomIn}
               >
-                <a
-                  href={"/clients/medicine"}
-                  className="categories-item-wrapper"
-                >
+                <a href={link} className="categories-item-wrapper">
                   <div
                     className={`categories-item-wrapper-dot category-${color}`}
                   >

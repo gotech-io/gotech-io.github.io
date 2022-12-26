@@ -1,10 +1,8 @@
 import React from "react";
 
-//import { ICONS } from "../../../assets/js/common/icons";
-
-function Flag({ icon, color }) {
+function Flag({ icon, color, isActive }) {
   return (
-    <div className={`flags ${color}`}>
+    <div className={`flags flags-${color}${isActive ? "-active" : ""}`}>
       <i className={icon} />
     </div>
   );

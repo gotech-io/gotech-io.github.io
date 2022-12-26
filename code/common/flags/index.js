@@ -1,15 +1,16 @@
 import Flag from "../flag";
 import React from "react";
 
-function Flags({ flags }) {
+function Flags({ flags, activeType }) {
   return (
     <div className="clients-flags-wrapper">
       {flags.length &&
-        flags.map(({ title, color, icon }) => {
+        flags.map(({ type, color, icon, link }) => {
+          const isActive = activeType === type;
           return (
-            <div key={title}>
-              <a href="/clients/education">
-                <Flag icon={icon} color={color} />
+            <div key={type}>
+              <a href={link}>
+                <Flag icon={icon} color={color} isActive={isActive} />
               </a>
             </div>
           );
