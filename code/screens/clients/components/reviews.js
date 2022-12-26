@@ -1,9 +1,9 @@
+import Grade from "./grade";
 import Mockup from "../../../common/mockup";
-import Range from "../../../common/range";
 import React from "react";
 import animations from "../../../../assets/js/animations";
 
-function Left({ title, description, color, range, clientName }) {
+function Reviews({ title, description, color, range, clientName, image }) {
   return (
     <div className="reviews flex-between">
       <div className="page-common-block reviews-wrapper">
@@ -19,14 +19,16 @@ function Left({ title, description, color, range, clientName }) {
           <h5>{title}</h5>
           <p className="reviews-content-description">{description}</p>
 
-          <div className="flex-between">
-            <Range color={color} range={range} />
-            <div>{clientName}</div>
-          </div>
+          <Grade
+            color={color}
+            range={range}
+            clientName={clientName}
+            image={image}
+          />
         </div>
       </div>
     </div>
   );
 }
 
-export default Left;
+export default Reviews;

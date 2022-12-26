@@ -1,4 +1,5 @@
 import React from "react";
+import { ICONS } from "../../../assets/js/common/icons";
 
 function ArrowButton({ link, textBtn }) {
   return (
@@ -6,7 +7,7 @@ function ArrowButton({ link, textBtn }) {
       <a href={link}>
         {textBtn}
         <div className="button-arrow-wrapper-icon">
-          <i className="fa-solid fa-arrow-right"></i>
+          <i className={ICONS.ARROW_R}></i>
         </div>
       </a>
     </div>

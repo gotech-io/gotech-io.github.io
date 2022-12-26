@@ -35,6 +35,39 @@
     &-description {
       margin: $content-gap 0;
     }
+
+    &-grade {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    &-clients {
+      display: flex;
+      height: auto;
+      align-items: center;
+
+      p {
+        margin-right: $content-gap;
+        font-weight: 600;
+        font-style: italic;
+      }
+
+      &-image {
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: $circle;
+        background-color: $additional;
+
+        i {
+          color: $main;
+        }
+      }
+    }
   }
 }
 
@@ -51,5 +84,11 @@
   .reviews-content-left {
     width: 100%;
     position: unset;
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .reviews-content-clients {
+    width: 100%;
   }
 }

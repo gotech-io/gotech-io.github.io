@@ -1,6 +1,6 @@
-import Category from "../components/category";
 import ColorSection from "../../../common/ColorSection";
 import Flags from "../../../common/flags";
+import ListReviews from "../components/listReviews";
 import PageWrapper from "../../../common/pageWrapper";
 import React from "react";
 import { listCategories } from "../../../../assets/js/common/clients/listCategories";
@@ -11,7 +11,7 @@ const isEmptyCategory =
 
 function Clients({ type, marquee, contact, _relativeURL, _ID }) {
   const currentCategory = listCategories.find((item) => item.type === type);
-  const { title, description } = currentCategory || {};
+  const { title, description, content } = currentCategory || {};
 
   return (
     <div>
@@ -27,7 +27,7 @@ function Clients({ type, marquee, contact, _relativeURL, _ID }) {
           <ColorSection color={COLORS.MAIN}>
             <div className="clients-categories-wrapper">
               <Flags flags={listCategories} activeType={type} />
-              <Category />
+              <ListReviews content={content} />
             </div>
           </ColorSection>
         </PageWrapper>
