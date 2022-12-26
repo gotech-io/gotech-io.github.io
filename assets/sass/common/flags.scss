@@ -14,6 +14,10 @@
 
     &-active {
       background-color: $green;
+
+      i {
+        color: $main !important;
+      }
     }
   }
 
@@ -24,6 +28,10 @@
 
     &-active {
       background-color: $blue;
+
+      i {
+        color: $main !important;
+      }
     }
   }
 
@@ -34,6 +42,10 @@
 
     &-active {
       background-color: $orange;
+
+      i {
+        color: $main !important;
+      }
     }
   }
 
@@ -44,6 +56,10 @@
 
     &-active {
       background-color: $pink;
+
+      i {
+        color: $main !important;
+      }
     }
   }
 
@@ -54,6 +70,10 @@
 
     &-active {
       background-color: $purple;
+
+      i {
+        color: $main !important;
+      }
     }
   }
 
@@ -64,6 +84,9 @@
 
     &-active {
       background-color: $prime;
+      i {
+        color: $main !important;
+      }
     }
   }
 
