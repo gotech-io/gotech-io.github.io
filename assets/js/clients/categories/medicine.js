@@ -1,6 +1,6 @@
-import { COLORS } from "../../colors";
-import { ICONS } from "../../icons";
-import { CLIENT_TITLES } from "../const";
+import { COLORS } from "../../common/colors";
+import { ICONS } from "../../common/icons";
+import { CLIENT_TITLES } from "../titles";
 
 export const MEDICINE = {
   type: "MEDICINE",

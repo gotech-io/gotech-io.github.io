@@ -2,11 +2,11 @@ import Categories from "../../common/categories";
 import ColorSection from "../../common/ColorSection";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
-import { CLIENT_DETAILS } from "../../../assets/js/common/clients";
-import { listCategories } from "../../../assets/js/common/clients/listCategories";
+import { CLIENTS_DETAILS } from "../../../assets/js/clients";
+import { listCategories } from "../../../assets/js/clients/listCategories";
 
 function Clients({ marquee, contact, _relativeURL, _ID }) {
-  const { title, description, sections } = CLIENT_DETAILS;
+  const { title, description, sections } = CLIENTS_DETAILS;
 
   return (
     <PageWrapper

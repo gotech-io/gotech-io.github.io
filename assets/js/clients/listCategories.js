@@ -1,7 +1,7 @@
-import { COLORS } from "../colors";
-import { ICONS } from "../icons";
+import { COLORS } from "../common/colors";
+import { ICONS } from "../common/icons";
 import { MEDICINE } from "./categories/medicine";
-import { CLIENT_TITLES } from "./const";
+import { CLIENT_TITLES } from "./titles";
 
 export const listCategories = [
   MEDICINE,

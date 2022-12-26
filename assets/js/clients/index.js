@@ -1,6 +1,6 @@
-import { COLORS } from "../colors";
+import { COLORS } from "../common/colors";
 
-export const CLIENT_DETAILS = {
+export const CLIENTS_DETAILS = {
   title: "Our Best Clients",
   description:
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",

@@ -2,8 +2,9 @@ import ColorSection from "../../../common/ColorSection";
 import Flags from "../../../common/flags";
 import ListReviews from "../components/listReviews";
 import PageWrapper from "../../../common/pageWrapper";
+import Question from "../../../common/faq";
 import React from "react";
-import { listCategories } from "../../../../assets/js/common/clients/listCategories";
+import { listCategories } from "../../../../assets/js/clients/listCategories";
 import { COLORS } from "../../../../assets/js/common/colors";
 
 const isEmptyCategory =
@@ -11,7 +12,7 @@ const isEmptyCategory =
 
 function Clients({ type, marquee, contact, _relativeURL, _ID }) {
   const currentCategory = listCategories.find((item) => item.type === type);
-  const { title, description, content } = currentCategory || {};
+  const { title, description, color, content } = currentCategory || {};
 
   return (
     <div>
@@ -29,6 +30,16 @@ function Clients({ type, marquee, contact, _relativeURL, _ID }) {
               <Flags flags={listCategories} activeType={type} />
               <ListReviews content={content} />
             </div>
+          </ColorSection>
+
+          <ColorSection
+            color={color}
+            title={"FAQ"}
+            description={
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+            }
+          >
+            <Question />
           </ColorSection>
         </PageWrapper>
       ) : (
