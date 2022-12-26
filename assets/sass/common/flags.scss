@@ -7,6 +7,66 @@
   align-items: center;
   border-radius: 0 0 50% 50%;
 
+  &-green {
+    &:hover {
+      background-color: $green;
+    }
+
+    &-active {
+      background-color: $green;
+    }
+  }
+
+  &-blue {
+    &:hover {
+      background-color: $blue;
+    }
+
+    &-active {
+      background-color: $blue;
+    }
+  }
+
+  &-orange {
+    &:hover {
+      background-color: $orange;
+    }
+
+    &-active {
+      background-color: $orange;
+    }
+  }
+
+  &-pink {
+    &:hover {
+      background-color: $pink;
+    }
+
+    &-active {
+      background-color: $pink;
+    }
+  }
+
+  &-purple {
+    &:hover {
+      background-color: $purple;
+    }
+
+    &-active {
+      background-color: $purple;
+    }
+  }
+
+  &-prime {
+    &:hover {
+      background-color: $prime;
+    }
+
+    &-active {
+      background-color: $prime;
+    }
+  }
+
   i {
     font-size: 25px;
     color: $main;

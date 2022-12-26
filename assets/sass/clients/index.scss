@@ -10,7 +10,6 @@
     .flags {
       width: 100px;
       height: 100px;
-      background-color: transparent;
       transition: background-color 0.3s;
       cursor: pointer;
 
@@ -21,9 +20,6 @@
       }
 
       &:hover {
-        background-color: $green;
-        //background-color: transparent;
-
         i {
           color: $main;
         }
