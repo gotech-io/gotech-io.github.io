@@ -12,7 +12,7 @@ const Categories = ({ categories }) => {
               <div
                 key={performance.now()}
                 className="stages-item"
-                data-aos-anchor-placement="top-center"
+                data-aos-anchor-placement="top"
                 data-aos={animations.zoomIn}
               >
                 <a href={link} className="categories-item-wrapper">

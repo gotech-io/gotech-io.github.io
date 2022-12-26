@@ -13,7 +13,7 @@ const Question = ({ color }) => {
               <div
                 key={item.question}
                 className="faq-wrapper-item"
-                data-aos-anchor-placement="top-center"
+                data-aos-anchor-placement="top"
                 data-aos={animations.zoomInUp}
                 data-aos-mirror="true"
                 data-aos-once="false"

@@ -11,7 +11,7 @@ function Flags({ flags, activeType }) {
           return (
             <div
               key={type}
-              data-aos-anchor-placement="top-center"
+              data-aos-anchor-placement="top"
               data-aos={animations.zoomIn}
             >
               <a href={link}>
