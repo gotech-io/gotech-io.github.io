@@ -2,7 +2,7 @@ import React from "react";
 import Step from "../step";
 import { FAQ } from "../../../assets/js/common/faq";
 
-const Question = () => {
+const Question = ({ color }) => {
   return (
     <div className="page-common-block">
       <div className="faq-wrapper">
@@ -10,7 +10,7 @@ const Question = () => {
           FAQ.map((item, i) => {
             return (
               <div key={item.question} className="faq-wrapper-item">
-                <Step step={item.question} number={i + 1} />
+                <Step step={item.question} number={i + 1} color={color} />
                 <p className="faq-wrapper-item-answer">{item.answer}</p>
               </div>
             );

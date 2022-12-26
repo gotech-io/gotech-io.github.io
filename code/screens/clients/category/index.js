@@ -5,6 +5,7 @@ import PageWrapper from "../../../common/pageWrapper";
 import Question from "../../../common/faq";
 import React from "react";
 import { listCategories } from "../../../../assets/js/clients/listCategories";
+import { SECTIONS_DETAILS } from "../../../../assets/js/clients/sectionsDetails";
 import { COLORS } from "../../../../assets/js/common/colors";
 
 const isEmptyCategory =
@@ -25,22 +26,28 @@ function Clients({ type, marquee, contact, _relativeURL, _ID }) {
           _relativeURL={_relativeURL}
           _ID={_ID}
         >
-          <ColorSection color={COLORS.MAIN}>
-            <div className="clients-categories-wrapper">
-              <Flags flags={listCategories} activeType={type} />
-              <ListReviews content={content} />
-            </div>
-          </ColorSection>
+          {SECTIONS_DETAILS.length &&
+            SECTIONS_DETAILS.map((section) => {
+              return (
+                <ColorSection
+                  key={section.type}
+                  color={section.color || color}
+                  title={section.title}
+                  description={section.description}
+                >
+                  {section.type === "section-alpha" && (
+                    <div className="clients-categories-wrapper">
+                      <Flags flags={listCategories} activeType={type} />
+                      <ListReviews content={content} />
+                    </div>
+                  )}
 
-          <ColorSection
-            color={color}
-            title={"FAQ"}
-            description={
-              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-            }
-          >
-            <Question />
-          </ColorSection>
+                  {section.type === "section-beta" && (
+                    <Question color={color} />
+                  )}
+                </ColorSection>
+              );
+            })}
         </PageWrapper>
       ) : (
         <ColorSection
