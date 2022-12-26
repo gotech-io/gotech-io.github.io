@@ -16,48 +16,31 @@
 .green {
   .color-block {
     background: $green-background;
+
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
   }
 }
 
 .gray {
   .color-block {
     background-color: $default;
-
-    &-title {
-      color: $prime;
-    }
-
-    &-description {
-      color: $prime;
-    }
   }
 }
 
 .default {
   .color-block {
     background-color: $default;
-
-    &-title {
-      color: $prime;
-    }
-
-    &-description {
-      color: $prime;
-    }
   }
 }
 
 .main {
   .color-block {
     background-color: $main;
-
-    &-title {
-      color: $prime;
-    }
-
-    &-description {
-      color: $prime;
-    }
   }
 }
 
