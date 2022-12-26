@@ -1,5 +1,6 @@
 import Flag from "../flag";
 import React from "react";
+import animations from "../../../assets/js/animations";
 
 function Flags({ flags, activeType }) {
   return (
@@ -8,7 +9,11 @@ function Flags({ flags, activeType }) {
         flags.map(({ type, color, icon, link }) => {
           const isActive = activeType === type;
           return (
-            <div key={type}>
+            <div
+              key={type}
+              data-aos-anchor-placement="top-center"
+              data-aos={animations.zoomIn}
+            >
               <a href={link}>
                 <Flag icon={icon} color={color} isActive={isActive} />
               </a>
