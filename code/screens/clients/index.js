@@ -1,5 +1,5 @@
-import Categories from "../../common/categories";
 import ColorSection from "../../common/ColorSection";
+import ListCategories from "../../common/categories";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import { CLIENTS_DETAILS } from "../../../assets/js/clients";
@@ -28,7 +28,7 @@ function Clients({ marquee, contact, _relativeURL, _ID }) {
               ></ColorSection>
 
               {type === "section-beta" && (
-                <Categories categories={listCategories} />
+                <ListCategories categories={listCategories} />
               )}
             </div>
           );

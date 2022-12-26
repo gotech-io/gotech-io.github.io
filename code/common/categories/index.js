@@ -1,34 +1,24 @@
+import CategoryItem from "../category";
 import React from "react";
-import animations from "../../../assets/js/animations";
 
-const Categories = ({ categories }) => {
+const ListCategories = ({ categories }) => {
   return (
-    <div className="page-common-block ">
-      <div className="categories">
-        {categories.length &&
-          categories.map((category) => {
-            const { title, color, icon, link } = category;
-            return (
-              <div
-                key={performance.now()}
-                className="stages-item"
-                data-aos-anchor-placement="top"
-                data-aos={animations.zoomIn}
-              >
-                <a href={link} className="categories-item-wrapper">
-                  <div
-                    className={`categories-item-wrapper-dot category-${color}`}
-                  >
-                    <i className={icon}></i>
-                  </div>
-                </a>
-                <p>{title}</p>
-              </div>
-            );
-          })}
-      </div>
+    <div className="page-common-block categories">
+      {categories.length &&
+        categories.map((category) => {
+          const { title, color, icon, link } = category;
+          return (
+            <CategoryItem
+              key={title}
+              title={title}
+              color={color}
+              icon={icon}
+              link={link}
+            />
+          );
+        })}
     </div>
   );
 };
 
-export default Categories;
+export default ListCategories;

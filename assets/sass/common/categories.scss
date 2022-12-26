@@ -1,7 +1,6 @@
 .categories {
-  width: 100%;
   display: flex;
-  margin: -$section-gap 0 $title-gap;
+  margin: -$section-gap auto $title-gap;
   justify-content: space-between;
 
   &-item {
