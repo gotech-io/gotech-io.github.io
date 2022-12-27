@@ -6,7 +6,7 @@ variables:
       title: About Us,
       list:
         [
-          { title: Clients, link: "/#clients" },
+          { title: Clients, link: "/clients" },
           { title: Teams, link: "/#team" },
           { title: Careers, link: "/careers/" },
         ],
@@ -30,9 +30,6 @@ variables:
         ],
     },
   ]
-
-# marquee:
-#   - /_shared/marquee/index.md
 
 copyright: © Copyright GoTech. All rights reserved.
 privacy_policy_text: Privacy Policy
