@@ -55,6 +55,11 @@
       &:hover {
         max-height: 500px;
       }
+
+      .color-block-title,
+      .color-block-description {
+        color: $prime;
+      }
     }
 
     &-number {
