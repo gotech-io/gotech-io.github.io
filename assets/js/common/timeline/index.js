@@ -55,6 +55,6 @@ export const TIMELINE = [
     description:
       "Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Vel pharetra vel turpis nunc eget lorem dolor sed. Purus in mollis nunc sed id semper. Ipsum dolor sit amet consectetur adipiscing elit. Quam viverra orci",
     year: 2023,
-    color: COLORS.DEFAULT,
+    color: COLORS.ADDITIONAL,
   },
 ];
