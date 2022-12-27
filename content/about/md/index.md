@@ -1,12 +1,10 @@
 ---
-layout: screens/about/index
-sections:
-  - grid/section1/index.md
-  - grid/section2/index.md
-  - grid/section3/index.md
-careers:
-  - careers/index.md
-topImage: /assets/images/about/img1.jpeg
-team:
-  - /home/md/team/index.md
+layout: screens/about-us/index
+title: About Us
+description: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Proin sed libero enim sed faucibus. Vestibulum morbi blandit cursus risus at ultrices mi tempus.
+marquee:
+  - /_shared/marquee/index.md
+
+contact:
+  - ../../home/md/contact/index.md
 ---
