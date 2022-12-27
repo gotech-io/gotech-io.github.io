@@ -29,12 +29,12 @@
 
   &-block {
     position: relative;
-    padding: $content-gap 0;
+    padding: $content-gap auto;
   }
 
   &-item {
     width: 100%;
-    margin: $section-gap 0;
+    margin: $section-gap auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,4 +95,27 @@
 }
 
 @media only screen and (max-width: $mobile) {
+  .timeline-item {
+    flex-wrap: wrap;
+
+    &-details {
+      width: 100%;
+    }
+
+    &-number {
+      margin: $content-gap auto;
+    }
+
+    &-year- {
+      width: 100%;
+      text-align: center;
+      background-color: $main;
+    }
+
+    &-year-reverse {
+      width: 100%;
+      justify-content: center;
+      background-color: $main;
+    }
+  }
 }
