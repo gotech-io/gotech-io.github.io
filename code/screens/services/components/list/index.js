@@ -5,10 +5,10 @@ const ListServices = ({ services }) => {
   return (
     <div className="services-content">
       {services.length &&
-        services.map((service, i) => {
+        services.map((service) => {
           return (
             <div
-              key={i}
+              key={service.type}
               className="services-content-item"
               data-aos-anchor-placement="top-center"
               data-aos={animations.zoomIn}

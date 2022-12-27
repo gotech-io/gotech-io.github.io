@@ -3,8 +3,6 @@ import React from "react";
 import Socials from "../../../socials";
 import { FOOTER_INFO } from "../../../../../assets/js/common/footer";
 
-//list.some((e) => e.title === "Social")
-
 const ListSection = () => {
   return (
     <div className="page-common-block">

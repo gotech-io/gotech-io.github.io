@@ -7,17 +7,17 @@ const Points = ({ points }) => {
       <div className="points-item-line" />
       <div className="page-common-block points-wrapper">
         {points.length &&
-          points.map((point, i) => {
+          points.map(({ title, count }) => {
             return (
               <div
-                key={i}
+                key={title}
                 className="points-item"
                 data-aos-anchor-placement="top-center"
                 data-aos={animations.zoomIn}
               >
-                <div className="points-item-number">{point.count}</div>
+                <div className="points-item-number">{count}</div>
                 <div className="points-item-dot" />
-                <p>{point.title}</p>
+                <p>{title}</p>
               </div>
             );
           })}
