@@ -27,7 +27,7 @@ export const TIMELINE = [
     description:
       "Nullam vehicula ipsum a arcu cursus vitae congue. Feugiat in fermentum posuere urna nec. Suscipit adipiscing bibendum est ultricies integer. Fames ac turpis egestas sed tempus.",
     year: 2019,
-    color: COLORS.GREEN,
+    color: COLORS.YELLOW,
   },
   {
     title: "Viverra nibh cras",
@@ -55,6 +55,6 @@ export const TIMELINE = [
     description:
       "Turpis egestas maecenas pharetra convallis posuere morbi leo urna. Vel pharetra vel turpis nunc eget lorem dolor sed. Purus in mollis nunc sed id semper. Ipsum dolor sit amet consectetur adipiscing elit. Quam viverra orci",
     year: 2023,
-    color: COLORS.GRAY,
+    color: COLORS.DEFAULT,
   },
 ];

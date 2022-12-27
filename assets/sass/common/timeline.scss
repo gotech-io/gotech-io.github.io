@@ -67,15 +67,10 @@
       border: 2px solid $additional;
       border-radius: $circle;
 
-      //change to step
-      p {
+      .steps-item-number {
         width: 35px;
         height: 35px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background-color: $green;
-        border-radius: $circle;
+        margin: 0 auto;
       }
     }
 

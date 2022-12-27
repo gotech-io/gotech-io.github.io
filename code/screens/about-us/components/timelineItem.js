@@ -12,8 +12,8 @@ function TimelineItem({ title, description, number, year, color, reverse }) {
           <p>{description}</p>
         </div>
       </div>
-      <div className={`timeline-item-number ${color}`}>
-        <p>{number}</p>
+      <div className="timeline-item-number">
+        <span className={`steps-item-number ${color}`}>{number}</span>
       </div>
       <div className={`timeline-item-year-${reverse}`}>
         <h4>{year}</h4>

@@ -2,7 +2,6 @@ import ColorSection from "../../common/ColorSection";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import TimelineItem from "./components/timelineItem";
-import { COLORS } from "../../../assets/js/common/colors";
 import { TIMELINE } from "../../../assets/js/common/timeline";
 
 function AboutUs({ title, description, marquee, contact, _relativeURL, _ID }) {

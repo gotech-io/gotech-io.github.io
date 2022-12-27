@@ -113,6 +113,31 @@ img {
   object-fit: contain;
 }
 
+.green {
+  background-color: $green;
+}
+.blue {
+  background-color: $blue;
+}
+.yellow {
+  background-color: $yellow;
+}
+.orange {
+  background-color: $orange;
+}
+.pink {
+  background-color: $pink;
+}
+.purple {
+  background-color: $purple;
+}
+.prime {
+  background-color: $prime;
+}
+.default {
+  background-color: $additional;
+}
+
 @media only screen and (max-width: $mobile) {
   h1 {
     font-size: 30px;
