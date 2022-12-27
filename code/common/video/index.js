@@ -3,9 +3,11 @@ import animations from "../../../assets/js/animations";
 
 function Video({ src, type }) {
   return (
-    <video className="video" controls data-aos={animations.up}>
-      <source src={src} type={type} />
-    </video>
+    <div className="page-common-block">
+      <video className="video" controls data-aos={animations.up}>
+        <source src={src} type={type} />
+      </video>
+    </div>
   );
 }
 
