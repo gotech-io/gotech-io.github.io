@@ -2,9 +2,13 @@ import ColorSection from "../../common/colorSection";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import Timeline from "./components/timeline";
+import Video from "../../common/video";
+import { ABOUT_US_DETAILS } from "../../../assets/js/common/about-us";
 import { COLORS } from "../../../assets/js/common/colors";
 
-function AboutUs({ title, description, marquee, contact, _relativeURL, _ID }) {
+function AboutUs({ marquee, contact, _relativeURL, _ID }) {
+  const { title, description, sections, video } = ABOUT_US_DETAILS;
+
   return (
     <PageWrapper
       title={title}
@@ -14,15 +18,22 @@ function AboutUs({ title, description, marquee, contact, _relativeURL, _ID }) {
       _relativeURL={_relativeURL}
       _ID={_ID}
     >
-      <ColorSection
-        color={COLORS.DEFAULT}
-        title={"our history"}
-        description={
-          "GoTech is a one-stop shop for infrastructures and development services. Our team consists of the best and most professional mobile and web developers, QA automation developers, DevOps, data engineers, and DBAs. We provide our clients with high-quality, reliable services that are tailored to their specific business needs."
-        }
-      >
-        <Timeline />
-      </ColorSection>
+      {sections.length &&
+        sections.map(({ type, color, title, description }) => {
+          return (
+            <ColorSection
+              key={type}
+              color={color}
+              title={title}
+              description={description}
+            >
+              {type === "section-alpha" && <Timeline />}
+              {type === "section-beta" && (
+                <Video src={video.src} type={video.type} />
+              )}
+            </ColorSection>
+          );
+        })}
     </PageWrapper>
   );
 }
