@@ -1,6 +1,7 @@
 .color-block {
   width: 100%;
-  padding: $section-gap 0;
+  padding: $title-gap 0;
+  transition: height 0.5s;
 
   &-title {
     color: $main;

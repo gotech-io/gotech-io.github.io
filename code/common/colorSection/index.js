@@ -6,10 +6,8 @@ const ColorSection = ({ color, title, description, paragraphs, children }) => {
     <div className={color}>
       <div className="color-block">
         <div className="page-common-block">
-          <h4 className="color-block-title">{title}</h4>
-          {description && (
-            <p className="color-block-description">{description}</p>
-          )}
+          <h4>{title}</h4>
+          {description && <p>{description}</p>}
 
           {paragraphs && <Paragraphs paragraphs={paragraphs} />}
 
