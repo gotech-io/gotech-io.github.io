@@ -1,7 +1,7 @@
 import { COLORS } from "../colors";
 
 export const ABOUT_US_DETAILS = {
-  title: "GoTech Family Introduce",
+  title: "GoTech Family Introduction",
   description:
     "We help Fortune 500 companies, startups, and enterprises to build relevant digital products, train their teams, solve business problems, and reduce costs while increasing efficiency.",
 
