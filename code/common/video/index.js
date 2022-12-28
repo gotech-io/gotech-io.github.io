@@ -1,12 +1,12 @@
 import React from "react";
 import animations from "../../../assets/js/animations";
 
-function Video({ src, type }) {
+function Video({ src, title }) {
   return (
     <div className="page-common-block">
-      <video className="video" controls data-aos={animations.up}>
-        <source src={src} type={type} />
-      </video>
+      <div className="video">
+        <iframe src={src} allowFullScreen title={title}></iframe>
+      </div>
     </div>
   );
 }

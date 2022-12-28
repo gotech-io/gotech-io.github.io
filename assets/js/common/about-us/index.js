@@ -6,8 +6,8 @@ export const ABOUT_US_DETAILS = {
     "We help Fortune 500 companies, startups, and enterprises to build relevant digital products, train their teams, solve business problems, and reduce costs while increasing efficiency.",
 
   video: {
-    src: "https://www.linkedin.com/company/gotechgroup/videos/native/urn:li:ugcPost:6880909146707787776/",
-    type: "video/mp4",
+    src: "https://www.linkedin.com/embed/feed/update/urn:li:ugcPost:6880909146707787776?compact=1",
+    title: "GoTech",
   },
 
   sections: [

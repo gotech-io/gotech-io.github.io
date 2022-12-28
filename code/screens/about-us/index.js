@@ -31,11 +31,11 @@ function AboutUs({ marquee, contact, _relativeURL, _ID }) {
             >
               {type === "section-alpha" && <Timeline />}
               {type === "section-beta" && (
-                <Video src={video.src} type={video.type} />
+                <Video src={video.src} type={video.title} />
               )}
               {type === "section-delta" && (
                 <div className="page-common-block">
-                  <div className="team">
+                  <div className="team" id="team">
                     {TEAMS.length &&
                       TEAMS.map(({ name, position, image, linkedin }) => {
                         return (

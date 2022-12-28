@@ -8,7 +8,7 @@ variables:
         [
           { title: About Company, link: "/about" },
           { title: Clients, link: "/#clients" },
-          { title: Teams, link: "/#team" },
+          { title: Teams, link: "/about/#team" },
           { title: Careers, link: "/careers/" },
         ],
     },
