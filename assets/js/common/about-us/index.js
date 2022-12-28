@@ -6,7 +6,7 @@ export const ABOUT_US_DETAILS = {
     "We help Fortune 500 companies, startups, and enterprises to build relevant digital products, train their teams, solve business problems, and reduce costs while increasing efficiency.",
 
   video: {
-    src: "https://dms.licdn.com/playlist/C4D05AQFmLxavnNLPxQ/mp4-720p-30fp-crf28/0/1640537394791?e=1670252400&v=beta&t=pxrl2OqClkWOMHhHrPttHic1hSZZwbaiPsNK_89FqJo",
+    src: "https://www.linkedin.com/company/gotechgroup/videos/native/urn:li:ugcPost:6880909146707787776/",
     type: "video/mp4",
   },
 
@@ -35,7 +35,7 @@ export const ABOUT_US_DETAILS = {
     {
       type: "section-delta",
       color: COLORS.MAIN,
-      title: "our best team!",
+      title: "Meet our professional team!",
       description:
         "At GoTech, we believe in the power of collaboration and partnerships. We work closely with our clients to understand their unique challenges and develop solutions that are tailored to their specific needs. Our team is dedicated to helping our clients achieve their goals and succeed in today's competitive market.",
     },

@@ -11,6 +11,7 @@
 @import "./parallax.scss";
 @import "./timeline.scss";
 @import "./video.scss";
+@import "./team.scss";
 
 .flex-start {
   display: flex;
@@ -117,7 +118,7 @@ $component-width: calc(100% - 100px);
 }
 
 $main-font: "Poppins", sans-serif;
-$headers-font: "Heebo", sans-serif;
+$headers-font: "Poppins", sans-serif;
 
 h3,
 h4,

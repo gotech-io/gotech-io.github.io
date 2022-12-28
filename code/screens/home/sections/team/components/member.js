@@ -1,6 +1,6 @@
+import Image from "../../../../../common/img";
 import React from "react";
 import animations from "../../../../../../assets/js/animations";
-import Image from "../../../../../common/img";
 import { handleUrl } from "../../../../../utils";
 
 const Member = ({ image, _relativeURL, _ID, _body }) => {

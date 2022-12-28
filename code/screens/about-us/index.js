@@ -1,9 +1,11 @@
 import ColorSection from "../../common/colorSection";
+import Member from "../../common/member";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import Timeline from "./components/timeline";
 import Video from "../../common/video";
 import { ABOUT_US_DETAILS } from "../../../assets/js/common/about-us";
+import { TEAMS } from "../../../assets/js/common/about-us/teams";
 import { COLORS } from "../../../assets/js/common/colors";
 
 function AboutUs({ marquee, contact, _relativeURL, _ID }) {
@@ -30,6 +32,24 @@ function AboutUs({ marquee, contact, _relativeURL, _ID }) {
               {type === "section-alpha" && <Timeline />}
               {type === "section-beta" && (
                 <Video src={video.src} type={video.type} />
+              )}
+              {type === "section-delta" && (
+                <div className="page-common-block">
+                  <div className="team">
+                    {TEAMS.length &&
+                      TEAMS.map(({ name, position, image, linkedin }) => {
+                        return (
+                          <Member
+                            key={name}
+                            name={name}
+                            position={position}
+                            image={image}
+                            linkedin={linkedin}
+                          />
+                        );
+                      })}
+                  </div>
+                </div>
               )}
             </ColorSection>
           );
