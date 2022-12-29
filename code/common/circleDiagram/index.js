@@ -13,10 +13,7 @@ function CircleDiagramServicesItem({ icon }) {
 function CircleDiagramTechnologiesItem({ color }) {
   return (
     <div className="circle-diagram-technologies-wrapper">
-      <div
-        className="circle-diagram-technologies-icons"
-        style={{ backgroundColor: color }}
-      ></div>
+      <div className={`circle-diagram-technologies-icons ${color}`}></div>
     </div>
   );
 }

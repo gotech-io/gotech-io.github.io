@@ -1,6 +1,7 @@
 import CircleDiagram from "../../common/circleDiagram";
 import React from "react";
 import animations from "../../../assets/js/animations";
+import { COLORS } from "../../../assets/js/common/colors";
 import { ICONS } from "../../../assets/js/common/icons";
 import { handleUrl } from "../../utils";
 
@@ -11,7 +12,7 @@ const content = {
   services: [
     {
       f: { icon: ICONS.WEB_DEV, color: "green" },
-      s: { icon: ICONS.MOBILE_DEV, color: "blue" },
+      s: { icon: ICONS.MOBILE_DEV, color: COLORS.BLUE },
     },
     {
       f: { icon: ICONS.DEVOPS_DEV, color: "orange" },
