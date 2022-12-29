@@ -1,9 +1,9 @@
 import React from "react";
 
-function CircleDiagramServicesItem({ icon }) {
+function CircleDiagramServicesItem({ icon, color }) {
   return (
     <div className="circle-diagram-services-wrapper">
-      <div className="circle-diagram-services-icons">
+      <div className={`circle-diagram-services-icons ${color}`}>
         <i className={icon}></i>
       </div>
     </div>
@@ -39,8 +39,8 @@ function CircleDiagram({ content }) {
                     key={f}
                     className="circle-diagram-services-rotate-wrapper"
                   >
-                    <CircleDiagramServicesItem icon={f} />
-                    <CircleDiagramServicesItem icon={s} />
+                    <CircleDiagramServicesItem icon={f.icon} color={f.color} />
+                    <CircleDiagramServicesItem icon={s.icon} color={s.color} />
                   </div>
                 );
               })}
