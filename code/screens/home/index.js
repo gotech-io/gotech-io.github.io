@@ -3,6 +3,7 @@ import React from "react";
 import animations from "../../../assets/js/animations";
 import { COLORS } from "../../../assets/js/common/colors";
 import { ICONS } from "../../../assets/js/common/icons";
+import { MAIN_PAGE_DETAILS } from "../../../assets/js/common/main-page";
 import { handleUrl } from "../../utils";
 
 const content = {
@@ -44,6 +45,8 @@ const content = {
 };
 
 const Home = ({ header, navbar, _relativeURL, _ID }) => {
+  const { title } = MAIN_PAGE_DETAILS;
+
   return (
     <div className="home" data-aos={animations.up}>
       {navbar}
