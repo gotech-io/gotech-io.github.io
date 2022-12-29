@@ -173,10 +173,17 @@
     &-rotate-wrapper {
       &:nth-child(1) {
         transform: rotate(60deg);
+
+        .circle-diagram-services-icons {
+          transform: rotate(-60deg);
+        }
       }
 
       &:nth-child(2) {
         transform: rotate(120deg);
+        .circle-diagram-services-icons {
+          transform: rotate(-120deg);
+        }
       }
     }
   }
