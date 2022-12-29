@@ -36,6 +36,9 @@
 
       &:nth-child(1) {
         transform: rotate(90deg);
+        .circle-diagram-services-icons {
+          transform: rotate(-90deg);
+        }
       }
     }
 
@@ -52,8 +55,16 @@
     &-icons {
       width: 80px;
       height: 80px;
-      background-color: $blue;
-      border-radius: $circle;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background-color: $green;
+      border-radius: 50%;
+
+      i {
+        font-size: 30px;
+        color: $main;
+      }
     }
   }
 
@@ -83,7 +94,7 @@
       position: absolute;
       border: 2px dashed $additional;
       border-radius: $circle;
-      animation: rotate 50s linear infinite;
+      animation: rotate 70s linear infinite;
     }
 
     &-rotate-wrapper {

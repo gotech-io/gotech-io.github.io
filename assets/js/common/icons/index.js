@@ -22,11 +22,10 @@ export const ICONS = {
   LINKEDIN: "fa-brands fa-linkedin",
   INSTAGRAM: "fa-brands fa-square-instagram",
 
-  CHECK: "fa-brands fa-network-wired",
+  NETWORK: "fa-solid fa-network-wired",
   PIE: "fa-solid fa-chart-pie",
-  AWS: "fa-solid fa-aws",
-  DOCKER: "fa-solid fa-docker",
+  AWS: "fa-brands fa-aws",
+  DOCKER: "fa-brands fa-docker",
   STACK: "fa-brands fa-stack-overflow",
   SLACK: "fa-brands fa-slack",
 };
-<i class="fa-solid fa-list-check"></i>;
