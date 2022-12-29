@@ -1,9 +1,19 @@
 import React from "react";
+import { ICONS } from "../../../assets/js/common/icons";
 
-const services = {
+const content = {
   title: "GoTech Group Provides",
   description:
     "State-of-the-art services, including highly qualified experts in all areas of infrastructure and development. Our services include Web Development, Mobile Development, DevOps, and QA Automation.",
+  services: [
+    { f: ICONS.WEB_DEV, s: ICONS.MOBILE_DEV },
+    { f: ICONS.DEVOPS_DEV, s: ICONS.QA_DEV },
+  ],
+  technologies: [
+    { f: ICONS.CHECK, s: ICONS.PIE },
+    { f: ICONS.AWS, s: ICONS.DOCKER },
+    { f: ICONS.SLACK, s: ICONS.STACK },
+  ],
 };
 
 function CircleDiagramServicesItem() {
@@ -28,8 +38,8 @@ function CircleDiagram() {
       <div className="circle-diagram">
         <div className="circle-diagram-content">
           <div>
-            <h4>{services.title}</h4>
-            <p>{services.description}</p>
+            <h4>{content.title}</h4>
+            <p>{content.description}</p>
           </div>
         </div>
 
