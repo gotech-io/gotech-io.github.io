@@ -9,13 +9,28 @@ const content = {
   description:
     "State-of-the-art services, including highly qualified experts in all areas of infrastructure and development. Our services include Web Development, Mobile Development, DevOps, and QA Automation.",
   services: [
-    { f: ICONS.WEB_DEV, s: ICONS.MOBILE_DEV },
-    { f: ICONS.DEVOPS_DEV, s: ICONS.QA_DEV },
+    {
+      f: { icon: ICONS.WEB_DEV, color: "green" },
+      s: { icon: ICONS.MOBILE_DEV, color: "blue" },
+    },
+    {
+      f: { icon: ICONS.DEVOPS_DEV, color: "orange" },
+      s: { icon: ICONS.QA_DEV, color: "pink" },
+    },
   ],
   technologies: [
-    { f: ICONS.NETWORK, s: ICONS.PIE },
-    { f: ICONS.AWS, s: ICONS.DOCKER },
-    { f: ICONS.SLACK, s: ICONS.STACK },
+    {
+      f: "green",
+      s: "pink",
+    },
+    {
+      s: "blue",
+      f: "purple",
+    },
+    {
+      f: "orange",
+      s: "prime",
+    },
   ],
 };
 

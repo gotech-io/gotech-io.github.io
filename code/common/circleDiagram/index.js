@@ -10,10 +10,13 @@ function CircleDiagramServicesItem({ icon }) {
   );
 }
 
-function CircleDiagramTechnologiesItem({ icon }) {
+function CircleDiagramTechnologiesItem({ color }) {
   return (
     <div className="circle-diagram-technologies-wrapper">
-      <div className="circle-diagram-technologies-icons"></div>
+      <div
+        className="circle-diagram-technologies-icons"
+        style={{ backgroundColor: color }}
+      ></div>
     </div>
   );
 }
@@ -57,8 +60,8 @@ function CircleDiagram({ content }) {
                     key={f}
                     className="circle-diagram-technologies-rotate-wrapper"
                   >
-                    <CircleDiagramTechnologiesItem />
-                    <CircleDiagramTechnologiesItem />
+                    <CircleDiagramTechnologiesItem color={f} />
+                    <CircleDiagramTechnologiesItem color={s} />
                   </div>
                 );
               })}
