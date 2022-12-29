@@ -5,7 +5,9 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  overflow: hidden;
 
+  //services
   &-services {
     width: 600px;
     height: 600px;
@@ -55,6 +57,7 @@
     }
   }
 
+  //content
   &-content {
     width: 290px;
     display: flex;
@@ -64,12 +67,14 @@
     position: absolute;
   }
 
+  //technologies
   &-technologies {
     width: 950px;
     height: 950px;
     display: flex;
     justify-content: center;
     align-items: center;
+    position: absolute;
 
     &-circle {
       width: 900px;
@@ -91,11 +96,15 @@
       top: 47%;
 
       &:nth-child(1) {
-        transform: rotate(55deg);
+        transform: rotate(30deg);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(90deg);
       }
 
       &:nth-child(3) {
-        transform: rotate(-55deg);
+        transform: rotate(-30deg);
       }
     }
 
@@ -125,7 +134,62 @@
 }
 
 @media only screen and (max-width: $medium) {
+  .circle-diagram-technologies-circle {
+    width: 690px;
+    height: 690px;
+  }
 }
 
 @media only screen and (max-width: $mobile) {
+  .circle-diagram-services {
+    width: 500px;
+    height: 500px;
+
+    &-circle {
+      width: 420px;
+      height: 420px;
+    }
+
+    &-wrapper {
+      width: 80px;
+      height: 80px;
+    }
+
+    &-icons {
+      width: 65px;
+      height: 65px;
+    }
+
+    &-rotate-wrapper {
+      &:nth-child(1) {
+        transform: rotate(60deg);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(120deg);
+      }
+    }
+  }
+
+  .circle-diagram-technologies {
+    width: 650px;
+    height: 650px;
+
+    &-circle {
+      width: 600px;
+      height: 600px;
+    }
+
+    &-rotate-wrapper {
+      top: 46%;
+
+      &:nth-child(1) {
+        transform: rotate(70deg);
+      }
+
+      &:nth-child(3) {
+        transform: rotate(110deg);
+      }
+    }
+  }
 }
