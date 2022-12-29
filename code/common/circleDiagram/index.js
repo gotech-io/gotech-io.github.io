@@ -1,17 +1,23 @@
 import React from "react";
 
-function CircleDiagramRedItem() {
+const services = {
+  title: "GoTech Group Provides",
+  description:
+    "State-of-the-art services, including highly qualified experts in all areas of infrastructure and development. Our services include Web Development, Mobile Development, DevOps, and QA Automation.",
+};
+
+function CircleDiagramServicesItem() {
   return (
-    <div className="circle-diagram-red-services-wrapper">
-      <div className="circle-diagram-red-services-icons"></div>
+    <div className="circle-diagram-services-wrapper">
+      <div className="circle-diagram-services-icons"></div>
     </div>
   );
 }
 
-function CircleDiagramInnerItem() {
+function CircleDiagramTechnologiesItem() {
   return (
-    <div className="circle-diagram-services-wrapper">
-      <div className="circle-diagram-services-icons"></div>
+    <div className="circle-diagram-technologies-wrapper">
+      <div className="circle-diagram-technologies-icons"></div>
     </div>
   );
 }
@@ -20,26 +26,41 @@ function CircleDiagram() {
   return (
     <div className="page-common-block">
       <div className="circle-diagram">
-        <div className="circle-diagram-line-inner">
-          <div className="circle-diagram-red">
-            <div className="circle-diagram-red-circle">
-              {[1, 2].map((item) => {
-                return (
-                  <div key={item} className="circle-diagram-red-rotate-wrapper">
-                    <CircleDiagramRedItem />
-                    <CircleDiagramRedItem />
-                  </div>
-                );
-              })}
-            </div>
+        <div className="circle-diagram-content">
+          <div>
+            <h4>{services.title}</h4>
+            <p>{services.description}</p>
           </div>
+        </div>
 
-          <div className="circle-diagram-line-circle">
+        <div className="circle-diagram-services">
+          <div className="circle-diagram-services-circle"> </div>
+          <div>
+            {[1, 2].map((item) => {
+              return (
+                <div
+                  key={item}
+                  className="circle-diagram-services-rotate-wrapper"
+                >
+                  <CircleDiagramServicesItem />
+                  <CircleDiagramServicesItem />
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+        <div className="circle-diagram-technologies">
+          <div className="circle-diagram-technologies-circle"> </div>
+          <div>
             {[1, 2, 3].map((item) => {
               return (
-                <div key={item} className="circle-diagram-icon-inner">
-                  <CircleDiagramInnerItem />
-                  <CircleDiagramInnerItem />
+                <div
+                  key={item}
+                  className="circle-diagram-technologies-rotate-wrapper"
+                >
+                  <CircleDiagramTechnologiesItem />
+                  <CircleDiagramTechnologiesItem />
                 </div>
               );
             })}
