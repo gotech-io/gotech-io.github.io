@@ -1,11 +1,11 @@
 import React from "react";
 
-function CircleDiagramServicesItem({ icon, color }) {
+function CircleDiagramServicesItem({ icon, link, color }) {
   return (
     <div className="circle-diagram-services-wrapper">
-      <div className={`circle-diagram-services-icons ${color}`}>
+      <a href={link} className={`circle-diagram-services-icons ${color}`}>
         <i className={icon}></i>
-      </div>
+      </a>
     </div>
   );
 }
@@ -39,8 +39,16 @@ function CircleDiagram({ content }) {
                     key={f}
                     className="circle-diagram-services-rotate-wrapper"
                   >
-                    <CircleDiagramServicesItem icon={f.icon} color={f.color} />
-                    <CircleDiagramServicesItem icon={s.icon} color={s.color} />
+                    <CircleDiagramServicesItem
+                      icon={f.icon}
+                      link={f.link}
+                      color={f.color}
+                    />
+                    <CircleDiagramServicesItem
+                      icon={s.icon}
+                      link={s.link}
+                      color={s.color}
+                    />
                   </div>
                 );
               })}
