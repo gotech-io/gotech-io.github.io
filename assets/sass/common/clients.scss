@@ -1,0 +1,34 @@
+.clients {
+  &-wrapper {
+    width: 100%;
+    margin: 100px 0;
+    padding: $section-gap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: $main;
+    border-radius: $radius;
+    box-shadow: $shadow;
+  }
+
+  &-item {
+    width: 30%;
+    margin: $section-gap auto;
+
+    &-image {
+      width: 150px;
+      margin: 0 auto;
+    }
+  }
+}
+
+@media only screen and (max-width: $medium) {
+}
+
+@media only screen and (max-width: $mobile) {
+  .clients {
+    width: 100%;
+    height: 150px;
+  }
+}

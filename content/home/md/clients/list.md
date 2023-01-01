@@ -4,12 +4,16 @@ list:
   - assets/images/home/clients/google.png
   - assets/images/home/clients/walmart.png
   - assets/images/home/clients/qualcomm.png
+  - assets/images/home/clients/nsogroup.png
+  - assets/images/home/clients/mellanox.png
+  - assets/images/home/clients/amdocs-logo.png
+  - assets/images/home/clients/digibank.png
+  - assets/images/home/clients/cisco.svg
+  - assets/images/home/clients/salesforce.png
   - assets/images/home/clients/cognyte.png
   - assets/images/home/clients/orbs.png
   - assets/images/home/clients/altshuler.png
-  - assets/images/home/clients/amdocs-logo.png
   - assets/images/home/clients/applied.png
-  - assets/images/home/clients/digibank.png
   - assets/images/home/clients/audiocodes.png
   - assets/images/home/clients/sqream.png
   - assets/images/home/clients/ownbackup.png
@@ -35,13 +39,10 @@ list:
   - assets/images/home/clients/pmo.png
   - assets/images/home/clients/police.png
   - assets/images/home/clients/renuar.png
-  - assets/images/home/clients/salesforce.png
   - assets/images/home/clients/weissbeerger.png
   - assets/images/home/clients/ustglobal.png
   - assets/images/home/clients/stilyoapps.png
-  - assets/images/home/clients/cisco.svg
   - assets/images/home/clients/earlysense.png
-  - assets/images/home/clients/mellanox.png
   - assets/images/home/clients/cybereason.png
   - assets/images/home/clients/tase.png
   - assets/images/home/clients/vasona.png
@@ -68,7 +69,6 @@ list:
   - assets/images/home/clients/menora.png
   - assets/images/home/clients/muvingapp.png
   - assets/images/home/clients/mypermissions.png
-  - assets/images/home/clients/nsogroup.png
   - assets/images/home/clients/navy.png
   - assets/images/home/clients/odo.png
   #- assets/images/home/clients/weekin.png

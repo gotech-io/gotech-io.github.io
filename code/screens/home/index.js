@@ -1,4 +1,5 @@
 import CircleDiagram from "../../common/circleDiagram";
+import Clients from "./components/clients";
 import ColorSection from "../../common/ColorSection";
 import React from "react";
 import animations from "../../../assets/js/animations";
@@ -45,7 +46,7 @@ const content = {
   ],
 };
 
-const Home = ({ header, navbar, _relativeURL, _ID }) => {
+const Home = ({ header, navbar, contact, _relativeURL, _ID }) => {
   const { sections } = MAIN_PAGE_DETAILS;
 
   return (
@@ -71,12 +72,13 @@ const Home = ({ header, navbar, _relativeURL, _ID }) => {
               title={title}
               description={description}
             >
-              {type === "section-epsilon" && (
-                <CircleDiagram content={content} />
-              )}
+              {type === "section-gamma" && <CircleDiagram content={content} />}
+              {type === "section-epsilon" && <Clients />}
             </ColorSection>
           );
         })}
+
+      <div className="page-common-sub-section">{contact}</div>
 
       <script
         type="module"
