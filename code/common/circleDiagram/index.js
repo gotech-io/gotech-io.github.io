@@ -1,24 +1,50 @@
+import CircleDiagramExternal from "./components/circleDiagramExternal";
+import CircleDiagramServices from "./components/circleDiagramServices";
+import CircleDiagramServicesItem from "./components/circleDiagramServicesItem";
+import CircleDiagramTechnologiesItem from "./components/circleDiagramExternalItem";
 import React from "react";
+import { COLORS } from "../../../assets/js/common/colors";
+import { ICONS } from "../../../assets/js/common/icons";
 
-function CircleDiagramServicesItem({ icon, link, color }) {
-  return (
-    <div className="circle-diagram-services-wrapper">
-      <a href={link} className={`circle-diagram-services-icons ${color}`}>
-        <i className={icon}></i>
-      </a>
-    </div>
-  );
-}
+const content = {
+  title: "GoTech Group Provides",
+  description:
+    "State-of-the-art services, including highly qualified experts in all areas of infrastructure and development. Our services include Web Development, Mobile Development, DevOps, and QA Automation.",
+  services: [
+    {
+      f: { icon: ICONS.WEB_DEV, link: "/services/web", color: COLORS.GREEN },
+      s: {
+        icon: ICONS.MOBILE_DEV,
+        link: "/services/mobile",
+        color: COLORS.BLUE,
+      },
+    },
+    {
+      f: {
+        icon: ICONS.DEVOPS_DEV,
+        link: "/services/devops",
+        color: COLORS.ORANGE,
+      },
+      s: { icon: ICONS.QA_DEV, link: "/services/qa", color: COLORS.PINK },
+    },
+  ],
+  externalsCircles: [
+    {
+      f: "purple",
+      s: "orange",
+    },
+    {
+      f: "prime",
+      s: "green",
+    },
+    {
+      f: "pink",
+      s: "blue",
+    },
+  ],
+};
 
-function CircleDiagramTechnologiesItem({ color }) {
-  return (
-    <div className="circle-diagram-technologies-wrapper">
-      <div className={`circle-diagram-technologies-icons ${color}`}></div>
-    </div>
-  );
-}
-
-function CircleDiagram({ content }) {
+function CircleDiagram() {
   return (
     <div className="page-common-block">
       <div className="circle-diagram">
@@ -29,49 +55,9 @@ function CircleDiagram({ content }) {
           </div>
         </div>
 
-        <div className="circle-diagram-services">
-          <div className="circle-diagram-services-circle"> </div>
-          <div>
-            {content.services.length &&
-              content.services.map(({ f, s }) => {
-                return (
-                  <div
-                    key={f}
-                    className="circle-diagram-services-rotate-wrapper"
-                  >
-                    <CircleDiagramServicesItem
-                      icon={f.icon}
-                      link={f.link}
-                      color={f.color}
-                    />
-                    <CircleDiagramServicesItem
-                      icon={s.icon}
-                      link={s.link}
-                      color={s.color}
-                    />
-                  </div>
-                );
-              })}
-          </div>
-        </div>
+        <CircleDiagramServices services={content.services} />
 
-        <div className="circle-diagram-technologies">
-          <div className="circle-diagram-technologies-circle"> </div>
-          <div>
-            {content.technologies.length &&
-              content.technologies.map(({ f, s }) => {
-                return (
-                  <div
-                    key={f}
-                    className="circle-diagram-technologies-rotate-wrapper"
-                  >
-                    <CircleDiagramTechnologiesItem color={f} />
-                    <CircleDiagramTechnologiesItem color={s} />
-                  </div>
-                );
-              })}
-          </div>
-        </div>
+        <CircleDiagramExternal externalsCircles={content.externalsCircles} />
       </div>
     </div>
   );
