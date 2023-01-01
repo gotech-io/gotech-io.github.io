@@ -1,4 +1,5 @@
 import CircleDiagram from "../../common/circleDiagram";
+import ColorSection from "../../common/ColorSection";
 import React from "react";
 import animations from "../../../assets/js/animations";
 import { COLORS } from "../../../assets/js/common/colors";
@@ -45,14 +46,37 @@ const content = {
 };
 
 const Home = ({ header, navbar, _relativeURL, _ID }) => {
-  const { title } = MAIN_PAGE_DETAILS;
+  const { sections } = MAIN_PAGE_DETAILS;
 
   return (
     <div className="home" data-aos={animations.up}>
       {navbar}
       {header}
-
-      <CircleDiagram content={content} />
+      <div className="home-screens">
+        <lottie-player
+          src="https://lottie.host/9c8c0b1e-2283-419e-a35e-c8dd8c3c5869/cqIf494w5p.json"
+          background="transparent"
+          speed="1"
+          style={{ width: "100%", height: "100%" }}
+          loop
+          autoplay
+        ></lottie-player>
+      </div>
+      {sections.length &&
+        sections.map(({ type, color, title, description }) => {
+          return (
+            <ColorSection
+              key={type}
+              color={color}
+              title={title}
+              description={description}
+            >
+              {type === "section-epsilon" && (
+                <CircleDiagram content={content} />
+              )}
+            </ColorSection>
+          );
+        })}
 
       <script
         type="module"

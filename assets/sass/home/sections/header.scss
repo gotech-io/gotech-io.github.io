@@ -1,65 +1,71 @@
-.home-header {
-  height: 100vh;
-  padding: 150px 0 200px;
-  position: relative;
-  overflow: hidden;
-  background-color: $prime;
-
-  &-background {
-    width: 100%;
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    z-index: 1;
-
-    .orange-blobs {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      right: -500px;
-      top: -500px;
-    }
-
-    .green-blobs {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: absolute;
-      left: -450px;
-      bottom: -1000px;
-    }
+.home {
+  &-screens {
+    width: 950px;
+    margin: -500px auto 0;
   }
 
-  @keyframes rotation {
-    from {
-      transform: rotate(0deg);
-    }
-    to {
-      transform: rotate(360deg);
-    }
-  }
-
-  &-main {
-    max-width: $main-grid;
-    width: calc(100% - 50px);
+  &-header {
+    height: 150vh;
+    padding: 150px 0 200px;
     position: relative;
-    z-index: 2;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
+    overflow: hidden;
+    background-color: $prime;
 
-    &-content {
-      opacity: 0.85;
+    &-background {
+      width: 100%;
+      position: absolute;
+      left: 0px;
+      top: 0px;
+      z-index: 1;
 
-      p {
-        margin: $content-gap 0 $section-gap;
-        color: $main;
+      .orange-blobs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: -500px;
+        top: -500px;
+      }
+
+      .green-blobs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: -450px;
+        bottom: -1000px;
+      }
+    }
+
+    @keyframes rotation {
+      from {
+        transform: rotate(0deg);
+      }
+      to {
+        transform: rotate(360deg);
+      }
+    }
+
+    &-main {
+      max-width: $main-grid;
+      width: calc(100% - 50px);
+      position: relative;
+      z-index: 2;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+
+      &-content {
+        opacity: 0.85;
+
+        p {
+          margin: $content-gap 0 $section-gap;
+          color: $main;
+        }
       }
     }
   }
 }
-
 @media only screen and (max-width: $mobile) {
   .home-header {
     height: auto;
