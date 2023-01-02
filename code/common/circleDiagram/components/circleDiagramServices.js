@@ -1,4 +1,4 @@
-import CircleDiagramServicesItem from "./components/circleDiagramServicesItem";
+import CircleDiagramServicesItem from "./circleDiagramServicesItem";
 import React from "react";
 
 function CircleDiagramServices({ services }) {

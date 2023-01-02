@@ -1,7 +1,5 @@
 import CircleDiagramExternal from "./components/circleDiagramExternal";
 import CircleDiagramServices from "./components/circleDiagramServices";
-import CircleDiagramServicesItem from "./components/circleDiagramServicesItem";
-import CircleDiagramTechnologiesItem from "./components/circleDiagramExternalItem";
 import React from "react";
 import { COLORS } from "../../../assets/js/common/colors";
 import { ICONS } from "../../../assets/js/common/icons";
@@ -56,7 +54,6 @@ function CircleDiagram() {
         </div>
 
         <CircleDiagramServices services={content.services} />
-
         <CircleDiagramExternal externalsCircles={content.externalsCircles} />
       </div>
     </div>

@@ -79,8 +79,8 @@
     position: absolute;
   }
 
-  //technologies
-  &-technologies {
+  //external
+  &-external {
     width: 800px;
     height: 800px;
     display: flex;
@@ -133,7 +133,6 @@
     &-icons {
       width: 30px;
       height: 30px;
-      // background-color: $green;
       border-radius: 50%;
     }
   }
@@ -146,7 +145,7 @@
 }
 
 @media only screen and (max-width: $medium) {
-  .circle-diagram-technologies-circle {
+  .circle-diagram-external-circle {
     width: 690px;
     height: 690px;
   }
@@ -190,7 +189,7 @@
     }
   }
 
-  .circle-diagram-technologies {
+  .circle-diagram-external {
     width: 650px;
     height: 650px;
 
