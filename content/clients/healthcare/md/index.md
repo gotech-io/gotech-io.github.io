@@ -1,6 +1,6 @@
 ---
 layout: screens/clients/category/index
-type: MEDICINE
+type: HEALTHCARE
 
 marquee:
   - /_shared/marquee/index.md

@@ -1,6 +1,6 @@
 ---
 layout: screens/clients/category/index
-type: AI
+type: IT
 
 marquee:
   - /_shared/marquee/index.md

@@ -1,15 +1,15 @@
-import { AI } from "./categories/ai";
 import { CRYPTOCURRENCY } from "./categories/cryptocurrency";
 import { EDUCATION } from "./categories/education";
 import { GOVERNMENT } from "./categories/government";
-import { MEDICINE } from "./categories/medicine";
+import { HEALTHCARE } from "./categories/healthcare";
+import { IT } from "./categories/it";
 import { SHOPPING } from "./categories/shopping";
 
 export const listCategories = [
-  MEDICINE,
+  HEALTHCARE,
   EDUCATION,
   SHOPPING,
   CRYPTOCURRENCY,
-  AI,
+  IT,
   GOVERNMENT,
 ];

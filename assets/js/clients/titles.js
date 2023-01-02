@@ -1,8 +1,8 @@
 export const CLIENT_TITLES = {
-  MEDICINE: "Medicine",
+  HEALTHCARE: "Healthcare",
   EDUCATION: "Education",
-  SHOPPING: "Shopping",
+  SHOPPING: "Commerce & Retail",
   CRYPTOCURRENCY: "Cryptocurrency",
-  AI: "Artificial Intelligence",
+  IT: "Cyber & IT",
   GOVERNMENT: "Government",
 };

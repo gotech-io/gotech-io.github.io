@@ -29,11 +29,11 @@ export const ICONS = {
   LAUNCH: "fa-solid fa-handshake",
   SUPPORT: "fa-solid fa-headset",
 
-  MEDICINE: "fa-solid fa-stethoscope",
+  HEALTHCARE: "fa-solid fa-stethoscope",
   EDUCATION: "fa-solid fa-graduation-cap",
   SHOPPING: "fa-solid fa-bag-shopping",
   CRYPTOCURRENCY: "fa-brands fa-bitcoin",
-  AI: "fa-solid fa-code-branch",
+  IT: "fa-solid fa-code-branch",
   GOVERNMENT: "fa-solid fa-building-shield",
 
   STAR: "fa-solid fa-star",
