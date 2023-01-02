@@ -1,6 +1,7 @@
 import CircleDiagramExternal from "./components/circleDiagramExternal";
 import CircleDiagramServices from "./components/circleDiagramServices";
 import React from "react";
+import TitleSection from "../titleSection";
 import { COLORS } from "../../../assets/js/common/colors";
 import { ICONS } from "../../../assets/js/common/icons";
 
@@ -47,10 +48,10 @@ function CircleDiagram() {
     <div className="page-common-block">
       <div className="circle-diagram">
         <div className="circle-diagram-content">
-          <div>
-            <h4>{content.title}</h4>
-            <p>{content.description}</p>
-          </div>
+          <TitleSection
+            title={content.title}
+            description={content.description}
+          />
         </div>
 
         <CircleDiagramServices services={content.services} />

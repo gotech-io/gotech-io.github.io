@@ -1,11 +1,11 @@
 .home {
   &-screens {
     width: 950px;
-    margin: -500px auto 0;
+    margin: -450px auto 0;
   }
 
   &-header {
-    height: 150vh;
+    height: 130vh;
     padding: 150px 0 200px;
     position: relative;
     overflow: hidden;
@@ -47,14 +47,13 @@
     }
 
     &-main {
-      max-width: $main-grid;
-      width: calc(100% - 50px);
+      width: $main-grid;
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      text-align: center;
       position: relative;
       z-index: 2;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-
       &-content {
         opacity: 0.85;
 
