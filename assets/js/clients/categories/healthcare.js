@@ -6,7 +6,7 @@ export const HEALTHCARE = {
   type: "HEALTHCARE",
   title: CLIENT_TITLES.HEALTHCARE,
   description:
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    "Streamline your medical practice with modern technology and smooth development approaches and get a scalable, flexible, and secure software solution for your business.",
   color: COLORS.GREEN,
   icon: ICONS.HEALTHCARE,
   link: "/clients/healthcare",
@@ -14,7 +14,7 @@ export const HEALTHCARE = {
   content: {
     title: "Our Clients on Healthcare Category",
     description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+      "We have experience with healthcare standards and health data privacy requirements.",
     clients: [
       {
         title: "Project Name 1",

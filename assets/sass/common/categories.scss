@@ -1,7 +1,8 @@
 .categories {
-  display: flex;
   margin: -$section-gap auto $title-gap;
+  display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 
   &-item {
     width: 16%;
@@ -91,4 +92,18 @@
 }
 
 @media only screen and (max-width: $mobile) {
+  .categories {
+    &-item {
+      &-wrapper {
+        width: 70px;
+        height: 70px;
+        box-shadow: $shadow;
+
+        &-dot {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
 }

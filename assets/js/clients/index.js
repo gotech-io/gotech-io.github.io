@@ -3,22 +3,22 @@ import { COLORS } from "../common/colors";
 export const CLIENTS_DETAILS = {
   title: "Our Best Clients",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+    "GoTech creates software products in collaboration with governments and engages in volunteer work, charitable activities. We working with small startups and Giant companies from the Forbes list.",
 
   sections: [
     {
       type: "section-alpha",
       color: COLORS.GREEN,
-      title: "All Our Categories",
+      title: "Expertise & Competencies",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "With our technical know-how and experience engineering sophisticated IT systems, we can help you achieve your business objectives in tune with your time, budget, and expectations.",
     },
     {
       type: "section-beta",
       color: COLORS.GRAY,
-      title: "Please choose one interesting of all categories!",
+      title: "Please choose one interesting of all Industries!",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "Access domain expertise and market knowledge to help your business evolve and scale with a relevant tech solution.",
     },
   ],
 };

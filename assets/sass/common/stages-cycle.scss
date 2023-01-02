@@ -83,6 +83,10 @@
       width: 30%;
       margin-top: $content-gap;
 
+      p {
+        font-size: 12px;
+      }
+
       &-line {
         display: none;
       }
