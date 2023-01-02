@@ -8,8 +8,7 @@
       background-color: $main;
       border-radius: $radius;
       box-shadow: $shadow;
-      transition: max-height 0.2s;
-
+      transition: max-height 1s;
       cursor: pointer;
 
       &:hover {

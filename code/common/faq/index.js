@@ -11,14 +11,15 @@ const Question = ({ color }) => {
           return (
             <div
               key={item.question}
-              className="faq-wrapper-item"
               data-aos-anchor-placement="top"
               data-aos={animations.zoomInUp}
               data-aos-mirror="true"
               data-aos-once="false"
             >
-              <Step step={item.question} number={i + 1} color={color} />
-              <p className="faq-wrapper-item-answer">{item.answer}</p>
+              <div className="faq-wrapper-item">
+                <Step step={item.question} number={i + 1} color={color} />
+                <p className="faq-wrapper-item-answer">{item.answer}</p>
+              </div>
             </div>
           );
         })}
