@@ -16,7 +16,7 @@ export const WEB_DEV = {
     },
     {
       type: "section-beta",
-      color: "white",
+      color: "main",
       title: "app development process",
       paragraphs: [
         "Whether you decide to develop your web application in-house team or outsource, your project will be more successful if you understand the process involved in web application development in advance.",
@@ -34,14 +34,14 @@ export const WEB_DEV = {
     },
     {
       type: "section-delta",
-      color: "white",
+      color: "main",
       title: "technologies",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals. The following web development technologies enable the creation of high-performing, fast, and advanced web applications.",
     },
     {
       type: "section-epsilon",
-      color: "dark",
+      color: "prime",
       title: "You Business have a Smart Future",
       paragraphs: [
         "Web development is defined through the upcoming trends and changes in the digital world. Businesses around the globe are in a quest to build outstanding websites. If you want your business to stay ahead of the race, the smartest thing u can do is to try out innovative and brave things.",
@@ -50,7 +50,7 @@ export const WEB_DEV = {
     },
     {
       type: "section-zeta",
-      color: "white",
+      color: "main",
       title: "case studies example",
       description:
         "Our teams help integrate the tailored experience of native apps with easy access on a website browser from any device, that provide immersive and tailored experiences like the native apps directly from the browser.",

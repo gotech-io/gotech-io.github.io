@@ -1,46 +1,53 @@
 .color-block {
   width: 100%;
   padding: $title-gap 0;
-
-  &-title {
-    color: $main;
-  }
-
-  &-description {
-    padding-top: $content-gap;
-    font-size: 20px;
-    color: $main;
-  }
 }
 
-.green {
+.green,
+.blue {
   .color-block {
     background: $green-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
   }
 }
 
-.dark {
+.pink {
   .color-block {
-    background: $prime;
+    background: $pink-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
   }
 }
 
 .orange {
   .color-block {
-    background: $orange;
+    background: $orange-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
   }
 }
 
-.white {
+.purple,
+.prime {
   .color-block {
-    background-color: $main;
-
-    &-title {
-      color: $prime;
-    }
-
-    &-description {
-      color: $prime;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
     }
   }
 }
@@ -48,14 +55,18 @@
 .gray {
   .color-block {
     background-color: $default;
+  }
+}
 
-    &-title {
-      color: $prime;
-    }
+.default {
+  .color-block {
+    background-color: $default;
+  }
+}
 
-    &-description {
-      color: $prime;
-    }
+.main {
+  .color-block {
+    background-color: $main;
   }
 }
 

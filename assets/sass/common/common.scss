@@ -114,8 +114,31 @@ img {
   object-fit: contain;
 }
 
+.green {
+  background-color: $green;
+}
+.blue {
+  background-color: $blue;
+}
+.orange {
+  background-color: $orange;
+}
+.pink {
+  background-color: $pink;
+}
+.purple {
+  background-color: $purple;
+}
+.prime {
+  background-color: $prime;
+}
+
 .title-section {
   text-align: center;
+  p {
+    padding-top: $content-gap;
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: $medium) {

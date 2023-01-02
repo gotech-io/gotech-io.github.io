@@ -10,12 +10,14 @@ export const MOBILE_DEV = {
       type: "section-alpha",
       color: "green",
       title: "our services",
-      description:
-        "GoTech is your reliable partner for any business-changing solutions",
+      paragraphs: [
+        "Robust Mobile Applications For Improved Client And Workforce Engagement.",
+        "An effectively designed and developed mobile app helps in reinforcing your brand value, extends brand visibility through a new channel, increases accessibility by connecting with users on the move, caters to a wider audience, and beyond.",
+      ],
     },
     {
       type: "section-beta",
-      color: "white",
+      color: "main",
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
@@ -23,32 +25,33 @@ export const MOBILE_DEV = {
     {
       type: "section-gamma",
       color: "orange",
+      title: "Mobile Strategies",
       paragraphs: [
-        "We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
-        "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
+        "We blend our mobile strategies with your technology needs to ensure that you delight your customers and attain business success. The goal is to gain maximum benefit from the current mobile technologies.",
       ],
     },
     {
       type: "section-delta",
-      color: "white",
+      color: "main",
       title: "technologies",
       description:
-        "We offer only well-recognized and time-tested technologies to support any of your business goals.",
+        "We offer only well-recognized and time-tested technologies to support any of your business goals. We employ platform-specific SDKs for Android and iOS, cross-platform approaches relying on HTML5, and conversion tools, to develop cost-effective enterprise mobile solutions.",
     },
     {
       type: "section-epsilon",
-      color: "dark",
+      color: "prime",
+      title: "Device Compatibility",
       paragraphs: [
         "We provide complete solutions for automating your software testing processes. We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
-        "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
+        "We ensure that all the applications that we develop are compatible with the device types used by our customers. iOS applications are tested on iOS and iPad devices, and Android applications are tested on popular Android phones and tablets to ensure compatibility.",
       ],
     },
     {
       type: "section-zeta",
-      color: "white",
+      color: "main",
       title: "case studies example",
       description:
-        "We have a proven track record of building high quality solutions for customers all over the world.",
+        "Keeping abreast of the latest trends and developments in mobile technologies to deliver value to our customers all over the world.",
     },
   ],
 

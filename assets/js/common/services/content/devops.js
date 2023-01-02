@@ -1,7 +1,8 @@
 export const DEVOPS_DEV = {
   title: "DevOps",
   details: "Choose smart development and upload your business to cloud",
-  description: "Choose smart development and upload your business to cloud.",
+  description:
+    "DevOps is much more than a process that facilitates coordination among development teams. Choose smart development and upload your business to cloud.",
   url: "/service/devops",
 
   sections: [
@@ -10,11 +11,11 @@ export const DEVOPS_DEV = {
       color: "green",
       title: "our services",
       description:
-        "GoTech is your reliable partner for any business-changing solutions",
+        "GoTech DevOps services can enhance the performance of your teams and equip them to build better products faster for greater customer satisfaction. Such collaboration and productivity will help you achieve your business goals and compete more effectively in the market.",
     },
     {
       type: "section-beta",
-      color: "white",
+      color: "main",
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
@@ -22,24 +23,27 @@ export const DEVOPS_DEV = {
     {
       type: "section-gamma",
       color: "orange",
+      title: "Is DevOps a tool?",
       paragraphs: [
-        "We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
-        "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
+        "DevOps cannot be referred to as a tool. It is a compound of Dev representing development and Ops, which stands for operations. It is a work culture that combines people, process and technology.",
+        "By adopting DevOps culture with its practices and tools, teams are more equipped to better respond to customer requirements, increase confidence in their applications and achieve business goals faster.",
+        "DevOps fulfills the requirement for fast and reliable development and also the deployment of a software.",
       ],
     },
     {
       type: "section-delta",
-      color: "white",
+      color: "main",
       title: "technologies",
       description:
-        "We offer only well-recognized and time-tested technologies to support any of your business goals.",
+        "We focus on research and user experience prior to start the development of the DevOps. We offer only well-recognized and time-tested technologies to support any of your business goals.",
     },
     {
       type: "section-epsilon",
-      color: "dark",
+      color: "prime",
+      title: "DevOps drive business results!",
       paragraphs: [
-        "We provide complete solutions for automating your software testing processes. We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
-        "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
+        "DevOps is all about providing continuous value to customers. The business results of adopting DevOps should be measured in relation to your business goals and objectives. ",
+        "DevOps teams can promote frequent code versions thereby reducing the number of implementation failures. This reduces the recovery time considerably allowing agile response to the market.",
       ],
     },
   ],

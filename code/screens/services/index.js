@@ -18,11 +18,12 @@ function Services({ services, marquee, contact, _relativeURL, _ID }) {
       _ID={_ID}
     >
       {sections.length &&
-        sections.map(({ type, color, paragraphs }) => {
+        sections.map(({ type, color, title, paragraphs }) => {
           return (
             <div key={type}>
               <ColorSection
                 color={color}
+                title={title}
                 paragraphs={paragraphs}
               ></ColorSection>
 

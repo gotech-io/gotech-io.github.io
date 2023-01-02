@@ -16,7 +16,7 @@ export const QA_DEV = {
     },
     {
       type: "section-beta",
-      color: "white",
+      color: "main",
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
@@ -30,21 +30,21 @@ export const QA_DEV = {
     },
     {
       type: "section-delta",
-      color: "white",
+      color: "main",
       title: "technologies used",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals.",
     },
     {
       type: "section-epsilon",
-      color: "dark",
+      color: "prime",
       paragraphs: [
         "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
       ],
     },
     {
       type: "section-zeta",
-      color: "white",
+      color: "main",
       title: "case studies example",
       description:
         "We have a proven track record of building high quality solutions for customers all over the world.",

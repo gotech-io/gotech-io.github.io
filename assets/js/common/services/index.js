@@ -7,6 +7,7 @@ export const PAGE_DETAILS = {
     {
       type: "section-alpha",
       color: "green",
+      title: "Full-scale product development services life cycle",
       paragraphs: [
         "GoTech offers a range of infrastructures and development services to help our clients succeed. Our team of experienced professionals is dedicated to delivering high-quality solutions that are tailored to your specific business needs.",
         "Our services include Web Development, Mobile Development, DevOps, and QA Automation.",
@@ -16,6 +17,7 @@ export const PAGE_DETAILS = {
     {
       type: "section-beta",
       color: "orange",
+      title: "How stay competitive in the market?",
       paragraphs: [
         "We have the skills and expertise to develop custom web and mobile applications that are user-friendly, efficient, and effective.",
         "Our DevOps and QA Automation services ensure that your applications are reliable and scalable, and can handle the demands of today's market.",
@@ -26,7 +28,7 @@ export const PAGE_DETAILS = {
   intro: {
     title: "Why Choose Us?",
     description:
-      "Our experienced engineers are at your service whenever you might need support with any type of project complexity!",
+      "All our processes are customer-oriented, designed to reduce the cost of business operations, address IT resourcing challenges, and offer you a competitive edge. We start with a deep analysis of your requirements and continue to end of project. Our experienced engineers are at your service whenever you might need support with any type of project complexity!",
     points: [
       { title: "Successfully Projects", count: "120+" },
       { title: "Years in Business", count: "7" },
