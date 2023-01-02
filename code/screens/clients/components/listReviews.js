@@ -1,7 +1,6 @@
 import React from "react";
 import Reviews from "./reviews";
 import TitleSection from "../../../common/titleSection";
-import { COLORS } from "../../../../assets/js/common/colors";
 
 function ListReviews({ content, color }) {
   const { title, description, clients } = content;

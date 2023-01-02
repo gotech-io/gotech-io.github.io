@@ -7,8 +7,8 @@ export const SECTIONS_DETAILS = [
   },
   {
     type: "section-beta",
-    title: "FAQ",
+    title: "frequently asked questions",
     description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      "We selected all the frequently asked questions for you and tried to answer them in as much details as possible so that you don't have doubts.",
   },
 ];
