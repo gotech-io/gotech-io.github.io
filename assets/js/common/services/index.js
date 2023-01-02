@@ -10,6 +10,7 @@ export const PAGE_DETAILS = {
       paragraphs: [
         "GoTech offers a range of infrastructures and development services to help our clients succeed. Our team of experienced professionals is dedicated to delivering high-quality solutions that are tailored to your specific business needs.",
         "Our services include Web Development, Mobile Development, DevOps, and QA Automation.",
+        "Our experience, extensive technical stack, and polished processes to help you cover your goals and objectives.",
       ],
     },
     {

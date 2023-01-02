@@ -12,21 +12,24 @@ export const WEB_DEV = {
       color: "green",
       title: "our services",
       description:
-        "GoTech is your reliable partner for any business-changing solutions",
+        "GoTech is your reliable partner for any business-changing solutions. Our teams help build your brand, increase your identity, promote your products and services to help you gain a competitive advantage.",
     },
     {
       type: "section-beta",
       color: "white",
       title: "app development process",
-      description:
+      paragraphs: [
+        "Whether you decide to develop your web application in-house team or outsource, your project will be more successful if you understand the process involved in web application development in advance.",
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
+      ],
     },
     {
       type: "section-gamma",
       color: "orange",
+      title: "First Point of Engagement with your buisnes",
       paragraphs: [
-        "We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
-        "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
+        "Your web app is the place that reflects what you do, your services, products, and your reputation. We help you develop end-to-end custom web applications designed to meet your specific business challenges. Leverage the next-gen technologies with our custom web application development services to build innovations that help you stand out from the crowd!",
+        "Having an app is an opportunity to build a great first impression and give people assurance that you’re a modern business.",
       ],
     },
     {
@@ -34,14 +37,15 @@ export const WEB_DEV = {
       color: "white",
       title: "technologies",
       description:
-        "We offer only well-recognized and time-tested technologies to support any of your business goals.",
+        "We offer only well-recognized and time-tested technologies to support any of your business goals. The following web development technologies enable the creation of high-performing, fast, and advanced web applications.",
     },
     {
       type: "section-epsilon",
       color: "dark",
+      title: "You Business have a Smart Future",
       paragraphs: [
-        "We provide complete solutions for automating your software testing processes. We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
-        "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
+        "Web development is defined through the upcoming trends and changes in the digital world. Businesses around the globe are in a quest to build outstanding websites. If you want your business to stay ahead of the race, the smartest thing u can do is to try out innovative and brave things.",
+        "We are not afraide to experiment and provide our clients with customized, robust, and secure web applications within the stipulated time and budget.",
       ],
     },
     {
@@ -49,7 +53,7 @@ export const WEB_DEV = {
       color: "white",
       title: "case studies example",
       description:
-        "We have a proven track record of building high quality solutions for customers all over the world.",
+        "Our teams help integrate the tailored experience of native apps with easy access on a website browser from any device, that provide immersive and tailored experiences like the native apps directly from the browser.",
     },
   ],
 
