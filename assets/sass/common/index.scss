@@ -254,17 +254,14 @@ li,
 
 .contact-link {
   height: 50px;
-
-  border-radius: 50px;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
   background: #40435000;
-
+  border: solid 2px $green;
+  border-radius: 50px;
   text-align: center;
-
   text-transform: uppercase;
   cursor: pointer;
-  border: solid 2px $green;
 
   transition: 0.2s all;
   p {
@@ -370,6 +367,15 @@ li,
   }
   100% {
     transform: translate(24px, 0);
+  }
+}
+
+@media only screen and (max-width: $medium) {
+  .contact-link {
+    border: solid 2px $main;
+    a {
+      color: $main;
+    }
   }
 }
 

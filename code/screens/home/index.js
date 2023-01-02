@@ -13,7 +13,7 @@ const Home = ({ header, navbar, contact, _relativeURL, _ID }) => {
       {navbar}
       {header}
 
-      <div className="home-screens">
+      <div className="page-common-block home-screens">
         <LottiePlayer
           src={lottie.src}
           width={lottie.width}

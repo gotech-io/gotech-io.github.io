@@ -142,16 +142,11 @@ img {
   padding: $title-gap 0;
 }
 
-@media only screen and (max-width: $mobile) {
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 25px;
-  }
-}
-
 @media only screen and (max-width: $medium) {
+  h1 {
+    font-size: 10rem;
+  }
+
   .page-common-block {
     width: 90%;
   }
@@ -162,6 +157,14 @@ img {
 }
 
 @media only screen and (max-width: $mobile) {
+  h1 {
+    font-size: 5rem;
+  }
+
+  h2 {
+    font-size: 25px;
+  }
+
   .socials {
     justify-content: center;
   }

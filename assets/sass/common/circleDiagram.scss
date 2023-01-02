@@ -145,9 +145,18 @@
 }
 
 @media only screen and (max-width: $medium) {
-  .circle-diagram-external-circle {
-    width: 690px;
-    height: 690px;
+  .circle-diagram-external {
+    width: 700px;
+    height: 700px;
+
+    &-circle {
+      width: 650px;
+      height: 650px;
+    }
+
+    &-rotate-wrapper {
+      top: 46%;
+    }
   }
 }
 
