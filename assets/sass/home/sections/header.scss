@@ -1,6 +1,6 @@
 .home {
   &-screens {
-    margin: -450px auto 0;
+    margin: -400px auto 0;
   }
 
   &-header {
@@ -65,8 +65,17 @@
 }
 
 @media only screen and (max-width: $medium) {
-  .home-header {
-    height: 110vh;
+  .home {
+    &-header {
+      height: 110vh;
+
+      &-background {
+        .green-blobs {
+          left: -600px;
+          bottom: -1200px;
+        }
+      }
+    }
   }
 }
 
