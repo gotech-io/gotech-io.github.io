@@ -1,13 +1,13 @@
 import React from "react";
 import { ICONS } from "../../../assets/js/common/icons";
 
-const range = [1, 2, 3, 4, 5];
+const stars = [1, 2, 3, 4, 5];
 
 function Range({ color, range }) {
   return (
     <div className="range-wrapper">
-      {range.length &&
-        range.map((item) => {
+      {stars.length &&
+        stars.map((item) => {
           const colorClass = item <= range ? `range-block-${color}` : "";
 
           return (

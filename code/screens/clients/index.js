@@ -25,7 +25,7 @@ function Clients({ marquee, contact, _relativeURL, _ID }) {
                 color={color}
                 title={title}
                 description={description}
-              ></ColorSection>
+              />
 
               {type === "section-beta" && (
                 <ListCategories categories={listCategories} />
