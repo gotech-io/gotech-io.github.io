@@ -1,9 +1,13 @@
+import { COLORS } from "../../colors";
+import { ICONS } from "../../icons";
+
 export const DEVOPS_DEV = {
   title: "DevOps",
   details: "Choose smart development and upload your business to cloud",
   description:
     "DevOps is much more than a process that facilitates coordination among development teams. Choose smart development and upload your business to cloud.",
   url: "/service/devops",
+  color: COLORS.PINK,
 
   sections: [
     {
@@ -19,6 +23,38 @@ export const DEVOPS_DEV = {
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
+      stages: [
+        {
+          title: "requirements analysis",
+          color: COLORS.GREEN,
+          icon: ICONS.UNIT,
+        },
+        {
+          title: "infrastructure setup",
+          color: COLORS.BLUE,
+          icon: ICONS.RESTORE,
+        },
+        {
+          title: "Deployment automation",
+          color: COLORS.YELLOW,
+          icon: ICONS.DEVELOP,
+        },
+        {
+          title: "Configuration & management",
+          color: COLORS.ORANGE,
+          icon: ICONS.PROGRESS,
+        },
+        {
+          title: "AP & health monitoring",
+          color: COLORS.PINK,
+          icon: ICONS.SANITY,
+        },
+        {
+          title: "Support & optimization",
+          color: COLORS.PURPLE,
+          icon: ICONS.SUPPORT,
+        },
+      ],
     },
     {
       type: "section-gamma",

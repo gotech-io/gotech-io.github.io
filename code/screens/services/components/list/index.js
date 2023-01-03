@@ -8,12 +8,12 @@ const ListServices = ({ services }) => {
         services.map((service) => {
           return (
             <div
+              className="services-content-wrapper"
               key={service.type}
-              className="services-content-item"
-              data-aos-anchor-placement="top-center"
+              data-aos-anchor-placement="top"
               data-aos={animations.zoomIn}
             >
-              {service}
+              <div className="services-content-item">{service}</div>
             </div>
           );
         })}

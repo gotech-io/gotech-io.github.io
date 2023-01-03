@@ -1,26 +1,17 @@
 import React from "react";
 import animations from "../../../assets/js/animations";
 
-const stages = [
-  { title: "Strategy", icon: "fa-solid fa-pencil" },
-  { title: "Design", icon: "fa-solid fa-wand-magic-sparkles" },
-  { title: "Develop", icon: "fa-solid fa-user-gear" },
-  { title: "Testing", icon: "fa-solid fa-bug" },
-  { title: "Launch", icon: "fa-solid fa-handshake" },
-  { title: "Support", icon: "fa-solid fa-headset" },
-];
-
-const StagesCycle = () => {
+const StagesCycle = ({ stages }) => {
   return (
     <div className="stages">
       <div className="stages-item-line" />
       <div className="page-common-block stages-wrapper">
         {stages.length &&
           stages.map((stage) => {
-            const { title, icon } = stage;
+            const { title, icon, color } = stage;
             return (
               <div
-                key={performance.now()}
+                key={title}
                 className="stages-item"
                 data-aos-anchor-placement="top-center"
                 data-aos={animations.zoomIn}
@@ -29,7 +20,7 @@ const StagesCycle = () => {
                   className="stages-item-wrapper"
                   data-aos={animations.zoomIn}
                 >
-                  <div className="stages-item-wrapper-dot">
+                  <div className={`stages-item-wrapper-dot ${color}`}>
                     <i className={icon}></i>
                   </div>
                 </div>

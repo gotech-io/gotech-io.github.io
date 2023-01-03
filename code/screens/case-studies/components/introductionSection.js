@@ -3,6 +3,7 @@ import ColorSection from "../../../common/ColorSection";
 import IntroductionItem from "./introductionItem";
 import React from "react";
 import Tags from "../../../common/tag";
+import { COLORS } from "../../../../assets/js/common/colors";
 
 const isEmpty = "Right now we don't have a description!";
 const textBtn = "see all";
@@ -25,7 +26,11 @@ function IntroductionSection({ introduction }) {
                     count={intro.options.length || 0}
                   />
                   {intro.link && (
-                    <ArrowButton link={intro.link} textBtn={textBtn} />
+                    <ArrowButton
+                      link={intro.link}
+                      textBtn={textBtn}
+                      color={COLORS.GREEN}
+                    />
                   )}
                 </div>
               )}

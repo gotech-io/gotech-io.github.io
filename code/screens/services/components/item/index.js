@@ -6,10 +6,10 @@ import { SERVICES } from "../../../../../assets/js/common/services/content";
 const textBtn = "read more";
 
 const ItemServices = ({ entity }) => {
-  const { title, details, url } = SERVICES[entity];
+  const { title, details, url, color } = SERVICES[entity];
   return (
     <div className="services-content-item-info">
-      <div className="services-content-item-type">
+      <div className={`services-content-item-type ${color}`}>
         <i className={ICONS[entity]} />
       </div>
 
@@ -17,7 +17,7 @@ const ItemServices = ({ entity }) => {
       <p>{details}</p>
 
       <div className="services-content-item-info-btn">
-        <ArrowButton link={url} textBtn={textBtn} />
+        <ArrowButton link={url} textBtn={textBtn} color={color} />
       </div>
     </div>
   );

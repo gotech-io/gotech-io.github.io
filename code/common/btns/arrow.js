@@ -1,11 +1,11 @@
 import React from "react";
 
-function ArrowButton({ link, textBtn }) {
+function ArrowButton({ link, textBtn, color }) {
   return (
     <div className="button-arrow-wrapper">
       <a href={link}>
         {textBtn}
-        <div className="button-arrow-wrapper-icon">
+        <div className={`button-arrow-wrapper-icon ${color}`}>
           <i className="fa-solid fa-arrow-right"></i>
         </div>
       </a>

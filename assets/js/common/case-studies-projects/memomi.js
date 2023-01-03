@@ -41,10 +41,11 @@ export const MEMOMI = {
   introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "AR Market" },
-    { title: "Services Used", options: ["Mobile"], link: "/#services" },
+    { title: "Services Used", options: ["Mobile"], link: "/service/mobile" },
     {
       title: "Technologies Stack",
       options: ["iOS", "Android", "ML", "AR", "SDK"],
+      link: "/service/mobile/#technologies",
     },
   ],
   tags: ["iOS", "Android", "ML", "AR", "SDK"],

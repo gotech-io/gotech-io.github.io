@@ -1,9 +1,13 @@
+import { COLORS } from "../../colors";
+import { ICONS } from "../../icons";
+
 export const MOBILE_DEV = {
   title: "Mobile Development",
   details: "Mobile app development allows your business to be at hand always",
   description:
     "Mobile app development allows your business to be at hand always",
   url: "/service/mobile",
+  color: COLORS.BLUE,
 
   sections: [
     {
@@ -21,6 +25,34 @@ export const MOBILE_DEV = {
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
+      stages: [
+        { title: "Strategy", color: COLORS.GREEN, icon: ICONS.STRATEGY },
+        {
+          title: "Design",
+          color: COLORS.BLUE,
+          icon: ICONS.DESIGN,
+        },
+        {
+          title: "Develop",
+          color: COLORS.YELLOW,
+          icon: ICONS.DEVELOP,
+        },
+        {
+          title: "Testing",
+          color: COLORS.ORANGE,
+          icon: ICONS.BUG,
+        },
+        {
+          title: "Launch",
+          color: COLORS.PINK,
+          icon: ICONS.LAUNCH,
+        },
+        {
+          title: "Support",
+          color: COLORS.PURPLE,
+          icon: ICONS.SUPPORT,
+        },
+      ],
     },
     {
       type: "section-gamma",

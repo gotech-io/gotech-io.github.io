@@ -19,7 +19,7 @@ function Left({ type }) {
         <div
           className="case-studies-content-left"
           data-aos-anchor-placement="top-center"
-          data-aos={animations?.fadeLeft}
+          data-aos={animations?.zoomUp}
         >
           <h5>{title}</h5>
           <p className="case-studies-content-description">{description}</p>

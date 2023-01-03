@@ -3,7 +3,7 @@ import animations from "../../../assets/js/animations";
 
 const Technologies = ({ technologies }) => {
   return (
-    <div className="page-common-block">
+    <div className="page-common-block" id="technologies">
       <div className="technology">
         {technologies.length
           ? technologies.map(({ title, icon }) => {

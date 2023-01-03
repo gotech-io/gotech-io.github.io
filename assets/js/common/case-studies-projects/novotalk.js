@@ -48,9 +48,13 @@ export const NOVOTALK = {
     {
       title: "Services Used",
       options: ["FrontEnd", "BackEnd"],
-      link: "/#services",
+      link: "/service/web",
     },
-    { title: "Technologies Stack", options: ["CSS", "React", "AWS"] },
+    {
+      title: "Technologies Stack",
+      options: ["CSS", "React", "AWS"],
+      link: "/service/web/#technologies",
+    },
   ],
   tags: ["CSS", "React", "AWS"],
   button: { url: "/case-studies-project/novotalk", btnText: "see more" },

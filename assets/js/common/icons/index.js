@@ -21,4 +21,20 @@ export const ICONS = {
   FACEBOOK: "fa-brands fa-square-facebook",
   LINKEDIN: "fa-brands fa-linkedin",
   INSTAGRAM: "fa-brands fa-square-instagram",
+
+  STRATEGY: "fa-solid fa-pencil",
+  DESIGN: "fa-solid fa-wand-magic-sparkles",
+  DEVELOP: "fa-solid fa-user-gear",
+  BUG: "fa-solid fa-bug",
+  LAUNCH: "fa-solid fa-handshake",
+  SUPPORT: "fa-solid fa-headset",
+
+  UNIT: "fa-solid fa-list-check",
+  SANITY: "fa-solid fa-dice",
+  CROSS_PLATFORM: "fa-solid fa-arrow-down-up-across-line",
+  REGRESSION: "fa-solid fa-backward",
+  INTEGRATION: "fa-solid fa-download",
+  AUTOMATED: "fa-brands fa-chromecast",
+  PROGRESS: "fa-solid fa-bars-progress",
+  RESTORE: "fa-solid fa-window-restore",
 };

@@ -2,7 +2,7 @@ import React from "react";
 import animations from "../../../../../assets/js/animations";
 import { ICONS } from "../../../../../assets/js/common/icons";
 
-const ServicesSection = ({ services }) => {
+const ServicesSection = ({ color, services }) => {
   return (
     <div className="page-common-block">
       <div className="service-wrapper">
@@ -16,7 +16,7 @@ const ServicesSection = ({ services }) => {
                 data-aos={animations.zoomInUp}
               >
                 <div>
-                  <div className="services-content-item-type">
+                  <div className={`services-content-item-type ${color}`}>
                     <i className={ICONS[icon]} />
                   </div>
                   <h5>{title}</h5>

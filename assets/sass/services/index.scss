@@ -20,10 +20,15 @@
     align-items: center;
     flex-wrap: wrap;
 
-    &-item {
+    &-wrapper {
       width: 49%;
       height: 250px;
       margin: 10px 0;
+    }
+
+    &-item {
+      width: 100%;
+      height: 100%;
       padding: $content-gap;
       display: flex;
       justify-content: center;
@@ -32,7 +37,7 @@
       background-color: $main;
       border-radius: $radius;
       box-shadow: $shadow;
-      transition: 0.5s;
+      transition: background-color 0.5s;
       cursor: pointer;
 
       &-info {
@@ -102,7 +107,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        background: $green-background;
+        //background: $green-background;
         border-radius: 0 0 $circle $circle;
         margin-top: -20px;
         padding: 10px;
@@ -183,7 +188,6 @@
 
       .services-content-item-type {
         margin: -$section-gap 0 10px;
-        background: $orange;
       }
     }
   }

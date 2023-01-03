@@ -120,6 +120,9 @@ img {
 .blue {
   background-color: $blue;
 }
+.yellow {
+  background-color: $yellow;
+}
 .orange {
   background-color: $orange;
 }
@@ -163,6 +166,14 @@ img {
   }
   .socials {
     justify-content: center;
+  }
+
+  .page-common-title {
+    font-size: 50px;
+  }
+
+  .title-section p {
+    font-size: 16px;
   }
 
   .home-header .home-header-background {

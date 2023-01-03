@@ -1,3 +1,6 @@
+import { COLORS } from "../../colors";
+import { ICONS } from "../../icons";
+
 export const WEB_DEV = {
   title: "Web Development",
   details:
@@ -5,27 +8,56 @@ export const WEB_DEV = {
   description:
     "Web teams to be responsible for the coding, innovative design and layout of the website. Web developers responsibilities include building the website from concept all the way to completion.",
   url: "/service/web",
+  color: COLORS.GREEN,
 
   sections: [
     {
       type: "section-alpha",
-      color: "green",
+      color: COLORS.GREEN,
       title: "our services",
       description:
         "GoTech is your reliable partner for any business-changing solutions. Our teams help build your brand, increase your identity, promote your products and services to help you gain a competitive advantage.",
     },
     {
       type: "section-beta",
-      color: "main",
+      color: COLORS.MAIN,
       title: "app development process",
       paragraphs: [
         "Whether you decide to develop your web application in-house team or outsource, your project will be more successful if you understand the process involved in web application development in advance.",
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
       ],
+      stages: [
+        { title: "Strategy", color: COLORS.GREEN, icon: ICONS.STRATEGY },
+        {
+          title: "Design",
+          color: COLORS.BLUE,
+          icon: ICONS.DESIGN,
+        },
+        {
+          title: "Develop",
+          color: COLORS.YELLOW,
+          icon: ICONS.DEVELOP,
+        },
+        {
+          title: "Testing",
+          color: COLORS.ORANGE,
+          icon: ICONS.BUG,
+        },
+        {
+          title: "Launch",
+          color: COLORS.PINK,
+          icon: ICONS.LAUNCH,
+        },
+        {
+          title: "Support",
+          color: COLORS.PURPLE,
+          icon: ICONS.SUPPORT,
+        },
+      ],
     },
     {
       type: "section-gamma",
-      color: "orange",
+      color: COLORS.YELLOW,
       title: "First Point of Engagement with your buisnes",
       paragraphs: [
         "Your web app is the place that reflects what you do, your services, products, and your reputation. We help you develop end-to-end custom web applications designed to meet your specific business challenges. Leverage the next-gen technologies with our custom web application development services to build innovations that help you stand out from the crowd!",
@@ -34,14 +66,14 @@ export const WEB_DEV = {
     },
     {
       type: "section-delta",
-      color: "main",
+      color: COLORS.MAIN,
       title: "technologies",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals. The following web development technologies enable the creation of high-performing, fast, and advanced web applications.",
     },
     {
       type: "section-epsilon",
-      color: "prime",
+      color: COLORS.PRIME,
       title: "You Business have a Smart Future",
       paragraphs: [
         "Web development is defined through the upcoming trends and changes in the digital world. Businesses around the globe are in a quest to build outstanding websites. If you want your business to stay ahead of the race, the smartest thing u can do is to try out innovative and brave things.",
@@ -50,7 +82,7 @@ export const WEB_DEV = {
     },
     {
       type: "section-zeta",
-      color: "main",
+      color: COLORS.MAIN,
       title: "case studies example",
       description:
         "Our teams help integrate the tailored experience of native apps with easy access on a website browser from any device, that provide immersive and tailored experiences like the native apps directly from the browser.",

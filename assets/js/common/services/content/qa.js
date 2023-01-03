@@ -1,3 +1,6 @@
+import { COLORS } from "../../colors";
+import { ICONS } from "../../icons";
+
 export const QA_DEV = {
   title: "QA Automation",
   details:
@@ -5,41 +8,77 @@ export const QA_DEV = {
   description:
     "Our QA Automation services provide complete solutions for automating your software testing processes.",
   url: "/service/qa",
+  color: COLORS.YELLOW,
 
   sections: [
     {
       type: "section-alpha",
       color: "green",
       title: "our services",
-      description:
-        "GoTech is your reliable partner for any business-changing solutions",
+      paragraphs: [
+        "GoTech will devise a tailored testing strategy or improve on your established QA processes that proved inefficient.",
+        "We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
+      ],
     },
     {
       type: "section-beta",
-      color: "main",
-      title: "app development process",
+      color: COLORS.MAIN,
+      title: "test automation range",
       description:
-        "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
+        "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software",
+      stages: [
+        { title: "unit testing", color: COLORS.GREEN, icon: ICONS.UNIT },
+        {
+          title: "sanity & smoke testing",
+          color: COLORS.BLUE,
+          icon: ICONS.SANITY,
+        },
+        {
+          title: "cross-platform testing",
+          color: COLORS.YELLOW,
+          icon: ICONS.CROSS_PLATFORM,
+        },
+        {
+          title: "regression testing",
+          color: COLORS.ORANGE,
+          icon: ICONS.REGRESSION,
+        },
+        {
+          title: "integration testing",
+          color: COLORS.PINK,
+          icon: ICONS.INTEGRATION,
+        },
+        {
+          title: "automated testing",
+          color: COLORS.PURPLE,
+          icon: ICONS.AUTOMATED,
+        },
+      ],
     },
     {
       type: "section-gamma",
       color: "orange",
       paragraphs: [
-        "We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
+        "GoTech will devise a tailored testing strategy or improve on your established QA processes that proved inefficient.",
+        "Functional tests will verify how well the entire system operates, what results it yields, and which aspects need to be improved.",
+        "Our team will evaluate how stable and responsive the software is under normal and extreme workloads. Subjecting your system to an individual set of tests on stress resilience and load endurance, we will assess its compliance with performance criteria and detect scalability limits.",
       ],
     },
     {
       type: "section-delta",
       color: "main",
       title: "technologies used",
-      description:
+      paragraphs: [
+        "We design a custom set of QA testing services depending on your vertical to properly address every specific botch, bottleneck, or risk.",
         "We offer only well-recognized and time-tested technologies to support any of your business goals.",
+      ],
     },
     {
       type: "section-epsilon",
       color: "prime",
       paragraphs: [
-        "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software.",
+        "GoTech teams will build a tailored automated testing framework covering your development scope and requirements.",
+        "We will run a multi-faceted evaluation to measure the level of the system protection and the safety of sensitive user data. Our team will scan for vulnerabilities in the network infrastructure, the client & server sides, as well as perform a series of simulated tests to reveal all possible flaws.",
       ],
     },
     {

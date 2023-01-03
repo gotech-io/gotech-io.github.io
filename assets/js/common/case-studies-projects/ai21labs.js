@@ -42,10 +42,11 @@ export const AI21LABS = {
   introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "Artificial intelligence" },
-    { title: "Services Used", options: ["QA automation"], link: "/#services" },
+    { title: "Services Used", options: ["QA automation"], link: "/service/qa" },
     {
       title: "Technologies Stack",
       options: ["Playwright", "Mocha"],
+      link: "/service/qa/#technologies",
     },
   ],
   tags: ["Playwright", "Mocha"],
