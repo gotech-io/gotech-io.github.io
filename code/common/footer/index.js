@@ -1,9 +1,8 @@
-import ListItems from "./components/list";
+import ListSection from "./components/listSection";
 import Policy from "./components/policy";
 import React from "react";
 
 const Footer = ({
-  variables,
   copyright,
   privacy_policy_text,
   privacy_policy_url,
@@ -13,22 +12,7 @@ const Footer = ({
   return (
     <div>
       <div className="footer">
-        <div className="page-common-block">
-          <div className="footer-list">
-            {variables.length
-              ? variables.map((variable) => {
-                  const { title, list } = variable;
-                  return (
-                    <div key={title}>
-                      <h6>{title}</h6>
-                      <ListItems list={list} />
-                    </div>
-                  );
-                })
-              : ""}
-          </div>
-        </div>
-
+        <ListSection />
         <Policy
           copyright={copyright}
           privacy_policy_text={privacy_policy_text}

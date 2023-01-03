@@ -53,13 +53,17 @@
     }
 
     .socials {
-      .img {
-        width: 30px;
-        opacity: 0.3;
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        margin-right: 10px;
+      &-link {
+        font-size: 25px;
+        margin-right: $content-gap;
+
+        i {
+          color: $additional;
+
+          &:hover {
+            color: $prime;
+          }
+        }
       }
     }
   }
@@ -84,5 +88,9 @@
         text-align: center;
       }
     }
+  }
+
+  .footer .list-items .socials-link {
+    margin: 0 10px;
   }
 }
