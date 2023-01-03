@@ -41,10 +41,15 @@ export const BASE = {
   introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "B2B Businesses" },
-    { title: "Services Used", options: ["QA automation"], link: "/#services" },
+    {
+      title: "Services Used",
+      options: ["QA automation"],
+      link: "/service/qa/#technologies",
+    },
     {
       title: "Technologies Stack",
       options: ["Java", "Cucumber", "Playwright"],
+      link: "/service/qa",
     },
   ],
   tags: ["Java", "Cucumber", "Playwright"],

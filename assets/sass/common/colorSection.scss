@@ -2,16 +2,6 @@
   width: 100%;
   padding: $title-gap 0;
   transition: height 0.2s;
-
-  &-title {
-    color: $main;
-  }
-
-  &-description {
-    padding: $content-gap 0 0;
-    font-size: 20px;
-    color: $main;
-  }
 }
 
 .green,

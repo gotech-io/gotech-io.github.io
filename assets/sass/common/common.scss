@@ -15,6 +15,7 @@ h2 {
 h4 {
   font-size: 25px;
   font-weight: 600px;
+  text-transform: uppercase;
 }
 
 h5 {
@@ -96,7 +97,7 @@ a {
 
   &-sub-section {
     width: 100%;
-    margin: 100px auto;
+    margin: 100px auto 200px;
   }
 }
 
@@ -119,6 +120,9 @@ img {
 .blue {
   background-color: $blue;
 }
+.yellow {
+  background-color: $yellow;
+}
 .orange {
   background-color: $orange;
 }
@@ -132,12 +136,11 @@ img {
   background-color: $prime;
 }
 
-@media only screen and (max-width: $mobile) {
-  h1 {
-    font-size: 30px;
-  }
-  h2 {
-    font-size: 25px;
+.title-section {
+  text-align: center;
+  p {
+    padding-top: $content-gap;
+    font-size: 20px;
   }
 }
 
@@ -152,7 +155,48 @@ img {
 }
 
 @media only screen and (max-width: $mobile) {
+  h1 {
+    font-size: 30px;
+  }
+  h2 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 15px;
+  }
   .socials {
     justify-content: center;
+  }
+
+  .page-common-title {
+    font-size: 50px;
+  }
+
+  .title-section p {
+    font-size: 16px;
+  }
+
+  .home-header .home-header-background {
+    .orange-blobs {
+      right: -700px;
+      top: -700px;
+    }
+
+    .green-blobs {
+      left: -750px;
+      top: -700px;
+    }
+  }
+
+  .page-common-header.home-header-background {
+    .orange-blobs {
+      right: -200px;
+      top: -300px;
+    }
+
+    .green-blobs {
+      left: -250px;
+      top: -50px;
+    }
   }
 }

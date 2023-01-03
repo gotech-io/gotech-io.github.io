@@ -42,10 +42,11 @@ export const ORBS = {
   introduction: [
     { title: "Country", description: "Israel" },
     { title: "Industry", description: "Blockchain Infrastructure" },
-    { title: "Services Used", options: ["FrontEnd"], link: "/#services" },
+    { title: "Services Used", options: ["FrontEnd"], link: "/service/web" },
     {
       title: "Technologies Stack",
       options: ["React", "Cuttlebelle", "Redux"],
+      link: "/service/web/#technologies",
     },
   ],
   tags: ["React", "Cuttlebelle", "Redux"],

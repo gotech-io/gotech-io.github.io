@@ -19,7 +19,7 @@
 
   &-item {
     width: 16%;
-    height: 100%;
+    height: 120px;
     display: flex;
     justify-content: center;
     align-content: space-between;
@@ -27,27 +27,25 @@
     z-index: 10;
 
     &-wrapper {
-      width: 70px;
-      height: 70px;
-      margin: 0 auto $content-gap;
+      width: 100px;
+      height: 100px;
       display: flex;
       justify-content: center;
       align-items: center;
       background-color: $main;
-      border: 2px solid lightgray;
-      border-radius: 50px; //$circle;
+      border-radius: $circle;
 
       &-dot {
-        width: 50px;
-        height: 50px;
+        width: 70px;
+        height: 70px;
         display: flex;
         justify-content: center;
         align-items: center;
-        border-radius: 50px; //$circle;
+        border-radius: $circle;
         animation: none;
 
         i {
-          font-size: 20px;
+          font-size: 25px;
           color: $main;
         }
       }
@@ -57,7 +55,7 @@
       width: 100%;
       height: 0px;
       position: absolute;
-      top: 35px;
+      top: 40%;
       border: 2px solid lightgray;
       border-bottom: none;
     }

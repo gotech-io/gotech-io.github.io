@@ -1,10 +1,11 @@
 import React from "react";
+import Socials from "../../../socials";
 
 const ListItems = ({ list }) => {
   return (
     <div className="list-items">
       {list.map((item) => {
-        const { title, link, phone, socials } = item;
+        const { title, link, content } = item;
         return (
           <div key={title} className="text-small">
             {link ? (
@@ -12,11 +13,16 @@ const ListItems = ({ list }) => {
                 {title}
               </a>
             ) : (
-              <span className="text-small">{title}</span>
+              <div>
+                {title === "Social" && <Socials />}
+                {title === "Contact Us" && (
+                  <div className="text-small">{content}</div>
+                )}
+                {title === "Find Us" && (
+                  <div className="text-small">{content}</div>
+                )}
+              </div>
             )}
-
-            <div className="text-small">{phone || phone}</div>
-            <div className="text-small">{socials || socials}</div>
           </div>
         );
       })}

@@ -25,7 +25,7 @@ export const ICONS = {
   STRATEGY: "fa-solid fa-pencil",
   DESIGN: "fa-solid fa-wand-magic-sparkles",
   DEVELOP: "fa-solid fa-user-gear",
-  TESTING: "fa-solid fa-bug",
+  BUG: "fa-solid fa-bug",
   LAUNCH: "fa-solid fa-handshake",
   SUPPORT: "fa-solid fa-headset",
 
@@ -39,4 +39,13 @@ export const ICONS = {
   STAR: "fa-solid fa-star",
   ARROW_R: "fa-solid fa-arrow-right",
   USER: "fa-solid fa-user",
+
+  UNIT: "fa-solid fa-list-check",
+  SANITY: "fa-solid fa-dice",
+  CROSS_PLATFORM: "fa-solid fa-arrow-down-up-across-line",
+  REGRESSION: "fa-solid fa-backward",
+  INTEGRATION: "fa-solid fa-download",
+  AUTOMATED: "fa-brands fa-chromecast",
+  PROGRESS: "fa-solid fa-bars-progress",
+  RESTORE: "fa-solid fa-window-restore",
 };
