@@ -57,37 +57,36 @@
 .category-green {
   &:hover {
     background-color: $green;
-    box-shadow: $shadow;
   }
 }
 .category-blue {
   &:hover {
     background-color: $blue;
-    box-shadow: $shadow;
+  }
+}
+.category-yellow {
+  &:hover {
+    background-color: $yellow;
   }
 }
 .category-orange {
   &:hover {
     background-color: $orange;
-    box-shadow: $shadow;
   }
 }
 .category-pink {
   &:hover {
     background-color: $pink;
-    box-shadow: $shadow;
   }
 }
 .category-purple {
   &:hover {
     background-color: $purple;
-    box-shadow: $shadow;
   }
 }
 .category-prime {
   &:hover {
     background-color: $prime;
-    box-shadow: $shadow;
   }
 }
 
