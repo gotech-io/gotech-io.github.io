@@ -16,7 +16,9 @@ const Points = ({ points }) => {
                 data-aos={animations.zoomIn}
               >
                 <div className="points-item-number">{count}</div>
-                <div className="points-item-dot" />
+                <div className="points-item-dot-wrapper">
+                  <div className="points-item-dot" />
+                </div>
                 <p>{title}</p>
               </div>
             );

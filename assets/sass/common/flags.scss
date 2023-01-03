@@ -35,6 +35,20 @@
     }
   }
 
+  &-yellow {
+    &:hover {
+      background-color: $yellow;
+    }
+
+    &-active {
+      background-color: $yellow;
+
+      i {
+        color: $main !important;
+      }
+    }
+  }
+
   &-orange {
     &:hover {
       background-color: $orange;

@@ -8,8 +8,8 @@ import { SHOPPING } from "./categories/shopping";
 export const listCategories = [
   HEALTHCARE,
   EDUCATION,
-  SHOPPING,
-  CRYPTOCURRENCY,
   IT,
+  SHOPPING,
   GOVERNMENT,
+  CRYPTOCURRENCY,
 ];

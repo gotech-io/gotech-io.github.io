@@ -44,12 +44,12 @@ export const BASE = {
     {
       title: "Services Used",
       options: ["QA automation"],
-      link: "/service/qa/#technologies",
+      link: "/service/qa",
     },
     {
       title: "Technologies Stack",
       options: ["Java", "Cucumber", "Playwright"],
-      link: "/service/qa",
+      link: "/service/qa/#technologies",
     },
   ],
   tags: ["Java", "Cucumber", "Playwright"],
