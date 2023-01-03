@@ -32,7 +32,7 @@ marquee:
   - /assets/images/home/clients/migdal.png
   - /assets/images/home/clients/inspekto.png
   - /assets/images/home/clients/pmo.png
-    - /assets/images/home/clients/zim.png
+  - /assets/images/home/clients/zim.png
   - /assets/images/home/clients/police.png
   - /assets/images/home/clients/renuar.png
   - /assets/images/home/clients/salesforce.png

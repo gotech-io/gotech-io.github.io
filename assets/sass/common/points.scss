@@ -44,7 +44,6 @@ $points-height: 100px;
 
       width: 30px;
       height: 30px;
-      background: $green-background;
       border-radius: $circle;
     }
 
@@ -82,7 +81,12 @@ $points-height: 100px;
       &-dot {
         width: 20px;
         height: 20px;
-        margin: 0;
+
+        &-wrapper {
+          width: 30px;
+          height: 30px;
+          margin: 0;
+        }
       }
 
       p {

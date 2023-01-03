@@ -1,3 +1,5 @@
+import { COLORS } from "../colors";
+
 export const PAGE_DETAILS = {
   title: "About our Abilities",
   description:
@@ -30,10 +32,10 @@ export const PAGE_DETAILS = {
     description:
       "All our processes are customer-oriented, designed to reduce the cost of business operations, address IT resourcing challenges, and offer you a competitive edge. We start with a deep analysis of your requirements and continue to end of project. Our experienced engineers are at your service whenever you might need support with any type of project complexity!",
     points: [
-      { title: "Successfully Projects", count: "120+" },
-      { title: "Years in Business", count: "7" },
-      { title: "Services", count: "4" },
-      { title: "Team Members", count: "100+" },
+      { title: "Successfully Projects", count: "120+", color: COLORS.GREEN },
+      { title: "Years in Business", count: "7", color: COLORS.YELLOW },
+      { title: "Services", count: "4", color: COLORS.PINK },
+      { title: "Team Members", count: "100+", color: COLORS.PURPLE },
     ],
   },
 
