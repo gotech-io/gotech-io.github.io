@@ -6,7 +6,7 @@ const diagramItems = ["client", "product", "gotech"];
 
 const Diagram = () => {
   return (
-    <div className="diagram">
+    <div className="page-common-block diagram">
       <div className="diagram-dot">
         {diagramCircle.map((item) => {
           return <div key={item} className="diagram-dot-item" />;

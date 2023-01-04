@@ -1,4 +1,3 @@
-import ColorSection from "../../../common/ColorSection";
 import Left from "../../case-studies/components/left";
 import PageWrapper from "../../../common/pageWrapper";
 import React from "react";
@@ -12,10 +11,11 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
     title,
     description,
     color,
-    example,
     sections,
+    stages,
     services,
     technologies,
+    example,
   } = SERVICES[entity];
 
   const mainColor = color;
@@ -24,38 +24,16 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
     <PageWrapper
       title={title}
       description={description}
+      sections={sections}
+      alpha={<ServicesSection color={mainColor} services={services} />}
+      beta={<StagesCycle stages={stages} />}
+      delta={<Technologies technologies={technologies} />}
+      zeta={example && <Left type={example} />}
       marquee={marquee}
       contact={contact}
       _relativeURL={_relativeURL}
       _ID={_ID}
-    >
-      {sections.length &&
-        sections.map(
-          ({ type, color, title, description, paragraphs, stages }) => {
-            return (
-              <div key={type} className="service">
-                <ColorSection
-                  color={color}
-                  title={title}
-                  description={description}
-                  paragraphs={paragraphs}
-                >
-                  {type === "section-alpha" && (
-                    <ServicesSection color={mainColor} services={services} />
-                  )}
-                  {type === "section-beta" && <StagesCycle stages={stages} />}
-                  {type === "section-delta" && (
-                    <Technologies technologies={technologies} />
-                  )}
-                  {type === "section-zeta" && example && (
-                    <Left type={example} />
-                  )}
-                </ColorSection>
-              </div>
-            );
-          }
-        )}
-    </PageWrapper>
+    />
   );
 }
 

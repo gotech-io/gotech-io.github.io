@@ -26,34 +26,6 @@ export const WEB_DEV = {
         "Whether you decide to develop your web application in-house team or outsource, your project will be more successful if you understand the process involved in web application development in advance.",
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
       ],
-      stages: [
-        { title: "Strategy", color: COLORS.GREEN, icon: ICONS.STRATEGY },
-        {
-          title: "Design",
-          color: COLORS.BLUE,
-          icon: ICONS.DESIGN,
-        },
-        {
-          title: "Develop",
-          color: COLORS.YELLOW,
-          icon: ICONS.DEVELOP,
-        },
-        {
-          title: "Testing",
-          color: COLORS.ORANGE,
-          icon: ICONS.BUG,
-        },
-        {
-          title: "Launch",
-          color: COLORS.PINK,
-          icon: ICONS.LAUNCH,
-        },
-        {
-          title: "Support",
-          color: COLORS.PURPLE,
-          icon: ICONS.SUPPORT,
-        },
-      ],
     },
     {
       type: "section-gamma",
@@ -86,6 +58,35 @@ export const WEB_DEV = {
       title: "case studies example",
       description:
         "Our teams help integrate the tailored experience of native apps with easy access on a website browser from any device, that provide immersive and tailored experiences like the native apps directly from the browser.",
+    },
+  ],
+
+  stages: [
+    { title: "Strategy", color: COLORS.GREEN, icon: ICONS.STRATEGY },
+    {
+      title: "Design",
+      color: COLORS.BLUE,
+      icon: ICONS.DESIGN,
+    },
+    {
+      title: "Develop",
+      color: COLORS.YELLOW,
+      icon: ICONS.DEVELOP,
+    },
+    {
+      title: "Testing",
+      color: COLORS.ORANGE,
+      icon: ICONS.BUG,
+    },
+    {
+      title: "Launch",
+      color: COLORS.PINK,
+      icon: ICONS.LAUNCH,
+    },
+    {
+      title: "Support",
+      color: COLORS.PURPLE,
+      icon: ICONS.SUPPORT,
     },
   ],
 

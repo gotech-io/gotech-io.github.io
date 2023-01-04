@@ -1,7 +1,6 @@
 .diagram {
-  width: 100%;
   height: 400px;
-  margin-top: $title-gap;
+  margin: $title-gap auto 0;
   position: relative;
 
   &-dot {

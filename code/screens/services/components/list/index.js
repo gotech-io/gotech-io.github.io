@@ -3,7 +3,7 @@ import animations from "../../../../../assets/js/animations";
 
 const ListServices = ({ services }) => {
   return (
-    <div className="services-content">
+    <div className="page-common-block services-content">
       {services.length &&
         services.map((service) => {
           return (

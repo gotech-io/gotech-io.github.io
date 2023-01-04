@@ -23,38 +23,6 @@ export const DEVOPS_DEV = {
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
-      stages: [
-        {
-          title: "requirements analysis",
-          color: COLORS.GREEN,
-          icon: ICONS.UNIT,
-        },
-        {
-          title: "infrastructure setup",
-          color: COLORS.BLUE,
-          icon: ICONS.RESTORE,
-        },
-        {
-          title: "Deployment automation",
-          color: COLORS.YELLOW,
-          icon: ICONS.DEVELOP,
-        },
-        {
-          title: "Configuration & management",
-          color: COLORS.ORANGE,
-          icon: ICONS.PROGRESS,
-        },
-        {
-          title: "AP & health monitoring",
-          color: COLORS.PINK,
-          icon: ICONS.SANITY,
-        },
-        {
-          title: "Support & optimization",
-          color: COLORS.PURPLE,
-          icon: ICONS.SUPPORT,
-        },
-      ],
     },
     {
       type: "section-gamma",
@@ -81,6 +49,39 @@ export const DEVOPS_DEV = {
         "DevOps is all about providing continuous value to customers. The business results of adopting DevOps should be measured in relation to your business goals and objectives. ",
         "DevOps teams can promote frequent code versions thereby reducing the number of implementation failures. This reduces the recovery time considerably allowing agile response to the market.",
       ],
+    },
+  ],
+
+  stages: [
+    {
+      title: "requirements analysis",
+      color: COLORS.GREEN,
+      icon: ICONS.UNIT,
+    },
+    {
+      title: "infrastructure setup",
+      color: COLORS.BLUE,
+      icon: ICONS.RESTORE,
+    },
+    {
+      title: "Deployment automation",
+      color: COLORS.YELLOW,
+      icon: ICONS.DEVELOP,
+    },
+    {
+      title: "Configuration & management",
+      color: COLORS.ORANGE,
+      icon: ICONS.PROGRESS,
+    },
+    {
+      title: "AP & health monitoring",
+      color: COLORS.PINK,
+      icon: ICONS.SANITY,
+    },
+    {
+      title: "Support & optimization",
+      color: COLORS.PURPLE,
+      icon: ICONS.SUPPORT,
     },
   ],
 

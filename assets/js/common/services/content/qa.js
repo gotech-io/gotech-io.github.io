@@ -26,34 +26,6 @@ export const QA_DEV = {
       title: "test automation range",
       description:
         "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software",
-      stages: [
-        { title: "unit testing", color: COLORS.GREEN, icon: ICONS.UNIT },
-        {
-          title: "sanity & smoke testing",
-          color: COLORS.BLUE,
-          icon: ICONS.SANITY,
-        },
-        {
-          title: "cross-platform testing",
-          color: COLORS.YELLOW,
-          icon: ICONS.CROSS_PLATFORM,
-        },
-        {
-          title: "regression testing",
-          color: COLORS.ORANGE,
-          icon: ICONS.REGRESSION,
-        },
-        {
-          title: "integration testing",
-          color: COLORS.PINK,
-          icon: ICONS.INTEGRATION,
-        },
-        {
-          title: "automated testing",
-          color: COLORS.PURPLE,
-          icon: ICONS.AUTOMATED,
-        },
-      ],
     },
     {
       type: "section-gamma",
@@ -87,6 +59,35 @@ export const QA_DEV = {
       title: "case studies example",
       description:
         "We have a proven track record of building high quality solutions for customers all over the world.",
+    },
+  ],
+
+  stages: [
+    { title: "unit testing", color: COLORS.GREEN, icon: ICONS.UNIT },
+    {
+      title: "sanity & smoke testing",
+      color: COLORS.BLUE,
+      icon: ICONS.SANITY,
+    },
+    {
+      title: "cross-platform testing",
+      color: COLORS.YELLOW,
+      icon: ICONS.CROSS_PLATFORM,
+    },
+    {
+      title: "regression testing",
+      color: COLORS.ORANGE,
+      icon: ICONS.REGRESSION,
+    },
+    {
+      title: "integration testing",
+      color: COLORS.PINK,
+      icon: ICONS.INTEGRATION,
+    },
+    {
+      title: "automated testing",
+      color: COLORS.PURPLE,
+      icon: ICONS.AUTOMATED,
     },
   ],
 

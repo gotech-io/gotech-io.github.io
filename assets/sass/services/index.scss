@@ -13,8 +13,7 @@
   }
 
   &-content {
-    width: 100%;
-    padding: $inner-gap 0;
+    padding: $title-gap 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -107,7 +106,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        //background: $green-background;
         border-radius: 0 0 $circle $circle;
         margin-top: -20px;
         padding: 10px;
@@ -117,24 +115,6 @@
           color: $main;
         }
       }
-    }
-  }
-
-  &-intro {
-    padding: $inner-gap 0;
-    text-align: center;
-    background-color: $default;
-  }
-
-  &-diagram {
-    height: auto;
-    padding: $inner-gap 0;
-    text-align: center;
-    background-color: $prime;
-
-    h4,
-    p {
-      color: $main;
     }
   }
 
@@ -202,15 +182,7 @@
 @media only screen and (max-width: $mobile) {
   .services {
     &-content {
-      padding: $title-gap 0;
-    }
-
-    &-intro {
-      padding: $title-gap 0;
-    }
-
-    &-diagram {
-      padding: $section-gap 0;
+      padding: 0;
     }
 
     &-content-wrapper {
