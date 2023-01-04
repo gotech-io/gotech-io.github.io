@@ -1,4 +1,5 @@
 import DetailsProject from "../components/detailsProject";
+import DetailsSection from "../components/detailsSection";
 import PageWrapper from "../../../common/pageWrapper";
 import Parallax from "../../../common/parallax";
 import React from "react";
@@ -18,14 +19,14 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
     description,
     sections,
     steps,
+    images,
     //----
-    //images,
     // client,
     // challenge,
     // solution,
-    // introduction,
+    introduction,
   } = PROJECTS_INFO[type];
-  //const { main, parallax } = images;
+  const { main, parallax } = images;
 
   // const details = [
   //   { type: TYPES.CLIENT, content: client, color: COLORS.GREEN },
@@ -38,9 +39,9 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
       title={title}
       description={description}
       sections={sections}
-      // alpha={<ServicesSection color={mainColor} services={services} />}
-      // beta={<StagesCycle stages={stages} />}
-      gamma={<Steps steps={steps} />}
+      beta={<DetailsSection main={main} introduction={introduction} />}
+      // gamma={<Steps steps={steps} />}
+      epsilon={<Parallax src={parallax.src} alt={parallax.alt} />}
       marquee={marquee}
       contact={contact}
       _relativeURL={_relativeURL}

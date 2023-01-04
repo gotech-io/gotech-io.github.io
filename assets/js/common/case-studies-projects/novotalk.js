@@ -47,7 +47,6 @@ export const NOVOTALK = {
     "Needed to be develop a testing system to cover the whole platform",
   ],
 
-  //------------
   images: {
     mockup: {
       src: "/assets/images/case-studies/novotalk/novotalk1.jpg",
@@ -62,6 +61,8 @@ export const NOVOTALK = {
       alt: "novotalk",
     },
   },
+
+  //------------
   client: {
     title: "About Client:",
     paragraphs: [
