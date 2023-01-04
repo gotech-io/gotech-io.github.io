@@ -10,9 +10,10 @@ function ListProjects() {
     <div>
       {projects.length &&
         projects.map(({ type }, i) => {
+          const isEven = i % 2 === 0;
           return (
             <div key={type}>
-              {i % 2 === 0 ? <Left type={type} /> : <Right type={type} />}
+              {isEven ? <Left type={type} /> : <Right type={type} />}
             </div>
           );
         })}
