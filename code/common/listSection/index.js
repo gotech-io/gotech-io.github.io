@@ -27,7 +27,7 @@ function Sections({
             >
               {type === "section-alpha" && alpha}
               {type === "section-beta" && beta}
-              {type === "section-alpha" && gamma}
+              {type === "section-gamma" && gamma}
               {type === "section-delta" && delta}
               {type === "section-epsilon" && epsilon}
               {type === "section-zeta" && zeta}
