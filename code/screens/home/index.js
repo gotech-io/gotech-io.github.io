@@ -1,3 +1,4 @@
+import HomeHeader from "./header";
 import LottiePlayer from "../../common/lottie-player";
 import React from "react";
 import Sections from "./components/sections";
@@ -6,13 +7,20 @@ import { MAIN_PAGE_DETAILS } from "../../../assets/js/common/main-page";
 import { handleUrl } from "../../utils";
 
 const Home = ({ navbar, contact, _relativeURL, _ID }) => {
-  const { title, sub_title, description, lottie, sections } = MAIN_PAGE_DETAILS;
+  const { title, sub_title, description, url, btnText, lottie, sections } =
+    MAIN_PAGE_DETAILS;
 
   return (
     <div className="home" data-aos={animations.up}>
       {navbar}
-      {/* {header} */}
 
+      <HomeHeader
+        title={title}
+        sub_title={sub_title}
+        description={description}
+        url={url}
+        btnText={btnText}
+      />
       <div className="page-common-block home-screens">
         <LottiePlayer
           src={lottie.src}

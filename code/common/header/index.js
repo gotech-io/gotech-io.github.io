@@ -1,4 +1,4 @@
-import Blobs from "../../screens/home/sections/header/components/blobs";
+import Blobs from "../../screens/home/header/components/blobs";
 import React from "react";
 
 const BLOBS_SIZE = {

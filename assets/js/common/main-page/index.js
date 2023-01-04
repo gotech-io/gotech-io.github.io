@@ -5,6 +5,9 @@ export const MAIN_PAGE_DETAILS = {
   sub_title: "Providing tech as a service",
   description:
     "Our team will help You forward to the next level. Reimagine your business into a software-first business with our custom software design and development approach!",
+  url: "/services",
+  btnText: "Let’s get started!",
+
   lottie: {
     src: "https://lottie.host/9c8c0b1e-2283-419e-a35e-c8dd8c3c5869/cqIf494w5p.json",
     width: "100%",

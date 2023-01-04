@@ -1,13 +1,14 @@
 import Blobs from "./components/blobs";
+import Link from "../../../common/btns/link";
 import React from "react";
-import animations from "../../../../../assets/js/animations";
+import animations from "../../../../assets/js/animations";
 
 const BLOBS_SIZE = {
   ORANGE: 1300,
   GREEN: 1100,
 };
 
-const HomeHeader = ({ title, sub_title, description, button }) => {
+const HomeHeader = ({ title, sub_title, description, url, btnText }) => {
   return (
     <div className="home-header">
       <Blobs orangeSize={BLOBS_SIZE.ORANGE} greenSize={BLOBS_SIZE.GREEN} />
@@ -27,7 +28,7 @@ const HomeHeader = ({ title, sub_title, description, button }) => {
               {description}
             </p>
           </di>
-          {button}
+          <Link url={url} btnText={btnText} />
         </div>
       </div>
     </div>
