@@ -1,8 +1,10 @@
 import { COLORS } from "../colors";
 
 export const MAIN_PAGE_DETAILS = {
-  title: "ggygj",
-  description: "jh ggy g ghghjgh gh ghghghgh uhu bnvvbv",
+  title: "GoTech",
+  sub_title: "Providing tech as a service",
+  description:
+    "Our team will help You forward to the next level. Reimagine your business into a software-first business with our custom software design and development approach!",
   lottie: {
     src: "https://lottie.host/9c8c0b1e-2283-419e-a35e-c8dd8c3c5869/cqIf494w5p.json",
     width: "100%",
@@ -16,9 +18,13 @@ export const MAIN_PAGE_DETAILS = {
     {
       type: "section-beta",
       color: COLORS.GREEN,
-      title: "Excepteur sint occaecat cupidatat non",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "Propelling your business to success with emerging tech",
+      paragraphs: [
+        "We are at the forefront of Advanced technology and Software development services:",
+        "Web, Mobile Developing",
+        "QA Manual & Automation",
+        "Mobile Developing",
+      ],
     },
     {
       type: "section-gamma",
@@ -27,16 +33,16 @@ export const MAIN_PAGE_DETAILS = {
     {
       type: "section-delta",
       color: COLORS.ORANGE,
-      title: "Excepteur sint occaecat cupidatat non",
+      title: "digital partner for all your tech needs",
       description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "GoTech is a reliable IT partner with varied tech expertise, stringent quality standards, and speedy implementations to meet and exceed customer expectations. We are an innovative software development company providing full-fledged tech services across the globe, that help businesses streamline their processes and drive business growth.",
     },
     {
       type: "section-epsilon",
       color: COLORS.GRAY,
       title: "Great Companies make us grow every day!",
       description:
-        "We are proud to work with truly innovative clients. Here are just a few of the companies we’ve had the privilege to work with.",
+        "We are proud to work with truly innovative clients. We are a trusted technology partner for many successful global enterprises and businesses. Our Teams have helped bring ideas to life by building sustainable business practices across industries. Here are just a few of the companies we’ve had the privilege to work with.",
     },
   ],
 };

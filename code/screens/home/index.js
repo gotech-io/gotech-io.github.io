@@ -5,13 +5,13 @@ import animations from "../../../assets/js/animations";
 import { MAIN_PAGE_DETAILS } from "../../../assets/js/common/main-page";
 import { handleUrl } from "../../utils";
 
-const Home = ({ header, navbar, contact, _relativeURL, _ID }) => {
-  const { lottie, sections } = MAIN_PAGE_DETAILS;
+const Home = ({ navbar, contact, _relativeURL, _ID }) => {
+  const { title, sub_title, description, lottie, sections } = MAIN_PAGE_DETAILS;
 
   return (
     <div className="home" data-aos={animations.up}>
       {navbar}
-      {header}
+      {/* {header} */}
 
       <div className="page-common-block home-screens">
         <LottiePlayer
