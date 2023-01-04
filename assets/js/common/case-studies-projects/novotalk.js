@@ -1,7 +1,53 @@
+import { COLORS } from "../colors";
+
 export const NOVOTALK = {
   title: "Novotalk",
   description:
     "Novotalk is an open platform for people with speech impediments. you will be helped to choose an individual approach to training and you will learn how to speak and pronounce words correctly.",
+
+  sections: [
+    {
+      type: "section-alpha",
+      color: COLORS.GREEN,
+      title: "About Client",
+      description:
+        "GoTech is your reliable partner for any business-changing solutions. Our teams help build your brand, increase your identity, promote your products and services to help you gain a competitive advantage.",
+    },
+    {
+      type: "section-beta",
+      color: COLORS.MAIN,
+    },
+    {
+      type: "section-gamma",
+      color: COLORS.DEFAULT,
+      title: "Challenge Faced",
+      description:
+        "When Novotalk approached GoTech, their platform was in need of significant refactoring and performance improvements.",
+    },
+    {
+      type: "section-delta",
+      color: COLORS.GREEN,
+      title: "Our Solution",
+      paragraphs: [
+        "GoTech was able to take ownership of Novotalk's entire system and address their technical challenges. We refactored both the client-side and server-side of the platform, solving numerous performance issues along the way. We also built an entire CI/CD process on AWS, including cost optimizations to help Novotalk save money.",
+        "Finally, we worked with Novotalk to develop a comprehensive QA testing plan that provided better coverage for their system.",
+        "Today, GoTech is Novotalk's entire technological team, and we continue to support them as they grow. With our help, Novotalk has been able to improve the performance and reliability of their platform, and is well-positioned for future growth.",
+      ],
+    },
+    {
+      type: "section-epsilon",
+      color: COLORS.MAIN,
+    },
+  ],
+
+  steps: [
+    "Both the client-side and server-side systems were outdated",
+    "Needed to be added CI/CD pipeline",
+    "Set up an quickly and efficiently deploy new features and updates",
+    "Needed to be develop a testing system to cover the whole platform",
+  ],
+
+  //------------
   images: {
     mockup: {
       src: "/assets/images/case-studies/novotalk/novotalk1.jpg",
