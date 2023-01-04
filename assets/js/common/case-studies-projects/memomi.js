@@ -1,6 +1,7 @@
 import { COLORS } from "../colors";
 
 export const MEMOMI = {
+  type: "MEMOMI",
   title: "Memomi ",
   description:
     "Memomi is the award-winning smart mirror software transforming the luxury shopping market.",

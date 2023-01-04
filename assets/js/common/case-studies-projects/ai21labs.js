@@ -1,6 +1,7 @@
 import { COLORS } from "../colors";
 
 export const AI21LABS = {
+  type: "AI21LABS",
   title: "AI21 Labs",
   description:
     "When Machines Become Thought Partners. AI has a way to go before it matches human intelligence. We aim to get it a little bit closer.",

@@ -1,6 +1,7 @@
 import { COLORS } from "../colors";
 
 export const BASE = {
+  type: "BASE",
   title: "Base",
   description:
     "Base helps B2B companies engage their customers automatically throughout their lifecycle.",

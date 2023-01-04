@@ -1,6 +1,7 @@
 import { COLORS } from "../colors";
 
 export const ORBS = {
+  type: "ORBS",
   title: "Orbs ",
   description:
     "Orbs is an open, decentralized and public blockchain infrastructure executed by a secure network of permission less validators using Proof-of-Stake (PoS) consensus.",

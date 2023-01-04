@@ -1,6 +1,7 @@
 import { COLORS } from "../colors";
 
 export const NOVOTALK = {
+  type: "NOVOTALK",
   title: "Novotalk",
   description:
     "Novotalk is an open platform for people with speech impediments. you will be helped to choose an individual approach to training and you will learn how to speak and pronounce words correctly.",
