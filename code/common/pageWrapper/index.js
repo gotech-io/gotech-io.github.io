@@ -6,7 +6,6 @@ import { handleUrl } from "../../utils";
 function PageWrapper({
   title,
   description,
-  children,
   sections,
   alpha,
   beta,
@@ -34,7 +33,6 @@ function PageWrapper({
           zeta={zeta}
         />
       )}
-      {children}
 
       <div>{marquee}</div>
       <div className="page-common-sub-section">{contact}</div>
