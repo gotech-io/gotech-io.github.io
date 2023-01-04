@@ -60,6 +60,21 @@
           color: $main;
         }
       }
+
+      &-link {
+        .link {
+          width: auto;
+          border: 2px solid $main;
+
+          a {
+            color: $main;
+          }
+
+          &:hover {
+            border: 2px solid transparent;
+          }
+        }
+      }
     }
   }
 }

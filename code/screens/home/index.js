@@ -21,6 +21,7 @@ const Home = ({ navbar, contact, _relativeURL, _ID }) => {
         url={url}
         btnText={btnText}
       />
+
       <div className="page-common-block home-screens">
         <LottiePlayer
           src={lottie.src}
