@@ -19,15 +19,21 @@
 
   .contact-link {
     border: solid 2px $main;
+
     a {
       color: $main;
     }
+
     &:hover {
       border: solid 2px transparent;
       a {
         color: $main;
       }
     }
+  }
+
+  &-desktop-contact {
+    width: 200px;
   }
 
   &-active {
@@ -100,11 +106,10 @@
   }
 
   &-root-link {
+    width: 200px;
+    height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
-    width: fit-content;
-    height: 100%;
   }
 
   &-logo {
