@@ -12,18 +12,20 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
   const { main, parallax } = images;
 
   return (
-    <PageWrapper
-      title={title}
-      description={description}
-      sections={sections}
-      beta={<DetailsSection main={main} introduction={introduction} />}
-      gamma={<Steps steps={steps} />}
-      epsilon={<Parallax src={parallax.src} alt={parallax.alt} />}
-      marquee={marquee}
-      contact={contact}
-      _relativeURL={_relativeURL}
-      _ID={_ID}
-    />
+    <div className="project-page">
+      <PageWrapper
+        title={title}
+        description={description}
+        sections={sections}
+        beta={<DetailsSection main={main} introduction={introduction} />}
+        gamma={<Steps steps={steps} />}
+        epsilon={<Parallax src={parallax.src} alt={parallax.alt} />}
+        marquee={marquee}
+        contact={contact}
+        _relativeURL={_relativeURL}
+        _ID={_ID}
+      />
+    </div>
   );
 }
 

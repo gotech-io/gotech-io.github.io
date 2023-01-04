@@ -3,6 +3,10 @@
   padding: $section-gap 0;
   background-color: $default;
 
+  .section-epsilon .main .color-block {
+    padding: 0;
+  }
+
   &-intro {
     h6 {
       margin-bottom: 10px;
