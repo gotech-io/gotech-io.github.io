@@ -42,9 +42,9 @@ export const ABOUT_US_DETAILS = {
     {
       type: "section-epsilon",
       color: COLORS.YELLOW,
-      title: "DELTA",
+      title: "With us, you are a step ahead",
       description:
-        "Contact us today to learn more about our services and see how we can help your business grow and thrive.",
+        "We don’t just simply initiate your project. We step into your shoes and perform a detailed analysis of your business landscape to give you the most purposeful solution. Contact us today to learn more about our services and see how we can help your business grow and thrive.",
     },
   ],
 };
