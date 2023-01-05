@@ -1,36 +1,22 @@
-import ColorSection from "../../common/ColorSection";
+import ListProjects from "./components/listProjects";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
-import { COLORS } from "../../../assets/js/common/colors";
+import { CASE_STUDIES_DETAILS } from "../../../assets/js/common/case-studies-details";
 
-const isEmpty = "Right now we don't have a new examples for you!";
+function CaseStudies({ marquee, contact, _relativeURL, _ID }) {
+  const { title, description, sections } = CASE_STUDIES_DETAILS;
 
-function CaseStudies({
-  title,
-  description,
-  projects,
-  marquee,
-  contact,
-  _relativeURL,
-  _ID,
-}) {
   return (
     <PageWrapper
       title={title}
       description={description}
+      sections={sections}
+      alpha={<ListProjects />}
       marquee={marquee}
       contact={contact}
       _relativeURL={_relativeURL}
       _ID={_ID}
-    >
-      {projects.length ? (
-        projects.map((project) => {
-          return <div key={project.key}>{project}</div>;
-        })
-      ) : (
-        <ColorSection color={COLORS.GREEN} title={isEmpty} />
-      )}
-    </PageWrapper>
+    />
   );
 }
 
