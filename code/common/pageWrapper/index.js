@@ -1,11 +1,19 @@
 import Header from "../header";
 import React from "react";
+import Sections from "../listSection";
 import { handleUrl } from "../../utils";
 
 function PageWrapper({
+  children,
   title,
   description,
-  children,
+  sections,
+  alpha,
+  beta,
+  gamma,
+  delta,
+  epsilon,
+  zeta,
   marquee,
   contact,
   _relativeURL,
@@ -14,6 +22,18 @@ function PageWrapper({
   return (
     <div>
       <Header title={title} description={description} />
+
+      {sections && (
+        <Sections
+          sections={sections}
+          alpha={alpha}
+          beta={beta}
+          gamma={gamma}
+          delta={delta}
+          epsilon={epsilon}
+          zeta={zeta}
+        />
+      )}
 
       {children}
 

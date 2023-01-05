@@ -14,29 +14,15 @@ function AboutUs({ marquee, contact, _relativeURL, _ID }) {
     <PageWrapper
       title={title}
       description={description}
+      sections={sections}
+      alpha={<Timeline />}
+      beta={<Video src={video.src} type={video.title} />}
+      delta={<ListMembers teams={TEAMS} />}
       marquee={marquee}
       contact={contact}
       _relativeURL={_relativeURL}
       _ID={_ID}
-    >
-      {sections.length &&
-        sections.map(({ type, color, title, description }) => {
-          return (
-            <ColorSection
-              key={type}
-              color={color}
-              title={title}
-              description={description}
-            >
-              {type === "section-alpha" && <Timeline />}
-              {type === "section-beta" && (
-                <Video src={video.src} type={video.title} />
-              )}
-              {type === "section-delta" && <ListMembers teams={TEAMS} />}
-            </ColorSection>
-          );
-        })}
-    </PageWrapper>
+    />
   );
 }
 
