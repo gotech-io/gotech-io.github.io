@@ -1,5 +1,5 @@
 ---
-layout: screens/home/sections/contact/index
+layout: screens/home/components/contact/index
 form:
   - form/index.md
 map:
