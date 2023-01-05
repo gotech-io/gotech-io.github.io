@@ -68,8 +68,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: $main;
-      border: 2px solid $additional;
+      background-color: $default;
       border-radius: $circle;
 
       .steps-item-number {
