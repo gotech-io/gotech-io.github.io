@@ -4,7 +4,6 @@
   &-item {
     margin: $content-gap 0;
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
 
     &-number {
@@ -19,14 +18,24 @@
     }
 
     p {
+      width: 90%;
       font-weight: 600;
     }
   }
 }
 
 @media only screen and (max-width: $mobile) {
-  .steps-item p {
-    width: 100%;
-    font-weight: 600;
+  .steps-item {
+    flex-wrap: wrap;
+
+    &-number {
+      margin: 10px auto;
+    }
+
+    p {
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+    }
   }
 }
