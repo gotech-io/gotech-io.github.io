@@ -1,7 +1,9 @@
+import CircleDiagram from "../../common/circleDiagram";
+import Clients from "./components/clients";
 import HomeHeader from "./header";
 import LottiePlayer from "../../common/lottie-player";
 import React from "react";
-import Sections from "./components/sections";
+import Sections from "../../common/listSection";
 import animations from "../../../assets/js/animations";
 import { MAIN_PAGE_DETAILS } from "../../../assets/js/common/main-page";
 import { handleUrl } from "../../utils";
@@ -30,7 +32,11 @@ const Home = ({ navbar, contact, _relativeURL, _ID }) => {
         />
       </div>
 
-      <Sections sections={sections} />
+      <Sections
+        sections={sections}
+        gamma={<CircleDiagram />}
+        epsilon={<Clients />}
+      />
 
       <div className="page-common-sub-section">{contact}</div>
 
