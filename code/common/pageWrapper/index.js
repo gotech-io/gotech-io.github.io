@@ -4,7 +4,6 @@ import Sections from "../listSection";
 import { handleUrl } from "../../utils";
 
 function PageWrapper({
-  children,
   title,
   description,
   sections,
@@ -34,8 +33,6 @@ function PageWrapper({
           zeta={zeta}
         />
       )}
-
-      {children}
 
       <div>{marquee}</div>
       <div className="page-common-sub-section">{contact}</div>
