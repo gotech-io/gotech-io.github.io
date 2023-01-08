@@ -7,12 +7,8 @@ function PageWrapper({
   title,
   description,
   sections,
-  alpha,
-  beta,
-  gamma,
-  delta,
-  epsilon,
-  zeta,
+  subjects,
+  color,
   marquee,
   contact,
   _relativeURL,
@@ -22,16 +18,8 @@ function PageWrapper({
     <div>
       <Header title={title} description={description} />
 
-      {sections && (
-        <Sections
-          sections={sections}
-          alpha={alpha}
-          beta={beta}
-          gamma={gamma}
-          delta={delta}
-          epsilon={epsilon}
-          zeta={zeta}
-        />
+      {sections && subjects && (
+        <Sections sections={sections} subjects={subjects} mainColor={color} />
       )}
 
       <div>{marquee}</div>

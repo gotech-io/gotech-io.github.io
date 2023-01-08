@@ -6,18 +6,32 @@ import Timeline from "./components/timeline";
 import Video from "../../common/video";
 import { ABOUT_US_DETAILS } from "../../../assets/js/common/about-us";
 import { TEAMS } from "../../../assets/js/common/about-us/teams";
+import { SECTIONS } from "../../../assets/js/common/sections";
 
 function AboutUs({ marquee, contact, _relativeURL, _ID }) {
   const { title, description, sections, video } = ABOUT_US_DETAILS;
+
+  const subjects = [
+    {
+      type: SECTIONS.ALPHA,
+      content: <Timeline />,
+    },
+    {
+      type: SECTIONS.BETA,
+      content: <Video src={video.src} type={video.title} />,
+    },
+    {
+      type: SECTIONS.DELTA,
+      content: <ListMembers teams={TEAMS} />,
+    },
+  ];
 
   return (
     <PageWrapper
       title={title}
       description={description}
       sections={sections}
-      alpha={<Timeline />}
-      beta={<Video src={video.src} type={video.title} />}
-      delta={<ListMembers teams={TEAMS} />}
+      subjects={subjects}
       marquee={marquee}
       contact={contact}
       _relativeURL={_relativeURL}
