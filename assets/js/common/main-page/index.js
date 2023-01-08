@@ -22,11 +22,8 @@ export const MAIN_PAGE_DETAILS = {
       type: "section-beta",
       color: COLORS.GREEN,
       title: "Propelling your business to success with emerging tech",
-      paragraphs: [
-        "We are at the forefront of Advanced technology and Software development services:",
-        "Web, Frontend & Backend Developing",
-        "QA Manual & Automation",
-        "Mobile Developing",
+      description: [
+        "Growing a business often requires keeping up with the latest industry trends, including technology. As such, business leaders always need to be on the lookout for new tech that will improve their results and workflow.",
       ],
     },
     {
