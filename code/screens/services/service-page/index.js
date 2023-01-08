@@ -23,15 +23,15 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
 
   const subjects = [
     {
-      type: SECTIONS.BETA,
+      type: SECTIONS.ALPHA,
       content: <ServicesSection color={mainColor} services={services} />,
     },
     {
-      type: SECTIONS.DELTA,
+      type: SECTIONS.BETA,
       content: <StagesCycle stages={stages} />,
     },
     {
-      type: SECTIONS.EPSILON,
+      type: SECTIONS.DELTA,
       content: <Technologies technologies={technologies} />,
     },
     {
