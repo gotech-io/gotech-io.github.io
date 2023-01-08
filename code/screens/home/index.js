@@ -6,7 +6,19 @@ import React from "react";
 import Sections from "../../common/listSection";
 import animations from "../../../assets/js/animations";
 import { MAIN_PAGE_DETAILS } from "../../../assets/js/common/main-page";
+import { SECTIONS } from "../../../assets/js/common/sections";
 import { handleUrl } from "../../utils";
+
+const subjects = [
+  {
+    type: SECTIONS.GAMMA,
+    content: <CircleDiagram />,
+  },
+  {
+    type: SECTIONS.EPSILON,
+    content: <Clients />,
+  },
+];
 
 const Home = ({ navbar, contact, _relativeURL, _ID }) => {
   const { title, sub_title, description, url, btnText, lottie, sections } =
@@ -32,11 +44,7 @@ const Home = ({ navbar, contact, _relativeURL, _ID }) => {
         />
       </div>
 
-      <Sections
-        sections={sections}
-        gamma={<CircleDiagram />}
-        epsilon={<Clients />}
-      />
+      <Sections sections={sections} subjects={subjects} />
 
       <div className="page-common-sub-section">{contact}</div>
 

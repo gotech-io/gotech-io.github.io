@@ -2,6 +2,14 @@ import ListProjects from "./components/listProjects";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import { CASE_STUDIES_DETAILS } from "../../../assets/js/common/case-studies-details";
+import { SECTIONS } from "../../../assets/js/common/sections";
+
+const subjects = [
+  {
+    type: SECTIONS.ALPHA,
+    content: <ListProjects />,
+  },
+];
 
 function CaseStudies({ marquee, contact, _relativeURL, _ID }) {
   const { title, description, sections } = CASE_STUDIES_DETAILS;
@@ -11,7 +19,7 @@ function CaseStudies({ marquee, contact, _relativeURL, _ID }) {
       title={title}
       description={description}
       sections={sections}
-      alpha={<ListProjects />}
+      subjects={subjects}
       marquee={marquee}
       contact={contact}
       _relativeURL={_relativeURL}
