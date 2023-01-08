@@ -1,5 +1,6 @@
 import { COLORS } from "../../colors";
 import { ICONS } from "../../icons";
+import { SECTIONS } from "../../sections";
 
 export const DEVOPS_DEV = {
   title: "DevOps",
@@ -11,21 +12,21 @@ export const DEVOPS_DEV = {
 
   sections: [
     {
-      type: "section-alpha",
+      type: SECTIONS.ALPHA,
       color: "green",
       title: "our services",
       description:
         "GoTech DevOps services can enhance the performance of your teams and equip them to build better products faster for greater customer satisfaction. Such collaboration and productivity will help you achieve your business goals and compete more effectively in the market.",
     },
     {
-      type: "section-beta",
+      type: SECTIONS.BETA,
       color: "main",
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
     },
     {
-      type: "section-gamma",
+      type: SECTIONS.GAMMA,
       color: "orange",
       title: "Is DevOps a tool?",
       paragraphs: [
@@ -35,14 +36,14 @@ export const DEVOPS_DEV = {
       ],
     },
     {
-      type: "section-delta",
+      type: SECTIONS.DELTA,
       color: "main",
       title: "technologies",
       description:
         "We focus on research and user experience prior to start the development of the DevOps. We offer only well-recognized and time-tested technologies to support any of your business goals.",
     },
     {
-      type: "section-epsilon",
+      type: SECTIONS.EPSILON,
       color: "prime",
       title: "DevOps drive business results!",
       paragraphs: [

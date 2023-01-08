@@ -1,5 +1,6 @@
 import { COLORS } from "../../colors";
 import { ICONS } from "../../icons";
+import { SECTIONS } from "../../sections";
 
 export const MOBILE_DEV = {
   title: "Mobile Development",
@@ -11,7 +12,7 @@ export const MOBILE_DEV = {
 
   sections: [
     {
-      type: "section-alpha",
+      type: SECTIONS.ALPHA,
       color: "green",
       title: "our services",
       paragraphs: [
@@ -20,14 +21,14 @@ export const MOBILE_DEV = {
       ],
     },
     {
-      type: "section-beta",
+      type: SECTIONS.BETA,
       color: "main",
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
     },
     {
-      type: "section-gamma",
+      type: SECTIONS.GAMMA,
       color: "orange",
       title: "Mobile Strategies",
       paragraphs: [
@@ -35,14 +36,14 @@ export const MOBILE_DEV = {
       ],
     },
     {
-      type: "section-delta",
+      type: SECTIONS.DELTA,
       color: "main",
       title: "technologies",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals. We employ platform-specific SDKs for Android and iOS, cross-platform approaches relying on HTML5, and conversion tools, to develop cost-effective enterprise mobile solutions.",
     },
     {
-      type: "section-epsilon",
+      type: SECTIONS.EPSILON,
       color: "prime",
       title: "Device Compatibility",
       paragraphs: [
@@ -51,7 +52,7 @@ export const MOBILE_DEV = {
       ],
     },
     {
-      type: "section-zeta",
+      type: SECTIONS.ZETA,
       color: "main",
       title: "case studies example",
       description:

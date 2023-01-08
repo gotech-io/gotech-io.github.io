@@ -1,5 +1,6 @@
 import { COLORS } from "../../colors";
 import { ICONS } from "../../icons";
+import { SECTIONS } from "../../sections";
 
 export const WEB_DEV = {
   title: "Web Development",
@@ -12,14 +13,14 @@ export const WEB_DEV = {
 
   sections: [
     {
-      type: "section-alpha",
+      type: SECTIONS.ALPHA,
       color: COLORS.GREEN,
       title: "our services",
       description:
         "GoTech is your reliable partner for any business-changing solutions. Our teams help build your brand, increase your identity, promote your products and services to help you gain a competitive advantage.",
     },
     {
-      type: "section-beta",
+      type: SECTIONS.BETA,
       color: COLORS.MAIN,
       title: "app development process",
       paragraphs: [
@@ -28,7 +29,7 @@ export const WEB_DEV = {
       ],
     },
     {
-      type: "section-gamma",
+      type: SECTIONS.GAMMA,
       color: COLORS.YELLOW,
       title: "First Point of Engagement with your buisnes",
       paragraphs: [
@@ -37,14 +38,14 @@ export const WEB_DEV = {
       ],
     },
     {
-      type: "section-delta",
+      type: SECTIONS.DELTA,
       color: COLORS.MAIN,
       title: "technologies",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals. The following web development technologies enable the creation of high-performing, fast, and advanced web applications.",
     },
     {
-      type: "section-epsilon",
+      type: SECTIONS.EPSILON,
       color: COLORS.PRIME,
       title: "You Business have a Smart Future",
       paragraphs: [
@@ -53,7 +54,7 @@ export const WEB_DEV = {
       ],
     },
     {
-      type: "section-zeta",
+      type: SECTIONS.ZETA,
       color: COLORS.MAIN,
       title: "case studies example",
       description:

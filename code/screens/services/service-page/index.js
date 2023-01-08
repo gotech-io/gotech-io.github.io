@@ -4,6 +4,7 @@ import React from "react";
 import ServicesSection from "../components/servicesSection";
 import StagesCycle from "../../../common/stages-cycle";
 import Technologies from "../../../common/technologies";
+import { SECTIONS } from "../../../../assets/js/common/sections";
 import { SERVICES } from "../../../../assets/js/common/services/content";
 
 function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
@@ -20,15 +21,31 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
 
   const mainColor = color;
 
+  const subjects = [
+    {
+      type: SECTIONS.BETA,
+      content: <ServicesSection color={mainColor} services={services} />,
+    },
+    {
+      type: SECTIONS.DELTA,
+      content: <StagesCycle stages={stages} />,
+    },
+    {
+      type: SECTIONS.EPSILON,
+      content: <Technologies technologies={technologies} />,
+    },
+    {
+      type: SECTIONS.ZETA,
+      content: <Left type={example} />,
+    },
+  ];
+
   return (
     <PageWrapper
       title={title}
       description={description}
       sections={sections}
-      alpha={<ServicesSection color={mainColor} services={services} />}
-      beta={<StagesCycle stages={stages} />}
-      delta={<Technologies technologies={technologies} />}
-      zeta={example && <Left type={example} />}
+      subjects={subjects}
       marquee={marquee}
       contact={contact}
       _relativeURL={_relativeURL}

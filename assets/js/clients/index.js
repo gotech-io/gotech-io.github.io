@@ -1,4 +1,5 @@
 import { COLORS } from "../common/colors";
+import { SECTIONS } from "../common/sections";
 
 export const CLIENTS_DETAILS = {
   title: "Our Best Clients",
@@ -7,14 +8,14 @@ export const CLIENTS_DETAILS = {
 
   sections: [
     {
-      type: "section-alpha",
+      type: SECTIONS.ALPHA,
       color: COLORS.GREEN,
       title: "Expertise & Competencies",
       description:
         "With our technical know-how and experience engineering sophisticated IT systems, we can help you achieve your business objectives in tune with your time, budget, and expectations.",
     },
     {
-      type: "section-beta",
+      type: SECTIONS.BETA,
       color: COLORS.GRAY,
       title: "Please choose one interesting of all Industries!",
       description:
