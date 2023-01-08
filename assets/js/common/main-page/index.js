@@ -24,7 +24,7 @@ export const MAIN_PAGE_DETAILS = {
       title: "Propelling your business to success with emerging tech",
       paragraphs: [
         "We are at the forefront of Advanced technology and Software development services:",
-        "Web, Mobile Developing",
+        "Web, Frontend & Backend Developing",
         "QA Manual & Automation",
         "Mobile Developing",
       ],
