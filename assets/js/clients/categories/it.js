@@ -32,6 +32,14 @@ export const IT = {
         clientName: "Client Second",
         image: "/",
       },
+      {
+        title: "Project Name 3",
+        description:
+          "fghjlk jjgfg vcjvkjdhvj dgv fhvjhdfgvjhdg vjhdg vdfvgdjhvgdjhvg jdhfvbdjhvdjhfvjhdfgvbhjdb",
+        range: 5,
+        clientName: "Client Third",
+        image: "/",
+      },
     ],
   },
 };
