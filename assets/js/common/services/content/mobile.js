@@ -68,7 +68,7 @@ export const MOBILE_DEV = {
       icon: ICONS.DESIGN,
     },
     {
-      title: "Develop",
+      title: "Development",
       color: COLORS.YELLOW,
       icon: ICONS.DEVELOP,
     },
