@@ -1,4 +1,5 @@
 import React from "react";
+import Step from "../step";
 
 const Steps = ({ steps }) => {
   return (
@@ -6,12 +7,7 @@ const Steps = ({ steps }) => {
       <div className="steps">
         {steps.length &&
           steps.map((step, i) => {
-            return (
-              <div key={step} className="steps-item">
-                <span className="steps-item-number">{i + 1}</span>
-                <p>{step}</p>
-              </div>
-            );
+            return <Step key={step} step={step} number={i + 1} />;
           })}
       </div>
     </div>

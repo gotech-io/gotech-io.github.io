@@ -31,10 +31,19 @@ $points-height: 100px;
     }
 
     &-dot {
+      &-wrapper {
+        width: 50px;
+        height: 50px;
+        margin: 35px 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: $default;
+        border-radius: $circle;
+      }
+
       width: 30px;
       height: 30px;
-      margin: $section-gap 0;
-      background: $green-background;
       border-radius: $circle;
     }
 
@@ -72,7 +81,12 @@ $points-height: 100px;
       &-dot {
         width: 20px;
         height: 20px;
-        margin: 0;
+
+        &-wrapper {
+          width: 30px;
+          height: 30px;
+          margin: 0;
+        }
       }
 
       p {

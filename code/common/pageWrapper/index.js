@@ -1,11 +1,14 @@
 import Header from "../header";
 import React from "react";
+import Sections from "../listSection";
 import { handleUrl } from "../../utils";
 
 function PageWrapper({
   title,
   description,
-  children,
+  sections,
+  subjects,
+  color,
   marquee,
   contact,
   _relativeURL,
@@ -15,7 +18,9 @@ function PageWrapper({
     <div>
       <Header title={title} description={description} />
 
-      {children}
+      {sections && subjects && (
+        <Sections sections={sections} subjects={subjects} mainColor={color} />
+      )}
 
       <div>{marquee}</div>
       <div className="page-common-sub-section">{contact}</div>

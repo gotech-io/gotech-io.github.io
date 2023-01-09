@@ -6,7 +6,7 @@ export const FOOTER_INFO = [
     list: [
       { title: "About Us", link: "/#about" },
       { title: "Services", link: "/services" },
-      { title: "Clients", link: "/#clients" },
+      { title: "Clients", link: "/clients" },
       { title: "Teams", link: "/#team" },
       { title: "Cases", link: "/case-studies" },
       { title: "Careers", link: "/careers/" },

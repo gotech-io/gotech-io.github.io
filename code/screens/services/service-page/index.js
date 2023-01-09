@@ -1,10 +1,10 @@
-import ColorSection from "../../../common/ColorSection";
 import Left from "../../case-studies/components/left";
 import PageWrapper from "../../../common/pageWrapper";
 import React from "react";
 import ServicesSection from "../components/servicesSection";
 import StagesCycle from "../../../common/stages-cycle";
 import Technologies from "../../../common/technologies";
+import { SECTIONS } from "../../../../assets/js/common/sections";
 import { SERVICES } from "../../../../assets/js/common/services/content";
 
 function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
@@ -12,50 +12,45 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
     title,
     description,
     color,
-    example,
     sections,
+    stages,
     services,
     technologies,
+    example,
   } = SERVICES[entity];
 
   const mainColor = color;
+
+  const subjects = [
+    {
+      type: SECTIONS.ALPHA,
+      content: <ServicesSection color={mainColor} services={services} />,
+    },
+    {
+      type: SECTIONS.BETA,
+      content: <StagesCycle stages={stages} />,
+    },
+    {
+      type: SECTIONS.DELTA,
+      content: <Technologies technologies={technologies} />,
+    },
+    {
+      type: SECTIONS.ZETA,
+      content: <Left type={example} />,
+    },
+  ];
 
   return (
     <PageWrapper
       title={title}
       description={description}
+      sections={sections}
+      subjects={subjects}
       marquee={marquee}
       contact={contact}
       _relativeURL={_relativeURL}
       _ID={_ID}
-    >
-      {sections.length &&
-        sections.map(
-          ({ type, color, title, description, paragraphs, stages }) => {
-            return (
-              <div key={type} className="service">
-                <ColorSection
-                  color={color}
-                  title={title}
-                  description={description}
-                  paragraphs={paragraphs}
-                >
-                  {type === "section-alpha" && (
-                    <ServicesSection color={mainColor} services={services} />
-                  )}
-                  {type === "section-beta" && <StagesCycle stages={stages} />}
-                  {type === "section-delta" && (
-                    <Technologies technologies={technologies} />
-                  )}
-                  {type === "section-zeta" && example && (
-                    <Left type={example} />
-                  )}
-                </ColorSection>
-              </div>
-            );
-          }
-        )}
-    </PageWrapper>
+    />
   );
 }
 

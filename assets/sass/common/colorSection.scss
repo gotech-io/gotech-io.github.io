@@ -1,6 +1,7 @@
 .color-block {
   width: 100%;
   padding: $title-gap 0;
+  transition: height 0.2s;
 }
 
 .green,
@@ -28,6 +29,7 @@
   }
 }
 
+.yellow,
 .orange {
   .color-block {
     background: $orange-background;

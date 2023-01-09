@@ -69,6 +69,16 @@
   }
 }
 
+@media only screen and (max-width: $medium) {
+  .stages {
+    &-item {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+}
+
 @media only screen and (max-width: $mobile) {
   .stages {
     margin-top: $section-gap;
@@ -80,6 +90,10 @@
     &-item {
       width: 30%;
       margin-top: $content-gap;
+
+      p {
+        font-size: 12px;
+      }
 
       &-line {
         display: none;

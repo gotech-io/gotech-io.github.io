@@ -8,7 +8,7 @@ links:
     value: /services
 
   - name: clients
-    value: /#clients
+    value: /clients
 
   - name: team
     value: /#team

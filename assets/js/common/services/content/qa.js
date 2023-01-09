@@ -1,5 +1,6 @@
 import { COLORS } from "../../colors";
 import { ICONS } from "../../icons";
+import { SECTIONS } from "../../sections";
 
 export const QA_DEV = {
   title: "QA Automation",
@@ -12,7 +13,7 @@ export const QA_DEV = {
 
   sections: [
     {
-      type: "section-alpha",
+      type: SECTIONS.ALPHA,
       color: "green",
       title: "our services",
       paragraphs: [
@@ -21,42 +22,14 @@ export const QA_DEV = {
       ],
     },
     {
-      type: "section-beta",
+      type: SECTIONS.BETA,
       color: COLORS.MAIN,
       title: "test automation range",
       description:
         "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software",
-      stages: [
-        { title: "unit testing", color: COLORS.GREEN, icon: ICONS.UNIT },
-        {
-          title: "sanity & smoke testing",
-          color: COLORS.BLUE,
-          icon: ICONS.SANITY,
-        },
-        {
-          title: "cross-platform testing",
-          color: COLORS.YELLOW,
-          icon: ICONS.CROSS_PLATFORM,
-        },
-        {
-          title: "regression testing",
-          color: COLORS.ORANGE,
-          icon: ICONS.REGRESSION,
-        },
-        {
-          title: "integration testing",
-          color: COLORS.PINK,
-          icon: ICONS.INTEGRATION,
-        },
-        {
-          title: "automated testing",
-          color: COLORS.PURPLE,
-          icon: ICONS.AUTOMATED,
-        },
-      ],
     },
     {
-      type: "section-gamma",
+      type: SECTIONS.GAMMA,
       color: "orange",
       paragraphs: [
         "GoTech will devise a tailored testing strategy or improve on your established QA processes that proved inefficient.",
@@ -65,7 +38,7 @@ export const QA_DEV = {
       ],
     },
     {
-      type: "section-delta",
+      type: SECTIONS.DELTA,
       color: "main",
       title: "technologies used",
       paragraphs: [
@@ -74,7 +47,7 @@ export const QA_DEV = {
       ],
     },
     {
-      type: "section-epsilon",
+      type: SECTIONS.EPSILON,
       color: "prime",
       paragraphs: [
         "GoTech teams will build a tailored automated testing framework covering your development scope and requirements.",
@@ -82,11 +55,40 @@ export const QA_DEV = {
       ],
     },
     {
-      type: "section-zeta",
+      type: SECTIONS.ZETA,
       color: "main",
       title: "case studies example",
       description:
         "We have a proven track record of building high quality solutions for customers all over the world.",
+    },
+  ],
+
+  stages: [
+    { title: "unit testing", color: COLORS.GREEN, icon: ICONS.UNIT },
+    {
+      title: "sanity & smoke testing",
+      color: COLORS.BLUE,
+      icon: ICONS.SANITY,
+    },
+    {
+      title: "cross-platform testing",
+      color: COLORS.YELLOW,
+      icon: ICONS.CROSS_PLATFORM,
+    },
+    {
+      title: "regression testing",
+      color: COLORS.ORANGE,
+      icon: ICONS.REGRESSION,
+    },
+    {
+      title: "integration testing",
+      color: COLORS.PINK,
+      icon: ICONS.INTEGRATION,
+    },
+    {
+      title: "automated testing",
+      color: COLORS.PURPLE,
+      icon: ICONS.AUTOMATED,
     },
   ],
 

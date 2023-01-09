@@ -7,7 +7,7 @@ const Points = ({ points }) => {
       <div className="points-item-line" />
       <div className="page-common-block points-wrapper">
         {points.length &&
-          points.map(({ title, count }) => {
+          points.map(({ title, count, color }) => {
             return (
               <div
                 key={title}
@@ -16,7 +16,9 @@ const Points = ({ points }) => {
                 data-aos={animations.zoomIn}
               >
                 <div className="points-item-number">{count}</div>
-                <div className="points-item-dot" />
+                <div className="points-item-dot-wrapper">
+                  <div className={`points-item-dot ${color}`} />
+                </div>
                 <p>{title}</p>
               </div>
             );
