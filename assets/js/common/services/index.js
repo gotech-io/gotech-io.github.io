@@ -34,7 +34,7 @@ export const PAGE_DETAILS = {
       color: COLORS.DEFAULT,
       title: "Why Choose Us?",
       description:
-        "All our processes are customer-oriented, designed to reduce the cost of business operations, address IT resourcing challenges, and offer you a competitive edge. We start with a deep analysis of your requirements and continue to end of project. Our experienced engineers are at your service whenever you might need support with any type of project complexity!",
+        "All our processes are customer-oriented, designed to reduce the cost of business operations, address IT resourcing challenges, and offer you a competitive edge. We start with a deep analysis of your requirements and continue to the end of the project. Our experienced engineers are at your service whenever you might need support with any type of project complexity!",
     },
 
     {
