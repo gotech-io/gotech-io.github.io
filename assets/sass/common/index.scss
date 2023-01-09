@@ -310,23 +310,20 @@ li,
 .socials {
   display: flex;
 
-  .img {
-    width: 40px;
-    height: 40px;
-    background: white;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
+  &-link {
+    font-size: 35px;
+    margin-right: $content-gap;
 
-    img {
-      width: 70%;
-      height: 70%;
-      object-fit: contain;
+    i {
+      color: $main;
+
+      &:hover {
+        color: $prime;
+      }
     }
   }
 }
+
 .lds-ellipsis {
   display: inline-block;
   position: relative;
