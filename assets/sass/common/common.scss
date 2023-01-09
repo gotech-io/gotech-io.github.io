@@ -135,11 +135,16 @@ img {
 .prime {
   background-color: $prime;
 }
-.default {
-  background-color: $default;
-}
 .additional {
   background-color: $additional;
+}
+
+.title-section {
+  text-align: center;
+  p {
+    padding-top: $content-gap;
+    font-size: 20px;
+  }
 }
 
 @media only screen and (max-width: $medium) {
@@ -170,12 +175,8 @@ img {
     font-size: 40px;
   }
 
-  .title-section {
-    text-align: center;
-    p {
-      padding-top: $content-gap;
-      font-size: 16px;
-    }
+  .title-section p {
+    font-size: 16px;
   }
 
   .home-header .home-header-background {

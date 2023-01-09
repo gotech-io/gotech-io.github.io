@@ -1,5 +1,6 @@
 .team {
   width: 100%;
+  margin-top: $title-gap;
   display: flex;
   flex-wrap: wrap;
 
@@ -35,7 +36,7 @@
       align-items: flex-end;
       background-color: $main;
       position: relative;
-      border-radius: $radius;
+      border-radius: 15px;
 
       h6 {
         font-size: 14px;

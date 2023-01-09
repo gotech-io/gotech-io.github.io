@@ -1,6 +1,7 @@
 .video {
   width: 100%;
   height: 500px;
+  margin-top: $title-gap;
   background-color: $default;
 
   iframe {
