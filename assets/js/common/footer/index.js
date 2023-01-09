@@ -5,8 +5,8 @@ export const FOOTER_INFO = [
     title: "Company",
     list: [
       { title: "About Us", link: "/#about" },
-      { title: "Services", link: "/services" },
-      { title: "Clients", link: "/clients" },
+      { title: "Services", link: "/#services" },
+      { title: "Clients", link: "/#clients" },
       { title: "Teams", link: "/#team" },
       { title: "Cases", link: "/case-studies" },
       { title: "Careers", link: "/careers/" },
