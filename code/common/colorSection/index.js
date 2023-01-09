@@ -7,7 +7,7 @@ const ColorSection = ({ color, title, description, paragraphs, children }) => {
     <div className={color}>
       <div className="color-block">
         <div className="page-common-block">
-          <TitleSection title={title} description={description} />
+          {title && <TitleSection title={title} description={description} />}
           {paragraphs && <Paragraphs paragraphs={paragraphs} />}
         </div>
         {children}

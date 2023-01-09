@@ -16,11 +16,28 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      color: white;
-      border-radius: 50%;
+      color: $main;
+      border-radius: $circle;
     }
 
     p {
+      width: 90%;
+      font-weight: 600;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .steps-item {
+    flex-wrap: wrap;
+
+    &-number {
+      margin: 10px auto;
+    }
+
+    p {
+      width: 100%;
+      text-align: center;
       font-weight: 600;
     }
   }

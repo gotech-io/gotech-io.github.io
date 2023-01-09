@@ -2,14 +2,10 @@ import React from "react";
 
 function Paragraphs({ paragraphs }) {
   return (
-    <div className="color-block-paragraphs">
+    <div className="title-section">
       {paragraphs.length &&
         paragraphs.map((par) => {
-          return (
-            <p key={par} className="color-block-description">
-              {par}
-            </p>
-          );
+          return <p key={par}>{par}</p>;
         })}
     </div>
   );

@@ -1,6 +1,6 @@
-import React from "react";
 import CareerPage from "../career-page";
 import ListItem from "../careers-list/list-item";
+import React from "react";
 
 function Mapper(props) {
   const { _ID } = props;

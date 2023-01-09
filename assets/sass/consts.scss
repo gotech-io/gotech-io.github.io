@@ -1,15 +1,19 @@
 $navbar-height: 110px !default;
-$light-color: #03fcf5;
-$light-blue: #53fffa;
 $mobile: 800px;
 $laptop: 1400px;
 $medium: 1000px;
-$dark-color: #191919;
-$font-color: #070f1a;
+$main-grid: 950px;
+
 $content-gap: 20px;
 $section-gap: 50px;
 $title-gap: 100px;
+$inner-gap: 200px;
 
-$main-grid: 950px;
-$radius: 10px;
-$circle: 50px;
+$radius: 20px;
+$circle: 50%;
+
+//delete when will be changed all UI
+$light-color: #03fcf5;
+$light-blue: #53fffa;
+$dark-color: #191919;
+$font-color: #070f1a;
