@@ -17,21 +17,21 @@ export const TIMELINE = [
   {
     title: "Major Achievements",
     description:
-      "2018 was a very successful year! We continued to grow. Opened an additional service for QA software testing. Teams have become largest, projects more interesting. Our teams start to work side by side with major global companies like Cisco, as well them working on projects from the Israeli police and govermant.",
+      "2018 was a very successful year! We continued to grow. Opened an additional service for QA software testing. Teams have become largest, projects more interesting. Our teams start to work side by side with major global companies like Cisco, as well them working on projects from the Israeli Police and Government.",
     year: 2018,
     color: COLORS.ORANGE,
   },
   {
     title: "CORONA is comme...",
     description:
-      "No Company can evolve without overcoming difficult situations and is always dependent on the world. 2019 was remembered by all te begginning of the corona and the sacrifices we had to make. We tried to retain the teams as much as possible, them switched to work remotely, many clients were vulnerable and suspended projects. Yes, it was been a tough year!",
+      "No Company can evolve without overcoming difficult situations and is always dependent on the world. 2019 was remembered by all the beginning of the corona and the sacrifices we had to make. We tried to retain the teams as much as possible, them switched to work remotely, many clients were vulnerable and suspended projects. Yes, it was been a tough year!",
     year: 2019,
     color: COLORS.YELLOW,
   },
   {
     title: "We can help rebuild our world",
     description:
-      "When the world rebuilding, it is important not to miss the moment. In 2020, many buisnesses reaized that only on the web theu can survive the pandamic and began to look for good partners. We returned in full force and start to recruit even more enployees and projects. 2019 made us stronger and now we saw exactly where to move.",
+      "When the world rebuilding, it is important not to miss the moment. In 2020, many businesses understood that only on the web then can survive the pandemic and began to look for good partners. We returned in full force and start to recruit even more employees and projects. 2019 made us stronger and now we saw exactly where to move.",
     year: 2020,
     color: COLORS.PINK,
   },
