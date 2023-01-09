@@ -31,7 +31,7 @@ export const WEB_DEV = {
     {
       type: SECTIONS.GAMMA,
       color: COLORS.YELLOW,
-      title: "First Point of Engagement with your buisnes",
+      title: "First Point of Engagement with your business",
       paragraphs: [
         "Your web app is the place that reflects what you do, your services, products, and your reputation. We help you develop end-to-end custom web applications designed to meet your specific business challenges. Leverage the next-gen technologies with our custom web application development services to build innovations that help you stand out from the crowd!",
         "Having an app is an opportunity to build a great first impression and give people assurance that you’re a modern business.",
@@ -40,7 +40,7 @@ export const WEB_DEV = {
     {
       type: SECTIONS.DELTA,
       color: COLORS.MAIN,
-      title: "technologies",
+      title: "technology stack",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals. The following web development technologies enable the creation of high-performing, fast, and advanced web applications.",
     },
@@ -50,7 +50,7 @@ export const WEB_DEV = {
       title: "You Business have a Smart Future",
       paragraphs: [
         "Web development is defined through the upcoming trends and changes in the digital world. Businesses around the globe are in a quest to build outstanding websites. If you want your business to stay ahead of the race, the smartest thing u can do is to try out innovative and brave things.",
-        "We are not afraide to experiment and provide our clients with customized, robust, and secure web applications within the stipulated time and budget.",
+        "We are not afraid to experiment and provide our clients with customized, robust, and secure web applications within the stipulated time and budget.",
       ],
     },
     {

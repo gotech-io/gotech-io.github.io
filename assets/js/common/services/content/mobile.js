@@ -46,10 +46,8 @@ export const MOBILE_DEV = {
       type: SECTIONS.EPSILON,
       color: "prime",
       title: "Device Compatibility",
-      paragraphs: [
-        "We provide complete solutions for automating your software testing processes. We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
+      description:
         "We ensure that all the applications that we develop are compatible with the device types used by our customers. iOS applications are tested on iOS and iPad devices, and Android applications are tested on popular Android phones and tablets to ensure compatibility.",
-      ],
     },
     {
       type: SECTIONS.ZETA,

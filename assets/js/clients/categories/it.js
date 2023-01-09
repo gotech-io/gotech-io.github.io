@@ -12,7 +12,7 @@ export const IT = {
   link: "/clients/it",
 
   content: {
-    title: "Our Clients on Medicine Category",
+    title: "Our Clients on Cyber & IT Category",
     description:
       "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
     clients: [

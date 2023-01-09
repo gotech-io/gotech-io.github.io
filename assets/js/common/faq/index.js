@@ -7,7 +7,7 @@ export const FAQ = [
   {
     question: "How much does software development cost?",
     answer:
-      "There are numerous aspects that contribute to the costs of custom software development which include the size of the software (the number of pages/ screens), the complexity of the software, design specifications, integration with other systems, migration of existing data, usage patterns, and so on. Depending on your requirements, we calculate all the options and create a cotract based on your capabilities and tasks.",
+      "There are numerous aspects that contribute to the costs of custom software development which include the size of the software (the number of pages/ screens), the complexity of the software, design specifications, integration with other systems, migration of existing data, usage patterns, and so on. Depending on your requirements, we calculate all the options and create a contract based on your capabilities and tasks.",
   },
   {
     question:

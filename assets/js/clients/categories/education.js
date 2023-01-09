@@ -5,21 +5,18 @@ import { CLIENT_TITLES } from "../titles";
 export const EDUCATION = {
   type: "EDUCATION",
   title: CLIENT_TITLES.EDUCATION,
-  description:
-    "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+  description: "Add Here",
   color: COLORS.BLUE,
   icon: ICONS.EDUCATION,
   link: "/clients/education",
 
   content: {
-    title: "Our Clients on Medicine Category",
-    description:
-      "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+    title: "Our Clients on Education Category",
+    description: "Add Here",
     clients: [
       {
         title: "Novotalk",
-        description:
-          "fghjlk jjgfg vcjvkjdhvj dgv fhvjhdfgvjhdg vjhdg vdfvgdjhvgdjhvg jdhfvbdjhvdjhfvjhdfgvbhjdb",
+        description: "Add Here",
         range: 5,
         clientName: "Client First",
         image: "/",
