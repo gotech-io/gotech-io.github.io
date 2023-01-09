@@ -1,35 +1,74 @@
 .color-block {
   width: 100%;
-  padding: $section-gap 0;
+  padding: $title-gap 0;
+  transition: height 0.2s;
+}
 
-  &-title {
-    color: $main;
-  }
-
-  &-description {
-    padding: $content-gap 0 0;
-    font-size: 20px;
-    color: $main;
+.green,
+.blue {
+  .color-block {
+    background: $green-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
   }
 }
 
-.green {
+.pink {
   .color-block {
-    background: $green-background;
+    background: $pink-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
+
+.yellow,
+.orange {
+  .color-block {
+    background: $orange-background;
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
+  }
+}
+
+.purple,
+.prime {
+  .color-block {
+    .title-section {
+      h4,
+      p {
+        color: $main;
+      }
+    }
   }
 }
 
 .gray {
   .color-block {
     background-color: $default;
+  }
+}
 
-    &-title {
-      color: $prime;
-    }
+.default {
+  .color-block {
+    background-color: $default;
+  }
+}
 
-    &-description {
-      color: $prime;
-    }
+.main {
+  .color-block {
+    background-color: $main;
   }
 }
 

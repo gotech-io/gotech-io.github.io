@@ -9,6 +9,18 @@
 @import "./colorSection.scss";
 @import "./steps.scss";
 @import "./parallax.scss";
+@import "./stages-cycle.scss";
+@import "./title-section.scss";
+@import "./flags.scss";
+@import "./reviews.scss";
+@import "./range.scss";
+@import "./categories.scss";
+@import "./faq.scss";
+@import "./diagram.scss";
+@import "./points.scss";
+@import "./btns.scss";
+@import "./stages-cycle.scss";
+@import "./technology";
 
 .flex-start {
   display: flex;
@@ -122,14 +134,14 @@ h4,
 h5,
 h6 {
   font-family: $headers-font;
-  color: $main-text;
+  color: $prime;
 }
 p,
 a,
 li,
 * {
   font-family: $main-font;
-  color: $main-text;
+  color: $prime;
 }
 
 .text {
@@ -298,23 +310,20 @@ li,
 .socials {
   display: flex;
 
-  .img {
-    width: 40px;
-    height: 40px;
-    background: white;
-    border-radius: 10px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-right: 20px;
+  &-link {
+    font-size: 35px;
+    margin-right: $content-gap;
 
-    img {
-      width: 70%;
-      height: 70%;
-      object-fit: contain;
+    i {
+      color: $main;
+
+      &:hover {
+        color: $prime;
+      }
     }
   }
 }
+
 .lds-ellipsis {
   display: inline-block;
   position: relative;
