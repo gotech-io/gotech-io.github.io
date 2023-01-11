@@ -1,14 +1,32 @@
 .privacy-policy {
+  background-color: $default;
+
+  &-block {
+    width: 100%;
+    height: 70px;
+    background-color: $prime;
+  }
+
+  &-wrapper {
+    padding: $title-gap;
+  }
+
   h1 {
     margin: 1.2rem 0 0.6rem;
+    font-size: 30px;
+    color: $font-color;
   }
 
   h2 {
     margin: 0.8rem 0 0.4rem;
+    font-size: 25px;
+    color: $font-color;
   }
 
   h3 {
     margin: 0.6rem 0 0.3rem;
+    font-size: 20px;
+    color: $font-color;
   }
 
   ul {
@@ -18,10 +36,6 @@
 
   p {
     margin-bottom: 1rem;
-  }
-
-  .about-grid {
-    margin-bottom: 4rem;
-    width: calc(100% - 50px);
+    color: $font-color;
   }
 }

@@ -1,4 +1,8 @@
 .title-section {
   padding: $inner-gap auto;
-  text-align: center;
+
+  p {
+    padding-top: $content-gap;
+    font-size: 20px;
+  }
 }
