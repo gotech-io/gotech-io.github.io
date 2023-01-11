@@ -1,11 +1,11 @@
 import React from "react";
-import animations from "../../../assets/js/animations";
 import { handleUrl } from "../../utils";
 
-function PrivacyPolicy({ sections, careers, topImage, _relativeURL, _ID }) {
+function PrivacyPolicy({ _relativeURL, _ID }) {
   return (
-    <div className="privacy-policy about">
-      <div className="about-grid">
+    <div className="privacy-policy">
+      <div className="privacy-policy-block"></div>
+      <div className="page-common-block privacy-policy-wrapper">
         <h1>Privacy Policy</h1>
         <hr />
         <p>Last updated: December 19, 2021</p>
