@@ -2751,25 +2751,26 @@ input {
 .marquee-wrapper {
   background: #f8f9fa;
   overflow: hidden;
-  position: relative;
 }
 
 .marquee {
-  width: 100%;
   display: flex;
-  animation-name: marquee;
-  animation-duration: 30s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-  animation-direction: alternate;
-  transform: translateX(0);
+  gap: var(--gap);
 }
-.marquee .marquee-item {
+.marquee-group {
+  min-width: 100%;
+  flex-shrink: 0;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  animation: marquee 200s linear infinite;
+}
+.marquee-group .marquee-item {
   margin: 20px;
 }
-.marquee img {
+.marquee-group img {
   width: 100px;
-  height: 100px;
+  max-height: 50px;
 }
 
 @keyframes marquee {
@@ -2778,11 +2779,6 @@ input {
   }
   to {
     transform: translateX(-100%);
-  }
-}
-@media only screen and (max-width: 800px) {
-  .marquee-wrapper {
-    display: none;
   }
 }
 .footer {
