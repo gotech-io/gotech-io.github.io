@@ -1,3 +1,4 @@
+import BlobButton from "../../../common/btns/blob";
 import Link from "../../../common/btns/link";
 import Mockup from "../../../common/mockup";
 import React from "react";
@@ -23,7 +24,7 @@ function Right({ type }) {
 
             <div className="case-studies-content-wrapper">
               <Tags tags={tags} count="2" />
-              <Link url={url} btnText={btnText} />
+              <BlobButton url={url} btnText={btnText} />
             </div>
           </div>
 

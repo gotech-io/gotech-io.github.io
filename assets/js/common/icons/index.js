@@ -37,7 +37,7 @@ export const ICONS = {
   GOVERNMENT: "fa-solid fa-building-shield",
 
   STAR: "fa-solid fa-star",
-  ARROW_R: "fa-solid fa-arrow-right",
+  ARROW_R: "fa-solid fa-chevron-right",
   USER: "fa-solid fa-user",
 
   UNIT: "fa-solid fa-list-check",
