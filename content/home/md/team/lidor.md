@@ -5,4 +5,4 @@ image: /assets/images/home/team/lidor.jpg
 
 ###### Lidor Itzhari
 
-COO
+CEO
