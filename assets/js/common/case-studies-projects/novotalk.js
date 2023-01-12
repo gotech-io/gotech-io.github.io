@@ -1,4 +1,5 @@
 import { COLORS } from "../colors";
+import { ICONS } from "../icons";
 
 export const NOVOTALK = {
   type: "NOVOTALK",
@@ -80,6 +81,10 @@ export const NOVOTALK = {
     },
   ],
 
-  tags: ["CSS", "React", "AWS"],
+  tags: [
+    { title: "CSS", icon: ICONS.CSS },
+    { title: "React", icon: ICONS.REACT },
+    { title: "AWS", icon: ICONS.AWS },
+  ],
   button: { url: "/case-studies-project/novotalk", btnText: "see more" },
 };

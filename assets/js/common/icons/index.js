@@ -48,4 +48,11 @@ export const ICONS = {
   AUTOMATED: "fa-brands fa-chromecast",
   PROGRESS: "fa-solid fa-bars-progress",
   RESTORE: "fa-solid fa-window-restore",
+
+  CSS: "fa-brands fa-css3-alt",
+  REACT: "fa-brands fa-react",
+  ANDROID: "fa-brands fa-react",
+  IOS: "fa-brands fa-apple",
+  AWS: "fa-brands fa-aws",
+  JAVA: "fa-brands fa-java",
 };

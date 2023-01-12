@@ -22,7 +22,7 @@ function Right({ type }) {
             <p className="case-studies-content-description">{description}</p>
 
             <div className="case-studies-content-wrapper">
-              <Tags tags={tags} count="3" />
+              <Tags tags={tags} count="2" />
               <Link url={url} btnText={btnText} />
             </div>
           </div>

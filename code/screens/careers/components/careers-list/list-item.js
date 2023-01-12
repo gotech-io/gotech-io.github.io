@@ -1,8 +1,7 @@
 import React from "react";
 import animations from "../../../../../assets/js/animations";
-import Tags from "../../../../common/tags";
 
-function LisItem({ folderName, title, tags, active }) {
+function LisItem({ folderName, title, active }) {
   return active ? (
     <li className="careers-list-item" data-aos={animations.up}>
       <a href={`/careers/${folderName}`}>

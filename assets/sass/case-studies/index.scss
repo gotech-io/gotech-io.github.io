@@ -62,18 +62,10 @@
       display: flex;
       align-items: center;
 
-      &-tags {
-        width: 100%;
-        display: flex;
-
-        &-item {
-          color: $additional;
-          margin-right: 10px;
-          padding: 5px;
-          border: 1px solid $additional;
-          border-radius: 5px;
-          font-size: 12px;
-        }
+      .tags-item {
+        background-color: $main;
+        color: $additional;
+        border: none;
       }
     }
   }

@@ -1,4 +1,5 @@
 import { COLORS } from "../colors";
+import { ICONS } from "../icons";
 
 export const MEMOMI = {
   type: "MEMOMI",
@@ -72,6 +73,15 @@ export const MEMOMI = {
     },
   ],
 
-  tags: ["iOS", "Android", "ML", "AR", "SDK"],
+  tags: [
+    { title: "iOS", icon: ICONS.IOS },
+    {
+      title: "Android",
+      image: "/assets/images/technologies/icons/android.png",
+    },
+    { title: "ML", image: "/assets/images/technologies/icons/ml.png" },
+    { title: "AR", image: "/assets/images/technologies/icons/ar.png" },
+    { title: "SDK", image: "/assets/images/technologies/icons/sdk.png" },
+  ],
   button: { url: "/case-studies-project/memomi", btnText: "see more" },
 };
