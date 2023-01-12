@@ -9,7 +9,7 @@ list:
   - assets/images/home/clients/ownbackup.png
   - assets/images/home/clients/audiocodes.png
   - assets/images/home/clients/ai21.png
-  - assets/images/home/clients/one-zero.png
+  - assets/images/home/clients/oneZero.png
   - assets/images/home/clients/applied.png
 
   - assets/images/home/clients/orbs.png
