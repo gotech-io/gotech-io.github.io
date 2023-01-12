@@ -1,4 +1,5 @@
 import { COLORS } from "../colors";
+import { ICONS } from "../icons";
 
 export const BASE = {
   type: "BASE",
@@ -77,6 +78,16 @@ export const BASE = {
     },
   ],
 
-  tags: ["Java", "Cucumber", "Playwright"],
+  tags: [
+    { title: "Java", icon: ICONS.JAVA },
+    {
+      title: "Cucumber",
+      image: "/assets/images/technologies/icons/cucumber.png",
+    },
+    {
+      title: "Playwright",
+      image: "/assets/images/technologies/icons/playwright.jpeg",
+    },
+  ],
   button: { url: "/case-studies-project/base", btnText: "see more" },
 };
