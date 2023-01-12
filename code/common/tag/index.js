@@ -2,13 +2,29 @@ import React from "react";
 
 const Tags = ({ tags, count }) => {
   return (
-    <div className="case-studies-content-wrapper-tags">
+    <div className="tags">
       {tags.length &&
-        tags.map((tag, i) => {
+        tags.map((item, i) => {
+          const { title, icon, image } = item;
           if (i < count) {
             return (
-              <div key={tag} className="case-studies-content-wrapper-tags-item">
-                {tag}
+              <div key={item}>
+                {icon || image ? (
+                  <div key={title} className="tags-item">
+                    {icon ? (
+                      <i className={icon} />
+                    ) : (
+                      <div className="tags-item-image">
+                        <img src={image} />
+                      </div>
+                    )}
+                    <p> {title}</p>
+                  </div>
+                ) : (
+                  <div key={item} className="tags-item">
+                    <p> {item}</p>
+                  </div>
+                )}
               </div>
             );
           }

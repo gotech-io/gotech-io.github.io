@@ -1,3 +1,4 @@
+import BlobButton from "../../../common/btns/blob";
 import Link from "../../../common/btns/link";
 import Mockup from "../../../common/mockup";
 import React from "react";
@@ -18,12 +19,12 @@ function Right({ type }) {
             data-aos-anchor-placement="top-center"
             data-aos={animations?.zoomUp}
           >
-            <h5>{title}</h5>
+            <h3>{title}</h3>
             <p className="case-studies-content-description">{description}</p>
 
             <div className="case-studies-content-wrapper">
-              <Tags tags={tags} count="3" />
-              <Link url={url} btnText={btnText} />
+              <Tags tags={tags} count="2" />
+              <BlobButton url={url} btnText={btnText} />
             </div>
           </div>
 
