@@ -1,12 +1,10 @@
 ---
 layout: screens/home/sections/team/index
 list:
-  - yaniv.md
-  - doron.md
   - lidor.md
+  - doron.md
   - assaf.md
   - giora.md
-  - evgeny.md
   - raz.md
   - mor.md
 
