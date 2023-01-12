@@ -33,30 +33,24 @@
 
   &-content {
     &-left {
-      width: 60%;
+      width: 50%;
       padding: $section-gap;
       position: absolute;
       bottom: 0;
       right: 0;
-      background-color: $main;
+      background-color: $default;
       border-radius: $radius;
-      box-shadow: $shadow;
-      -webkit-box-shadow: $shadow;
-      -moz-box-shadow: $shadow;
     }
 
     &-right {
-      width: 60%;
+      width: 50%;
       padding: $section-gap;
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 10;
-      background-color: $main;
+      background-color: $default;
       border-radius: $radius;
-      box-shadow: $shadow;
-      -webkit-box-shadow: $shadow;
-      -moz-box-shadow: $shadow;
     }
 
     &-description {
