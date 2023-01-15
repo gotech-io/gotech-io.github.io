@@ -4,10 +4,7 @@
   &-item {
     margin: $content-gap 0;
     display: flex;
-    justify-content: center;
     align-items: center;
-    color: $main;
-    border-radius: $circle;
 
     &-number {
       width: 30px;

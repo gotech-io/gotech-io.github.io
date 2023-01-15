@@ -12,14 +12,9 @@
     border-radius: 5px;
 
     p {
+      margin-left: 5px;
       color: $additional;
       font-size: 12px;
-    }
-
-    &-icon {
-      p {
-        margin-left: 5px;
-      }
     }
 
     &-image {

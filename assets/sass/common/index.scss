@@ -9,9 +9,6 @@
 @import "./colorSection.scss";
 @import "./steps.scss";
 @import "./parallax.scss";
-@import "./timeline.scss";
-@import "./video.scss";
-@import "./team.scss";
 @import "./stages-cycle.scss";
 @import "./title-section.scss";
 @import "./flags.scss";
@@ -21,6 +18,7 @@
 @import "./faq.scss";
 @import "./diagram.scss";
 @import "./points.scss";
+@import "./btns.scss";
 @import "./stages-cycle.scss";
 @import "./technology";
 
@@ -129,7 +127,7 @@ $component-width: calc(100% - 100px);
 }
 
 $main-font: "Poppins", sans-serif;
-$headers-font: "Poppins", sans-serif;
+$headers-font: "Heebo", sans-serif;
 
 h3,
 h4,
