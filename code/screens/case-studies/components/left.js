@@ -1,5 +1,4 @@
 import BlobButton from "../../../common/btns/blob";
-import Link from "../../../common/btns/link";
 import Mockup from "../../../common/mockup";
 import React from "react";
 import Tags from "../../../common/tags";
