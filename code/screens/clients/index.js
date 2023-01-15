@@ -1,4 +1,5 @@
 import ListCategories from "../../common/categories";
+import ListClients from "./listClients";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import { CLIENTS_DETAILS } from "../../../assets/js/clients";
@@ -9,6 +10,10 @@ const subjects = [
   {
     type: SECTIONS.BETA,
     content: <ListCategories categories={listCategories} />,
+  },
+  {
+    type: SECTIONS.GAMMA,
+    content: <ListClients listCategories={listCategories} />,
   },
 ];
 

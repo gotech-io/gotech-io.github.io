@@ -39,6 +39,15 @@
       }
     }
   }
+
+  &-list {
+    margin: $content-gap auto;
+
+    h4 {
+      margin-bottom: $content-gap;
+      color: $main;
+    }
+  }
 }
 
 @media only screen and (max-width: $medium) {

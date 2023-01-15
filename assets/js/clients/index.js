@@ -21,5 +21,9 @@ export const CLIENTS_DETAILS = {
       description:
         "Access domain expertise and market knowledge to help your business evolve and scale with a relevant tech solution.",
     },
+    {
+      type: SECTIONS.GAMMA,
+      color: COLORS.PRIME,
+    },
   ],
 };

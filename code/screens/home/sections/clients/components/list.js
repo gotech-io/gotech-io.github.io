@@ -1,6 +1,5 @@
 import React from "react";
 import animations from "../../../../../../assets/js/animations";
-import Image from "../../../../../common/img";
 
 const List = ({ list }) => {
   return (

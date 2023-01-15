@@ -11,6 +11,11 @@ export const CRYPTOCURRENCY = {
   icon: ICONS.CRYPTOCURRENCY,
   link: "/clients/cryptocurrency",
 
+  clients: [
+    "/assets/images/home/clients/walmart.png",
+    "/assets/images/home/clients/qualcomm.png",
+  ],
+
   content: {
     title: "Our Clients on Finance & Cryptocurrency Category",
     description:
