@@ -81,5 +81,5 @@ export const AI21LABS = {
     },
     { title: "Mocha", image: "/assets/images/technologies/icons/mocha.png" },
   ],
-  button: { url: "/case-studies-project/ai21labs", btnText: "see more" },
+  button: { url: "/case-studies-project/labs", btnText: "see more" },
 };
