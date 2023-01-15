@@ -3,7 +3,7 @@ import SimpleTag from "./simpleTag";
 
 const IconTag = ({ title, icon, image }) => {
   return (
-    <div className="tags-item">
+    <div className="tags-item tags-item-icon">
       {icon ? (
         <i className={icon} />
       ) : (
