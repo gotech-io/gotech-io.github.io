@@ -7,7 +7,7 @@ function TimelineItem({ title, description, number, year, color, reverse }) {
     <div
       className="timeline-item"
       style={{ flexDirection: reverse && "row-reverse" }}
-      data-aos-anchor-placement="top-center"
+      data-aos-anchor-placement="top"
       data-aos={animations.zoomInUp}
     >
       <div className="timeline-item-details">

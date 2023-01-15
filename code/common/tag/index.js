@@ -1,36 +1,17 @@
+import IconTag from "./iconTag";
 import React from "react";
+import SimpleTag from "./simpleTag";
 
-const Tags = ({ tags, count }) => {
+const Tag = ({ item }) => {
   return (
-    <div className="tags">
-      {tags.length &&
-        tags.map((item, i) => {
-          const { title, icon, image } = item;
-          if (i < count) {
-            return (
-              <div key={item}>
-                {icon || image ? (
-                  <div key={title} className="tags-item">
-                    {icon ? (
-                      <i className={icon} />
-                    ) : (
-                      <div className="tags-item-image">
-                        <img src={image} />
-                      </div>
-                    )}
-                    <p> {title}</p>
-                  </div>
-                ) : (
-                  <div key={item} className="tags-item">
-                    <p> {item}</p>
-                  </div>
-                )}
-              </div>
-            );
-          }
-        })}
+    <div>
+      {item.icon || item.image ? (
+        <IconTag title={item.title} icon={item.icon} image={item.image} />
+      ) : (
+        <SimpleTag item={item} />
+      )}
     </div>
   );
 };
 
-export default Tags;
+export default Tag;

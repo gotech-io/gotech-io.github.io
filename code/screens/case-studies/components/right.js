@@ -1,8 +1,7 @@
 import BlobButton from "../../../common/btns/blob";
-import Link from "../../../common/btns/link";
 import Mockup from "../../../common/mockup";
 import React from "react";
-import Tags from "../../../common/tag";
+import Tags from "../../../common/tags";
 import animations from "../../../../assets/js/animations";
 import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 
