@@ -1,4 +1,5 @@
 import { COLORS } from "../colors";
+import { ICONS } from "../icons";
 
 export const ORBS = {
   type: "ORBS",
@@ -72,6 +73,14 @@ export const ORBS = {
       link: "/service/web/#technologies",
     },
   ],
-  tags: ["React", "Cuttlebelle", "Redux"],
+  tags: [
+    {
+      title: "Cuttlebelle",
+      image: "/assets/images/technologies/icons/cuttlebelle.png",
+    },
+    { title: "React", icon: ICONS.REACT },
+    { title: "Redux", image: "/assets/images/technologies/icons/redux.png" },
+  ],
+
   button: { url: "/case-studies-project/orbs", btnText: "see more" },
 };

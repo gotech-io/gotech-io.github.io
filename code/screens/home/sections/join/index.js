@@ -1,7 +1,8 @@
 import React from "react";
+import Socials from "../../../../common/socials";
 import animations from "../../../../../assets/js/animations";
 
-const Join = ({ _body, animation, socials }) => {
+const Join = ({ _body, animation }) => {
   return (
     <div className="home-join">
       <div className="home-join-flex">
@@ -18,7 +19,7 @@ const Join = ({ _body, animation, socials }) => {
           data-aos-anchor-placement="center-bottom"
         >
           {_body}
-          {socials}
+          <Socials />
         </div>
       </div>
     </div>

@@ -12,10 +12,14 @@ h2 {
   font-weight: 600;
 }
 
+h3 {
+  font-size: 30px;
+  height: 30px;
+}
+
 h4 {
   font-size: 25px;
   font-weight: 600px;
-  text-transform: uppercase;
 }
 
 h5 {
@@ -81,13 +85,11 @@ a {
 
   &-title {
     font-size: 60px;
-    text-align: center;
     color: $main;
   }
 
   &-description {
     font-size: 20px;
-    text-align: center;
     color: $main;
   }
 
@@ -137,14 +139,6 @@ img {
 }
 .additional {
   background-color: $additional;
-}
-
-.title-section {
-  text-align: center;
-  p {
-    padding-top: $content-gap;
-    font-size: 20px;
-  }
 }
 
 @media only screen and (max-width: $medium) {

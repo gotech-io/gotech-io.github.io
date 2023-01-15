@@ -1,4 +1,5 @@
 import { COLORS } from "../colors";
+import { ICONS } from "../icons";
 
 export const AI21LABS = {
   type: "AI21LABS",
@@ -73,6 +74,12 @@ export const AI21LABS = {
     },
   ],
 
-  tags: ["Playwright", "Mocha"],
+  tags: [
+    {
+      title: "Playwright",
+      image: "/assets/images/technologies/icons/playwright.jpeg",
+    },
+    { title: "Mocha", image: "/assets/images/technologies/icons/mocha.png" },
+  ],
   button: { url: "/case-studies-project/ai21labs", btnText: "see more" },
 };

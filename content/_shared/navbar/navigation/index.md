@@ -2,13 +2,13 @@
 layout: common/navbar/components/navigation/index
 links:
   - name: about
-    value: /about
+    value: /#about
 
   - name: services
-    value: /services
+    value: /#services
 
   - name: clients
-    value: /clients
+    value: /#clients
 
   - name: team
     value: /about/#team

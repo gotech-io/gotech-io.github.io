@@ -1,30 +1,29 @@
 .tags {
+  width: 100%;
   display: flex;
-  align-items: center;
-  flex-wrap: wrap;
-  &-tag {
-    background: #eaeaec;
-    margin-bottom: 10px;
-    height: 32px;
-    padding: 0 18px;
-    border-radius: 23px;
+
+  &-item {
+    height: 40px;
     margin-right: 10px;
-    font-size: 0.875rem;
+    padding: 5px;
     display: flex;
     align-items: center;
-    justify-content: center;
-    font-weight: 300;
-    color: #9494a3;
-    &:last-child {
-      margin-right: 0px;
-    }
-  }
-}
+    border: 1px solid $additional;
+    border-radius: 5px;
 
-@media only screen and (max-width: $mobile) {
-  .tags {
-    &-tag {
-      font-size: 0.75rem;
+    p {
+      margin-left: 5px;
+      color: $additional;
+      font-size: 12px;
+    }
+
+    &-image {
+      width: 20px;
+      height: 20px;
+    }
+
+    i {
+      font-size: 20px;
     }
   }
 }

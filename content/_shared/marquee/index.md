@@ -1,27 +1,43 @@
 ---
 layout: common/marquee/index
 marquee:
-  - /assets/images/home/clients/altshuler.png
-  - /assets/images/home/clients/amdocs-logo.png
-  - /assets/images/home/clients/applied.png
-  - /assets/images/home/clients/digibank.png
-  - /assets/images/home/clients/audiocodes.png
-  - /assets/images/home/clients/sqream.png
-  - /assets/images/home/clients/ownbackup.png
-  - /assets/images/home/clients/uveye.png
-  - /assets/images/home/clients/pelephone.png
-  - /assets/images/home/clients/ai21.png
+  - /assets/images/home/clients/solebit.png
+  - /assets/images/home/clients/hp.svg
+  - /assets/images/home/clients/cisco.svg
   - /assets/images/home/clients/google.png
   - /assets/images/home/clients/walmart.png
   - /assets/images/home/clients/qualcomm.png
   - /assets/images/home/clients/cognyte.png
+  - /assets/images/home/clients/varonis.png
+  - /assets/images/home/clients/ownbackup.png
+  - /assets/images/home/clients/audiocodes.png
+  - /assets/images/home/clients/ai21.png
+  - /assets/images/home/clients/oneZero.png
+  - /assets/images/home/clients/applied.png
+  - /assets/images/home/clients/amdocs-logo.png
   - /assets/images/home/clients/orbs.png
+  - /assets/images/home/clients/augury.png
+  - /assets/images/home/clients/rewire.png
+  - /assets/images/home/clients/nsogroup.png
+  - /assets/images/home/clients/salesforce.png
+  - /assets/images/home/clients/mellanox.png
+  - /assets/images/home/clients/cybereason.png
+  - /assets/images/home/clients/memomi.png
+  - /assets/images/home/clients/solebit.png
+  - /assets/images/home/clients/police.png
+  - /assets/images/home/clients/migdal.png
+  - /assets/images/home/clients/navy.png
+  - /assets/images/home/clients/sqream.png
+  - /assets/images/home/clients/uveye.png
+  - /assets/images/home/clients/pelephone.png
   - /assets/images/home/clients/cellwize.png
   - /assets/images/home/clients/noname.svg
   - /assets/images/home/clients/scopio.png
   - /assets/images/home/clients/brainlab.png
   - /assets/images/home/clients/kazuar.png
   - /assets/images/home/clients/namogoo.png
+  - /assets/images/home/clients/zim.png
+  - /assets/images/home/clients/altshuler.png
   - /assets/images/home/clients/carwiz.png
   - /assets/images/home/clients/telicomm.png
   - /assets/images/home/clients/surecomp.png
@@ -29,20 +45,13 @@ marquee:
   - /assets/images/home/clients/mimun.png
   - /assets/images/home/clients/crowdvocate.png
   - /assets/images/home/clients/cellcom.png
-  - /assets/images/home/clients/migdal.png
   - /assets/images/home/clients/inspekto.png
   - /assets/images/home/clients/pmo.png
-  - /assets/images/home/clients/zim.png
-  - /assets/images/home/clients/police.png
   - /assets/images/home/clients/renuar.png
-  - /assets/images/home/clients/salesforce.png
   - /assets/images/home/clients/weissbeerger.png
   - /assets/images/home/clients/ustglobal.png
   - /assets/images/home/clients/stilyoapps.png
-  - /assets/images/home/clients/cisco.svg
   - /assets/images/home/clients/earlysense.png
-  - /assets/images/home/clients/mellanox.png
-  - /assets/images/home/clients/cybereason.png
   - /assets/images/home/clients/tase.png
   - /assets/images/home/clients/vasona.png
   - /assets/images/home/clients/ca.png
@@ -57,19 +66,15 @@ marquee:
   - /assets/images/home/clients/vulcan.png
   - /assets/images/home/clients/clicksoftware.png
   - /assets/images/home/clients/geoquant.png
-  - /assets/images/home/clients/hp.svg
   - /assets/images/home/clients/infinityco.png
   - /assets/images/home/clients/iso.png
   - /assets/images/home/clients/klh.png
   - /assets/images/home/clients/lightico.png
   - /assets/images/home/clients/liusto.png
   - /assets/images/home/clients/lusha.png
-  - /assets/images/home/clients/memomi.png
   - /assets/images/home/clients/menora.png
   - /assets/images/home/clients/muvingapp.png
   - /assets/images/home/clients/mypermissions.png
-  - /assets/images/home/clients/nsogroup.png
-  - /assets/images/home/clients/navy.png
   - /assets/images/home/clients/odo.png
   - /assets/images/home/clients/pomicell.png
   - /assets/images/home/clients/promo.png
@@ -78,7 +83,6 @@ marquee:
   - /assets/images/home/clients/sendajob.png
   - /assets/images/home/clients/roojoom.png
   - /assets/images/home/clients/riskified.png
-  - /assets/images/home/clients/solebit.png
   - /assets/images/home/clients/slatch.png
   - /assets/images/home/clients/starttech.png
   - /assets/images/home/clients/systematics.png
