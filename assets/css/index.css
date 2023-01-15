@@ -398,9 +398,11 @@ img {
   border-radius: 5px;
 }
 .tags-item p {
-  margin-left: 5px;
   color: #c2c2c2;
   font-size: 12px;
+}
+.tags-item-icon p {
+  margin-left: 5px;
 }
 .tags-item-image {
   width: 20px;
