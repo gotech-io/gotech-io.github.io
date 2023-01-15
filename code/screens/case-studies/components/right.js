@@ -23,7 +23,7 @@ function Right({ type }) {
 
             <div className="case-studies-content-wrapper">
               <Tags tags={tags} count="2" />
-              <BlobButton url={url} btnText={btnText} />
+              <BlobButton link={url} btnText={btnText} />
             </div>
           </div>
 
