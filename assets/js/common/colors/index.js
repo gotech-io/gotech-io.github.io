@@ -9,4 +9,5 @@ export const COLORS = {
   PRIME: "prime",
   MAIN: "main",
   DEFAULT: "default",
+  ADDITIONAL: "additional",
 };
