@@ -9,7 +9,7 @@ function ListReviews({ content, color }) {
   return (
     <div>
       {clients.length ? (
-        <div>
+        <div className="page-common-block">
           <TitleSection title={title} description={description} />
           {clients.map(({ title, description, range, clientName }, i) => {
             return (
@@ -26,7 +26,7 @@ function ListReviews({ content, color }) {
           })}
         </div>
       ) : (
-        <TitleSection title={isListEmpty} />
+        <TitleSection className="page-common-block" title={isListEmpty} />
       )}
     </div>
   );

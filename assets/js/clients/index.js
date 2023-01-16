@@ -9,21 +9,10 @@ export const CLIENTS_DETAILS = {
   sections: [
     {
       type: SECTIONS.ALPHA,
-      color: COLORS.GREEN,
-      title: "Expertise & Competencies",
-      description:
-        "With our technical know-how and experience engineering sophisticated IT systems, we can help you achieve your business objectives in tune with your time, budget, and expectations.",
-    },
-    {
-      type: SECTIONS.BETA,
-      color: COLORS.GRAY,
+      color: COLORS.MAIN,
       title: "Please choose one interesting of all Industries!",
       description:
         "Access domain expertise and market knowledge to help your business evolve and scale with a relevant tech solution.",
-    },
-    {
-      type: SECTIONS.GAMMA,
-      color: COLORS.PRIME,
     },
   ],
 };

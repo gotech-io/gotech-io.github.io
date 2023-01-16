@@ -1,11 +1,6 @@
 .clients {
   position: relative;
 
-  .gray .color-block {
-    height: 320px;
-    margin-bottom: $inner-gap;
-  }
-
   &-categories-wrapper {
     .section-alpha {
       .color-block {
@@ -40,12 +35,17 @@
     }
   }
 
-  &-list {
-    margin: $content-gap auto;
+  &-list-wrapper {
+    margin: $section-gap auto;
+    display: flex;
 
-    h4 {
-      margin-bottom: $content-gap;
-      color: $main;
+    .home-clients-list {
+      margin-left: $section-gap;
+
+      &-item {
+        width: 150px;
+        background-color: $default;
+      }
     }
   }
 }

@@ -11,10 +11,7 @@ export const SHOPPING = {
   icon: ICONS.SHOPPING,
   link: "/clients/shopping",
 
-  clients: [
-    "/assets/images/home/clients/walmart.png",
-    "/assets/images/home/clients/qualcomm.png",
-  ],
+  clients: ["/assets/images/home/clients/walmart.png"],
 
   content: {
     title: "Our Clients on Commerce & Retail Category",

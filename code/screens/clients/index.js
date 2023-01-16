@@ -8,11 +8,7 @@ import { SECTIONS } from "../../../assets/js/common/sections";
 
 const subjects = [
   {
-    type: SECTIONS.BETA,
-    content: <ListCategories categories={listCategories} />,
-  },
-  {
-    type: SECTIONS.GAMMA,
+    type: SECTIONS.ALPHA,
     content: <ListClients listCategories={listCategories} />,
   },
 ];
