@@ -21,7 +21,7 @@
 
     &-wrapper {
       width: 49%;
-      height: 250px;
+      height: 300px;
       margin: 10px 0;
     }
 
@@ -32,10 +32,8 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      text-align: center;
-      background-color: $main;
+      background-color: $default;
       border-radius: $radius;
-      box-shadow: $shadow;
       transition: background-color 0.5s;
       cursor: pointer;
 
@@ -47,17 +45,17 @@
         flex-wrap: wrap;
 
         h6 {
-          width: 90%;
+          width: 100%;
           margin: 0 auto;
           color: $prime;
           text-transform: uppercase;
-          font-size: 40px;
+          font-size: 25px;
         }
 
         p {
           width: 100%;
           margin: $content-gap auto;
-          display: none;
+          font-size: 16px;
         }
 
         &-btn {
@@ -69,7 +67,7 @@
             margin: 0;
 
             a {
-              color: $main;
+              color: $prime;
             }
           }
 
@@ -85,18 +83,15 @@
       }
 
       &:hover {
-        background: $prime;
+        background-color: $prime;
 
-        .services-content-item-info {
-          h6 {
-            display: none;
-          }
+        h6,
+        p {
+          color: $main;
+        }
 
-          p {
-            font-size: 16px;
-            color: $main;
-            display: block;
-          }
+        .services-content-item-info-btn .button-arrow-wrapper a {
+          color: $main;
         }
       }
 
