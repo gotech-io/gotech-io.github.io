@@ -14,9 +14,9 @@ const HomeHeader = ({ title, subTitle, description, button }) => {
               {title}
             </h1>
 
-            <h2 data-aos={animations.up} data-aos-delay="250">
+            <h1 data-aos={animations.up} data-aos-delay="250">
               {subTitle}
-            </h2>
+            </h1>
 
             <p data-aos={animations.up} data-aos-delay="250">
               {description}
