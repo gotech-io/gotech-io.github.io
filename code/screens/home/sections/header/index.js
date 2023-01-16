@@ -2,26 +2,26 @@ import Blobs from "./components/blobs";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const HomeHeader = ({ title, sub_title, description, button }) => {
+const HomeHeader = ({ title, subTitle, description, button }) => {
   return (
     <div className="home-header">
       <Blobs />
 
       <div className="home-header-main">
-        <div className="page-common-block">
-          <di className="home-header-main-content">
+        <div>
+          <div className="home-header-main-content">
             <h1 data-aos={animations.up} data-aos-delay="100">
               {title}
             </h1>
 
             <h2 data-aos={animations.up} data-aos-delay="250">
-              {sub_title}
+              {subTitle}
             </h2>
 
             <p data-aos={animations.up} data-aos-delay="250">
               {description}
             </p>
-          </di>
+          </div>
           {button}
         </div>
       </div>
