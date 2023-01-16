@@ -4,9 +4,10 @@ import { SECTIONS } from "../../sections";
 
 export const MOBILE_DEV = {
   title: "Mobile Development",
-  details: "Mobile app development allows your business to be at hand always",
+  details:
+    "Boost your mobile application development with our in-house team of experts.",
   description:
-    "Mobile app development allows your business to be at hand always",
+    "Mobile app development is an ongoing process of a constant, iterative effort to make your product better and better. Our mobile development team of experts will help you build smart business solutions and develop state-of-the-art mobile apps with ease.",
   url: "/service/mobile",
   color: COLORS.BLUE,
 

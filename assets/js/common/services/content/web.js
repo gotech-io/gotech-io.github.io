@@ -5,9 +5,9 @@ import { SECTIONS } from "../../sections";
 export const WEB_DEV = {
   title: "Web Development",
   details:
-    "Web teams to be responsible for the coding, innovative design and layout of the website",
+    "We provide a full range of services to create best-in-class software solutions based on your needs.",
   description:
-    "Web teams to be responsible for the coding, innovative design and layout of the website. Web developers responsibilities include building the website from concept all the way to completion.",
+    "Benefit from our highly experienced specialists in Full-Stack development. As a top software development company, we have the expertise to create customized solutions with cutting-edge technology that are both technically advanced and easy to use.",
   url: "/service/web",
   color: COLORS.GREEN,
 

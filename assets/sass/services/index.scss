@@ -44,17 +44,20 @@
         align-content: space-between;
         flex-wrap: wrap;
 
+        &-block {
+          height: 100px;
+        }
+
         h6 {
           width: 100%;
           margin: 0 auto;
           color: $prime;
-          text-transform: uppercase;
           font-size: 25px;
         }
 
         p {
           width: 100%;
-          margin: $content-gap auto;
+          margin: 0 auto;
           font-size: 16px;
         }
 
@@ -185,9 +188,16 @@
       height: auto;
     }
 
-    &-content-item-info h6 {
-      font-size: 20px;
-      margin-top: $content-gap;
+    &-content-item-info {
+      h6 {
+        font-size: 20px;
+        margin-top: $content-gap;
+      }
+
+      &-block {
+        height: auto;
+        margin-bottom: $content-gap;
+      }
     }
   }
 

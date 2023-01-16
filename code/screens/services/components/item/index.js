@@ -3,7 +3,7 @@ import React from "react";
 import { ICONS } from "../../../../../assets/js/common/icons";
 import { SERVICES } from "../../../../../assets/js/common/services/content";
 
-const textBtn = "read more";
+const textBtn = "more";
 
 const ItemServices = ({ entity }) => {
   const { title, details, url, color } = SERVICES[entity];
@@ -13,8 +13,10 @@ const ItemServices = ({ entity }) => {
         <i className={ICONS[entity]} />
       </div>
 
-      <h6>{title}</h6>
-      <p>{details}</p>
+      <div className="services-content-item-info-block">
+        <h6>{title}</h6>
+        <p>{details}</p>
+      </div>
 
       <div className="services-content-item-info-btn">
         <ArrowButton link={url} textBtn={textBtn} color={color} />
