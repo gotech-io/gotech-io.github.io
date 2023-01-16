@@ -13,18 +13,17 @@ const blobs = [
   },
 ];
 
-const Blobs = ({ orangeSize, greenSize }) => {
+const Blobs = () => {
   return (
     <div className="home-header-background">
       {blobs.map((blob) => {
         const { type, className, src } = blob;
-        const size = type === "orange" ? orangeSize : greenSize;
         return (
           <div key={type} className={className}>
             <lottie-player
               src={src}
               background="transparent"
-              style={{ width: `${size}px`, height: `${size}px` }}
+              style={{ width: "100%", height: "100%" }}
               speed="1"
               loop
               autoplay
