@@ -10,6 +10,11 @@ export const EDUCATION = {
   icon: ICONS.EDUCATION,
   link: "/clients/education",
 
+  clients: [
+    "/assets/images/home/clients/walmart.png",
+    "/assets/images/home/clients/qualcomm.png",
+  ],
+
   content: {
     title: "Our Clients on Education Category",
     description: "Add Here",

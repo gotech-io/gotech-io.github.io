@@ -11,6 +11,11 @@ export const GOVERNMENT = {
   icon: ICONS.GOVERNMENT,
   link: "/clients/government",
 
+  clients: [
+    "/assets/images/home/clients/walmart.png",
+    "/assets/images/home/clients/qualcomm.png",
+  ],
+
   content: {
     title: "Our Clients on Government Category",
     description:

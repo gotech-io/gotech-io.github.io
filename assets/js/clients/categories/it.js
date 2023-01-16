@@ -11,6 +11,11 @@ export const IT = {
   icon: ICONS.IT,
   link: "/clients/it",
 
+  clients: [
+    "/assets/images/home/clients/walmart.png",
+    "/assets/images/home/clients/qualcomm.png",
+  ],
+
   content: {
     title: "Our Clients on Cyber & IT Category",
     description:
