@@ -1,9 +1,9 @@
 import { COLORS } from "../colors";
 
 export const PAGE_DETAILS = {
-  title: "About our Abilities",
+  title: "Services",
   description:
-    "GoTech Group provides state-of-the-art services, including highly qualified experts in all areas of infrastructure and development.",
+    "Whether you’re looking to build an application from scratch or upgrade an existing product, we can help you find a perfect solution for all of your technological needs.",
 
   sections: [
     {

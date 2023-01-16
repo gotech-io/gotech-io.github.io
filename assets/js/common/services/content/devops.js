@@ -4,9 +4,10 @@ import { SECTIONS } from "../../sections";
 
 export const DEVOPS_DEV = {
   title: "DevOps",
-  details: "Choose smart development and upload your business to cloud",
+  details:
+    "Boost the efficiency of your tech and business processes with our professional DevOps engineers.",
   description:
-    "DevOps is much more than a process that facilitates coordination among development teams. Choose smart development and upload your business to cloud.",
+    "We work with you to leverage the latest technologies and DevOps methodologies so that we can create sustainable value for your organization. We have helped businesses of all sizes, from startups to established companies adapt in today's changing market environments and deliver innovative solutions quickly and seamlessly.",
   url: "/service/devops",
   color: COLORS.PINK,
 
