@@ -274,7 +274,7 @@ li,
 
   text-transform: uppercase;
   cursor: pointer;
-  border: solid 2px $green;
+  border: solid 2px $main;
 
   transition: 0.2s all;
   p {
@@ -293,7 +293,7 @@ li,
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: $green;
+    color: $main;
   }
   &:hover {
     @extend .contact-link-active;

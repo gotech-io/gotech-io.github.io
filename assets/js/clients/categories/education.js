@@ -13,6 +13,8 @@ export const EDUCATION = {
   clients: [
     "/assets/images/home/clients/walmart.png",
     "/assets/images/home/clients/qualcomm.png",
+    "/assets/images/home/clients/qualcomm.png",
+    "/assets/images/home/clients/qualcomm.png",
   ],
 
   content: {

@@ -1,7 +1,6 @@
 export const COLORS = {
   GREEN: "green",
   BLUE: "blue",
-  GRAY: "gray",
   YELLOW: "yellow",
   ORANGE: "orange",
   PINK: "pink",

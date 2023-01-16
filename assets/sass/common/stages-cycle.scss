@@ -9,7 +9,6 @@
   margin-top: $title-gap;
   display: flex;
   justify-content: space-between;
-  position: relative;
   align-items: center;
 
   &-wrapper {
@@ -18,13 +17,8 @@
   }
 
   &-item {
-    width: 16%;
-    height: 120px;
-    display: flex;
-    justify-content: center;
-    align-content: space-between;
-    flex-wrap: wrap;
-    z-index: 10;
+    width: 200px;
+    height: 100%;
 
     &-wrapper {
       width: 100px;
