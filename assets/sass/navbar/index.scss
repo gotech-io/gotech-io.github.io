@@ -17,6 +17,10 @@
     }
   }
 
+  &-list {
+    display: flex;
+  }
+
   .contact-link {
     border: solid 2px $main;
     a {
