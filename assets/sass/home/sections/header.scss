@@ -73,6 +73,14 @@
     padding-top: 150px;
     padding-bottom: 80px;
 
+    &-main-content {
+      width: auto;
+
+      p {
+        margin-top: 10px;
+      }
+    }
+
     .link {
       width: 100%;
     }
