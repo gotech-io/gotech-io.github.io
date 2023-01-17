@@ -15,7 +15,7 @@ const Clients = ({ clients, link, _body, title }) => {
       <div className="home-clients-grid">{clients}</div>
 
       <div className="page-common-block home-clients-btn">
-        <Link link={link} btnText={"More"} />
+        <Link url={link} btnText={"More"} />
       </div>
     </div>
   );

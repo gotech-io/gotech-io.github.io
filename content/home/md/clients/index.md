@@ -3,7 +3,7 @@ layout: screens/home/sections/clients/index
 title: clients
 clients:
   - list.md
-link: /clients,
+link: /clients
 ---
 
 #### Join our family
