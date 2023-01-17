@@ -1,13 +1,13 @@
 h1 {
   color: $main;
-  font-size: 4rem;
+  font-size: $h1;
   font-weight: 600;
-  line-height: 75px;
+  line-height: 60px;
 }
 
 h2 {
   color: $main;
-  font-size: 4rem;
+  font-size: $h2;
   margin-bottom: 10px;
   font-weight: 600;
 }
