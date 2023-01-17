@@ -15,7 +15,7 @@ function Reviews({
   return (
     <div className="reviews flex-between">
       <div
-        className="page-common-block reviews-wrapper"
+        className="reviews-wrapper"
         style={{ flexDirection: reverse && "row-reverse" }}
       >
         <div className="reviews-image-item">

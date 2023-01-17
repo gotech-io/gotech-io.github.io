@@ -10,13 +10,15 @@ const HomeHeader = ({ title, subTitle, description, button }) => {
       <div className="home-header-main">
         <div>
           <div className="home-header-main-content">
-            <h1 data-aos={animations.up} data-aos-delay="100">
-              {title}
-            </h1>
+            <div>
+              <h1 data-aos={animations.up} data-aos-delay="100">
+                {title}
+              </h1>
 
-            <h1 data-aos={animations.up} data-aos-delay="250">
-              {subTitle}
-            </h1>
+              <h1 data-aos={animations.up} data-aos-delay="250">
+                {subTitle}
+              </h1>
+            </div>
 
             <p data-aos={animations.up} data-aos-delay="250">
               {description}

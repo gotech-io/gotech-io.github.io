@@ -103,10 +103,6 @@
     }
   }
 
-  &-root-link {
-    width: 40px;
-  }
-
   &-logo {
     height: 50px;
     width: auto;
@@ -139,9 +135,9 @@
       &-toggle {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         width: 40px;
-        height: 40px;
+        height: 100%;
         position: absolute;
         top: 0;
         right: 20px;
@@ -209,7 +205,8 @@
     }
 
     &-logo {
-      height: 40px;
+      width: 30px;
+      height: 30px;
       padding: 0;
     }
   }
