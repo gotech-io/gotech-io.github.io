@@ -216,7 +216,7 @@ img {
   transition: width 0.3s ease-in;
 }
 .button-blob p {
-  width: 100px;
+  width: auto;
   text-align: center;
   font-weight: 500;
   position: absolute;
@@ -1139,7 +1139,7 @@ img {
   transition: width 0.3s ease-in;
 }
 .button-blob p {
-  width: 100px;
+  width: auto;
   text-align: center;
   font-weight: 500;
   position: absolute;
