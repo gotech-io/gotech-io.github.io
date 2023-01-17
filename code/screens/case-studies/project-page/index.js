@@ -6,7 +6,7 @@ import Steps from "../../../common/steps";
 import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 import { SECTIONS } from "../../../../assets/js/common/sections";
 
-function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
+function PageProject({ type, marquee, contact, _relativeURL, _ID }) {
   const { title, description, sections, steps, images, introduction } =
     PROJECTS_INFO[type];
 
@@ -43,4 +43,4 @@ function ProjectPage({ type, marquee, contact, _relativeURL, _ID }) {
   );
 }
 
-export default ProjectPage;
+export default PageProject;

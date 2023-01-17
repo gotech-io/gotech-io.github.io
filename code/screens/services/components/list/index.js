@@ -1,7 +1,7 @@
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const ListServices = ({ services }) => {
+const PageServices = ({ services }) => {
   return (
     <div className="page-common-block services-content">
       {services.length &&
@@ -21,4 +21,4 @@ const ListServices = ({ services }) => {
   );
 };
 
-export default ListServices;
+export default PageServices;

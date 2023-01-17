@@ -11,7 +11,7 @@ const subjects = [
   },
 ];
 
-function CaseStudies({ marquee, contact, _relativeURL, _ID }) {
+function PageCaseStudies({ marquee, contact, _relativeURL, _ID }) {
   const { title, description, sections } = CASE_STUDIES_DETAILS;
 
   return (
@@ -28,4 +28,4 @@ function CaseStudies({ marquee, contact, _relativeURL, _ID }) {
   );
 }
 
-export default CaseStudies;
+export default PageCaseStudies;

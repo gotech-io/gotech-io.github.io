@@ -13,7 +13,7 @@ const subjects = [
   },
 ];
 
-function Clients({ marquee, contact, _relativeURL, _ID }) {
+function PageClients({ marquee, contact, _relativeURL, _ID }) {
   const { title, description, sections } = CLIENTS_DETAILS;
 
   return (
@@ -32,4 +32,4 @@ function Clients({ marquee, contact, _relativeURL, _ID }) {
   );
 }
 
-export default Clients;
+export default PageClients;
