@@ -16,7 +16,7 @@
     height: 90%;
 
     img {
-      border-radius: $radius;
+      border-radius: 20px;
     }
   }
 
@@ -27,7 +27,7 @@
     right: 0;
 
     img {
-      border-radius: $radius;
+      border-radius: 20px;
     }
   }
 
@@ -38,8 +38,8 @@
       position: absolute;
       bottom: 0;
       right: 0;
-      background-color: $default;
-      border-radius: $radius;
+      background-color: $case-studies-bg;
+      border-radius: 20px;
     }
 
     &-right {
@@ -49,18 +49,25 @@
       bottom: 0;
       left: 0;
       z-index: 10;
-      background-color: $default;
-      border-radius: $radius;
+      background-color: $case-studies-bg;
+      border-radius: 20px;
     }
 
     &-description {
       margin: $content-gap 0;
+      font-size: $description;
     }
 
     &-wrapper {
       width: 100%;
       display: flex;
       align-items: center;
+      flex-wrap: wrap;
+      div,
+      button {
+        margin: 5px 5px 5px 0;
+        text-align: center;
+      }
 
       .tags-item {
         background-color: $main;
@@ -73,13 +80,6 @@
 
 @media only screen and (max-width: $medium) {
   .case-studies {
-    &-content {
-      &-left,
-      &-right {
-        width: 100% !important;
-      }
-    }
-
     &-image {
       &-left,
       &-right {
@@ -95,15 +95,9 @@
     margin: 0 !important;
 
     &-content {
-      &-wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
-
-        div,
-        button {
-          margin: 5px 5px 5px 0;
-          text-align: center;
-        }
+      &-left,
+      &-right {
+        width: 100% !important;
       }
     }
 

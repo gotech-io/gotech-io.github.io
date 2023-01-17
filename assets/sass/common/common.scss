@@ -13,26 +13,26 @@ h2 {
 }
 
 h3 {
-  font-size: 30px;
+  font-size: $h3;
   height: 30px;
 }
 
 h4 {
-  font-size: 25px;
+  font-size: $h4;
   font-weight: 600px;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: $h5;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: $description;
   font-weight: 600px;
 }
 
 p {
-  font-size: 18px;
+  font-size: $p;
   font-weight: 100;
 }
 
@@ -41,7 +41,7 @@ a {
 }
 
 .text-small {
-  font-size: 14px;
+  font-size: $small;
   margin: 5px 0;
   color: $additional;
 }
