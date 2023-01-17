@@ -1,8 +1,9 @@
 ---
 layout: screens/home/sections/clients/index
+title: clients
 clients:
   - list.md
-title: clients
+link: /clients,
 ---
 
 #### Join our family
