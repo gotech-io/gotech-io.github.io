@@ -39,7 +39,7 @@
       bottom: 0;
       right: 0;
       background-color: $case-studies-bg;
-      border-radius: 20px;
+      border-radius: $radius;
     }
 
     &-right {
@@ -50,7 +50,7 @@
       left: 0;
       z-index: 10;
       background-color: $case-studies-bg;
-      border-radius: 20px;
+      border-radius: $radius;
     }
 
     &-description {
