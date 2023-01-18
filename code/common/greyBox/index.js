@@ -14,7 +14,7 @@ function GreyBox({ title, description, icon, tags, link }) {
 
       <div className="grey-box-wrapper">
         {tags && <Tags tags={tags} count="2" />}
-        <BlobButton link={link} btnText={btnText} />
+        {link && <BlobButton link={link} btnText={btnText} />}
       </div>
     </div>
   );

@@ -1,8 +1,9 @@
+import GreyBox from "../../../../common/greyBox";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 import { ICONS } from "../../../../../assets/js/common/icons";
 
-const ServicesSection = ({ color, services }) => {
+const ServicesSection = ({ services }) => {
   return (
     <div className="page-common-block">
       <div className="service-wrapper">
@@ -10,18 +11,16 @@ const ServicesSection = ({ color, services }) => {
           services.map(({ icon, title, description }) => {
             return (
               <div
+                className="services-content-wrapper"
                 key={title}
-                className="service-wrapper-detail"
-                data-aos-anchor-placement="top-center"
-                data-aos={animations.zoomInUp}
+                data-aos-anchor-placement="top"
+                data-aos={animations.zoomIn}
               >
-                <div>
-                  <div className={`services-content-item-type ${color}`}>
-                    <i className={ICONS[icon]} />
-                  </div>
-                  <h5>{title}</h5>
-                  <p>{description}</p>
-                </div>
+                <GreyBox
+                  title={title}
+                  description={description}
+                  icon={ICONS[icon]}
+                />
               </div>
             );
           })}

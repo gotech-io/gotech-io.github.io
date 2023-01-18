@@ -11,7 +11,6 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
   const {
     title,
     description,
-    color,
     sections,
     stages,
     services,
@@ -19,12 +18,10 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
     example,
   } = SERVICES[entity];
 
-  const mainColor = color;
-
   const subjects = [
     {
       type: SECTIONS.ALPHA,
-      content: <ServicesSection color={mainColor} services={services} />,
+      content: <ServicesSection services={services} />,
     },
     {
       type: SECTIONS.BETA,

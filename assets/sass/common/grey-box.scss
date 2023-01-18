@@ -10,7 +10,7 @@
   }
 
   &-description {
-    margin: 10px 0 20px;
+    margin: 10px 0 0;
     font-size: $description;
   }
 
@@ -21,13 +21,17 @@
     flex-wrap: wrap;
 
     .tags {
-      margin: 20px 0;
+      margin-top: 40px;
     }
 
     .tags-item {
       background-color: $main;
       color: $additional;
       border: none;
+    }
+
+    .button-blob {
+      margin-top: 20px;
     }
   }
 }

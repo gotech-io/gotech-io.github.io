@@ -51,18 +51,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    &-detail {
-      width: 49%;
-      margin-bottom: $content-gap;
-      padding: $section-gap;
-      background-color: $main;
-      border-radius: $radius;
-
-      .services-content-item-type {
-        margin: -$section-gap 0 10px;
-      }
-    }
   }
 }
 
@@ -81,24 +69,6 @@
     &-content-wrapper {
       width: 100%;
       height: auto;
-    }
-
-    &-content-item-info {
-      h6 {
-        font-size: 20px;
-        margin-top: $content-gap;
-      }
-
-      &-block {
-        height: auto;
-        margin-bottom: $content-gap;
-      }
-    }
-  }
-
-  .service {
-    &-wrapper-detail {
-      width: 100%;
     }
   }
 }
