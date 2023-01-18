@@ -85,7 +85,12 @@ a {
     margin: 0 auto;
   }
 
+  &-title {
+    width: $header-grid;
+  }
+
   &-description {
+    width: $header-grid;
     color: $main;
   }
 
@@ -142,14 +147,26 @@ img {
 
 @media only screen and (max-width: $mobile) {
   h1 {
-    font-size: 30px;
+    font-size: $h1-small;
     line-height: 40px;
   }
   h2 {
-    font-size: 25px;
+    font-size: $h1-small;
+  }
+  p {
+    font-size: $p-small;
   }
   .socials {
     justify-content: center;
+  }
+
+  .page-common {
+    &-title {
+      width: auto;
+    }
+    &-description {
+      width: auto;
+    }
   }
 
   .home-header .home-header-background {
