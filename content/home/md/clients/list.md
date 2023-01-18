@@ -16,7 +16,7 @@ list:
   - assets/images/home/clients/augury.png
   - assets/images/home/clients/rewire.png
   - assets/images/home/clients/altshuler.png
-  - assets/images/home/clients/amdocs-logo.png
+  - assets/images/home/clients/amdocs.png
   - assets/images/home/clients/sqream.png
   - assets/images/home/clients/uveye.png
   - assets/images/home/clients/pelephone.png

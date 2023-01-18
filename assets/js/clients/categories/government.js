@@ -12,8 +12,11 @@ export const GOVERNMENT = {
   link: "/clients/government",
 
   clients: [
-    "/assets/images/home/clients/walmart.png",
-    "/assets/images/home/clients/qualcomm.png",
+    "/assets/images/home/clients/pmo.png",
+    "/assets/images/home/clients/police.png",
+    "/assets/images/home/clients/iso.png",
+    "/assets/images/home/clients/navy.png",
+    "/assets/images/home/clients/tax.png",
   ],
 
   content: {

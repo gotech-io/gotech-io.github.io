@@ -29,10 +29,12 @@ export const ICONS = {
   LAUNCH: "fa-solid fa-handshake",
   SUPPORT: "fa-solid fa-headset",
 
+  NETWORK: "fa-solid fa-globe",
+  ENTERPRISE: "fa-solid fa-briefcase",
   HEALTHCARE: "fa-solid fa-stethoscope",
   EDUCATION: "fa-solid fa-graduation-cap",
   SHOPPING: "fa-solid fa-bag-shopping",
-  CRYPTOCURRENCY: "fa-brands fa-bitcoin",
+  FINANCE: "fa-brands fa-bitcoin",
   IT: "fa-solid fa-code-branch",
   GOVERNMENT: "fa-solid fa-building-shield",
 

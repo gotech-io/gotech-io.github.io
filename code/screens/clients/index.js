@@ -1,4 +1,3 @@
-import ListCategories from "../../common/categories";
 import ListClients from "./listClients";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";

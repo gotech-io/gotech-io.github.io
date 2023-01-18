@@ -12,9 +12,17 @@ export const IT = {
   link: "/clients/it",
 
   clients: [
-    "/assets/images/home/clients/walmart.png",
-    "/assets/images/home/clients/qualcomm.png",
-    "/assets/images/home/clients/qualcomm.png",
+    "/assets/images/home/clients/cognyte.png",
+    "/assets/images/home/clients/varonis.png",
+    "/assets/images/home/clients/noname.svg",
+    "/assets/images/home/clients/uveye.png",
+    "/assets/images/home/clients/kazuar.png",
+    "/assets/images/home/clients/cybereason.png",
+    "/assets/images/home/clients/bisec.svg",
+    "/assets/images/home/clients/cyberbit.png",
+    "/assets/images/home/clients/vulcan.png",
+    "/assets/images/home/clients/nsogroup.png",
+    "/assets/images/home/clients/solebit.png",
   ],
 
   content: {

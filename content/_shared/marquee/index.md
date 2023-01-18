@@ -14,7 +14,7 @@ marquee:
   - /assets/images/home/clients/ai21.png
   - /assets/images/home/clients/oneZero.png
   - /assets/images/home/clients/applied.png
-  - /assets/images/home/clients/amdocs-logo.png
+  - /assets/images/home/clients/amdocs.png
   - /assets/images/home/clients/orbs.png
   - /assets/images/home/clients/augury.png
   - /assets/images/home/clients/rewire.png
