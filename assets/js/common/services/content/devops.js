@@ -8,8 +8,7 @@ export const DEVOPS_DEV = {
     "Boost the efficiency of your tech and business processes with our professional DevOps engineers.",
   description:
     "We work with you to leverage the latest technologies and DevOps methodologies so that we can create sustainable value for your organization. We have helped businesses of all sizes, from startups to established companies adapt in today's changing market environments and deliver innovative solutions quickly and seamlessly.",
-  url: "/service/devops",
-  color: COLORS.PINK,
+  link: "/service/devops",
 
   sections: [
     {

@@ -8,8 +8,7 @@ export const MOBILE_DEV = {
     "Boost your mobile application development with our in-house team of experts.",
   description:
     "Mobile app development is an ongoing process of a constant, iterative effort to make your product better and better. Our mobile development team of experts will help you build smart business solutions and develop state-of-the-art mobile apps with ease.",
-  url: "/service/mobile",
-  color: COLORS.BLUE,
+  link: "/service/mobile",
 
   sections: [
     {

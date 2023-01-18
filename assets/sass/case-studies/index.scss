@@ -5,7 +5,7 @@
 
   &-wrapper {
     height: 500px;
-    margin: $section-gap auto;
+    margin: 0 auto $section-gap;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -16,7 +16,7 @@
     height: 90%;
 
     img {
-      border-radius: 20px;
+      border-radius: $radius;
     }
   }
 
@@ -27,53 +27,24 @@
     right: 0;
 
     img {
-      border-radius: 20px;
+      border-radius: $radius;
     }
   }
 
   &-content {
     &-left {
       width: 50%;
-      padding: $section-gap;
       position: absolute;
       bottom: 0;
       right: 0;
-      background-color: $case-studies-bg;
-      border-radius: 20px;
     }
 
     &-right {
       width: 50%;
-      padding: $section-gap;
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 10;
-      background-color: $case-studies-bg;
-      border-radius: 20px;
-    }
-
-    &-description {
-      margin: $content-gap 0;
-      font-size: $description;
-    }
-
-    &-wrapper {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-      div,
-      button {
-        margin: 5px 5px 5px 0;
-        text-align: center;
-      }
-
-      .tags-item {
-        background-color: $main;
-        color: $additional;
-        border: none;
-      }
     }
   }
 }

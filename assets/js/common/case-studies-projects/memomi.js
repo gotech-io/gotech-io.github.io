@@ -83,5 +83,6 @@ export const MEMOMI = {
     { title: "AR", image: "/assets/images/technologies/icons/ar.png" },
     { title: "SDK", image: "/assets/images/technologies/icons/sdk.png" },
   ],
-  button: { url: "/case-studies-project/memomi", btnText: "see more" },
+
+  link: "/case-studies-project/memomi",
 };

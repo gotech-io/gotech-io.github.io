@@ -82,9 +82,11 @@ export const NOVOTALK = {
   ],
 
   tags: [
+    { title: "React.js", icon: ICONS.REACT },
+    { title: "Node.js", icon: ICONS.NODE },
     { title: "CSS", icon: ICONS.CSS },
-    { title: "React", icon: ICONS.REACT },
     { title: "AWS", icon: ICONS.AWS },
   ],
-  button: { url: "/case-studies-project/novotalk", btnText: "see more" },
+
+  link: "/case-studies-project/novotalk",
 };

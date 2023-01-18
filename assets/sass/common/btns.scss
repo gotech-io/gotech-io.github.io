@@ -55,6 +55,8 @@
 
     p {
       width: auto;
+      display: flex;
+      align-items: center;
       text-align: center;
       font-size: $description;
       font-weight: 500;
@@ -64,13 +66,14 @@
 
       i {
         margin-left: 5px;
+        font-size: 15px;
         color: $green;
       }
     }
 
     &:hover {
       .button-blob-circle {
-        width: 140px;
+        width: 130px;
       }
     }
   }

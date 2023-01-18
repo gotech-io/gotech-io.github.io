@@ -1,118 +1,13 @@
 .services {
-  &-block {
-    width: 100%;
-    padding: $section-gap 0;
-    background: $green-background;
-
-    &-description {
-      padding: $section-gap 100px;
-      text-align: center;
-      font-size: 18px;
-      color: $main;
-    }
-  }
-
   &-content {
-    padding: $title-gap 0;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: stretch;
     flex-wrap: wrap;
 
     &-wrapper {
       width: 49%;
-      height: 300px;
       margin: 10px 0;
-    }
-
-    &-item {
-      width: 100%;
-      height: 100%;
-      padding: $content-gap;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $default;
-      border-radius: $radius;
-      transition: background-color 0.5s;
-      cursor: pointer;
-
-      &-info {
-        width: 90%;
-        height: 100%;
-        display: flex;
-        align-content: space-between;
-        flex-wrap: wrap;
-
-        &-block {
-          height: 100px;
-        }
-
-        h6 {
-          width: 100%;
-          margin: 0 auto;
-          color: $prime;
-          font-size: 25px;
-        }
-
-        p {
-          width: 100%;
-          margin: 0 auto;
-          font-size: 16px;
-        }
-
-        &-btn {
-          width: 100%;
-          display: flex;
-          justify-content: end;
-
-          .button-arrow-wrapper {
-            margin: 0;
-
-            a {
-              color: $prime;
-            }
-          }
-
-          .button-arrow-wrapper-icon {
-            width: 40px;
-            height: 40px;
-
-            i {
-              font-size: 20px;
-            }
-          }
-        }
-      }
-
-      &:hover {
-        background-color: $prime;
-
-        h6,
-        p {
-          color: $main;
-        }
-
-        .services-content-item-info-btn .button-arrow-wrapper a {
-          color: $main;
-        }
-      }
-
-      &-type {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 0 0 $circle $circle;
-        margin-top: -20px;
-        padding: 10px;
-
-        i {
-          font-size: 25px;
-          color: $main;
-        }
-      }
     }
   }
 
@@ -156,18 +51,6 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    &-detail {
-      width: 49%;
-      margin-bottom: $content-gap;
-      padding: $section-gap;
-      background-color: $main;
-      border-radius: $radius;
-
-      .services-content-item-type {
-        margin: -$section-gap 0 10px;
-      }
-    }
   }
 }
 
@@ -186,24 +69,6 @@
     &-content-wrapper {
       width: 100%;
       height: auto;
-    }
-
-    &-content-item-info {
-      h6 {
-        font-size: 20px;
-        margin-top: $content-gap;
-      }
-
-      &-block {
-        height: auto;
-        margin-bottom: $content-gap;
-      }
-    }
-  }
-
-  .service {
-    &-wrapper-detail {
-      width: 100%;
     }
   }
 }

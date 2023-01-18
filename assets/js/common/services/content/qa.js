@@ -7,8 +7,7 @@ export const QA_DEV = {
   details: "Upgrade the quality of your software with a certified QA team.",
   description:
     "With our test automation services, we can help you accurately check the software so that human error isn't an issue. It will speed up testing and increase coverage for future updates with minimal time investment on your part, while getting a higher return on investment (ROI) in the long run.",
-  url: "/service/qa",
-  color: COLORS.YELLOW,
+  link: "/service/qa",
 
   sections: [
     {

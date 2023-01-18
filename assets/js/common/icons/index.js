@@ -55,4 +55,5 @@ export const ICONS = {
   IOS: "fa-brands fa-apple",
   AWS: "fa-brands fa-aws",
   JAVA: "fa-brands fa-java",
+  NODE: "fa-brands fa-node",
 };
