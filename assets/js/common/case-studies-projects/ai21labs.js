@@ -84,5 +84,6 @@ export const AI21LABS = {
       image: "/assets/images/technologies/icons/ts.png",
     },
   ],
-  button: { url: "/case-studies-project/labs", btnText: "see more" },
+
+  link: "/case-studies-project/labs",
 };

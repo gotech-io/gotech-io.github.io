@@ -79,5 +79,5 @@ export const ORBS = {
     { title: "CSS", icon: ICONS.CSS },
   ],
 
-  button: { url: "/case-studies-project/orbs", btnText: "see more" },
+  link: "/case-studies-project/orbs",
 };

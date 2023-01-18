@@ -6,7 +6,7 @@ import React from "react";
 import { SECTIONS } from "../../../assets/js/common/sections";
 import { PAGE_DETAILS } from "../../../assets/js/common/services";
 
-function Services({ services, marquee, contact, _relativeURL, _ID }) {
+function PageServices({ services, marquee, contact, _relativeURL, _ID }) {
   const { title, description, sections, points } = PAGE_DETAILS;
 
   const subjects = [
@@ -38,4 +38,4 @@ function Services({ services, marquee, contact, _relativeURL, _ID }) {
   );
 }
 
-export default Services;
+export default PageServices;

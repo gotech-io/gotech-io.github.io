@@ -89,5 +89,6 @@ export const BASE = {
     },
     { title: "Java", icon: ICONS.JAVA },
   ],
-  button: { url: "/case-studies-project/base", btnText: "see more" },
+
+  link: "/case-studies-project/base",
 };

@@ -34,45 +34,17 @@
   &-content {
     &-left {
       width: 50%;
-      padding: $section-gap ($section-gap - 10px);
       position: absolute;
       bottom: 0;
       right: 0;
-      background-color: $case-studies-bg;
-      border-radius: $radius;
     }
 
     &-right {
       width: 50%;
-      padding: $section-gap;
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 10;
-      background-color: $case-studies-bg;
-      border-radius: $radius;
-    }
-
-    &-description {
-      margin: 10px 0 40px;
-      font-size: $description;
-    }
-
-    &-wrapper {
-      width: 100%;
-      display: flex;
-      align-items: center;
-      flex-wrap: wrap;
-
-      .tags {
-        margin-bottom: $content-gap;
-      }
-
-      .tags-item {
-        background-color: $main;
-        color: $additional;
-        border: none;
-      }
     }
   }
 }

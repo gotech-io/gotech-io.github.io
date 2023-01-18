@@ -1,7 +1,9 @@
+import GreyBox from "../../../../common/greyBox";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
+import { ICONS } from "../../../../../assets/js/common/icons";
 
-const PageServices = ({ services }) => {
+const ListServices = ({ services }) => {
   return (
     <div className="page-common-block services-content">
       {services.length &&
@@ -13,7 +15,7 @@ const PageServices = ({ services }) => {
               data-aos-anchor-placement="top"
               data-aos={animations.zoomIn}
             >
-              <div className="services-content-item">{service}</div>
+              {service}
             </div>
           );
         })}
@@ -21,4 +23,4 @@ const PageServices = ({ services }) => {
   );
 };
 
-export default PageServices;
+export default ListServices;

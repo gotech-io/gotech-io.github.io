@@ -87,5 +87,6 @@ export const NOVOTALK = {
     { title: "CSS", icon: ICONS.CSS },
     { title: "AWS", icon: ICONS.AWS },
   ],
-  button: { url: "/case-studies-project/novotalk", btnText: "see more" },
+
+  link: "/case-studies-project/novotalk",
 };

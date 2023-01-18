@@ -2,8 +2,8 @@
 layout: screens/services/index
 services:
   - content/web.md
-  - content/mobile.md
   - content/devops.md
+  - content/mobile.md
   - content/qa.md
 
 marquee:
