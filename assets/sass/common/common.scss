@@ -1,38 +1,39 @@
 h1 {
   color: $main;
-  font-size: 4rem;
+  font-size: $h1;
   font-weight: 600;
   line-height: 75px;
 }
 
 h2 {
   color: $main;
-  font-size: 4rem;
+  font-size: $h2;
   margin-bottom: 10px;
   font-weight: 600;
 }
 
 h3 {
-  font-size: 30px;
+  font-size: $h3;
   height: 30px;
 }
 
 h4 {
-  font-size: 25px;
+  font-size: $h4;
   font-weight: 600px;
 }
 
 h5 {
-  font-size: 20px;
+  font-size: $h5;
+  font-weight: 600px;
 }
 
 h6 {
-  font-size: 16px;
+  font-size: $description;
   font-weight: 600px;
 }
 
 p {
-  font-size: 18px;
+  font-size: $p;
   font-weight: 100;
 }
 
@@ -41,7 +42,7 @@ a {
 }
 
 .text-small {
-  font-size: 14px;
+  font-size: $small;
   margin: 5px 0;
   color: $additional;
 }
@@ -84,7 +85,12 @@ a {
     margin: 0 auto;
   }
 
+  &-title {
+    width: $header-grid;
+  }
+
   &-description {
+    width: $header-grid;
     color: $main;
   }
 
@@ -141,14 +147,26 @@ img {
 
 @media only screen and (max-width: $mobile) {
   h1 {
-    font-size: 30px;
+    font-size: $h1-small;
     line-height: 40px;
   }
   h2 {
-    font-size: 25px;
+    font-size: $h1-small;
+  }
+  p {
+    font-size: $p-small;
   }
   .socials {
     justify-content: center;
+  }
+
+  .page-common {
+    &-title {
+      width: auto;
+    }
+    &-description {
+      width: auto;
+    }
   }
 
   .home-header .home-header-background {

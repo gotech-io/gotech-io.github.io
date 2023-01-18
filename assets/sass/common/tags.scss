@@ -5,20 +5,20 @@
   &-item {
     height: 40px;
     margin-right: 10px;
-    padding: 5px;
+    padding: 7px 15px;
     display: flex;
     align-items: center;
     border: 1px solid $additional;
-    border-radius: 5px;
+    border-radius: 10px;
 
     p {
       color: $additional;
-      font-size: 12px;
+      font-size: $small;
     }
 
     &-icon {
       p {
-        margin-left: 5px;
+        margin-left: 10px;
       }
     }
 

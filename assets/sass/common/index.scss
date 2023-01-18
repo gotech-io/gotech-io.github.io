@@ -133,15 +133,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $headers-font;
-  color: $prime;
+  font-family: $main-font;
+  color: $main-title;
 }
 p,
 a,
 li,
 * {
   font-family: $main-font;
-  color: $prime;
+  color: $main-description;
 }
 
 .text {
