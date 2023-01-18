@@ -79,7 +79,6 @@ export const BASE = {
   ],
 
   tags: [
-    { title: "Java", icon: ICONS.JAVA },
     {
       title: "Cucumber",
       image: "/assets/images/technologies/icons/cucumber.png",
@@ -88,6 +87,7 @@ export const BASE = {
       title: "Playwright",
       image: "/assets/images/technologies/icons/playwright.jpeg",
     },
+    { title: "Java", icon: ICONS.JAVA },
   ],
   button: { url: "/case-studies-project/base", btnText: "see more" },
 };

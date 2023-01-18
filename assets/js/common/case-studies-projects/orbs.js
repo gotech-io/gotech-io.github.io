@@ -74,12 +74,9 @@ export const ORBS = {
     },
   ],
   tags: [
-    {
-      title: "Cuttlebelle",
-      image: "/assets/images/technologies/icons/cuttlebelle.png",
-    },
-    { title: "React", icon: ICONS.REACT },
+    { title: "React.js", icon: ICONS.REACT },
     { title: "Redux", image: "/assets/images/technologies/icons/redux.png" },
+    { title: "CSS", icon: ICONS.CSS },
   ],
 
   button: { url: "/case-studies-project/orbs", btnText: "see more" },

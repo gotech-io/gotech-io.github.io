@@ -79,7 +79,10 @@ export const AI21LABS = {
       title: "Playwright",
       image: "/assets/images/technologies/icons/playwright.jpeg",
     },
-    { title: "Mocha", image: "/assets/images/technologies/icons/mocha.png" },
+    {
+      title: "TypeScript",
+      image: "/assets/images/technologies/icons/ts.png",
+    },
   ],
   button: { url: "/case-studies-project/labs", btnText: "see more" },
 };

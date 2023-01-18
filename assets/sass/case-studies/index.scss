@@ -5,7 +5,7 @@
 
   &-wrapper {
     height: 500px;
-    margin: $section-gap auto;
+    margin: 0 auto $section-gap;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -34,7 +34,7 @@
   &-content {
     &-left {
       width: 50%;
-      padding: $section-gap;
+      padding: $section-gap ($section-gap - 10px);
       position: absolute;
       bottom: 0;
       right: 0;
@@ -54,7 +54,7 @@
     }
 
     &-description {
-      margin: $content-gap 0;
+      margin: 10px 0 40px;
       font-size: $description;
     }
 
@@ -63,10 +63,9 @@
       display: flex;
       align-items: center;
       flex-wrap: wrap;
-      div,
-      button {
-        margin: 5px 5px 5px 0;
-        text-align: center;
+
+      .tags {
+        margin-bottom: $content-gap;
       }
 
       .tags-item {
