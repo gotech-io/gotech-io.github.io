@@ -1,9 +1,9 @@
+import Image from "../../../../../common/img";
 import React from "react";
 import animations from "../../../../../../assets/js/animations";
-import Image from "../../../../../common/img";
 import { handleUrl } from "../../../../../utils";
 
-const Member = ({ image, _relativeURL, _ID, _body }) => {
+const Member = ({ image, name, position, link, _relativeURL, _ID }) => {
   return (
     <div
       className="home-team-member"
@@ -16,7 +16,14 @@ const Member = ({ image, _relativeURL, _ID, _body }) => {
         data-aos={animations.up}
         data-aos-delay="150"
       >
-        {_body}
+        <div className="home-team-member-content-header">
+          <h6>{name}</h6>
+          <a href={link} target="_blank">
+            <i className="fa-brands fa-linkedin" />
+          </a>
+        </div>
+
+        <p>{position}</p>
       </div>
     </div>
   );
