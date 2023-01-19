@@ -29,6 +29,9 @@ const Page = ({ title, navbar, footer, _relativeURL, _ID, main }) => {
         {navbar}
         <div className="app-wrapper">{main}</div>
         {footer}
+
+        {/* Accessibility for the disabled */}
+        <script src="https://cdn.enable.co.il/licenses/enable-L17164fx15o8hkpg-0123-40528/init.js"></script>
       </body>
     </html>
   );

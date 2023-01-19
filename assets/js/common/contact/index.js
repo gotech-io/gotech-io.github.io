@@ -16,6 +16,7 @@ export const CONTACT = {
       },
     ],
   },
-  PHONE: { title: "Contact Us", content: "(+972)-9-866-40-40" },
+  //  PHONE: { title: "Contact Us", content: "(+972)-9-866-40-40" },
+  EMAIL: { title: "Write Us", content: "contact@gotech.io" },
   ADDRESS: { title: "Find Us", content: "5 Ha-Melakha St., Netanya" },
 };

@@ -15,7 +15,7 @@ const ListItems = ({ list }) => {
             ) : (
               <div>
                 {title === "Social" && <Socials />}
-                {title === "Contact Us" && (
+                {title === "Write Us" && (
                   <div className="text-small">{content}</div>
                 )}
                 {title === "Find Us" && (

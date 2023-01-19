@@ -8,11 +8,11 @@ import { NETWORK } from "./categories/network";
 import { SHOPPING } from "./categories/shopping";
 
 export const listCategories = [
+  ENTERPRISE,
   IT,
   NETWORK,
   FINANCE,
   HEALTHCARE,
-  ENTERPRISE,
   EDUCATION,
   SHOPPING,
   GOVERNMENT,
