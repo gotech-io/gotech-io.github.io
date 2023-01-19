@@ -1472,7 +1472,6 @@ li,
 }
 
 .link {
-  width: 200px;
   height: 50px;
   letter-spacing: 2px;
   font-size: 12px;
@@ -1495,7 +1494,7 @@ li,
 }
 .link:hover {
   background: linear-gradient(90deg, #4be2c8, #2ac8e8);
-  border: 2px solid white;
+  border: none;
 }
 .link:hover a {
   color: white;
@@ -1526,7 +1525,7 @@ li,
 .contact-link-active, .contact-link:hover {
   color: white;
   background: linear-gradient(90deg, #4be2c8, #2ac8e8);
-  border: solid 2px transparent;
+  border: none;
 }
 .contact-link-active a, .contact-link:hover a {
   color: white;
@@ -1974,6 +1973,10 @@ input {
   box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.1);
   -webkit-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.1);
   -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.1);
+}
+.home-clients-btn {
+  display: flex;
+  justify-content: center;
 }
 
 @media only screen and (max-width: 800px) {
@@ -2713,7 +2716,7 @@ input {
   color: #0c173c;
 }
 .navbar-active .navbar-flex .contact-link:hover {
-  border: solid 2px transparent;
+  border: none;
 }
 .navbar-active .navbar-flex .contact-link:hover a {
   color: white;
