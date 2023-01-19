@@ -12,13 +12,14 @@ const Member = ({ name, position, image, linkedin }) => {
         data-aos={animations.up}
         data-aos-delay="150"
       >
-        <div>
+        <div className="team-member-content-wrapper">
           <h6>{name}</h6>
-          <p>{position}</p>
+          <a href={linkedin} target="_blank">
+            <i className="fa-brands fa-linkedin"></i>
+          </a>
         </div>
-        <a href={linkedin} target="_blank">
-          <i className="fa-brands fa-linkedin"></i>
-        </a>
+
+        <p>{position}</p>
       </div>
     </div>
   );

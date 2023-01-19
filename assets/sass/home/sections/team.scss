@@ -1,152 +1,97 @@
-// .home-team {
-//   width: $component-width;
-//   &-content {
-//     text-align: center;
-//   }
-//   &-list {
-//     margin-left: auto;
-//     margin-right: auto;
-//     margin-top: 0px;
-//     max-width: 1100px;
-//     display: flex;
-//     justify-content: center;
-//     flex-wrap: wrap;
+.home-team {
+  width: 1100px;
+  padding-bottom: 0;
 
-//     .home-team-member {
-//       overflow: hidden;
-//       display: flex;
-//       flex-direction: column;
-//       position: relative;
-//       height: 300px;
-//       width: 23%;
-//       margin: 0 10px 20px;
+  .section-header {
+    margin-bottom: 0;
+  }
 
-//       .img {
-//         width: 100%;
-//         height: 100%;
-//         position: absolute;
-//         left: 0px;
-//         top: 0px;
+  .team {
+    width: 100%;
+    margin: $content-gap 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
-//         img {
-//           border-radius: 20px;
-//           object-position: center;
-//           width: 100%;
-//           height: 100%;
-//           object-fit: cover;
-//         }
-//       }
-//       &-content {
-//         margin-top: auto;
-//         margin-bottom: 10px;
-//         background: white;
-//         padding: 10px 10px 10px 20px;
-//         position: relative;
-//         width: calc(100% - 20px);
-//         margin-left: auto;
-//         margin-right: auto;
-//         border-radius: 15px;
-//         h6 {
-//           font-size: 14px;
-//           font-weight: 600;
-//         }
-//         p {
-//           font-size: 12px;
-//         }
-//       }
-//     }
-//   }
-// }
+    &-member {
+      &-wrapper {
+        width: 23%;
+        height: 250px;
+        margin: 0 10px 20px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+      }
 
-// @media only screen and (max-width: $mobile) {
-//   .home-team-list {
-//     margin-top: 40px;
-//     .home-team-member {
-//       width: calc(50% - 10px);
-//       margin-right: 0px;
-//       height: 50vw;
+      &-image {
+        width: 100%;
+        height: auto;
+        position: absolute;
+        left: 0px;
+        top: 0px;
 
-//       &-content {
-//         h6 {
-//           font-size: 13px;
-//         }
-//         p {
-//           font-size: 12px;
-//         }
-//       }
-//       &:nth-child(even) {
-//         margin-left: auto;
-//       }
-//     }
-//   }
-// }
+        img {
+          border-radius: $radius;
+        }
+      }
 
-// @media only screen and (max-width: 550px) {
-//   .home-team {
-//     width: 100%;
-//     padding-left: 30px;
-//     padding-right: 30px;
-//     &-list {
-//       margin-top: 0px;
-//       .home-team-member {
-//         width: 100%;
-//         height: 80vw;
-//         margin-left: 0px;
-//         min-height: 350px;
-//       }
-//     }
-//   }
-// }
+      &-content {
+        width: calc(100% - 20px);
+        margin: 0 auto;
+        padding: 10px;
+        background-color: $main;
+        position: relative;
+        top: 180px;
+        border-radius: 15px;
 
-//----
-.team {
-  width: 100%;
-  margin-top: $title-gap;
-  display: flex;
-  flex-wrap: wrap;
+        &-wrapper {
+          display: flex;
+          justify-content: space-between;
+        }
 
-  &-member {
-    &-wrapper {
-      width: 30%;
-      height: 290px;
-      margin: 10px;
-      position: relative;
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-    }
-
-    &-image {
-      width: 100%;
-      height: auto;
-      position: absolute;
-      left: 0px;
-      top: 0px;
-
-      img {
-        border-radius: $radius;
+        h6 {
+          font-size: 14px;
+        }
+        p {
+          font-size: 12px;
+          text-align: start;
+        }
+        i {
+          font-size: 20px;
+        }
       }
     }
+  }
+}
 
-    &-content {
-      width: calc(100% - 20px);
-      margin: auto auto 15px;
-      padding: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: flex-end;
-      background-color: $main;
-      position: relative;
-      border-radius: 15px;
+@media only screen and (max-width: $medium) {
+  .home-team {
+    width: 90%;
 
-      h6 {
-        font-size: 14px;
+    .team-member {
+      &-wrapper {
+        width: 35%;
+        height: 250px;
       }
-      p {
-        font-size: 12px;
+      &-content {
+        top: 170px;
       }
-      i {
-        font-size: 20px;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .home-team {
+    width: 90%;
+
+    .team-member {
+      &-wrapper {
+        width: 80%;
+        height: 280px;
+      }
+      &-content {
+        top: 200px;
       }
     }
   }
