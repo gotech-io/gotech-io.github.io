@@ -37,6 +37,6 @@ export const FOOTER_INFO = [
   },
   {
     title: "Join Us",
-    list: [CONTACT.SOCIAL_MEDIA, CONTACT.PHONE, CONTACT.ADDRESS],
+    list: [CONTACT.SOCIAL_MEDIA, CONTACT.EMAIL, CONTACT.ADDRESS], //CONTACT.PHONE
   },
 ];
