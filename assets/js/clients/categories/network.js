@@ -2,17 +2,22 @@ import { COLORS } from "../../common/colors";
 import { ICONS } from "../../common/icons";
 import { CLIENT_TITLES } from "../titles";
 
-export const EDUCATION = {
-  type: "EDUCATION",
-  title: CLIENT_TITLES.EDUCATION,
+export const NETWORK = {
+  type: "NETWORK",
+  title: CLIENT_TITLES.NETWORK,
   description: "Add Here",
   color: COLORS.BLUE,
-  icon: ICONS.EDUCATION,
-  link: "/clients/education",
+  icon: ICONS.NETWORK,
+  link: "/clients/network",
 
   clients: [
-    "/assets/images/home/clients/novotalk.png",
-    "/assets/images/home/clients/johnbryce.jpg",
+    "/assets/images/home/clients/celltick.png",
+    "/assets/images/home/clients/cisco.svg",
+    "/assets/images/home/clients/klh.png",
+    "/assets/images/home/clients/cellcom.png",
+    "/assets/images/home/clients/pelephone.png",
+    "/assets/images/home/clients/cellwize.png",
+    "/assets/images/home/clients/telicomm.png",
   ],
 
   content: {

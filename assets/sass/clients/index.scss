@@ -79,5 +79,13 @@
         }
       }
     }
+
+    &-list-wrapper {
+      display: block;
+
+      .home-clients-list {
+        margin: 20px auto;
+      }
+    }
   }
 }

@@ -11,7 +11,20 @@ export const SHOPPING = {
   icon: ICONS.SHOPPING,
   link: "/clients/shopping",
 
-  clients: ["/assets/images/home/clients/walmart.png"],
+  clients: [
+    "/assets/images/home/clients/augury.png",
+    "/assets/images/home/clients/namogoo.png",
+    "/assets/images/home/clients/weissbeerger.png",
+    "/assets/images/home/clients/lightico.png",
+    "/assets/images/home/clients/lisuto.png",
+    "/assets/images/home/clients/lusha.png",
+    "/assets/images/home/clients/promo.png",
+    "/assets/images/home/clients/rfkeeper.png",
+    "/assets/images/home/clients/roojoom.png",
+    "/assets/images/home/clients/riskified.png",
+    "/assets/images/home/clients/renuar.png",
+    "/assets/images/home/clients/toolway.png",
+  ],
 
   content: {
     title: "Our Clients on Commerce & Retail Category",

@@ -16,32 +16,10 @@
     &-wrapper {
       width: 100px;
       height: 100px;
-      margin: 0 auto $content-gap;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: $default;
-      border-radius: $circle;
+      margin: 0 auto 10px;
 
-      &-dot {
-        width: 70px;
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: $circle;
-        cursor: pointer;
-
-        i {
-          font-size: 30px;
-          color: $additional;
-        }
-
-        &:hover {
-          i {
-            color: $main;
-          }
-        }
+      .icons-wrapper {
+        background-color: $default;
       }
     }
 
@@ -54,39 +32,17 @@
   }
 }
 
-.category-green {
-  &:hover {
-    background-color: $green;
-  }
-}
-.category-blue {
-  &:hover {
-    background-color: $blue;
-  }
-}
-.category-yellow {
-  &:hover {
-    background-color: $yellow;
-  }
-}
-.category-orange {
-  &:hover {
-    background-color: $orange;
-  }
-}
-.category-pink {
-  &:hover {
-    background-color: $pink;
-  }
-}
-.category-purple {
-  &:hover {
-    background-color: $purple;
-  }
-}
-.category-prime {
-  &:hover {
-    background-color: $prime;
+.category {
+  &-item {
+    width: 200px;
+    height: 100%;
+
+    p {
+      width: 100%;
+      text-transform: uppercase;
+      text-align: center;
+      font-weight: 600;
+    }
   }
 }
 
@@ -96,11 +52,16 @@
       &-wrapper {
         width: 70px;
         height: 70px;
+      }
+    }
+  }
 
-        &-dot {
-          width: 50px;
-          height: 50px;
-        }
+  .category {
+    &-item {
+      width: 120px;
+
+      p {
+        font-size: 12px;
       }
     }
   }
@@ -109,18 +70,11 @@
 @media only screen and (max-width: $mobile) {
   .categories {
     margin: $section-gap auto 0;
+  }
 
+  .category {
     &-item {
-      &-wrapper {
-        width: 70px;
-        height: 70px;
-        box-shadow: $shadow;
-
-        &-dot {
-          width: 50px;
-          height: 50px;
-        }
-      }
+      margin: 0 auto;
     }
   }
 }
