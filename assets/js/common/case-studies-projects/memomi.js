@@ -18,11 +18,11 @@ export const MEMOMI = {
     },
     {
       type: "section-beta",
-      color: COLORS.MAIN,
+      color: COLORS.GREY,
     },
     {
       type: "section-gamma",
-      color: COLORS.DEFAULT,
+      color: COLORS.MAIN,
       title: "Challenge Faced",
       description:
         "Memomi needed assistance integrating their complex AR engine between the server and mobile applications.",
@@ -68,7 +68,6 @@ export const MEMOMI = {
     { title: "Services Used", options: ["Mobile"], link: "/service/mobile" },
     {
       title: "Technologies Stack",
-      options: ["iOS", "Android", "ML", "AR", "SDK"],
       link: "/service/mobile/#technologies",
     },
   ],

@@ -109,6 +109,10 @@ img {
   object-fit: contain;
 }
 
+.grey {
+  background-color: #f2f4f8;
+}
+
 .green {
   background-color: #4be2c8;
 }
@@ -401,14 +405,16 @@ img {
 .tags {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
 }
 .tags-item {
   height: 40px;
-  margin-right: 10px;
+  margin: 0 10px 10px 0;
   padding: 7px 15px;
   display: flex;
   align-items: center;
-  border: 1px solid #95979b;
+  background-color: white;
+  color: #95979b;
   border-radius: 10px;
 }
 .tags-item p {
@@ -606,7 +612,7 @@ img {
   width: 100%;
   height: 0px;
   position: absolute;
-  top: 40%;
+  top: 35%;
   border: 2px solid lightgray;
   border-bottom: none;
 }
@@ -614,6 +620,7 @@ img {
   width: 100%;
   text-transform: uppercase;
   text-align: center;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -1195,7 +1202,7 @@ img {
   width: 100%;
   height: 0px;
   position: absolute;
-  top: 40%;
+  top: 35%;
   border: 2px solid lightgray;
   border-bottom: none;
 }
@@ -1203,6 +1210,7 @@ img {
   width: 100%;
   text-transform: uppercase;
   text-align: center;
+  font-size: 16px;
   font-weight: 600;
 }
 
@@ -1288,11 +1296,6 @@ img {
 }
 .grey-box-wrapper .tags {
   margin-top: 40px;
-}
-.grey-box-wrapper .tags-item {
-  background-color: white;
-  color: #95979b;
-  border: none;
 }
 .grey-box-wrapper .button-blob {
   margin-top: 20px;
@@ -3364,6 +3367,9 @@ input {
 .project-page-intro h6 {
   margin-bottom: 10px;
 }
+.project-page-intro p {
+  font-size: 16px;
+}
 .project-page-block {
   margin: 50px 0;
   display: flex;
@@ -3386,11 +3392,17 @@ input {
   height: 500px;
 }
 
+@media only screen and (max-width: 1000px) {
+  .project-page-intro {
+    width: 25%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .project-page-block {
     flex-wrap: wrap;
   }
   .project-page-intro {
+    width: auto;
     margin-bottom: 20px;
   }
   .main-wrapper-image {

@@ -1,4 +1,5 @@
 export const COLORS = {
+  GREY: "grey",
   GREEN: "green",
   BLUE: "blue",
   YELLOW: "yellow",
@@ -8,5 +9,6 @@ export const COLORS = {
   PRIME: "prime",
   MAIN: "main",
   DEFAULT: "default",
+  ADDITIONAL: "additional",
   ADDITIONAL: "additional",
 };
