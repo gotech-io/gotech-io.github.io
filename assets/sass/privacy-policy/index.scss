@@ -36,6 +36,11 @@
 
   p {
     margin-bottom: 1rem;
+    font-size: 18px;
     color: $font-color;
+  }
+
+  a {
+    text-decoration: underline;
   }
 }
