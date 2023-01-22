@@ -11,7 +11,7 @@ links:
     value: /#clients
 
   - name: team
-    value: /#team
+    value: /#about/#team
 
   - name: cases
     value: /case-studies
