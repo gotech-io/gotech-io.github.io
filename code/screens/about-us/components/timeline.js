@@ -1,8 +1,7 @@
 import React from "react";
 import TimelineItem from "./timelineItem";
 import VerticalLine from "./verticalLine";
-
-//import { TIMELINE } from "../../../../assets/js/common/timeline";
+import { TIMELINE } from "../../../../assets/js/common/timeline";
 
 const Timeline = () => {
   return (
@@ -11,7 +10,7 @@ const Timeline = () => {
         <VerticalLine />
 
         <div className="timeline-block">
-          {/* {TIMELINE.length &&
+          {TIMELINE.length &&
             TIMELINE.map(({ title, description, year, color }, i) => {
               return (
                 <TimelineItem
@@ -24,7 +23,7 @@ const Timeline = () => {
                   reverse={i % 2 === 0 ? "reverse" : ""}
                 />
               );
-            })} */}
+            })}
         </div>
       </div>
     </div>
