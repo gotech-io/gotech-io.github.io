@@ -2013,24 +2013,8 @@ input {
     line-height: 1.4;
     font-size: 28px;
   }
-  .home-services-list {
-    padding: 20px;
-    flex-direction: column;
-    margin-left: 12px;
-    margin-right: 12px;
-  }
-  .home-services-list-item {
-    width: 100%;
-    margin-bottom: 40px;
-  }
-  .home-services-list-item h6 {
-    font-size: 14px;
-  }
-  .home-services-list-item p {
-    font-size: 15px;
-  }
-  .home-services-list-item:last-child {
-    margin-bottom: 0px;
+  .home-services-list .grey-box {
+    height: auto;
   }
 }
 .home-clients {
