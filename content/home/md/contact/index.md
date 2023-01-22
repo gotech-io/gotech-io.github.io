@@ -1,17 +1,10 @@
 ---
 layout: screens/home/sections/contact/index
+title: Get in touch
+subTitle1: Have any questions?
+subTitle2: Find us
 form:
   - form/index.md
 map:
   - map/index.md
 ---
-
-## Get in touch
-
-### Have any questions?
-
-- Contact us at: contact@gotech.io
-
-### Find us
-
-5 Ha-Melakha St., Netanya
