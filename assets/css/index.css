@@ -1953,15 +1953,6 @@ input {
   margin-left: auto;
   margin-right: auto;
 }
-.home-services h3 {
-  height: auto;
-  margin-bottom: 20px;
-  font-size: 2.6rem;
-  line-height: 3.2rem;
-  font-weight: 600;
-  letter-spacing: -0.063rem;
-  font-weight: 500;
-}
 .home-services-header {
   max-width: 700px;
   width: calc(100% - 100px);
@@ -1974,15 +1965,16 @@ input {
   padding: 0 10px;
 }
 .home-services-list {
-  padding: 35px 30px;
   margin-top: 50px;
-  border-radius: 20px;
-  border-style: solid;
-  border-width: 2px;
-  border-color: #f2f4f8;
-  background: white;
-  max-width: 1100px;
-  align-items: stretch;
+}
+.home-services-list .grey-box {
+  height: 300px;
+}
+.home-services-list .grey-box-icon {
+  display: none;
+}
+.home-services-list .grey-box-wrapper {
+  display: none;
 }
 .home-services-list-item {
   width: calc(33.3333333333% - 10px);
@@ -2588,9 +2580,15 @@ input {
 }
 .contact-info h3 {
   font-size: 40px;
+  font-weight: 500;
+  line-height: 35px;
+  margin-bottom: 20px;
 }
 .contact-info-block {
   margin: 0 0 20px;
+}
+.contact-info-block h4 {
+  font-weight: 500;
 }
 .contact-info-block p {
   font-size: 18px;
