@@ -137,6 +137,9 @@ img {
 .prime {
   background-color: $prime;
 }
+.additional {
+  background-color: $additional;
+}
 
 @media only screen and (max-width: $medium) {
   .page-common-block {

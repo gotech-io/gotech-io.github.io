@@ -72,6 +72,12 @@
   }
 }
 
+.additional {
+  .color-block {
+    background-color: $additional;
+  }
+}
+
 @media only screen and (max-width: $mobile) {
   .color-block {
     &-description {
