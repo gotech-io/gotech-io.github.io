@@ -39,6 +39,14 @@
   }
 }
 
+@media only screen and (max-width: $medium) {
+  .project-page {
+    &-intro {
+      width: 25%;
+    }
+  }
+}
+
 @media only screen and (max-width: $mobile) {
   .project-page {
     &-block {
@@ -46,6 +54,7 @@
     }
 
     &-intro {
+      width: auto;
       margin-bottom: 20px;
     }
   }
