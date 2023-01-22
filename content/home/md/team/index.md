@@ -1,15 +1,7 @@
 ---
 layout: screens/home/sections/team/index
-list:
-  - lidor.md
-  - doron.md
-  - ronen.md
-  - mor.md
-  - assaf.md
-  - giora.md
-  - raz.md
-
 title: team
+list: /_shared/teams/index.md
 ---
 
 #### Meet our professional team

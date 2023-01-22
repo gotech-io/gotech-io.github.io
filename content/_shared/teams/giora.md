@@ -1,5 +1,5 @@
 ---
-layout: screens/home/sections/team/components/member
+layout: common/member/index
 image: /assets/images/home/team/giora.jpg
 name: Giora Krasilshchik
 position: Head of Mobile

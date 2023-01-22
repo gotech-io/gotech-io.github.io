@@ -1,5 +1,5 @@
 ---
-layout: screens/home/sections/team/components/member
+layout: common/member/index
 image: /assets/images/home/team/ronen.jpg
 name: Ronen Klein
 position: VP Sales & Business Development

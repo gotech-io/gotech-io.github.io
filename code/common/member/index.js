@@ -1,7 +1,7 @@
-import Image from "../../../../../common/img";
+import Image from "../img";
 import React from "react";
-import animations from "../../../../../../assets/js/animations";
-import { handleUrl } from "../../../../../utils";
+import animations from "../../../assets/js/animations";
+import { handleUrl } from "../../utils";
 
 const Member = ({ image, name, position, link, _relativeURL, _ID }) => {
   return (

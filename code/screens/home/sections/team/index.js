@@ -1,7 +1,8 @@
 import React from "react";
+import Teams from "../../../../common/teams";
 import animations from "../../../../../assets/js/animations";
 
-const Team = ({ list, _body, title }) => {
+const HomePageTeams = ({ title, list, _body }) => {
   return (
     <div className="home-team section">
       <div className="section-header" data-aos={animations.up}>
@@ -9,9 +10,9 @@ const Team = ({ list, _body, title }) => {
         <section className="section-body">{_body}</section>
       </div>
       <aside className="indicator" id="team"></aside>
-      <div className="home-team-list">{list}</div>
+      {list}
     </div>
   );
 };
 
-export default Team;
+export default HomePageTeams;
