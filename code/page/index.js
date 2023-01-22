@@ -6,6 +6,16 @@ const Page = ({ title, navbar, footer, _relativeURL, _ID, main }) => {
   return (
     <html>
       <head>
+        <script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-16SZPX0CE1"
+        ></script>
+        <script>
+          window.dataLayer = window.dataLayer || []; function gtag()
+          {typeof window !== "undefined" && window.dataLayer.push(arguments)}
+          gtag('js', new Date()); gtag('config', 'G-16SZPX0CE1');
+        </script>
+
         <title>{title}</title>
         <MetaTags _relativeURL={_relativeURL} _ID={_ID} />
         <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
