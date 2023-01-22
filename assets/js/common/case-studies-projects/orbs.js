@@ -19,11 +19,11 @@ export const ORBS = {
     },
     {
       type: "section-beta",
-      color: COLORS.MAIN,
+      color: COLORS.GREY,
     },
     {
       type: "section-gamma",
-      color: COLORS.DEFAULT,
+      color: COLORS.MAIN,
       title: "Challenge Faced",
       description:
         "Orbs was looking for a partner who could take ownership of entire projects, think big, and work independently while providing high-quality products.",
@@ -69,7 +69,6 @@ export const ORBS = {
     { title: "Services Used", options: ["FrontEnd"], link: "/service/web" },
     {
       title: "Technologies Stack",
-      options: ["React", "Cuttlebelle", "Redux"],
       link: "/service/web/#technologies",
     },
   ],

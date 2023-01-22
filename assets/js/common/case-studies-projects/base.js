@@ -19,11 +19,11 @@ export const BASE = {
     },
     {
       type: "section-beta",
-      color: COLORS.MAIN,
+      color: COLORS.GREY,
     },
     {
       type: "section-gamma",
-      color: COLORS.DEFAULT,
+      color: COLORS.MAIN,
       title: "Challenge Faced",
       description:
         "As Base's client base grew, the demands on their R&D department increased.",
@@ -73,7 +73,6 @@ export const BASE = {
     },
     {
       title: "Technologies Stack",
-      options: ["Java", "Cucumber", "Playwright"],
       link: "/service/qa/#technologies",
     },
   ],

@@ -8,7 +8,8 @@
     padding: 7px 15px;
     display: flex;
     align-items: center;
-    border: 1px solid $additional;
+    background-color: $main;
+    color: $additional;
     border-radius: 10px;
 
     p {

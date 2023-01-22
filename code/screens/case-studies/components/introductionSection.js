@@ -1,6 +1,7 @@
 import ArrowButton from "../../../common/btns/arrow";
 import ColorSection from "../../../common/ColorSection";
 import IntroductionItem from "./introductionItem";
+import IntroductionTagsItem from "./introductionTagsItem";
 import React from "react";
 import Tags from "../../../common/tags";
 import { COLORS } from "../../../../assets/js/common/colors";
@@ -8,7 +9,7 @@ import { COLORS } from "../../../../assets/js/common/colors";
 const isEmpty = "Right now we don't have a description!";
 const textBtn = "see all";
 
-function IntroductionSection({ introduction }) {
+function IntroductionSection({ introduction, tags }) {
   return (
     <div className="project-page-block">
       {introduction.length ? (
@@ -19,20 +20,12 @@ function IntroductionSection({ introduction }) {
               title={intro.title}
               description={intro.description || ""}
             >
-              {intro.options && (
-                <div>
-                  <Tags
-                    tags={intro.options}
-                    count={intro.options.length || 0}
-                  />
-                  {intro.link && (
-                    <ArrowButton
-                      link={intro.link}
-                      textBtn={textBtn}
-                      color={COLORS.GREEN}
-                    />
-                  )}
-                </div>
+              {intro.options ? (
+                <IntroductionTagsItem link={intro.link} tags={intro.options} />
+              ) : (
+                tags.length && (
+                  <IntroductionTagsItem link={intro.link} tags={tags} />
+                )
               )}
             </IntroductionItem>
           );

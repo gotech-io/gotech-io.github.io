@@ -19,11 +19,11 @@ export const NOVOTALK = {
     },
     {
       type: "section-beta",
-      color: COLORS.MAIN,
+      color: COLORS.GREY,
     },
     {
       type: "section-gamma",
-      color: COLORS.DEFAULT,
+      color: COLORS.MAIN,
       title: "Challenge Faced",
       description:
         "When Novotalk approached GoTech, their platform was in need of significant refactoring and performance improvements.",
@@ -76,7 +76,6 @@ export const NOVOTALK = {
     },
     {
       title: "Technologies Stack",
-      options: ["CSS", "React", "AWS"],
       link: "/service/web/#technologies",
     },
   ],

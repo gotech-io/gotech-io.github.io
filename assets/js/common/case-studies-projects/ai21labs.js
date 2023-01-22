@@ -19,11 +19,11 @@ export const AI21LABS = {
     },
     {
       type: "section-beta",
-      color: COLORS.MAIN,
+      color: COLORS.GREY,
     },
     {
       type: "section-gamma",
-      color: COLORS.DEFAULT,
+      color: COLORS.MAIN,
       title: "Challenge Faced",
       description:
         "AI21 Labs was facing several challenges with their QA automation tests. The tests were unstable, unorganized, and not providing the results they were looking for.",
@@ -69,7 +69,6 @@ export const AI21LABS = {
     { title: "Services Used", options: ["QA automation"], link: "/service/qa" },
     {
       title: "Technologies Stack",
-      options: ["Playwright", "Mocha"],
       link: "/service/qa/#technologies",
     },
   ],

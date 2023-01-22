@@ -7,7 +7,7 @@ import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-project
 import { SECTIONS } from "../../../../assets/js/common/sections";
 
 function PageProject({ type, marquee, contact, _relativeURL, _ID }) {
-  const { title, description, sections, steps, images, introduction } =
+  const { title, description, sections, steps, images, tags, introduction } =
     PROJECTS_INFO[type];
 
   const { main, parallax } = images;
@@ -15,7 +15,9 @@ function PageProject({ type, marquee, contact, _relativeURL, _ID }) {
   const subjects = [
     {
       type: SECTIONS.BETA,
-      content: <DetailsSection main={main} introduction={introduction} />,
+      content: (
+        <DetailsSection main={main} introduction={introduction} tags={tags} />
+      ),
     },
     {
       type: SECTIONS.GAMMA,
