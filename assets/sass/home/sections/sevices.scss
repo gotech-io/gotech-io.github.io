@@ -81,23 +81,8 @@
       font-size: 28px;
     }
     &-list {
-      padding: 20px;
-      flex-direction: column;
-      margin-left: 12px;
-      margin-right: 12px;
-
-      &-item {
-        width: 100%;
-        margin-bottom: 40px;
-        h6 {
-          font-size: 14px;
-        }
-        p {
-          font-size: 15px;
-        }
-        &:last-child {
-          margin-bottom: 0px;
-        }
+      .grey-box {
+        height: auto;
       }
     }
   }
