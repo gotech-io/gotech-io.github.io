@@ -9,8 +9,8 @@ const ItemServices = ({ entity }) => {
     <GreyBox
       title={title}
       description={details}
-      icon={ICONS[entity]}
-      link={link}
+      // icon={ICONS[entity]}
+      // link={link}
     />
   );
 };
