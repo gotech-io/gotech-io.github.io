@@ -23,6 +23,8 @@
 @import "./points.scss";
 @import "./stages-cycle.scss";
 @import "./technology";
+@import "./grey-box";
+@import "./icon-blob";
 
 .flex-start {
   display: flex;
@@ -135,15 +137,15 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: $headers-font;
-  color: $prime;
+  font-family: $main-font;
+  color: $main-title;
 }
 p,
 a,
 li,
 * {
   font-family: $main-font;
-  color: $prime;
+  color: $main-description;
 }
 
 .text {
@@ -200,7 +202,6 @@ li,
   }
 }
 .link {
-  width: 200px;
   height: 50px;
   letter-spacing: 2px;
   font-size: 12px;
@@ -224,7 +225,7 @@ li,
 
   &:hover {
     background: $green-background;
-    border: 2px solid $main;
+    border: none;
     a {
       color: $main;
     }
@@ -258,7 +259,7 @@ li,
 .contact-link-active {
   color: $main;
   background: $green-background;
-  border: solid 2px transparent;
+  border: none;
   a {
     color: $main;
   }
@@ -266,18 +267,14 @@ li,
 
 .contact-link {
   height: 50px;
-
   border-radius: 50px;
   -webkit-transition: background-color 200ms ease-in-out;
   transition: background-color 200ms ease-in-out;
   background: #40435000;
-
   text-align: center;
-
   text-transform: uppercase;
   cursor: pointer;
-  border: solid 2px $green;
-
+  border: solid 2px $main;
   transition: 0.2s all;
   p {
     width: 100%;
@@ -295,11 +292,15 @@ li,
     height: 100%;
     justify-content: center;
     align-items: center;
-    color: $green;
+    color: $main;
   }
   &:hover {
     @extend .contact-link-active;
   }
+
+  // &:hover {
+  //  border: none;
+  // }
 }
 
 .fixed {

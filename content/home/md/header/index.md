@@ -1,8 +1,10 @@
 ---
 layout: screens/home/sections/header/index
-title: GoTech
-sub_title: Providing tech as a service
-description: "Our team will help You forward to the next level. Reimagine your business into a software-first business with our custom software design and development approach!"
+title: Tailored Services
+subTitle: Total Ownership
+description: "
+GoTech is a one-stop shop for infrastructures and development services. Our team consist of the best and most professional mobile and web developers, QA automation developers, DevOps, 
+data engineers and DBAs."
 button:
   - link.md
 ---

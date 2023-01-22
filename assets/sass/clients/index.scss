@@ -1,11 +1,6 @@
 .clients {
   position: relative;
 
-  .gray .color-block {
-    height: 320px;
-    margin-bottom: $inner-gap;
-  }
-
   &-categories-wrapper {
     .section-alpha {
       .color-block {
@@ -39,6 +34,20 @@
       }
     }
   }
+
+  &-list-wrapper {
+    margin: $section-gap auto;
+    display: flex;
+
+    .home-clients-list {
+      margin-left: $section-gap;
+
+      &-item {
+        width: 150px;
+        background-color: $default;
+      }
+    }
+  }
 }
 
 @media only screen and (max-width: $medium) {
@@ -58,15 +67,24 @@
 
     &-flags-wrapper {
       width: 90%;
+      margin: -100px auto;
       justify-content: space-between;
+
+      .flags {
+        width: 50px;
+        height: 50px;
+
+        i {
+          font-size: 25px;
+        }
+      }
     }
 
-    .flags {
-      width: 50px;
-      height: 50px;
+    &-list-wrapper {
+      display: block;
 
-      i {
-        font-size: 25px;
+      .home-clients-list {
+        margin: 20px auto;
       }
     }
   }

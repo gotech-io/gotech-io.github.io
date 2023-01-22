@@ -1,10 +1,9 @@
 import React from "react";
 import animations from "../../../../../../assets/js/animations";
-import Image from "../../../../../common/img";
 
 const List = ({ list }) => {
   return (
-    <ul className="home-clients-list flex-start">
+    <ul className="home-clients-list">
       {list.map((e, i) => {
         return (
           <li

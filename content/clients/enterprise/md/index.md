@@ -1,6 +1,6 @@
 ---
 layout: screens/clients/category/index
-type: CRYPTOCURRENCY
+type: ENTERPRISE
 
 marquee:
   - /_shared/marquee/index.md

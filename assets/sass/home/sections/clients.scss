@@ -24,26 +24,25 @@
     margin: 1rem 0;
   }
   &-list {
+    width: 100%;
+    display: flex;
     flex-wrap: wrap;
     align-items: flex-start;
+
     &-item {
       width: calc(100% / 5 - 10px);
-      margin-right: 12px;
+      margin: 0 5px 10px;
       height: 100%;
       border-radius: 20px;
       overflow: hidden;
       height: 106px;
       background: white;
-      margin-bottom: 12px;
       display: flex;
       align-items: center;
       justify-content: center;
       transition: 0.3s all;
       padding: 22.5px 20.5px;
 
-      &:nth-of-type(5n) {
-        margin-right: 0px;
-      }
       img {
         width: 100%;
         height: 100%;
@@ -55,6 +54,11 @@
         -moz-box-shadow: -1px 7px 50px -10px rgba(0, 0, 0, 0.1);
       }
     }
+  }
+
+  &-btn {
+    display: flex;
+    justify-content: center;
   }
 }
 

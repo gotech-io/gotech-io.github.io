@@ -11,6 +11,14 @@ export const HEALTHCARE = {
   icon: ICONS.HEALTHCARE,
   link: "/clients/healthcare",
 
+  clients: [
+    "/assets/images/home/clients/scopio.png",
+    "/assets/images/home/clients/brainlab.png",
+    "/assets/images/home/clients/earlysense.png",
+    "/assets/images/home/clients/dyn.png",
+    "/assets/images/home/clients/paradigma.png",
+    "/assets/images/home/clients/glucotrack.jpg",
+  ],
   content: {
     title: "Our Clients on Healthcare Category",
     description:

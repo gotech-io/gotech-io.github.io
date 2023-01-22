@@ -5,7 +5,7 @@
 
   &-wrapper {
     height: 500px;
-    margin: $section-gap auto;
+    margin: 0 auto $section-gap;
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -34,52 +34,23 @@
   &-content {
     &-left {
       width: 50%;
-      padding: $section-gap;
       position: absolute;
       bottom: 0;
       right: 0;
-      background-color: $default;
-      border-radius: $radius;
     }
 
     &-right {
       width: 50%;
-      padding: $section-gap;
       position: absolute;
       bottom: 0;
       left: 0;
       z-index: 10;
-      background-color: $default;
-      border-radius: $radius;
-    }
-
-    &-description {
-      margin: $content-gap 0;
-    }
-
-    &-wrapper {
-      width: 100%;
-      display: flex;
-      align-items: center;
-
-      .tags-item {
-        background-color: $main;
-        color: $additional;
-        border: none;
-      }
     }
   }
 }
 
 @media only screen and (max-width: $medium) {
   .case-studies {
-    &-content {
-      &-left,
-      &-right {
-        width: 100% !important;
-      }
-    }
-
     &-image {
       &-left,
       &-right {
@@ -95,15 +66,9 @@
     margin: 0 !important;
 
     &-content {
-      &-wrapper {
-        flex-wrap: wrap;
-        justify-content: center;
-
-        div,
-        button {
-          margin: 5px 5px 5px 0;
-          text-align: center;
-        }
+      &-left,
+      &-right {
+        width: 100% !important;
       }
     }
 

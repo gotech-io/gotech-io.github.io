@@ -1,4 +1,4 @@
-import ListCategories from "../../common/categories";
+import ListClients from "./listClients";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import { CLIENTS_DETAILS } from "../../../assets/js/clients";
@@ -7,12 +7,12 @@ import { SECTIONS } from "../../../assets/js/common/sections";
 
 const subjects = [
   {
-    type: SECTIONS.BETA,
-    content: <ListCategories categories={listCategories} />,
+    type: SECTIONS.ALPHA,
+    content: <ListClients listCategories={listCategories} />,
   },
 ];
 
-function Clients({ marquee, contact, _relativeURL, _ID }) {
+function PageClients({ marquee, contact, _relativeURL, _ID }) {
   const { title, description, sections } = CLIENTS_DETAILS;
 
   return (
@@ -31,4 +31,4 @@ function Clients({ marquee, contact, _relativeURL, _ID }) {
   );
 }
 
-export default Clients;
+export default PageClients;

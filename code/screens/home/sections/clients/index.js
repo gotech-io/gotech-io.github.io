@@ -1,7 +1,8 @@
+import Link from "../../../../common/btns/link";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
-const Clients = ({ clients, _body, title }) => {
+const Clients = ({ title, clients, link, _body }) => {
   return (
     <div className="home-clients section">
       <div className="section-header" data-aos={animations.up}>
@@ -11,6 +12,10 @@ const Clients = ({ clients, _body, title }) => {
 
       <aside className="indicator" id="clients"></aside>
       <div className="home-clients-grid">{clients}</div>
+
+      <div className="page-common-block home-clients-btn">
+        <Link url={link} btnText={"See all our clients"} />
+      </div>
     </div>
   );
 };

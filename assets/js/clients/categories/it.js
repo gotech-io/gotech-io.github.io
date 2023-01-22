@@ -11,6 +11,20 @@ export const IT = {
   icon: ICONS.IT,
   link: "/clients/it",
 
+  clients: [
+    "/assets/images/home/clients/cognyte.png",
+    "/assets/images/home/clients/varonis.png",
+    "/assets/images/home/clients/noname.svg",
+    "/assets/images/home/clients/uveye.png",
+    "/assets/images/home/clients/kazuar.png",
+    "/assets/images/home/clients/cybereason.png",
+    "/assets/images/home/clients/bisec.svg",
+    "/assets/images/home/clients/cyberbit.png",
+    "/assets/images/home/clients/vulcan.png",
+    "/assets/images/home/clients/nsogroup.png",
+    "/assets/images/home/clients/solebit.png",
+  ],
+
   content: {
     title: "Our Clients on Cyber & IT Category",
     description:

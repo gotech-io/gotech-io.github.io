@@ -17,6 +17,10 @@
     }
   }
 
+  &-list {
+    display: flex;
+  }
+
   .contact-link {
     border: solid 2px $main;
     a {
@@ -46,7 +50,7 @@
           color: $prime;
         }
         &:hover {
-          border: solid 2px transparent;
+          border: none;
           a {
             color: $main;
           }
@@ -99,17 +103,9 @@
     }
   }
 
-  &-root-link {
-    width: 200px;
-    height: 100%;
-    display: flex;
-    align-items: center;
-  }
-
   &-logo {
     height: 50px;
     width: auto;
-    padding-top: 5px;
   }
 
   &-desktop-contact {
@@ -139,9 +135,9 @@
       &-toggle {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: end;
         width: 40px;
-        height: 40px;
+        height: 100%;
         position: absolute;
         top: 0;
         right: 20px;
@@ -209,7 +205,8 @@
     }
 
     &-logo {
-      height: 40px;
+      width: 30px;
+      height: 30px;
       padding: 0;
     }
   }

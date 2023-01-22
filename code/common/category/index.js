@@ -1,21 +1,19 @@
+import IconBlob from "../iconBlob";
 import React from "react";
 import animations from "../../../assets/js/animations";
 
-const CategoryItem = ({ title, link, color, icon }) => {
+const CategoryItem = ({ title, link, icon }) => {
   return (
-    <div
-      key={title}
-      className="stages-item"
-      data-aos-anchor-placement="top"
-      data-aos={animations.zoomIn}
-    >
-      <a href={link} className="categories-item-wrapper">
-        <div className={`categories-item-wrapper-dot category-${color}`}>
-          <i className={icon}></i>
-        </div>
-      </a>
+    <div data-aos-anchor-placement="top" data-aos={animations.zoomIn}>
+      <div className="category-item">
+        <a href={link}>
+          <div className="categories-item-wrapper">
+            <IconBlob icon={icon} />
+          </div>
+        </a>
 
-      <p>{title}</p>
+        <p>{title}</p>
+      </div>
     </div>
   );
 };
