@@ -1972,6 +1972,9 @@ input {
 }
 .home-services-list .grey-box {
   height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 .home-services-list .grey-box-icon {
   display: none;
