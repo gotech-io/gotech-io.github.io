@@ -1,13 +1,10 @@
-import ArrowButton from "../../../common/btns/arrow";
 import ColorSection from "../../../common/ColorSection";
-import IntroductionItem from "./introductionItem";
-import IntroductionTagsItem from "./introductionTagsItem";
+import IntroductionItem from "./introduction-item";
+import IntroductionTagsItem from "./introduction-tags-item";
 import React from "react";
-import Tags from "../../../common/tags";
 import { COLORS } from "../../../../assets/js/common/colors";
 
 const isEmpty = "Right now we don't have a description!";
-const textBtn = "see all";
 
 function IntroductionSection({ introduction, tags }) {
   return (

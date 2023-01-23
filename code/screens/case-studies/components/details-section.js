@@ -1,4 +1,4 @@
-import IntroductionSection from "./introductionSection";
+import IntroductionSection from "./introduction-section";
 import Mockup from "../../../common/mockup";
 import React from "react";
 

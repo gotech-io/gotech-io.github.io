@@ -1,7 +1,7 @@
 import Left from "../../case-studies/components/left";
 import PageWrapper from "../../../common/pageWrapper";
 import React from "react";
-import ServicesSection from "../components/servicesSection";
+import ServicesSection from "../components/services-section";
 import StagesCycle from "../../../common/stages-cycle";
 import Technologies from "../../../common/technologies";
 import { SECTIONS } from "../../../../assets/js/common/sections";

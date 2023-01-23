@@ -1,4 +1,4 @@
-import ListProjects from "./components/listProjects";
+import ListProjects from "./components/list-projects";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import { CASE_STUDIES_DETAILS } from "../../../assets/js/common/case-studies-details";

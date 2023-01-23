@@ -1,4 +1,4 @@
-import DetailsSection from "../components/detailsSection";
+import DetailsSection from "../components/details-section";
 import PageWrapper from "../../../common/pageWrapper";
 import Parallax from "../../../common/parallax";
 import React from "react";
