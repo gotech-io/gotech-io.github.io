@@ -8,6 +8,16 @@
     &-wrapper {
       width: 49%;
       margin: 10px 0;
+
+      .grey-box {
+        &:hover {
+          background: linear-gradient(
+            90deg,
+            rgba(75, 226, 200, 0.4),
+            rgba(42, 200, 232, 0.4)
+          );
+        }
+      }
     }
   }
 
