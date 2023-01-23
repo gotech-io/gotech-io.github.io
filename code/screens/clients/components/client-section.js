@@ -10,7 +10,7 @@ function ClientSection({ title, description, image, reverse }) {
         style={{ flexDirection: reverse && "row-reverse" }}
       >
         <div className="client-section-image-item">
-          <Mockup />
+          <Mockup image={image} />
         </div>
 
         <div

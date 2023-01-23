@@ -1,6 +1,5 @@
 .client-section {
   width: 100%;
-  margin-bottom: $section-gap;
 
   &-wrapper {
     margin: $section-gap auto;
@@ -24,4 +23,19 @@
 }
 
 @media only screen and (max-width: $mobile) {
+  .client-section {
+    &-wrapper {
+      display: block;
+    }
+
+    &-image-item {
+      display: none;
+    }
+
+    &-content {
+      &-item {
+        width: 100%;
+      }
+    }
+  }
 }
