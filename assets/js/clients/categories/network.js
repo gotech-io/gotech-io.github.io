@@ -20,17 +20,5 @@ export const NETWORK = {
     "/assets/images/home/clients/telicomm.png",
   ],
 
-  content: {
-    title: "Our Clients on Education Category",
-    description: "Add Here",
-    clients: [
-      {
-        title: "Novotalk",
-        description: "Add Here",
-        range: 5,
-        clientName: "Client First",
-        image: "/",
-      },
-    ],
-  },
+  sections: [],
 };
