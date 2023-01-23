@@ -4,14 +4,9 @@ import { ICONS } from "../../../../../assets/js/common/icons";
 import { SERVICES } from "../../../../../assets/js/common/services/content";
 
 const ItemServices = ({ entity }) => {
-  const { title, details, link } = SERVICES[entity];
+  const { title, details, link, image } = SERVICES[entity];
   return (
-    <GreyBox
-      title={title}
-      description={details}
-      icon={ICONS[entity]}
-      link={link}
-    />
+    <GreyBox title={title} description={details} image={image} link={link} />
   );
 };
 

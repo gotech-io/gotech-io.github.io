@@ -9,6 +9,7 @@ export const MOBILE_DEV = {
   description:
     "Mobile app development is an ongoing process of a constant, iterative effort to make your product better and better. Our mobile development team of experts will help you build smart business solutions and develop state-of-the-art mobile apps with ease.",
   link: "/service/mobile",
+  image: "/assets/images/services/mobile.png",
 
   sections: [
     {

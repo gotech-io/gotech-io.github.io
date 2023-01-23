@@ -9,6 +9,7 @@ export const WEB_DEV = {
   description:
     "Benefit from our highly experienced specialists in Full-Stack development. As a top software development company, we have the expertise to create customized solutions with cutting-edge technology that are both technically advanced and easy to use.",
   link: "/service/web",
+  image: "/assets/images/services/web.png",
 
   sections: [
     {

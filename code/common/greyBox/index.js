@@ -1,15 +1,17 @@
 import BlobButton from "../btns/blob";
+import GreyBoxIcon from "../grey-box-icon";
 import React from "react";
 import Tags from "../tags";
 
 const btnText = "See more";
 
-function GreyBox({ title, description, icon, tags, link }) {
+function GreyBox({ title, description, icon, image, tags, link }) {
   return (
     <div className="grey-box">
       {icon && <i className={`grey-box-icon ${icon}`} />}
+      {image && <GreyBoxIcon image={image} />}
 
-      <h3>{title}</h3>
+      <h4>{title}</h4>
       <p className="grey-box-description">{description}</p>
 
       <div className="grey-box-wrapper">

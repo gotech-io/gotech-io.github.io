@@ -9,7 +9,7 @@ export const DEVOPS_DEV = {
   description:
     "We work with you to leverage the latest technologies and DevOps methodologies so that we can create sustainable value for your organization. We have helped businesses of all sizes, from startups to established companies adapt in today's changing market environments and deliver innovative solutions quickly and seamlessly.",
   link: "/service/devops",
-
+  image: "/assets/images/services/devops.png",
   sections: [
     {
       type: SECTIONS.ALPHA,

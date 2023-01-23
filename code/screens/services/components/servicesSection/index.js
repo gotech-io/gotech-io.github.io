@@ -8,7 +8,7 @@ const ServicesSection = ({ services }) => {
     <div className="page-common-block">
       <div className="service-wrapper">
         {services.length &&
-          services.map(({ icon, title, description }) => {
+          services.map(({ title, description, image }) => {
             return (
               <div
                 className="services-content-wrapper"
@@ -19,7 +19,7 @@ const ServicesSection = ({ services }) => {
                 <GreyBox
                   title={title}
                   description={description}
-                  icon={ICONS[icon]}
+                  image={image}
                 />
               </div>
             );
