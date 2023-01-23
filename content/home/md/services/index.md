@@ -1,5 +1,6 @@
 ---
 layout: screens/home/sections/services/index
+section: Services
 title: The only tech company you'll ever need
 services:
   - content/web.md
