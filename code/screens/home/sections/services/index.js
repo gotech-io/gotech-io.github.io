@@ -21,7 +21,6 @@ const Services = ({ section, title, services, _body }) => {
         data-aos={animations.zoomIn}
         data-aos-delay="200"
       >
-        {/* {services} */}
         <ListServices services={services} />
       </div>
     </div>

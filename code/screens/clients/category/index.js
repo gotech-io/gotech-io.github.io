@@ -1,5 +1,5 @@
 import Flags from "../../../common/flags";
-import ListReviews from "../components/listReviews";
+import ListClientSection from "../components/list-client-section";
 import PageWrapper from "../../../common/pageWrapper";
 import Question from "../../../common/faq";
 import React from "react";
@@ -9,7 +9,7 @@ import { SECTIONS } from "../../../../assets/js/common/sections";
 
 function Categories({ type, marquee, contact, _relativeURL, _ID }) {
   const currentCategory = listCategories.find((item) => item.type === type);
-  const { title, description, color, content } = currentCategory;
+  const { title, description, color, sections } = currentCategory;
 
   const subjects = [
     {
@@ -18,7 +18,7 @@ function Categories({ type, marquee, contact, _relativeURL, _ID }) {
     },
     {
       type: SECTIONS.BETA,
-      content: <ListReviews content={content} color={color} />,
+      content: <ListClientSection sections={sections} />,
     },
     {
       type: SECTIONS.GAMMA,

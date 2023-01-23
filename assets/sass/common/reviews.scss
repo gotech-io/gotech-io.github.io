@@ -1,99 +1,27 @@
-.reviews {
+.client-section {
   width: 100%;
   margin-bottom: $section-gap;
 
   &-wrapper {
     margin: $section-gap auto;
-    position: relative;
     display: flex;
     justify-content: space-between;
+    align-items: center;
   }
 
   &-image-item {
     width: 40%;
-    height: 90%;
-
-    img {
-      border-radius: $radius;
-    }
   }
 
   &-content {
     &-item {
-      width: 70%;
-      padding: $section-gap;
-      position: absolute;
-      bottom: -50px;
-      right: 0;
-      background-color: $main;
-      border-radius: $radius;
-      box-shadow: $shadow;
-      -webkit-box-shadow: $shadow;
-      -moz-box-shadow: $shadow;
-
-      .reverse {
-        left: 0;
-      }
-    }
-
-    &-description {
-      margin: $content-gap 0;
-      font-size: 15px;
-    }
-
-    &-grade {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      flex-wrap: wrap;
-    }
-
-    &-clients {
-      display: flex;
-      height: auto;
-      align-items: center;
-
-      p {
-        margin-right: $content-gap;
-        font-weight: 600;
-        font-style: italic;
-      }
-
-      &-image {
-        width: 50px;
-        height: 50px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: $circle;
-        background-color: $additional;
-
-        i {
-          color: $main;
-        }
-      }
+      width: 55%;
     }
   }
 }
 
 @media only screen and (max-width: $medium) {
-  .reviews-wrapper {
-    display: block;
-  }
-
-  .reviews-image-item {
-    width: 100%;
-    height: auto;
-  }
-
-  .reviews-content-item {
-    width: 100%;
-    position: unset;
-  }
 }
 
 @media only screen and (max-width: $mobile) {
-  .reviews-content-clients {
-    width: 100%;
-  }
 }

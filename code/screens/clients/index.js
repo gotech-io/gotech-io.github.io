@@ -1,4 +1,4 @@
-import ListClients from "./listClients";
+import ListClients from "./list-clients";
 import PageWrapper from "../../common/pageWrapper";
 import React from "react";
 import { CLIENTS_DETAILS } from "../../../assets/js/clients";
