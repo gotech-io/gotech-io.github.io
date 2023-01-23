@@ -3382,6 +3382,9 @@ input {
   width: 49%;
   margin: 10px 0;
 }
+.services-content-wrapper .grey-box:hover {
+  background: linear-gradient(90deg, rgba(75, 226, 200, 0.4), rgba(42, 200, 232, 0.4));
+}
 .services-technology {
   width: 100%;
   padding: 200px 0;
