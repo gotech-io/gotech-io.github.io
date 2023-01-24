@@ -2,3 +2,5 @@ node_modules
 site/
 .idea/
 assets/css
+
+settings.json
