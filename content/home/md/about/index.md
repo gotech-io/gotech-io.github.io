@@ -7,7 +7,7 @@ sectionBtn:
   - link.md
 ---
 
-#### We Are GoTech
+### We Are GoTech
 
 In today's challenging and rapidly changing world of technology, GoTech Group provides the best innovative solutions for development, QA automation, DevOps, Database engineers.
 
