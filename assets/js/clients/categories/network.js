@@ -5,6 +5,7 @@ import { CLIENT_TITLES } from "../titles";
 export const NETWORK = {
   type: "NETWORK",
   title: CLIENT_TITLES.NETWORK,
+  sectionName: CLIENT_TITLES.NETWORK,
   description: "Add Here",
   color: COLORS.BLUE,
   icon: ICONS.NETWORK,

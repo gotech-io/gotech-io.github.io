@@ -2,6 +2,8 @@ import Link from "../../../../common/btns/link";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
 
+const btnText = "See all our clients";
+
 const Clients = ({ title, clients, link, _body }) => {
   return (
     <div className="home-clients section">
@@ -14,7 +16,7 @@ const Clients = ({ title, clients, link, _body }) => {
       <div className="home-clients-grid">{clients}</div>
 
       <div className="page-common-block home-clients-btn">
-        <Link url={link} btnText={"See all our clients"} />
+        <Link url={link} btnText={btnText} />
       </div>
     </div>
   );

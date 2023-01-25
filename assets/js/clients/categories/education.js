@@ -5,6 +5,7 @@ import { CLIENT_TITLES } from "../titles";
 export const EDUCATION = {
   type: "EDUCATION",
   title: CLIENT_TITLES.EDUCATION,
+  sectionName: CLIENT_TITLES.EDUCATION,
   description: "Add Here",
   color: COLORS.BLUE,
   icon: ICONS.EDUCATION,

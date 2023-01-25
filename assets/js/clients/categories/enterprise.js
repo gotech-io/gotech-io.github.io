@@ -5,6 +5,7 @@ import { CLIENT_TITLES } from "../titles";
 export const ENTERPRISE = {
   type: "ENTERPRISE",
   title: CLIENT_TITLES.ENTERPRISE,
+  sectionName: CLIENT_TITLES.ENTERPRISE,
   description: "Add Here",
   color: COLORS.BLUE,
   icon: ICONS.ENTERPRISE,

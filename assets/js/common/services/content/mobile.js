@@ -14,7 +14,7 @@ export const MOBILE_DEV = {
   sections: [
     {
       type: SECTIONS.ALPHA,
-      color: "green",
+      color: COLORS.MAIN,
       title: "our services",
       paragraphs: [
         "Robust Mobile Applications For Improved Client And Workforce Engagement.",
@@ -23,14 +23,14 @@ export const MOBILE_DEV = {
     },
     {
       type: SECTIONS.BETA,
-      color: "main",
+      color: COLORS.DEFAULT,
       title: "app development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
     },
     {
       type: SECTIONS.GAMMA,
-      color: "orange",
+      color: COLORS.ORANGE,
       title: "Mobile Strategies",
       paragraphs: [
         "We blend our mobile strategies with your technology needs to ensure that you delight your customers and attain business success. The goal is to gain maximum benefit from the current mobile technologies.",
@@ -38,21 +38,21 @@ export const MOBILE_DEV = {
     },
     {
       type: SECTIONS.DELTA,
-      color: "main",
+      color: COLORS.MAIN,
       title: "technologies",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals. We employ platform-specific SDKs for Android and iOS, cross-platform approaches relying on HTML5, and conversion tools, to develop cost-effective enterprise mobile solutions.",
     },
     {
       type: SECTIONS.EPSILON,
-      color: "prime",
+      color: COLORS.PRIME,
       title: "Device Compatibility",
       description:
         "We ensure that all the applications that we develop are compatible with the device types used by our customers. iOS applications are tested on iOS and iPad devices, and Android applications are tested on popular Android phones and tablets to ensure compatibility.",
     },
     {
       type: SECTIONS.ZETA,
-      color: "main",
+      color: COLORS.MAIN,
       title: "case studies example",
       description:
         "Keeping abreast of the latest trends and developments in mobile technologies to deliver value to our customers all over the world.",
