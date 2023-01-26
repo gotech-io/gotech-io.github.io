@@ -1,5 +1,5 @@
-import NavTag from "../../screens/blog/components/nav-tag";
-import Profile from "../../screens/blog/components/profile";
+import NavTag from "../../screens/blogs/components/nav-tag";
+import Profile from "../../screens/blogs/components/profile";
 import React from "react";
 
 const Post = ({ post }) => {

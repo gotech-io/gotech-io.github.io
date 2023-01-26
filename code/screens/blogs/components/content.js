@@ -3,8 +3,8 @@ import NavTag from "./nav-tag";
 import Profile from "./profile";
 import React from "react";
 
-const BlogsContent = ({}) => {
-  const { title, description, image, profile, link } = blog;
+const BlogsContent = ({ content }) => {
+  const { title, description, image, profile, link } = content;
   return (
     <div className="page-common-block blogs-content">
       <h3>{title}</h3>

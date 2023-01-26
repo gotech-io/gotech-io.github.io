@@ -8,10 +8,11 @@ const navTags = [
   { link: "/", text: "Tutorials" },
 ];
 
-const BlogsHeader = ({}) => {
+const BlogsHeader = ({ header }) => {
+  const { title, activeTag } = header;
   return (
     <div className="page-common-block blogs-title">
-      <h2>Enigma Blog</h2>
+      <h2>{title}</h2>
       <div className="blogs-title-links">
         {navTags.length &&
           navTags.map(({ link, text }) => {

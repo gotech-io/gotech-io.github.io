@@ -1,5 +1,5 @@
 layout: page/index
-script: case-studies/index
+script: services/index
 title: GoTech | Tech as a Service
 navbar:
   - /_shared/navbar/index.md

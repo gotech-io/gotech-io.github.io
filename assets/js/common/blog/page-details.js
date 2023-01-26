@@ -1,5 +1,4 @@
 import { COLORS } from "../colors";
-import { posts } from "../posts";
 import { SECTIONS } from "../sections";
 
 export const PAGE_BLOG_DETAILS = {
@@ -13,6 +12,4 @@ export const PAGE_BLOG_DETAILS = {
       color: COLORS.DEFAULT,
     },
   ],
-
-  posts: posts,
 };
