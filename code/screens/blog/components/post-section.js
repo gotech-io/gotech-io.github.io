@@ -3,12 +3,12 @@ import React from "react";
 
 const PostSection = ({ posts }) => {
   return (
-    <div className="blogs-content">
+    <div className="page-common-block posts">
       <h3>Latests Posts</h3>
 
       {posts.length &&
-        posts.map(({ title, description }) => {
-          return <Post key={title} title={title} description={description} />;
+        posts.map((post) => {
+          return <Post key={post.title} post={post} />;
         })}
     </div>
   );

@@ -1,41 +1,39 @@
 import BlogsContent from "./components/content";
 import BlogsHeader from "./components/header";
+import PageWrapper from "../../common/pageWrapper";
 import PostSection from "./components/post-section";
 import React from "react";
-import { handleUrl } from "../../utils";
-
-// const subjects = [
-//   {
-//     type: SECTIONS.ALPHA,
-//     content: <ListProjects />,
-//   },
-// ];
-
-const posts = [
-  {
-    title: "How to improve Web Design Process",
-    description:
-      "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
-  },
-];
+import { BLOG_DETAILS } from "../../../assets/js/blog";
+import { SECTIONS } from "../../../assets/js/common/sections";
 
 function PageBlogs({ marquee, contact, _relativeURL, _ID }) {
-  //const { title, description, sections } = CASE_STUDIES_DETAILS;
+  const { sections, posts } = BLOG_DETAILS;
+
+  const subjects = [
+    {
+      type: SECTIONS.ALPHA,
+      content: (
+        <div className="blogs">
+          <BlogsHeader />
+          <BlogsContent />
+        </div>
+      ),
+    },
+    {
+      type: SECTIONS.BETA,
+      content: <PostSection posts={posts} />,
+    },
+  ];
 
   return (
-    <div>
-      <div className="page-common-block blogs">
-        <BlogsHeader />
-
-        <BlogsContent />
-
-        <PostSection posts={posts} />
-      </div>
-
-      <div className="page-common-sub-section">{contact}</div>
-      <script
-        type="module"
-        src={handleUrl(`/assets/js/home/index.js`, _relativeURL, _ID)}
+    <div className="b">
+      <PageWrapper
+        sections={sections}
+        subjects={subjects}
+        marquee={marquee}
+        contact={contact}
+        _relativeURL={_relativeURL}
+        _ID={_ID}
       />
     </div>
   );

@@ -1,16 +1,18 @@
 .post {
+  margin: $section-gap 0 0;
   padding: 10px;
   display: flex;
   justify-content: space-between;
   border-radius: $radius;
-  background-color: $additional;
+  background-color: $main;
 
   &-image {
     width: 30%;
     height: 350px;
+    background-color: $default;
+    border-radius: $radius;
 
     img {
-      background-color: $default;
       border-radius: $radius;
     }
   }
@@ -21,10 +23,6 @@
 
     h4 {
       margin: $content-gap 0 10px;
-    }
-
-    p {
-      margin-bottom: $content-gap;
     }
 
     .profile {

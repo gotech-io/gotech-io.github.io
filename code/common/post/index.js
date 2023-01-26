@@ -2,17 +2,20 @@ import NavTag from "../../screens/blog/components/nav-tag";
 import Profile from "../../screens/blog/components/profile";
 import React from "react";
 
-const Post = ({ title, description }) => {
+const Post = ({ post }) => {
+  const { title, description, image, tag, profile } = post;
+
   return (
     <div className="post">
       <div className="post-image">
-        <img src={"/"} />
+        <img src={image} alt="post-image" />
       </div>
+
       <div className="post-content">
-        <NavTag text={"news"} />
+        <NavTag text={tag} />
         <h4>{title}</h4>
         <p>{description} </p>
-        <Profile src={"/"} title={"Software"} date={"July 24, 2019"} />
+        <Profile profile={profile} />
       </div>
     </div>
   );

@@ -73,10 +73,11 @@
   &-circle {
     width: 40px;
     height: 40px;
+    background-color: $default;
+    border-radius: $circle;
 
     img {
       border-radius: $circle;
-      background-color: $default;
     }
   }
 

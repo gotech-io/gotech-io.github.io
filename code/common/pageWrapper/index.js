@@ -16,7 +16,9 @@ function PageWrapper({
 }) {
   return (
     <div>
-      <Header title={title} description={description} />
+      {(title || description) && (
+        <Header title={title} description={description} />
+      )}
 
       {sections && subjects && (
         <Sections sections={sections} subjects={subjects} mainColor={color} />

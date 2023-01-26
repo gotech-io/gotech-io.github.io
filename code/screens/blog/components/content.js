@@ -5,7 +5,7 @@ import React from "react";
 
 const BlogsContent = () => {
   return (
-    <div className="blogs-content">
+    <div className="page-common-block blogs-content">
       <h3>E7 Ways To Improve Website Usability And Accessibility</h3>
 
       <NavTag text={"news"} />
@@ -14,7 +14,7 @@ const BlogsContent = () => {
       </div>
 
       <div className="blogs-content-profile">
-        <Profile src={"/"} title={"Software"} date={"July 24, 2019"} />
+        {/* <Profile profile={profile} /> */}
       </div>
 
       <p>
