@@ -15,10 +15,6 @@ function PageServices({ services, marquee, contact, _relativeURL, _ID }) {
       content: <ListServices services={services} />,
     },
     {
-      type: SECTIONS.DELTA,
-      content: <Points points={points} />,
-    },
-    {
       type: SECTIONS.EPSILON,
       content: <Diagram />,
     },
