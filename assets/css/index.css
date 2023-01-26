@@ -544,6 +544,7 @@ img {
 }
 .steps-item p {
   width: 90%;
+  font-size: 15px;
   font-weight: 600;
 }
 
@@ -1193,7 +1194,7 @@ img {
 .technology {
   margin-top: 50px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 .technology-stack h5 {
@@ -3407,6 +3408,9 @@ input {
   box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.2), 0 5px 10px 0 rgba(0, 0, 0, 0.2);
 }
 
+.service-page .case-studies-wrapper {
+  margin-top: 50px;
+}
 .service .color-block-title, .service .color-block-description {
   text-align: center;
 }
