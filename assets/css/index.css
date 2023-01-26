@@ -1934,13 +1934,9 @@ input {
   margin-top: 50px;
 }
 .home-services-list .grey-box {
-  height: 300px;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.home-services-list .grey-box-wrapper {
-  display: none;
 }
 .home-services-list-item {
   width: calc(33.3333333333% - 10px);

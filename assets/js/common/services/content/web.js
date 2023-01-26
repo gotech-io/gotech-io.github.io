@@ -15,14 +15,14 @@ export const WEB_DEV = {
     {
       type: SECTIONS.ALPHA,
       color: COLORS.MAIN,
-      title: "our services",
+      title: "Our Services",
       description:
         "GoTech is your reliable partner for any business-changing solutions. Our teams help build your brand, increase your identity, promote your products and services to help you gain a competitive advantage.",
     },
     {
       type: SECTIONS.BETA,
       color: COLORS.DEFAULT,
-      title: "app development process",
+      title: "App Development Process",
       paragraphs: [
         "Whether you decide to develop your web application in-house team or outsource, your project will be more successful if you understand the process involved in web application development in advance.",
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
@@ -40,7 +40,7 @@ export const WEB_DEV = {
     {
       type: SECTIONS.DELTA,
       color: COLORS.MAIN,
-      title: "technology stack",
+      title: "Technologies",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals. The following web development technologies enable the creation of high-performing, fast, and advanced web applications.",
     },
@@ -56,7 +56,7 @@ export const WEB_DEV = {
     {
       type: SECTIONS.ZETA,
       color: COLORS.MAIN,
-      title: "case studies example",
+      title: "Case Studies Example",
       description:
         "Our teams help integrate the tailored experience of native apps with easy access on a website browser from any device, that provide immersive and tailored experiences like the native apps directly from the browser.",
     },

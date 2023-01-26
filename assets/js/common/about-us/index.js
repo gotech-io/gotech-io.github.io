@@ -1,4 +1,5 @@
 import { COLORS } from "../colors";
+import { SECTIONS } from "../sections";
 
 export const ABOUT_US_DETAILS = {
   title: "About Us",
@@ -12,35 +13,27 @@ export const ABOUT_US_DETAILS = {
 
   sections: [
     {
-      type: "section-alpha",
-      color: COLORS.DEFAULT,
-      title: "our history",
-      description:
-        "GoTech is a one-stop shop for infrastructures and development services. Our team consists of the best and most professional mobile and web developers, QA automation developers, DevOps, data engineers, and DBAs. We provide our clients with high-quality, reliable services that are tailored to their specific business needs.",
-    },
-    {
-      type: "section-beta",
+      type: SECTIONS.ALPHA,
       color: COLORS.MAIN,
-      title: "you can see us here!",
-      description:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      title: "You can see Us here!",
+      description: "Add here",
     },
     {
-      type: "section-gamma",
+      type: SECTIONS.BETA,
       color: COLORS.GREEN,
-      title: "why choose us?",
+      title: "Why choose Us?",
       description:
         "With years of experience in the industry, our team has the skills and expertise to deliver top-notch solutions that drive real results for our clients. We are committed to providing exceptional customer service and working closely with our clients to ensure their success.",
     },
     {
-      type: "section-delta",
+      type: SECTIONS.GAMMA,
       color: COLORS.MAIN,
       title: "Meet our professional team!",
       description:
         "At GoTech, we believe in the power of collaboration and partnerships. We work closely with our clients to understand their unique challenges and develop solutions that are tailored to their specific needs. Our team is dedicated to helping our clients achieve their goals and succeed in today's competitive market.",
     },
     {
-      type: "section-epsilon",
+      type: SECTIONS.DELTA,
       color: COLORS.YELLOW,
       title: "With us, you are a step ahead",
       description:

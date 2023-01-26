@@ -22,14 +22,9 @@
     margin-top: 50px;
 
     .grey-box {
-      height: 300px;
       display: flex;
       flex-direction: column;
       justify-content: center;
-
-      &-wrapper {
-        display: none;
-      }
     }
 
     &-item {
