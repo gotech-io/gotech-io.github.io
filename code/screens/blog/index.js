@@ -3,11 +3,11 @@ import BlogsHeader from "./components/header";
 import PageWrapper from "../../common/pageWrapper";
 import PostSection from "./components/post-section";
 import React from "react";
-import { BLOG_DETAILS } from "../../../assets/js/blog";
+import { PAGE_BLOG_DETAILS } from "../../../assets/js/common/blog";
 import { SECTIONS } from "../../../assets/js/common/sections";
 
-function PageBlogs({ marquee, contact, _relativeURL, _ID }) {
-  const { sections, posts } = BLOG_DETAILS;
+function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
+  const { sections, posts } = PAGE_BLOG_DETAILS;
 
   const subjects = [
     {

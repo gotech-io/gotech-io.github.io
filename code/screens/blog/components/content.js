@@ -3,30 +3,25 @@ import NavTag from "./nav-tag";
 import Profile from "./profile";
 import React from "react";
 
-const BlogsContent = () => {
+const BlogsContent = ({}) => {
+  const { title, description, image, profile, link } = blog;
   return (
     <div className="page-common-block blogs-content">
-      <h3>E7 Ways To Improve Website Usability And Accessibility</h3>
+      <h3>{title}</h3>
 
       <NavTag text={"news"} />
       <div className="blogs-content-image">
-        <img src={"/"} alt="blogs-image" />
+        <img src={image} alt="blogs-image" />
       </div>
 
       <div className="blogs-content-profile">
-        {/* <Profile profile={profile} /> */}
+        <Profile profile={profile} />
       </div>
 
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
-        varius enim in eros elementum tristique. Duis cursus, mi quis viverra
-        ornare, eros dolor interdum nulla, ut commodo diam libero vitae erat.
-        Aenean faucibus nibh et justo cursus id rutrum lorem imperdiet. Nunc ut
-        sem vitae risus tristique posuere.
-      </p>
+      <p>{description}</p>
 
       <div className="blogs-content-link">
-        <BlobButton link={"/"} btnText={"Read more"} />
+        <BlobButton link={link} btnText={"Read more"} />
       </div>
     </div>
   );

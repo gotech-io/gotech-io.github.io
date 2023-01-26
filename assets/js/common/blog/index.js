@@ -1,8 +1,8 @@
-import { COLORS } from "../common/colors";
-import { SECTIONS } from "../common/sections";
-import { posts } from "./posts";
+import { COLORS } from "../colors";
+import { posts } from "../posts";
+import { SECTIONS } from "../sections";
 
-export const BLOG_DETAILS = {
+export const PAGE_BLOG_DETAILS = {
   sections: [
     {
       type: SECTIONS.ALPHA,
