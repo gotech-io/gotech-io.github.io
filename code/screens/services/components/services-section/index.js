@@ -1,7 +1,6 @@
 import GreyBox from "../../../../common/greyBox";
 import React from "react";
 import animations from "../../../../../assets/js/animations";
-import { ICONS } from "../../../../../assets/js/common/icons";
 
 const ServicesSection = ({ services }) => {
   return (

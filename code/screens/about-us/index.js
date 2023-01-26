@@ -12,14 +12,10 @@ function AboutUs({ teams, marquee, contact, _relativeURL, _ID }) {
   const subjects = [
     {
       type: SECTIONS.ALPHA,
-      content: <Timeline />,
-    },
-    {
-      type: SECTIONS.BETA,
       content: <Video src={video.src} type={video.title} />,
     },
     {
-      type: SECTIONS.DELTA,
+      type: SECTIONS.GAMMA,
       content: <SectionTeams teams={teams} />,
     },
   ];
