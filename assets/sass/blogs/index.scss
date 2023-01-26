@@ -1,0 +1,90 @@
+.blogs {
+  margin-top: 200px;
+
+  &-title {
+    padding-bottom: $content-gap;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid $default;
+
+    h2 {
+      color: $main-text;
+    }
+
+    &-links {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      .nav-tag {
+        background-color: $main;
+        color: $main-text;
+
+        //remove when click will be activate
+        &:nth-of-type(1) {
+          background-color: $green;
+          color: $main;
+          opacity: 0.5;
+        }
+      }
+    }
+  }
+
+  &-content {
+    h3 {
+      margin: $section-gap 0 $content-gap;
+    }
+
+    &-image {
+      width: 100%;
+      height: 300px;
+      margin: $content-gap 0;
+      background-color: $default;
+      border-radius: $radius;
+    }
+
+    &-link {
+      margin-top: $content-gap;
+
+      .button-blob-circle {
+        background-color: $default;
+      }
+    }
+  }
+}
+
+.nav-tag {
+  width: auto;
+  padding: 5px 25px;
+  border-radius: $radius;
+  background-color: $green;
+  color: $main;
+}
+
+.profile {
+  margin-bottom: $content-gap;
+  display: flex;
+  align-items: center;
+
+  &-circle {
+    width: 40px;
+    height: 40px;
+
+    img {
+      border-radius: $circle;
+      background-color: $default;
+    }
+  }
+
+  &-title {
+    margin: 0 10px;
+    font-size: 14px;
+    font-weight: 400;
+  }
+
+  &-date {
+    color: $additional;
+    font-size: 14px;
+  }
+}
