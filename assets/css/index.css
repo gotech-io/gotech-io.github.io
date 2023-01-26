@@ -159,6 +159,9 @@ img {
     font-size: 38px;
   }
   h3 {
+    font-size: 24px;
+  }
+  h4 {
     font-size: 20px;
   }
   p {
@@ -595,7 +598,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #f8f9fa;
   border-radius: 50%;
 }
 .stages-item-wrapper-dot {
@@ -745,6 +748,9 @@ img {
 }
 .client-section-image-item {
   width: 40%;
+}
+.client-section-image-item img {
+  border-radius: 20px;
 }
 .client-section-content-item {
   width: 55%;
@@ -1129,7 +1135,7 @@ img {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: white;
+  background-color: #f8f9fa;
   border-radius: 50%;
 }
 .stages-item-wrapper-dot {
@@ -1462,10 +1468,6 @@ img {
   margin-bottom: 0px;
 }
 
-.title-h4 {
-  font-size: 1.875rem;
-}
-
 .flex-between {
   display: flex;
   align-items: center;
@@ -1735,9 +1737,6 @@ li,
   .section {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  .title-h4 {
-    font-size: 1.5rem;
   }
 }
 html,

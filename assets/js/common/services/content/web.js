@@ -14,14 +14,14 @@ export const WEB_DEV = {
   sections: [
     {
       type: SECTIONS.ALPHA,
-      color: COLORS.GREEN,
+      color: COLORS.MAIN,
       title: "our services",
       description:
         "GoTech is your reliable partner for any business-changing solutions. Our teams help build your brand, increase your identity, promote your products and services to help you gain a competitive advantage.",
     },
     {
       type: SECTIONS.BETA,
-      color: COLORS.MAIN,
+      color: COLORS.DEFAULT,
       title: "app development process",
       paragraphs: [
         "Whether you decide to develop your web application in-house team or outsource, your project will be more successful if you understand the process involved in web application development in advance.",
@@ -30,7 +30,7 @@ export const WEB_DEV = {
     },
     {
       type: SECTIONS.GAMMA,
-      color: COLORS.YELLOW,
+      color: COLORS.ORANGE,
       title: "First Point of Engagement with your business",
       paragraphs: [
         "Your web app is the place that reflects what you do, your services, products, and your reputation. We help you develop end-to-end custom web applications designed to meet your specific business challenges. Leverage the next-gen technologies with our custom web application development services to build innovations that help you stand out from the crowd!",

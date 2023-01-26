@@ -10,6 +10,10 @@
 
   &-image-item {
     width: 40%;
+
+    img {
+      border-radius: $radius;
+    }
   }
 
   &-content {

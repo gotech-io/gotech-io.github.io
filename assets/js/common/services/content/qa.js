@@ -13,7 +13,7 @@ export const QA_DEV = {
   sections: [
     {
       type: SECTIONS.ALPHA,
-      color: "green",
+      color: COLORS.MAIN,
       title: "our services",
       paragraphs: [
         "GoTech will devise a tailored testing strategy or improve on your established QA processes that proved inefficient.",
@@ -22,14 +22,14 @@ export const QA_DEV = {
     },
     {
       type: SECTIONS.BETA,
-      color: COLORS.MAIN,
+      color: COLORS.DEFAULT,
       title: "test automation range",
       description:
         "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software",
     },
     {
       type: SECTIONS.GAMMA,
-      color: "orange",
+      color: COLORS.ORANGE,
       paragraphs: [
         "GoTech will devise a tailored testing strategy or improve on your established QA processes that proved inefficient.",
         "Functional tests will verify how well the entire system operates, what results it yields, and which aspects need to be improved.",
@@ -38,7 +38,7 @@ export const QA_DEV = {
     },
     {
       type: SECTIONS.DELTA,
-      color: "main",
+      color: COLORS.MAIN,
       title: "technologies used",
       paragraphs: [
         "We design a custom set of QA testing services depending on your vertical to properly address every specific botch, bottleneck, or risk.",
@@ -47,7 +47,7 @@ export const QA_DEV = {
     },
     {
       type: SECTIONS.EPSILON,
-      color: "prime",
+      color: COLORS.PRIME,
       paragraphs: [
         "GoTech teams will build a tailored automated testing framework covering your development scope and requirements.",
         "We will run a multi-faceted evaluation to measure the level of the system protection and the safety of sensitive user data. Our team will scan for vulnerabilities in the network infrastructure, the client & server sides, as well as perform a series of simulated tests to reveal all possible flaws.",
@@ -55,7 +55,7 @@ export const QA_DEV = {
     },
     {
       type: SECTIONS.ZETA,
-      color: "main",
+      color: COLORS.MAIN,
       title: "case studies example",
       description:
         "We have a proven track record of building high quality solutions for customers all over the world.",

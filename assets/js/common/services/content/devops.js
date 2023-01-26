@@ -13,21 +13,21 @@ export const DEVOPS_DEV = {
   sections: [
     {
       type: SECTIONS.ALPHA,
-      color: "green",
-      title: "our services",
+      color: COLORS.MAIN,
+      title: "Our Services",
       description:
         "GoTech DevOps services can enhance the performance of your teams and equip them to build better products faster for greater customer satisfaction. Such collaboration and productivity will help you achieve your business goals and compete more effectively in the market.",
     },
     {
       type: SECTIONS.BETA,
-      color: "main",
-      title: "app development process",
+      color: COLORS.DEFAULT,
+      title: "App Development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
     },
     {
       type: SECTIONS.GAMMA,
-      color: "orange",
+      color: COLORS.ORANGE,
       title: "Is DevOps a tool?",
       paragraphs: [
         "DevOps cannot be referred to as a tool. It is a compound of Dev representing development and Ops, which stands for operations. It is a work culture that combines people, process and technology.",
@@ -37,14 +37,14 @@ export const DEVOPS_DEV = {
     },
     {
       type: SECTIONS.DELTA,
-      color: "main",
-      title: "technologies",
+      color: COLORS.MAIN,
+      title: "Technologies",
       description:
         "We focus on research and user experience prior to start the development of the DevOps. We offer only well-recognized and time-tested technologies to support any of your business goals.",
     },
     {
       type: SECTIONS.EPSILON,
-      color: "prime",
+      color: COLORS.PRIME,
       title: "DevOps drive business results!",
       paragraphs: [
         "DevOps is all about providing continuous value to customers. The business results of adopting DevOps should be measured in relation to your business goals and objectives. ",
@@ -52,7 +52,6 @@ export const DEVOPS_DEV = {
       ],
     },
   ],
-
   stages: [
     {
       title: "requirements analysis",

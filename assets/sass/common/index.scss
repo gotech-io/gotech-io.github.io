@@ -94,9 +94,6 @@
   }
 }
 
-.title-h4 {
-  font-size: 1.875rem;
-}
 .flex-between {
   display: flex;
   align-items: center;
@@ -297,10 +294,6 @@ li,
   &:hover {
     @extend .contact-link-active;
   }
-
-  // &:hover {
-  //  border: none;
-  // }
 }
 
 .fixed {
@@ -387,8 +380,5 @@ li,
   .section {
     padding-top: 50px;
     padding-bottom: 50px;
-  }
-  .title-h4 {
-    font-size: 1.5rem;
   }
 }
