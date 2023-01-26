@@ -48,6 +48,12 @@
 }
 
 .service {
+  &-page {
+    .case-studies-wrapper {
+      margin-top: $section-gap;
+    }
+  }
+
   .color-block {
     &-title,
     &-description {

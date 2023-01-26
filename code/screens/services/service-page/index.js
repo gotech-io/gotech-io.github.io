@@ -38,16 +38,18 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
   ];
 
   return (
-    <PageWrapper
-      title={title}
-      description={description}
-      sections={sections}
-      subjects={subjects}
-      marquee={marquee}
-      contact={contact}
-      _relativeURL={_relativeURL}
-      _ID={_ID}
-    />
+    <div className="service-page">
+      <PageWrapper
+        title={title}
+        description={description}
+        sections={sections}
+        subjects={subjects}
+        marquee={marquee}
+        contact={contact}
+        _relativeURL={_relativeURL}
+        _ID={_ID}
+      />
+    </div>
   );
 }
 

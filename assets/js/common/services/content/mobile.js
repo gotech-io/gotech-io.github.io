@@ -15,7 +15,7 @@ export const MOBILE_DEV = {
     {
       type: SECTIONS.ALPHA,
       color: COLORS.MAIN,
-      title: "our services",
+      title: "Our Services",
       paragraphs: [
         "Robust Mobile Applications For Improved Client And Workforce Engagement.",
         "An effectively designed and developed mobile app helps in reinforcing your brand value, extends brand visibility through a new channel, increases accessibility by connecting with users on the move, caters to a wider audience, and beyond.",
@@ -24,7 +24,7 @@ export const MOBILE_DEV = {
     {
       type: SECTIONS.BETA,
       color: COLORS.DEFAULT,
-      title: "app development process",
+      title: "App development process",
       description:
         "There is a long and complex process that starts with receiving a client’s request and finishes with developing an application and successfully launching it. Yet we apply the best methods and techniques to make this process run smoothly and to facilitate the efficiency of each of its stages.",
     },
@@ -39,7 +39,7 @@ export const MOBILE_DEV = {
     {
       type: SECTIONS.DELTA,
       color: COLORS.MAIN,
-      title: "technologies",
+      title: "Technologies",
       description:
         "We offer only well-recognized and time-tested technologies to support any of your business goals. We employ platform-specific SDKs for Android and iOS, cross-platform approaches relying on HTML5, and conversion tools, to develop cost-effective enterprise mobile solutions.",
     },
@@ -53,7 +53,7 @@ export const MOBILE_DEV = {
     {
       type: SECTIONS.ZETA,
       color: COLORS.MAIN,
-      title: "case studies example",
+      title: "Case studies example",
       description:
         "Keeping abreast of the latest trends and developments in mobile technologies to deliver value to our customers all over the world.",
     },
