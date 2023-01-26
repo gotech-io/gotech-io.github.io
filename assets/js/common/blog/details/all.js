@@ -5,6 +5,16 @@ export const ALL = {
     title: "Add Here 1",
     activeTag: "ALL",
   },
-  content: {},
+  content: {
+    title: "asdfghjk",
+    description: "gcgvjklmnb fljkjhvbnmn ugfkjljv",
+    image: "/",
+    profile: {
+      image: "/",
+      title: "dfghj fghj",
+      date: "1234 vbdfgh 45",
+    },
+    link: "/",
+  },
   posts: posts,
 };

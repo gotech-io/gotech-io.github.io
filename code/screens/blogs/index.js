@@ -17,7 +17,7 @@ function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
       content: (
         <div className="blogs">
           <BlogsHeader header={header} />
-          {/* <BlogsContent content={content}/> */}
+          <BlogsContent content={content} />
         </div>
       ),
     },

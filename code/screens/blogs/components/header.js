@@ -2,10 +2,10 @@ import NavTag from "./nav-tag";
 import React from "react";
 
 const navTags = [
-  { link: "/", text: "all" },
-  { link: "/", text: "News" },
-  { link: "/", text: "Features" },
-  { link: "/", text: "Tutorials" },
+  { link: "/blogs/all/", text: "all" },
+  { link: "/blogs/news/", text: "News" },
+  { link: "/blogs/features/", text: "Features" },
+  { link: "/blogs/tutorials/", text: "Tutorials" },
 ];
 
 const BlogsHeader = ({ header }) => {
@@ -16,7 +16,11 @@ const BlogsHeader = ({ header }) => {
       <div className="blogs-title-links">
         {navTags.length &&
           navTags.map(({ link, text }) => {
-            return <NavTag key={text} text={text} />;
+            return (
+              <a key={text} href={link}>
+                <NavTag text={text} />
+              </a>
+            );
           })}
       </div>
     </div>

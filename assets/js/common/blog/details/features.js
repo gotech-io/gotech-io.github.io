@@ -5,6 +5,16 @@ export const FEATURES = {
     title: "Add Here 2",
     activeTag: "FEATURES",
   },
-  content: {},
+  content: {
+    title: "asdfghjk",
+    description: "gcgvjklmnb fljkjhvbnmn ugfkjljv",
+    image: "/",
+    profile: {
+      image: "/",
+      title: "dfghj fghj",
+      date: "1234 vbdfgh 45",
+    },
+    link: "/",
+  },
   posts: posts,
 };

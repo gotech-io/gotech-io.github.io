@@ -5,6 +5,16 @@ export const NEWS = {
     title: "Add Here 3",
     activeTag: "NEWS",
   },
-  content: {},
+  content: {
+    title: "asdfghjk",
+    description: "gcgvjklmnb fljkjhvbnmn ugfkjljv",
+    image: "/",
+    profile: {
+      image: "/",
+      title: "dfghj fghj",
+      date: "1234 vbdfgh 45",
+    },
+    link: "/",
+  },
   posts: posts,
 };
