@@ -14,7 +14,7 @@ export const QA_DEV = {
     {
       type: SECTIONS.ALPHA,
       color: COLORS.MAIN,
-      title: "our services",
+      title: "Our Services",
       paragraphs: [
         "GoTech will devise a tailored testing strategy or improve on your established QA processes that proved inefficient.",
         "We offer services such as implementing and integrating automation infrastructure, developing test tools and reporting tools, and providing automation training to your team.",
@@ -23,7 +23,7 @@ export const QA_DEV = {
     {
       type: SECTIONS.BETA,
       color: COLORS.DEFAULT,
-      title: "test automation range",
+      title: "Test Automation Range",
       description:
         "Our experts have extensive experience in automation, and can help you create stable and maintainable test automation systems that will save time and improve the reliability of your software",
     },
@@ -39,7 +39,7 @@ export const QA_DEV = {
     {
       type: SECTIONS.DELTA,
       color: COLORS.MAIN,
-      title: "technologies used",
+      title: "Technologies",
       paragraphs: [
         "We design a custom set of QA testing services depending on your vertical to properly address every specific botch, bottleneck, or risk.",
         "We offer only well-recognized and time-tested technologies to support any of your business goals.",
@@ -56,7 +56,7 @@ export const QA_DEV = {
     {
       type: SECTIONS.ZETA,
       color: COLORS.MAIN,
-      title: "case studies example",
+      title: "Case Studies Example",
       description:
         "We have a proven track record of building high quality solutions for customers all over the world.",
     },

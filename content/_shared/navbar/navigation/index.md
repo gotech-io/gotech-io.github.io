@@ -5,7 +5,7 @@ links:
     value: /#about
 
   - name: services
-    value: /#services
+    value: /services
 
   - name: clients
     value: /#clients
