@@ -11,7 +11,15 @@ import { handleUrl } from "../../utils";
 //   },
 // ];
 
-function PageCaseStudies({ marquee, contact, _relativeURL, _ID }) {
+const posts = [
+  {
+    title: "How to improve Web Design Process",
+    description:
+      "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
+  },
+];
+
+function PageBlogs({ marquee, contact, _relativeURL, _ID }) {
   //const { title, description, sections } = CASE_STUDIES_DETAILS;
 
   return (
@@ -21,7 +29,7 @@ function PageCaseStudies({ marquee, contact, _relativeURL, _ID }) {
 
         <BlogsContent />
 
-        <PostSection />
+        <PostSection posts={posts} />
       </div>
 
       <div className="page-common-sub-section">{contact}</div>
@@ -33,4 +41,4 @@ function PageCaseStudies({ marquee, contact, _relativeURL, _ID }) {
   );
 }
 
-export default PageCaseStudies;
+export default PageBlogs;

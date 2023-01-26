@@ -1,0 +1,34 @@
+.post {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: $radius;
+  background-color: $additional;
+
+  &-image {
+    width: 30%;
+    height: 350px;
+
+    img {
+      background-color: $default;
+      border-radius: $radius;
+    }
+  }
+
+  &-content {
+    width: 65%;
+    padding: 20px 0;
+
+    h4 {
+      margin: $content-gap 0 10px;
+    }
+
+    p {
+      margin-bottom: $content-gap;
+    }
+
+    .profile {
+      margin-bottom: 0;
+    }
+  }
+}

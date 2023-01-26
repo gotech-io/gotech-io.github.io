@@ -13,7 +13,10 @@ const BlogsContent = () => {
         <img src={"/"} alt="blogs-image" />
       </div>
 
-      <Profile src={"/"} title={"Software"} date={"July 24, 2019"} />
+      <div className="blogs-content-profile">
+        <Profile src={"/"} title={"Software"} date={"July 24, 2019"} />
+      </div>
+
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse
         varius enim in eros elementum tristique. Duis cursus, mi quis viverra

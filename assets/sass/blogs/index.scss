@@ -44,6 +44,10 @@
       border-radius: $radius;
     }
 
+    &-profile {
+      margin-bottom: $content-gap;
+    }
+
     &-link {
       margin-top: $content-gap;
 
@@ -63,7 +67,6 @@
 }
 
 .profile {
-  margin-bottom: $content-gap;
   display: flex;
   align-items: center;
 
