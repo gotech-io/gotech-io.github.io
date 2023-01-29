@@ -6,18 +6,15 @@ import React from "react";
 import { BLOG_DETAILS } from "../../../assets/js/common/blog/details/index";
 import { PAGE_BLOG_DETAILS } from "../../../assets/js/common/blog/page-details";
 import { SECTIONS } from "../../../assets/js/common/sections";
+import { filteredPosts, getTags } from "../../../assets/js/common/blog/helpers";
 
 function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
   const { sections } = PAGE_BLOG_DETAILS;
   const currentBlog = BLOG_DETAILS.find((item) => item.type === entity);
   const { header, content, posts } = currentBlog;
-  const filteredPosts = posts.filter((item) => item.type === entity);
-  const currentPosts = filteredPosts.length ? filteredPosts : posts;
 
-  const tags = [];
-  BLOG_DETAILS.map((item) => {
-    tags.push(item.header.tag);
-  });
+  const currentPosts = filteredPosts(posts, entity);
+  const tags = getTags(BLOG_DETAILS);
 
   const subjects = [
     {
