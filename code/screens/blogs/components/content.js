@@ -4,7 +4,8 @@ import React from "react";
 import BlogsDescription from "./section-description";
 
 const BlogsContent = ({ content, isPost }) => {
-  const { title, description, type, image, profile, link } = content;
+  const { title, description, descriptionDetails, type, image, profile, link } =
+    content;
   return (
     <div className="page-common-block blogs-content">
       <h3>{title}</h3>
@@ -18,7 +19,12 @@ const BlogsContent = ({ content, isPost }) => {
         <Profile profile={profile} />
       </div>
 
-      <BlogsDescription description={description} link={link} isPost={isPost} />
+      <BlogsDescription
+        description={description}
+        details={descriptionDetails}
+        link={link}
+        isPost={isPost}
+      />
     </div>
   );
 };

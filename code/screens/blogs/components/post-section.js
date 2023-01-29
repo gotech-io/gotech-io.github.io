@@ -8,7 +8,11 @@ const PostSection = ({ posts }) => {
 
       {posts.length &&
         posts.map((post) => {
-          return <Post key={post.title} post={post} />;
+          return (
+            <a key={post.title} href={post.link}>
+              <Post post={post} />
+            </a>
+          );
         })}
     </div>
   );
