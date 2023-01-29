@@ -5,3 +5,9 @@
   background-color: $green;
   color: $main;
 }
+
+@media only screen and (max-width: $mobile) {
+  .nav-tag {
+    font-size: 10px;
+  }
+}

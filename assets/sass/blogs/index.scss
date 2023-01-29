@@ -5,6 +5,7 @@
     padding-bottom: $content-gap;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
     align-items: center;
     border-bottom: 2px solid $default;
 
