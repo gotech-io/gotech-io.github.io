@@ -6,7 +6,7 @@ export const filteredPosts = (posts, entity) => {
 export const getTags = (details) => {
   const tags = [];
   details.map((item) => {
-    tags.push(item.header.tag);
+    tags.push(item.tag);
   });
   return tags;
 };

@@ -11,7 +11,7 @@ import { filteredPosts, getTags } from "../../../assets/js/common/blog/helpers";
 function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
   const { sections } = PAGE_BLOG_DETAILS;
   const currentBlog = BLOG_DETAILS.find((item) => item.type === entity);
-  const { header, posts } = currentBlog; //content
+  const { title, tag, posts } = currentBlog;
 
   const currentPosts = filteredPosts(posts, entity);
   const content = currentPosts[0];
@@ -22,7 +22,7 @@ function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
       type: SECTIONS.ALPHA,
       content: (
         <div className="blogs">
-          <BlogsHeader header={header} tags={tags} />
+          <BlogsHeader title={title} tag={tag} tags={tags} />
           <BlogsContent content={content} />
         </div>
       ),
