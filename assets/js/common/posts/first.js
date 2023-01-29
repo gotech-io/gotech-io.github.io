@@ -1,9 +1,9 @@
 import { TAGS } from "../tags";
 
 export const first = {
-  title: "aaaaaaaa",
+  title: "How to improve Web Design Process",
   description:
-    "Aperiam amet dolor in corporis. Ut explicabo aperiam inventore quaerat optio dicta.",
+    "Repellat officia sunt quo delectus qui quisquam sunt asperiores. Facilis dolores totam. Et quia et eos provident fugiat et mollitia. Maxime voluptas odit et similique porro saepe aut. Occaecati dolor vitae enim et consequatur est occaecati animi unde. Nemo dolores ab odit.",
   descriptionDetails: [
     { type: "title", text: "Eos nam atque maiores voluptatem pariatur enim." },
     {

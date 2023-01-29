@@ -1,8 +1,9 @@
 import { TAGS } from "../tags";
 
 export const second = {
-  title: "bbbbbbb",
-  description: "Ut explicabo aperiam inventore quaerat optio dicta.",
+  title: "10 Great Examples of Responsive Websites",
+  description:
+    "Quae quidem sit inventore sunt sint et quos. Rerum rem nostrum recusandae fugiat. Totam est pariatur error animi beatae exercitationem. Iure corporis eum ullam non sit cum.",
   descriptionDetails: [
     { type: "title", text: "Eos nam atque maiores voluptatem pariatur enim." },
     {
