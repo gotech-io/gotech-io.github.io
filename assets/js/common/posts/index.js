@@ -6,8 +6,12 @@ export const posts = [
     description:
       "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
     type: TAGS.NEWS,
-    image: "/",
-    profile: { image: "/", title: "Aaaa Daaaa", date: "July 24, 2019" },
+    image: "/assets/images/about/img1.jpeg",
+    profile: {
+      image: "/assets/images/about/img1.jpeg",
+      title: "Aaaa Daaaa",
+      date: "July 24, 2019",
+    },
   },
 
   {
