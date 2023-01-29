@@ -23,13 +23,13 @@ function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
       content: (
         <div className="blogs">
           <BlogsHeader title={title} tag={tag} tags={tags} />
-          <BlogsContent content={content} />
+          {content && <BlogsContent content={content} />}
         </div>
       ),
     },
     {
       type: SECTIONS.BETA,
-      content: <PostSection posts={currentPosts} />,
+      content: currentPosts.length && <PostSection posts={currentPosts} />,
     },
   ];
 

@@ -1,6 +1,7 @@
 export const filteredPosts = (posts, entity) => {
-  const filteredPosts = posts.filter((item) => item.type === entity);
-  return filteredPosts.length ? filteredPosts : posts;
+  const filteredPosts =
+    entity === "ALL" ? posts : posts.filter((item) => item.type === entity);
+  return filteredPosts;
 };
 
 export const getTags = (details) => {

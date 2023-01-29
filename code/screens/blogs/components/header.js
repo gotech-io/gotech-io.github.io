@@ -6,9 +6,10 @@ const BlogsHeader = ({ title, tag, tags }) => {
     <div className="page-common-block blogs-title">
       <h2>{title}</h2>
       <div className="blogs-title-links">
-        {tags.length &&
+        {tags &&
+          tags.length &&
           tags.map(({ link, text }) => {
-            const isActive = link === tag.link;
+            const isActive = link === tag?.link;
             return (
               <a
                 key={text}

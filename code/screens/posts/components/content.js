@@ -1,9 +1,9 @@
+import BlobButton from "../../../../common/btns/blob";
 import NavTag from "./nav-tag";
 import Profile from "./profile";
 import React from "react";
-import BlogsDescription from "./section-description";
 
-const BlogsContent = ({ content, isPost }) => {
+const BlogsContent = ({ content }) => {
   const { title, description, type, image, profile, link } = content;
   return (
     <div className="page-common-block blogs-content">
@@ -18,7 +18,11 @@ const BlogsContent = ({ content, isPost }) => {
         <Profile profile={profile} />
       </div>
 
-      <BlogsDescription description={description} link={link} isPost={isPost} />
+      <p>{description}</p>
+
+      <div className="blogs-content-link">
+        <BlobButton link={link} btnText={"Read more"} />
+      </div>
     </div>
   );
 };
