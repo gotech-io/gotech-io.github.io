@@ -11,6 +11,8 @@ function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
   const { sections } = PAGE_BLOG_DETAILS;
   const currentBlog = BLOG_DETAILS.find((item) => item.type === entity);
   const { header, content, posts } = currentBlog;
+  const filteredPosts = posts.filter((item) => item.type === entity);
+  const currentPosts = filteredPosts.length ? filteredPosts : posts;
 
   const tags = [];
   BLOG_DETAILS.map((item) => {
@@ -29,7 +31,7 @@ function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
     },
     {
       type: SECTIONS.BETA,
-      content: <PostSection posts={posts} />,
+      content: <PostSection posts={currentPosts} />,
     },
   ];
 
