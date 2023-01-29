@@ -4,12 +4,12 @@ import Profile from "./profile";
 import React from "react";
 
 const BlogsContent = ({ content }) => {
-  const { title, description, image, profile, link } = content;
+  const { title, description, type, image, profile, link } = content;
   return (
     <div className="page-common-block blogs-content">
       <h3>{title}</h3>
 
-      <NavTag text={"news"} />
+      <NavTag text={type} />
       <div className="blogs-content-image">
         <img src={image} alt="blogs-image" />
       </div>

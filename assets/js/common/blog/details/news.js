@@ -4,19 +4,19 @@ import { TAGS } from "../../tags";
 export const NEWS = {
   type: TAGS.NEWS,
   header: {
-    title: "Add Here 3",
+    title: "News Blogs",
     tag: { link: "/blogs/news/", text: TAGS.NEWS },
   },
-  content: {
-    title: "asdfghjk",
-    description: "gcgvjklmnb fljkjhvbnmn ugfkjljv",
-    image: "/",
-    profile: {
-      image: "/",
-      title: "dfghj fghj",
-      date: "1234 vbdfgh 45",
-    },
-    link: "/",
-  },
+  // content: {
+  //   title: "asdfghjk",
+  //   description: "gcgvjklmnb fljkjhvbnmn ugfkjljv",
+  //   image: "/",
+  //   profile: {
+  //     image: "/",
+  //     title: "dfghj fghj",
+  //     date: "1234 vbdfgh 45",
+  //   },
+  //   link: "/",
+  // },
   posts: posts,
 };

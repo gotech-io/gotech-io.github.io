@@ -2,9 +2,9 @@ import { TAGS } from "../tags";
 
 export const posts = [
   {
-    title: "How to improve Web Design Process",
+    title: "aaaaaaaa",
     description:
-      "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
     type: TAGS.NEWS,
     image: "/assets/images/about/img1.jpeg",
     profile: {
@@ -12,32 +12,35 @@ export const posts = [
       title: "Aaaa Daaaa",
       date: "July 24, 2019",
     },
+    link: "/",
   },
 
   {
-    title: "How to improve Web Design Process",
+    title: "bbbbbbb",
     description:
-      "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
+      "Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
     type: TAGS.FEATURES,
     image: "/",
     profile: { image: "/", title: "Aaaa Daaaa", date: "July 24, 2019" },
+    link: "/",
   },
 
   {
-    title: "How to improve Web Design Process",
-    description:
-      "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
+    title: "ccccccccc",
+    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
     type: TAGS.TUTORIALS,
     image: "/",
     profile: { image: "/", title: "Aaaa Daaaa", date: "July 24, 2019" },
+    link: "/",
   },
 
   {
-    title: "How to improve Web Design Process",
+    title: "dddddddd",
     description:
-      "  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra.",
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse varius enim in eros elementum tristique. Duis cursus, mi quis viverra. Lorem ipsum dolor sit amet, consectetur adipiscing elit. ",
     type: TAGS.NEWS,
     image: "/",
     profile: { image: "/", title: "Aaaa Daaaa", date: "July 24, 2019" },
+    link: "/",
   },
 ];
