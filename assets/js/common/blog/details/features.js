@@ -1,9 +1,10 @@
 import { posts } from "../../posts/index";
 
 export const FEATURES = {
+  type: "FEATURES",
   header: {
     title: "Add Here 2",
-    activeTag: "FEATURES",
+    tag: { link: "/blogs/features/", text: "features" },
   },
   content: {
     title: "asdfghjk",

@@ -1,9 +1,10 @@
 import { posts } from "../../posts/index";
 
 export const TUTORIALS = {
+  type: "TUTORIALS",
   header: {
     title: "Add Here 4",
-    activeTag: "TUTORIALS",
+    tag: { link: "/blogs/tutorials/", text: "tutorials" },
   },
   content: {
     title: "asdfghjk",

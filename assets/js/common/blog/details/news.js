@@ -1,9 +1,10 @@
 import { posts } from "../../posts/index";
 
 export const NEWS = {
+  type: "NEWS",
   header: {
     title: "Add Here 3",
-    activeTag: "NEWS",
+    tag: { link: "/blogs/news/", text: "news" },
   },
   content: {
     title: "asdfghjk",

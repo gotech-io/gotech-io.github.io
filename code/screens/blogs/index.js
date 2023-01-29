@@ -9,14 +9,20 @@ import { SECTIONS } from "../../../assets/js/common/sections";
 
 function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
   const { sections } = PAGE_BLOG_DETAILS;
-  const { header, content, posts } = BLOG_DETAILS[entity];
+  const currentBlog = BLOG_DETAILS.find((item) => item.type === entity);
+  const { header, content, posts } = currentBlog;
+
+  const tags = [];
+  BLOG_DETAILS.map((item) => {
+    tags.push(item.header.tag);
+  });
 
   const subjects = [
     {
       type: SECTIONS.ALPHA,
       content: (
         <div className="blogs">
-          <BlogsHeader header={header} />
+          <BlogsHeader header={header} tags={tags} />
           <BlogsContent content={content} />
         </div>
       ),

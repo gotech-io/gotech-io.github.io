@@ -17,15 +17,17 @@
       justify-content: space-between;
       align-items: center;
 
-      .nav-tag {
-        background-color: $main;
-        color: $main-text;
+      &-tag {
+        .nav-tag {
+          background-color: $main;
+          color: $main-text;
+        }
 
-        //remove when click will be activate
-        &:nth-of-type(1) {
-          background-color: $green;
-          color: $main;
-          opacity: 0.5;
+        &-active {
+          .nav-tag {
+            background-color: rgba(75, 226, 200, 0.2);
+            color: $green;
+          }
         }
       }
     }
@@ -56,14 +58,6 @@
       }
     }
   }
-}
-
-.nav-tag {
-  width: auto;
-  padding: 5px 25px;
-  border-radius: $radius;
-  background-color: $green;
-  color: $main;
 }
 
 .profile {

@@ -1,23 +1,24 @@
 import NavTag from "./nav-tag";
 import React from "react";
 
-const navTags = [
-  { link: "/blogs/all/", text: "all" },
-  { link: "/blogs/news/", text: "News" },
-  { link: "/blogs/features/", text: "Features" },
-  { link: "/blogs/tutorials/", text: "Tutorials" },
-];
-
-const BlogsHeader = ({ header }) => {
-  const { title, activeTag } = header;
+const BlogsHeader = ({ header, tags }) => {
   return (
     <div className="page-common-block blogs-title">
-      <h2>{title}</h2>
+      <h2>{header.title}</h2>
       <div className="blogs-title-links">
-        {navTags.length &&
-          navTags.map(({ link, text }) => {
+        {tags.length &&
+          tags.map(({ link, text }) => {
+            const isActive = link === header.tag.link;
             return (
-              <a key={text} href={link}>
+              <a
+                key={text}
+                href={link}
+                className={
+                  isActive
+                    ? "blogs-title-links-tag-active"
+                    : "blogs-title-links-tag"
+                }
+              >
                 <NavTag text={text} />
               </a>
             );
