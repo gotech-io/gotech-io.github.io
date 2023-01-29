@@ -3,6 +3,7 @@
   padding: 10px;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   border-radius: $radius;
   background-color: $main;
 
@@ -28,6 +29,18 @@
 
     .profile {
       margin-bottom: 0;
+    }
+  }
+}
+
+@media only screen and (max-width: $mobile) {
+  .post {
+    &-image {
+      width: 100%;
+    }
+
+    &-content {
+      width: 100%;
     }
   }
 }
