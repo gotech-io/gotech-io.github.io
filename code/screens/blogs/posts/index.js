@@ -7,6 +7,7 @@ import { SECTIONS } from "../../../../assets/js/common/sections";
 import PageWrapper from "../../../common/pageWrapper";
 import BlogsContent from "../components/content";
 import BlogsHeader from "../components/header";
+import PostSection from "../components/post-section";
 
 function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
   const { sections } = PAGE_BLOG_DETAILS;
@@ -26,10 +27,10 @@ function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
         </div>
       ),
     },
-    // {
-    //   type: SECTIONS.BETA,
-    //   content: <PostSection posts={currentPosts} />,
-    // },
+    {
+      type: SECTIONS.BETA,
+      content: <PostSection posts={POSTS} />,
+    },
   ];
 
   return (
