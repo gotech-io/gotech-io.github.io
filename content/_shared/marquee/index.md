@@ -70,7 +70,7 @@ marquee:
   - /assets/images/home/clients/iso.png
   - /assets/images/home/clients/klh.png
   - /assets/images/home/clients/lightico.png
-  - /assets/images/home/clients/liusto.png
+  - /assets/images/home/clients/lisuto.png
   - /assets/images/home/clients/lusha.png
   - /assets/images/home/clients/menora.png
   - /assets/images/home/clients/muvingapp.png
