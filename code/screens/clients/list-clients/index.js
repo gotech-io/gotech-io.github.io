@@ -5,7 +5,7 @@ const ListClients = ({ listCategories }) => {
   return (
     <div className="page-common-block">
       {listCategories.length &&
-        listCategories.map(({ title, sectionName, link, icon, clients }, i) => {
+        listCategories.map(({ sectionName, link, icon, clients }, i) => {
           return (
             <div key={i}>
               {clients?.length && (
