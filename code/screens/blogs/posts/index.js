@@ -1,16 +1,16 @@
 import React from "react";
 import { BLOG_DETAILS } from "../../../../assets/js/common/blog/details";
 import { getTags } from "../../../../assets/js/common/blog/helpers";
-import { PAGE_BLOG_DETAILS } from "../../../../assets/js/common/blog/page-details";
 import { POSTS } from "../../../../assets/js/common/posts";
+import { PAGE_POSTS_DETAILS } from "../../../../assets/js/common/posts/page-details";
 import { SECTIONS } from "../../../../assets/js/common/sections";
 import PageWrapper from "../../../common/pageWrapper";
 import BlogsContent from "../components/content";
 import BlogsHeader from "../components/header";
-import PostSection from "../components/post-section";
+import VerticalPostSection from "../components/vertical-post-section";
 
-function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
-  const { sections } = PAGE_BLOG_DETAILS;
+function PagePosts({ entity, marquee, contact, _relativeURL, _ID }) {
+  const { sections } = PAGE_POSTS_DETAILS;
 
   const currentPost = POSTS.find((item) => item.entity === entity);
   const { title } = BLOG_DETAILS.find((item) => item.type === currentPost.type);
@@ -29,7 +29,7 @@ function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
     },
     {
       type: SECTIONS.BETA,
-      content: <PostSection posts={POSTS} />,
+      content: <VerticalPostSection posts={POSTS} />,
     },
   ];
 
@@ -47,4 +47,4 @@ function PageBlogs({ entity, marquee, contact, _relativeURL, _ID }) {
   );
 }
 
-export default PageBlogs;
+export default PagePosts;

@@ -1,20 +1,21 @@
 import React from "react";
 import animations from "../../../../assets/js/animations";
-import Post from "./post";
+import VerticalPost from "./vertical-post";
 
-const PostSection = ({ posts }) => {
+const VerticalPostSection = ({ posts }) => {
   return (
-    <div className="page-common-block posts">
+    <div className="page-common-block vertical-posts">
       {posts.length &&
         posts.map((post) => {
           return (
             <a
+              className="vertical-posts-link"
               key={post.title}
               href={post.link}
               data-aos-anchor-placement="top-center"
               data-aos={animations.zoomIn}
             >
-              <Post post={post} />
+              <VerticalPost post={post} />
             </a>
           );
         })}
@@ -22,4 +23,4 @@ const PostSection = ({ posts }) => {
   );
 };
 
-export default PostSection;
+export default VerticalPostSection;
