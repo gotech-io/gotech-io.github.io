@@ -14,9 +14,9 @@
     z-index: 10;
 
     &-wrapper {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 10px;
+      width: 50px;
+      height: 50px;
+      margin: 0;
 
       .icons-wrapper {
         background-color: $default;
@@ -34,14 +34,20 @@
 
 .category {
   &-item {
-    width: 200px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .icons-wrapper-icon {
+      font-size: 20px;
+    }
 
     p {
       width: 100%;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 20px;
+      margin: 0 16px;
     }
   }
 }
@@ -50,18 +56,14 @@
   .categories {
     &-item {
       &-wrapper {
-        width: 70px;
-        height: 70px;
       }
     }
-  }
 
-  .category {
-    &-item {
-      width: 120px;
-
-      p {
-        font-size: 12px;
+    .category {
+      &-item {
+        p {
+          font-size: 16px;
+        }
       }
     }
   }
@@ -70,11 +72,5 @@
 @media only screen and (max-width: $mobile) {
   .categories {
     margin: $section-gap auto 0;
-  }
-
-  .category {
-    &-item {
-      margin: 0 auto;
-    }
   }
 }

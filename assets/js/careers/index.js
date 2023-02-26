@@ -3,9 +3,7 @@ import { handleOnScroll } from "../index.js";
 
 window.onload = () => {
   AOS.init({ once: true });
-  changeNavbarLogo();
   initCareers();
-  handleOnScroll("careers-active-navbar");
 };
 
 const initCareers = () => {
@@ -35,9 +33,4 @@ const initCareers = () => {
     };
     window.COMEET ? a() : (window.comeetUpdate = a);
   })();
-};
-
-const changeNavbarLogo = () => {
-  const logo = document.querySelector(".navbar-logo img");
-  logo.src = images.common.whiteLogo;
 };

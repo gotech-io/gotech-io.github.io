@@ -4,9 +4,6 @@
 
   @extend .grid;
   .section-header {
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
   }
   &-text {
     max-width: 650px;
@@ -21,13 +18,10 @@
   .images-flex {
     position: relative;
     z-index: 10;
-    max-width: 960px;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
 
-    margin-left: auto;
-    margin-right: auto;
     .img {
       img {
         border-radius: 10px;

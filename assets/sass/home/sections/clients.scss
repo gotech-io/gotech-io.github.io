@@ -11,10 +11,7 @@
     margin-bottom: 20px;
   }
   &-grid {
-    max-width: 940px;
     @extend .grid;
-    margin-left: auto;
-    margin-right: auto;
   }
   &-cat-title {
     text-align: center;
@@ -41,7 +38,7 @@
       align-items: center;
       justify-content: center;
       transition: 0.3s all;
-      padding: 22.5px 20.5px;
+      padding: 25px;
 
       img {
         width: 100%;
@@ -66,17 +63,8 @@
   .home-clients {
     &-list {
       &-item {
-        width: calc(100% / 3 - 7px);
-        margin-right: 10px;
-        &:nth-child(5n) {
-          margin-right: 10px;
-        }
-        &:nth-child(4n) {
-          margin-right: 10px;
-        }
-        &:nth-child(3n) {
-          margin-right: 0px;
-        }
+        width: calc(100% / 3 - 10px);
+        margin-right: 5px;
       }
     }
   }

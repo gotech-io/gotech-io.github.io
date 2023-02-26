@@ -25,6 +25,8 @@
 @import "./icon-blob.scss";
 @import "./video.scss";
 @import "./timeline.scss";
+@import "./post.scss";
+@import "./nav-tag.scss";
 
 .flex-start {
   display: flex;
@@ -36,6 +38,12 @@
   justify-content: center;
   align-items: center;
 }
+.w-container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  max-width: $main-container-width;
+}
 .section {
   padding-top: 100px;
   margin-left: auto;
@@ -44,7 +52,6 @@
   position: relative;
   display: flex;
   flex-direction: column;
-  align-items: center;
   .link {
     margin-top: 50px;
   }
@@ -55,23 +62,21 @@
     font-size: 0.75rem;
     font-weight: 500;
     margin-bottom: 10px;
-    text-align: center;
   }
   &-body {
-    text-align: center;
     margin-top: 5px;
   }
   &-header {
     margin-bottom: 50px;
     display: flex;
     flex-direction: column;
-    align-items: center;
     h4 {
     }
     p {
-      text-align: center;
       color: #1f2631;
       font-weight: 300;
+      font-size: 1.1rem;
+      max-width: 800px;
     }
   }
 }
@@ -107,10 +112,6 @@
 $component-width: calc(100% - 100px);
 
 .grid {
-  max-width: 950px;
-  width: $component-width;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 @mixin dynamic-grid($maxWidth) {
@@ -298,7 +299,7 @@ li,
 
 .fixed {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0px;
   left: 0px;
 }
@@ -376,9 +377,17 @@ li,
   }
 }
 
+@media only screen and (max-width: 1150px) {
+  .section,
+  .w-container.w-padding {
+    padding-right: 50px;
+    padding-left: 50px;
+  }
+}
+
 @media only screen and (max-width: $mobile) {
-  .section {
-    padding-top: 50px;
-    padding-bottom: 50px;
+  .section,
+  .w-container.w-padding {
+    padding: 50px 20px;
   }
 }
