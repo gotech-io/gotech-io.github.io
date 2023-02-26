@@ -1,7 +1,7 @@
 ---
 layout: screens/home/sections/services/index
 section: Services
-title: The only tech company you'll ever need
+title: In a changing world, you need a flexible partner that will take ownership
 services:
   - content/web.md
   - content/devops.md
@@ -9,4 +9,5 @@ services:
   - content/qa.md
 ---
 
-GoTech Group provides state-of-the-art services, including highly qualified experts in all areas of infrastructure and development. The services are provided according to the customer's schedule, needs and constraints
+We understand that the business world is constantly changing, and that you need a partner that can adapt and evolve with it.
+We take ownership of your business needs, and strive to provide the highest level of service and quality.

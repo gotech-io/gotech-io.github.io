@@ -12,14 +12,16 @@ const Footer = ({
   return (
     <div>
       <div className="footer">
-        <ListSection />
-        <Policy
-          copyright={copyright}
-          privacy_policy_text={privacy_policy_text}
-          privacy_policy_url={privacy_policy_url}
-          terms_of_use_text={terms_of_use_text}
-          terms_of_use_url={terms_of_use_url}
-        />
+        <div className="w-container">
+          <ListSection />
+          <Policy
+            copyright={copyright}
+            privacy_policy_text={privacy_policy_text}
+            privacy_policy_url={privacy_policy_url}
+            terms_of_use_text={terms_of_use_text}
+            terms_of_use_url={terms_of_use_url}
+          />
+        </div>
       </div>
     </div>
   );

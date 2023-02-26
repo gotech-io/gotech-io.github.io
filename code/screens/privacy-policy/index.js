@@ -493,7 +493,9 @@ function PrivacyPolicy({ _relativeURL, _ID }) {
         </p>
         <ul>
           <li>
-            <p>By email: contact@gotech.io</p>
+            <p>
+              By email: <a href="mailto:contact@gotech.io">contact@gotech.io</a>
+            </p>
           </li>
           <li>
             <p>

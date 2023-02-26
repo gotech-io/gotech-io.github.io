@@ -79,11 +79,6 @@ a {
     }
   }
 
-  &-block {
-    width: $main-grid;
-    margin: 0 auto;
-  }
-
   &-title {
     width: $header-grid;
   }
@@ -144,12 +139,6 @@ img {
   background-color: $additional;
 }
 
-@media only screen and (max-width: $medium) {
-  .page-common-block {
-    width: 90%;
-  }
-}
-
 @media only screen and (max-width: $mobile) {
   h1 {
     font-size: $h1-small;
@@ -166,9 +155,6 @@ img {
   }
   p {
     font-size: $p-small;
-  }
-  .socials {
-    justify-content: center;
   }
 
   .page-common {

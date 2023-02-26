@@ -45,7 +45,7 @@
   }
 
   &-main {
-    max-width: 1100px;
+    max-width: $main-grid;
     width: calc(100% - 50px);
     height: 100%;
     display: flex;
@@ -58,6 +58,7 @@
     &-content {
       width: 600px;
       opacity: 0.85;
+      text-shadow: 0px 0px 20px rgb(12 23 60 / 30%);
 
       p {
         margin: $content-gap 0 $section-gap;
@@ -86,6 +87,17 @@
     }
     .toggle-animation {
       display: none;
+    }
+  }
+
+  @media only screen and (max-width: $mobile-small) {
+    h1 {
+      font-size: 9vw;
+      line-height: 1.2;
+    }
+
+    p {
+      font-size: 3.5vw;
     }
   }
 }

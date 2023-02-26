@@ -117,7 +117,7 @@ export const MOBILE_DEV = {
     { title: "ios", icon: "/assets/images/technologies/mobile/ios.png" },
     { title: "java", icon: "/assets/images/technologies/mobile/java.png" },
     { title: "spring", icon: "/assets/images/technologies/mobile/spring.png" },
-    { title: "lonic", icon: "/assets/images/technologies/mobile/lonic.png" },
+    { title: "ionic", icon: "/assets/images/technologies/mobile/ionic.png" },
     { title: "python", icon: "/assets/images/technologies/mobile/python.png" },
     {
       title: "react native",

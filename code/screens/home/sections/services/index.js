@@ -5,23 +5,25 @@ import animations from "../../../../../assets/js/animations";
 const Services = ({ section, title, services, _body }) => {
   return (
     <div className="home-services section">
-      <aside className="indicator" id="services"></aside>
-      <h5 className="section-title">{section}</h5>
-      <div className="home-services-header">
-        <h3 className="home-services-title" data-aos={animations.up}>
-          {title}
-        </h3>
+      <div className="w-container">
+        <aside className="indicator" id="services"></aside>
+        <h5 className="section-title">{section}</h5>
+        <div className="home-services-header">
+          <h3 className="home-services-title" data-aos={animations.up}>
+            {title}
+          </h3>
 
-        <div data-aos={animations.up} data-aos-delay="100">
-          {_body}
+          <div data-aos={animations.up} data-aos-delay="100">
+            {_body}
+          </div>
         </div>
-      </div>
-      <div
-        className="home-services-list flex-between"
-        data-aos={animations.zoomIn}
-        data-aos-delay="200"
-      >
-        <ListServices services={services} />
+        <div
+          className="home-services-list flex-between"
+          data-aos={animations.zoomIn}
+          data-aos-delay="200"
+        >
+          <ListServices services={services} />
+        </div>
       </div>
     </div>
   );

@@ -9,7 +9,8 @@
     "sass-prebuild": "sass ./assets/sass/index.scss ./assets/css/index.css",
     "watch-sass": "sass -w ./assets/sass/index.scss ./assets/css/index.css",
     "watch": "npm run watch-sass & cuttlebelle -w",
-    "watch-win": "npm run sass-prebuild && cuttlebelle -w"
+    "watch-win": "npm run sass-prebuild && cuttlebelle -w",
+    "serve-site": "npx serve ./site"
   },
   "cuttlebelle": {
     "site": {

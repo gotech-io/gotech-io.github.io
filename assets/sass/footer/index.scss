@@ -1,24 +1,34 @@
 .footer {
   width: 100%;
-  padding: $section-gap 0 $content-gap;
+  padding: $section-gap 40px $content-gap;
   position: relative;
   bottom: 0;
   z-index: 10;
-  background: rgba(255, 255, 255, 0.2);
+  background-color: #0c173c;
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border-top: 2px solid $default;
+  color: #ffffff;
 
   &-list {
     width: 100%;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      color: #ffffff;
+      font-size: 1.1rem;
+      font-weight: 500;
+    }
   }
 
   &-bottom {
     margin-top: 50px;
-    border-top: 2px solid $default;
     margin-top: $content-gap;
     color: lightgray;
     font-size: 10px;
@@ -42,13 +52,13 @@
 
   .list-items {
     &-link {
-      color: $additional;
+      color: rgba(255, 255, 255, 0.7);
       text-decoration: none;
       text-transform: none;
       cursor: pointer;
 
       &:hover {
-        color: $prime;
+        color: #ffffff;
       }
     }
 
@@ -57,10 +67,10 @@
         font-size: 25px;
 
         i {
-          color: $additional;
+          color: #ffffff;
 
           &:hover {
-            color: $prime;
+            color: rgba(255, 255, 255, 0.7);
           }
         }
       }
@@ -74,17 +84,14 @@
       div {
         width: 100%;
         margin: 10px 0;
-        text-align: center;
       }
     }
 
     &-bottom-section {
-      justify-content: center;
       flex-wrap: wrap;
 
       div {
         width: 100%;
-        text-align: center;
       }
     }
   }

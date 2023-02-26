@@ -9,10 +9,7 @@ sectionBtn:
 
 ### We Are GoTech
 
-In today's challenging and rapidly changing world of technology, GoTech Group provides the best innovative solutions for development, QA automation, DevOps, Database engineers.
-
-We specialize in delivering quick solutions with very high quality. With our first-class and outstanding experts.
-
 Helping you from the requirements and design stage and all the way through building the infrastructure and architecture, development and QA to full integration within your organization.
 
-Our experts are former 8200 and Mamram graduates with vast experience working for the best leading professional services companies and vendors, giving them the knowledge on how to implement the best solution that fits your budget and timeline.
+Our commitment to customer satisfaction is evident in our vast range of services, and our ability to customize solutions based on your individual needs.
+Our experts are former 8200 and Mamram graduates dedicated to staying ahead of the curve and providing you with the solutions that you need to stay competitive in today's ever-changing world.

@@ -35,15 +35,16 @@
   }
 
   &-active {
-    .navbar-flex {
-      background: $main;
-      box-shadow: $shadow;
-      -webkit-box-shadow: $shadow;
-      -moz-box-shadow: $shadow;
+    background: $main;
+    box-shadow: $shadow;
+    -webkit-box-shadow: $shadow;
+    -moz-box-shadow: $shadow;
 
+    .navbar-flex {
       a {
         color: $prime;
       }
+
       .contact-link {
         border: solid 2px $prime;
         a {
@@ -66,7 +67,9 @@
     height: 100%;
     align-items: center;
     justify-content: space-between;
-    padding: 0 $content-gap;
+    padding: 0;
+    max-width: $main-grid;
+    margin: 0 auto;
   }
 
   &-hidden {
@@ -87,7 +90,6 @@
         font-size: 0.938rem;
         letter-spacing: 0.063rem;
         font-weight: 100;
-        text-transform: uppercase;
       }
     }
 
@@ -109,7 +111,6 @@
   }
 
   &-desktop-contact {
-    width: 200px;
   }
 }
 

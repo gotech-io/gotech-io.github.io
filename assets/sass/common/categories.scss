@@ -14,9 +14,9 @@
     z-index: 10;
 
     &-wrapper {
-      width: 100px;
-      height: 100px;
-      margin: 0 auto 10px;
+      width: 50px;
+      height: 50px;
+      margin: 0;
 
       .icons-wrapper {
         background-color: $default;
@@ -34,14 +34,20 @@
 
 .category {
   &-item {
-    width: 200px;
     height: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    .icons-wrapper-icon {
+      font-size: 22px;
+    }
 
     p {
       width: 100%;
-      text-transform: uppercase;
-      text-align: center;
-      font-weight: 600;
+      font-weight: 500;
+      font-size: 24px;
+      margin: 0 20px;
     }
   }
 }

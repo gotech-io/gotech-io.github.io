@@ -45,10 +45,9 @@
   &-list-wrapper {
     margin: $section-gap auto;
     display: flex;
+    flex-direction: column;
 
     .home-clients-list {
-      margin-left: $section-gap;
-
       &-item {
         width: 150px;
         background-color: $default;

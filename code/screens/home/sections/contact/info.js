@@ -6,7 +6,9 @@ const Info = ({ title, subTitle1, subTitle2, email, address }) => {
       <h3>{title}</h3>
       <div className="contact-info-block">
         <h4>{subTitle1}</h4>
-        <p>{email}</p>
+        <p>
+          <a href={`mailto:${email}`}>{email}</a>
+        </p>
       </div>
 
       <div className="contact-info-block">
