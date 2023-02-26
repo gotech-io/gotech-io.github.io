@@ -4,19 +4,19 @@ import React from "react";
 import animations from "../../../../assets/js/animations";
 import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
 
-function Left({ type }) {
+function CaseStudyItem({ type, side }) {
   const { title, description, images, link, tags } = PROJECTS_INFO[type];
   const { mockup } = images;
 
   return (
     <div className="case-studies flex-between">
       <div className="page-common-block case-studies-wrapper">
-        <div className="case-studies-image-left">
+        <div className={`case-studies-image-${side ?? "left"}`}>
           <Mockup image={mockup} />
         </div>
 
         <div
-          className="case-studies-content-left"
+          className={`case-studies-content-${side ?? "left"}`}
           data-aos-anchor-placement="top-center"
           data-aos={animations?.zoomUp}
         >
@@ -32,4 +32,4 @@ function Left({ type }) {
   );
 }
 
-export default Left;
+export default CaseStudyItem;

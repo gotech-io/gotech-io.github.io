@@ -139,10 +139,13 @@
 
 @media only screen and (max-width: $mobile) {
   .contact {
-    padding-top: 30px;
+    width: calc(100% - 20px);
+    padding: 40px 20px;
+
     &-flex {
       flex-direction: column;
     }
+
     &-left {
       width: 100%;
       text-align: center;

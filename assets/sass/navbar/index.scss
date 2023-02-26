@@ -177,6 +177,7 @@
       top: 0px;
       right: 0px;
       width: calc(100% - 50px);
+      max-width: 350px;
       background: white;
       flex-direction: column;
       transform-origin: right;
@@ -195,7 +196,13 @@
   }
 }
 
-@media only screen and (max-width: $mobile) {
+@media only screen and (max-width: $main-grid) {
+  .navbar {
+    padding: 0 10px;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
   .navbar {
     .contact-link {
       border: solid 2px $prime;

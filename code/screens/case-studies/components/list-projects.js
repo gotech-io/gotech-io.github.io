@@ -1,7 +1,6 @@
-import Left from "./left";
 import React from "react";
-import Right from "./right";
 import { PROJECTS_INFO } from "../../../../assets/js/common/case-studies-projects";
+import CaseStudyItem from "./case-study-item";
 
 function ListProjects() {
   const projects = Object.values(PROJECTS_INFO);
@@ -13,7 +12,7 @@ function ListProjects() {
           const isEven = i % 2 === 0;
           return (
             <div key={type}>
-              {isEven ? <Left type={type} /> : <Right type={type} />}
+              <CaseStudyItem type={type} side={isEven ? "left" : "right"} />
             </div>
           );
         })}

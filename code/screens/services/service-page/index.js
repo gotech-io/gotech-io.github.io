@@ -1,4 +1,4 @@
-import Left from "../../case-studies/components/left";
+import CaseStudyItem from "../../case-studies/components/case-study-item";
 import PageWrapper from "../../../common/pageWrapper";
 import React from "react";
 import ServicesSection from "../components/services-section";
@@ -33,7 +33,7 @@ function ServicePage({ entity, marquee, contact, _relativeURL, _ID }) {
     },
     {
       type: SECTIONS.ZETA,
-      content: <Left type={example} />,
+      content: <CaseStudyItem type={example} />,
     },
   ];
 

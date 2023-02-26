@@ -1,17 +1,17 @@
 ---
 layout: common/navbar/components/navigation/index
 links:
-  - name: services
+  - name: Services
     value: /services
-  - name: about
+  - name: About
     value: /#about
-  - name: clients
+  - name: Clients
     value: /#clients
-  - name: cases
+  - name: Cases
     value: /#case-studies
-  - name: team
+  - name: Team
     value: /#team
-  - name: contact us
+  - name: Contact Us
     value: /#contact
   - name: Careers
     value: careers

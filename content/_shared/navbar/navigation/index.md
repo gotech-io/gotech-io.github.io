@@ -4,7 +4,7 @@ links:
   - name: About
     value: /#about
 
-  - name: services
+  - name: Services
     value: /services
 
   - name: Clients

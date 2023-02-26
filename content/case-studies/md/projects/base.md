@@ -1,4 +1,4 @@
 ---
-layout: screens/case-studies/components/left
+layout: screens/case-studies/components/case-study-item
 type: BASE
 ---

@@ -76,6 +76,7 @@
       color: #1f2631;
       font-weight: 300;
       font-size: 1.1rem;
+      max-width: 800px;
     }
   }
 }
@@ -298,7 +299,7 @@ li,
 
 .fixed {
   position: fixed;
-  width: 100%;
+  width: 100vw;
   top: 0px;
   left: 0px;
 }
@@ -377,14 +378,16 @@ li,
 }
 
 @media only screen and (max-width: 1150px) {
-  .section {
+  .section,
+  .w-container.w-padding {
     padding-right: 50px;
     padding-left: 50px;
   }
 }
 
 @media only screen and (max-width: $mobile) {
-  .section {
+  .section,
+  .w-container.w-padding {
     padding: 50px 20px;
   }
 }

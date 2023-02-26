@@ -5,17 +5,20 @@ $text-color: black;
   margin-left: auto;
   margin-right: auto;
 }
-.careers-active-navbar{
-  background: linear-gradient(135deg, #092442, #0A3667);
+.careers-active-navbar {
+  background: linear-gradient(135deg, #092442, #0a3667);
 }
 
 .careers {
-  
+  .page-common-sub-section {
+    margin: 0 auto;
+  }
+
   &-header {
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: linear-gradient(135deg, #092442, #0A3667);
+    background-image: linear-gradient(135deg, #092442, #0a3667);
     min-height: 400px;
 
     &-content {
@@ -282,6 +285,6 @@ $text-color: black;
   }
 }
 
-.smallTitle{
-  display: none!important;
+.smallTitle {
+  display: none !important;
 }

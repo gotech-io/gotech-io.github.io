@@ -5,29 +5,33 @@
 
   &-wrapper {
     height: 500px;
+    width: 100%;
+    max-width: 900px;
     margin: 0 auto $section-gap;
     position: relative;
     display: flex;
     justify-content: space-between;
   }
 
-  &-image-left {
-    width: 90%;
-    height: 90%;
+  &-image {
+    &-left,
+    &-right {
+      width: 90%;
+      height: 90%;
+      position: absolute;
 
-    img {
-      border-radius: $radius;
+      img {
+        border-radius: $radius;
+        object-fit: cover;
+      }
     }
-  }
 
-  &-image-right {
-    width: 90%;
-    height: 90%;
-    position: absolute;
-    right: 0;
+    &-left {
+      left: 0;
+    }
 
-    img {
-      border-radius: $radius;
+    &-right {
+      right: 0;
     }
   }
 
@@ -54,43 +58,64 @@
     &-image {
       &-left,
       &-right {
-        width: 100% !important;
-      }
-    }
-  }
-}
-
-@media only screen and (max-width: $mobile) {
-  .case-studies {
-    min-height: auto !important;
-    margin: 0 !important;
-
-    &-content {
-      &-left,
-      &-right {
-        width: 100% !important;
+        width: 100%;
+        position: static;
+        z-index: 1;
       }
     }
 
     &-wrapper {
-      height: auto !important;
-      flex-wrap: wrap;
-      justify-content: center;
-      position: unset !important;
+      flex-direction: column;
+      height: auto;
     }
 
     &-content {
       &-left,
       &-right {
-        position: unset !important;
-      }
-    }
+        position: static;
+        width: 100%;
 
-    &-image {
-      &-left,
-      &-right {
-        display: none;
+        .grey-box {
+          border-radius: 0 0 20px 20px;
+          margin-top: -30px;
+          padding: 60px 40px 40px;
+        }
       }
     }
   }
 }
+
+// @media only screen and (max-width: $mobile) {
+//   .case-studies {
+//     min-height: auto !important;
+//     margin: 0 !important;
+
+//     &-content {
+//       &-left,
+//       &-right {
+//         width: 100% !important;
+//       }
+//     }
+
+//     &-wrapper {
+//       height: auto !important;
+//       flex-wrap: wrap;
+//       justify-content: center;
+//       position: unset !important;
+//     }
+
+//     &-content {
+//       &-left,
+//       &-right {
+//         position: unset !important;
+//       }
+//     }
+
+//     &-image {
+//       &-left,
+//       &-right {
+//         display: none;
+//       }
+//     }
+//   }
+// }
